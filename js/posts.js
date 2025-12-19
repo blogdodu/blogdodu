@@ -5,7 +5,7 @@ const postsData = [
     {
         id: "isso-e-so-o-re-comeco-cd1",
         title: '"isso é só o (re)começo" - cd1',
-        date: "09 mar 2025",
+        date: "19 dez 2025",
         readingTime: "3 min de leitura",
         category: "conversas",
         categoryId: "#caminhos",
@@ -46,3 +46,4 @@ const postsData = [
     },
 
 ];
+
