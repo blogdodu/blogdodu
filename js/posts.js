@@ -26,7 +26,6 @@ const postsData = [
             <p>acredito que coletividade é uma base forte, e que a diversidade de pensamentos e experiências é o que nos torna mais sábios e tolerantes....</p>
         <hr class="divisor-fino-longo">
             <p>por isso, convido você a se juntar e fazer parte dessa jornada inspiradora...</p>
-            <p>me siga no instagram para se manter atualizado e participar de conversas interativas......</p>
             <p>espero te ver sempre por aqui!!!</p>
         <br>
         <br>
@@ -45,4 +44,5 @@ const postsData = [
             <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
         `
     },
+
 ];
