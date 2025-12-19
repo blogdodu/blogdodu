@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>blog do du | letras, arte e vida</title>
+    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="barra-leitura"></div>
+
+    <div class="toggle-container desktop-only">
+        <label class="switch">
+            <input type="checkbox" class="theme-toggle-input" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="mobile-top-bar">
+        <a href="#" class="logo-menu">blog do du</a>
+    </div>
+
+    <div class="mobile-bottom-bar">
+        <div class="menu-hamburguer" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="mobile-copyright">
+            ©2026 blogdodu
+        </div>
+        
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" class="theme-toggle-input" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <nav class="menu-fixo" id="navegacao-global">
+        <div class="menu-container">
+            <a href="#" class="logo-menu desktop-only">blog do du</a>
+
+            <ul class="links-internos" id="menu-lista">
+                <li><a href="#sobre" id="link-sobre">sobre</a></li>
+                <li><a href="#textos" id="link-textos">textos</a></li>
+                <li><a href="#caminhos" id="link-caminhos">caminhos</a></li>
+                <li><a href="#autores" id="link-autores">autoras(es)</a></li>
+                <li><a href="#contato" id="link-contato">contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="footer-global desktop-only">
+        <p><strong>©2026 blogdodu</strong></p>
+    </div>
+
+    <div id="modal-foto" class="modal">
+        <span class="fechar-modal">&times;</span>
+        <img class="modal-conteudo" id="img-ampliada">
+    </div>
+
+    <section id="capa" class="animacao-entrada">
+        <div class="conteudo-capa">
+            <h1>blog do du</h1>
+            <p class="subtitulo">poesia  •  música  •  arte  •  fotografia</p>
+            
+            <nav class="menu-capa">
+                <ul>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#textos">textos</a></li>
+                    <li><a href="#caminhos">caminhos</a></li>
+                    <li><a href="#autores">autoras(es)</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <main id="conteudo" class="hidden">
+    
+        <div class="area-leitura">
+            
+            <section id="sobre" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>sobre</h2>
+                </div>
+
+                <div class="sobre-container">
+                    <div class="sobre-foto">
+                        <img src="img/du-perfil.jpg" alt="foto do du" id="foto-perfil">
+                        <span class="legenda-foto">eu, você, nós e além!!!</span>
+                    </div>
+
+                    <div class="sobre-texto">
+                        <p class="destaque">oi.... eu sou o du....</p><br>
+                        <p>e esse é o <strong>blog do du</strong>, um espaço onde junto tudo que sou e o que me tange......</p><br>
+                        <p>acho que não sei existir de um jeito só: sou designer, fotógrafo, músico, compositor, iluminador cênico, cenógrafo, produtor artístico cultural, massoterapeuta e 'otras cositas más'... rsrsrs..... ah! e claro, nas horas mais intensas, <strong>escritor</strong>....</p><br>
+                        <p>desde 2019 venho enfrentando uma depressão e escrever tem sido uma forma de respirar..... cada texto é um passo..... cada palavra, uma tentativa de voltar a sentir.....</p><br>
+                        <p>e disso nasce esse blog, de uma <strong>vontade de compartilhar, de criar conexões</strong> em tempos de tanta distração.....</p><br>
+                        <p>uma proposta de <strong>slow content</strong>..</p><br>
+                        <hr class="divisor-fino-longo">
+                        <div class="chamada-final">
+                            <p>não prometo respostas.....</p>
+                            <p>mas te convido pra conversas interessantes......</p>
+                            <hr class="divisor-fino-longo"><br>
+                            <p class="assinatura">vem junto, que a gente se encontra nas palavras....</p>
+                        </div>
+
+                        <div id="apoio-template" class="apoio-container">
+                            <p>considere apoiar o projeto <strong>a partir de R$ 5,oo</strong></p>
+                            <p><a href="https://apoia.se/blogdodu"><strong>https://apoia.se/blogdodu</strong></a></p>
+                            <div class="pix-info">
+                                <p>chave pix para apoiar diretamente:</p>
+                                <p><strong>pix.ducanal@gmail.com</strong></p>
+                                <p class="detalhe">(sim, é um email feio e sem glamour - mas o café que ele proporciona é real e aquece o coração....)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="post-view" class="conteudo-bloco secao-conteudo" style="display: none;">
+                <div class="titulo-com-voltar">
+                    <a href="#textos" class="seta-voltar">&lt;</a>
+                    <h2 id="dynamic-title">Titulo do Post</h2>
+                </div>
+                
+                <div class="meta-post">
+                    <small id="dynamic-date">Data</small>
+                    <small class="tag-post">
+                        <a href="#" id="dynamic-cat">Categoria</a> / <a href="#" id="dynamic-author">Autor</a> . <span id="dynamic-time">Tempo</span>
+                    </small>
+                </div>
+
+                <div class="corpo-post">
+                    <br><br><br>
+                    
+                    <div id="dynamic-content"></div>
+
+                    <div class="apoio-container" style="margin-top: 60px;">
+                        <p>considere apoiar o projeto <strong>a partir de R$ 5,oo</strong></p>
+                        <p><a href="https://apoia.se/blogdodu"><strong>https://apoia.se/blogdodu</strong></a></p>
+                        <div class="pix-info">
+                            <p>chave pix para apoiar diretamente:</p>
+                            <p><strong>pix.ducanal@gmail.com</strong></p>
+                            <p class="detalhe">(sim, é um email feio e sem glamour - mas o café que ele proporciona é real e aquece o coração....)</p>
+                        </div>
+                    </div>
+
+                    <div class="navigation-layout">
+                        <div id="nav-prev-area"></div>
+
+                        <div class="post-capa-center">
+                            <img id="dynamic-image" src="" alt="">
+                            <span id="dynamic-caption" class="legenda-foto"></span>
+                        </div>
+
+                        <div id="nav-next-area"></div>
+                    </div>
+
+                    <div id="social-area"></div>
+                    
+                </div>
+            </section>
+
+            <section id="textos" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>textos</h2>
+                </div>
+    
+                <div class="container-busca">
+                    <input type="text" id="campo-busca" placeholder="busque por título, tema ou palavra..." autocomplete="off">
+                </div>
+
+                <div id="textos-lista"></div>
+            </section>
+            
+            <section id="caminhos" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>caminhos</h2>
+                </div>
+
+                <div class="lista-simples">
+                    
+                    <a href="#cat-conversas" class="item-lista">conversas <span>&rarr;</span></a>
+                </div>
+            </section>
+
+            <section id="autores" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>autoras(es)</h2>
+                </div>
+                    <p>espero sempre poder aumentar essa lista, que começa, humildemente comigo</p>
+                    <br>
+                <div class="lista-simples">
+                    <a href="#sobre" class="item-lista">
+                        <span>du</span>
+                        <span style="color: var(--accent-color);">criador & curador</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="contato" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>contato</h2>
+                </div>
+                <p>se você tem um pedido, uma sugestão, quer enviar uma mensagem ou tem interesse em parcerias, sinta-se à vontade para me escrever..... </p><br>
+                <p><strong>'eu mesmo'<strong>¹</strong>  leio cada e-mail!!!</strong></p>
+                    <hr class="divisor-fino-longo">
+                <p style="font-size: 1.1rem; font-weight: bold;">
+                    <a href="mailto:pix.ducanal@gmail.com" style="color: var(--text-color);">pix.ducanal@gmail.com</a>
+                </p>
+                <br><br><br><br><br><br><br><br>
+                <p>¹ enquanto for viável....rsrrsr</p>
+                <br>
+                <div class="pos-scriptum">
+                    <p><strong>ps.:</strong> até o momento o blog funciona na função "euquipe", desde a programação, design e textos..... qualquer coisa que dê errado a culpa é minha mesmo e pode relatar que vou tentar resolver.....rsrsrsr....</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="js/posts.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
