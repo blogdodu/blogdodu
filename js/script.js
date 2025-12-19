@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 page_location: window.location.href,
                 page_path: window.location.hash || '/'
             });
+        }
         const hash = window.location.hash;
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
@@ -407,5 +408,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
