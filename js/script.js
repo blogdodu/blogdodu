@@ -185,11 +185,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 6. Sistema de Roteamento ---
     function roteador() {
-        // RESETAR SCROLL E BARRA DE LEITURA
+        // ... (seu código de resetar scroll e barra leitura) ...
         window.scrollTo(0, 0);
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
-
+        
+        // --- NOVO: AVISAR O GOOGLE QUE A PÁGINA MUDOU ---
+        if (typeof gtag === 'function') {
+            gtag('event', 'page_view', {
+                page_title: document.title,
+                page_location: window.location.href,
+                page_path: window.location.hash || '/'
+            });
         const hash = window.location.hash;
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
@@ -400,4 +407,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
