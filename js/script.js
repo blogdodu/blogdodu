@@ -8,8 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('light-mode', isLight);
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
         toggleCheckboxes.forEach(box => box.checked = !isLight);
-    };
 
+        // ATUALIZA O TEMA DO GISCUS SEM RECARREGAR
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (iframe) {
+            const novoTema = isLight ? 'light' : 'noborder_gray';
+            iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: novoTema } } }, 'https://giscus.app');
+        }
+    };
+    
     if (temaSalvo === 'light') {
         setTema(true);
     } else {
@@ -136,29 +143,44 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="btn-share" onclick="navigator.clipboard.writeText('${url}').then(() => alert('link copiado!'))">Copiar Link</button>
                 </div>
             </div>
-            <div id="disqus_thread"></div>
+            <div class="giscus-container" style="margin-top: 50px;"></div>
         `;
     }
 
-    // --- 5. FUNÇÃO DO DISQUS ---
-    function carregarDisqus(postId, postTitle) {
-        var disqus_shortname = 'blogdodu'; // Troque pelo seu shortname real
+    // --- 5. FUNÇÃO DO GISCUS (Comentários Minimalistas) ---
+    function carregarGiscus() {
+        const giscusContainer = document.querySelector('.giscus-container');
+        if (!giscusContainer) return;
 
-        if (window.DISQUS) {
-            window.DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = postId;
-                    this.page.url = window.location.href;
-                    this.page.title = postTitle;
-                }
-            });
-        } else {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
+        // Limpa container anterior para não duplicar ao trocar de post
+        giscusContainer.innerHTML = '';
+
+        // PREENCHA COM SEUS DADOS AQUI:
+        const repo = "blogdodu/blogdodu";             // data-repo
+        const repoId = "R_kgDOQraO_w";                // data-repo-id
+        const category = "General";                   // data-category
+        const categoryId = "DIC_kwDOQraO_84Cz_cT";    // data-category-id
+        
+        // Verifica o tema atual do site para carregar o Giscus combinando
+        const temaAtual = document.body.classList.contains('light-mode') ? 'light' : 'noborder_gray';
+
+        const script = document.createElement('script');
+        script.src = "https://giscus.app/client.js";
+        script.setAttribute("data-repo", repo);
+        script.setAttribute("data-repo-id", repoId);
+        script.setAttribute("data-category", category);
+        script.setAttribute("data-category-id", categoryId);
+        script.setAttribute("data-mapping", "url"); 
+        script.setAttribute("data-strict", "0");
+        script.setAttribute("data-reactions-enabled", "1");
+        script.setAttribute("data-emit-metadata", "0");
+        script.setAttribute("data-input-position", "bottom");
+        script.setAttribute("data-theme", temaAtual); // Tema dinâmico
+        script.setAttribute("data-lang", "pt");
+        script.crossOrigin = "anonymous";
+        script.async = true;
+
+        giscusContainer.appendChild(script);
     }
 
     // --- 6. Sistema de Roteamento ---
@@ -253,8 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (socialArea) {
                     socialArea.innerHTML = htmlShare;
                 }
-                carregarDisqus(post.id, post.title);
-
+                carregarGiscus();
+                
                 const prevContainer = document.getElementById('nav-prev-area');
                 const nextContainer = document.getElementById('nav-next-area');
                 prevContainer.innerHTML = '';
@@ -378,3 +400,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
