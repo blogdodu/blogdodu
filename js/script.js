@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                if(post.category === "ensaios & provocações") catLink.href = "#cat-ensaios";
+                if(post.category === "ensaios e provocações") catLink.href = "#cat-ensaios";
                 else if(post.category === "conversas") catLink.href = "#cat-conversas";
                 else catLink.href = "#caminhos";
 
@@ -408,6 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
 
