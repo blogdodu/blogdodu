@@ -5,7 +5,7 @@ const postsData = [
         {
             id: "apenas-verdades-absolutas-ed1",
             title: "apenas verdades absolutas - ed1",
-            date: "10 mar 2025",
+            date: "22 dez 2025",
             readingTime: "3 min de leitura",
             category: "ensaios & provocações",
             categoryId: "#caminhos",
@@ -127,5 +127,6 @@ const postsData = [
     },
 
 ];
+
 
 
