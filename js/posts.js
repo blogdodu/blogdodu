@@ -1,5 +1,152 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
+
+// d003. Ciclos
+    {
+        id: "ciclos-dd8",
+        title: "ciclos",
+        date: "29 dez 2025",
+        readingTime: "8 min de leitura",
+        category: "ensaios e provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-ciclos.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "",
+        content: `
+                <p>ciclos, ah os ciclos... a dança incessante do tempo que nos envolve, nos impulsiona e nos transforma..... um eterno recomeço, uma jornada que nos leva de um ponto a outro, revelando novas paisagens e novas perspectivas....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ a roda do tempo ♦</strong></p>
+                <p>uma hora, um dia, um ano, uma vida.....</p>
+                <p>a gente vive na ânsia de novos começos, mas esquecemos que já começamos e que o que realmente deveríamos estar focando é nos fins.... ou no fim......</p>
+                <p>não de uma forma lamentosa, por algo estar acabando, mas de uma forma a aproveitarmos cada momento até que chegue o fim....</p>
+                <p>é bem provável que você, inconscientemente, esteja torcendo e vivendo pra que ciclos acabem, tão focada(o) nas possibilidades, que nem mesmo são certezas, de um novo ciclo, que deixa de viver o presente.....</p>
+                <p>torcendo para a hora passar e o dia de trabalho se encerrar, não vê a hora da semana chegar ao fim, que cheguem as férias, que o ano novo comece e tudo seja diferente....</p>
+                <p>sem perceber você está deixando passar o único momento que você realmente pode aproveitar e se sentir viva(o).... o agora...</p>
+                <p>como diria o filósofo alan watts, estamos sempre "chegando" a algum lugar, mas nunca realmente "estamos" em lugar algum....</p>
+                <p>vivemos em função de um futuro que, quando chega, já se transforma em outro futuro a ser alcançado....</p>
+                <p>essa corrida sem fim nos leva a uma espécie de amnésia existencial, onde o presente é apenas uma ponte estreita entre um passado que já se foi e um futuro que ainda não chegou....</p>
+                <p>esquecemos de habitar o instante, de saborear a experiência imediata da vida....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ a geometria da existência ♦</strong></p>
+                <p>qualquer ponto de um círculo é um começo, um fim e um recomeço....</p>
+                <p>mas além disso é um ângulo de visão que nunca mais poderá ser apreciado novamente... pois a cada volta nos tornamos diferentes e apreciamos o ciclo modificado pelo tempo e por nós mesmas(os)....</p>
+                <p>hoje, dia 12 de maio, está distante um ano do próximo dia 12 de maio.... é assim que comemoramos aniversários, é o nosso reinício de ciclo...... então, todos os dias é um reinício de ciclo, todas horas, todos os momentos....</p>
+                <p>sendo assim, porque esperar a segunda para iniciar na academia, as férias para descansar e cuidar de si, o ano virar para colocar em prática metas de mudança....</p>
+                <p>quando fazemos isso, procrastinamos nossa vida, nosso principal ciclo, e não percebemos que a vida está passando.....</p>
+                <p>o filósofo heráclito já nos alertava que "não podemos entrar duas vezes no mesmo rio", pois tanto o rio quanto nós já somos outros....</p>
+                <p>cada momento é único, irrepetível, mesmo que pareça familiar....</p>
+                <p>os ciclos não são círculos perfeitos, mas espirais que nos levam a lugares semelhantes, porém sempre novos....</p>
+                <p>pense nas estações do ano....</p>
+                <p>cada primavera é uma primavera, com suas próprias flores, suas próprias chuvas, seus próprios aromas.... nunca é a mesma primavera do ano anterior, mesmo que siga o mesmo padrão cíclico....</p>
+                <p>assim também são nossos dias, nossas semanas, nossos anos.... padrões que se repetem, mas sempre com novas nuances, novas texturas, novas possibilidades....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ a finitude e o presente ♦</strong></p>
+                <p>até porque um dia vamos morrer.... mas um pequeno beagle extrovertido, de humor delicado, respondeu ao seu dono: "é verdade, mas em todos os outros dias não!!!"</p>
+                <p>por isso, fique um pouco no aqui, olhe ao redor, respire fundo, esteja presente, experimente o agora, aprecie os detalhes, não adie a vida.....</p>
+                <p>e, principalmente, não fique presa(o) no que te incomoda, porque está esperando o momento certo de mudar.....</p>
+                <p>como nos ensina a filosofia zen, "quando você está sentado, apenas sente-se; quando você está andando, apenas ande"....</p>
+                <p>a prática da atenção plena nos convida a habitar integralmente cada momento, reconhecendo que o presente é o único tempo que realmente existe....</p>
+                <p>o filósofo martin heidegger falava sobre o "dasein" (ser-aí), nossa condição de estarmos lançados no mundo, sempre em relação com o tempo....</p>
+                <p>nossa autenticidade depende de como nos relacionamos com nossa finitude, de como abraçamos nossa temporalidade....</p>
+                <p>a consciência da morte não precisa ser um peso, mas pode ser justamente o que dá sabor à vida....</p>
+                <p>é porque sabemos que um dia tudo acaba que cada momento ganha seu valor único e insubstituível.... como escreveu o poeta mario quintana: "a vida é tão bela que chega a dar medo"....</p>
+                <p>esse medo, paradoxalmente, pode ser o que nos desperta para a beleza do instante....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ o tempo em nossas mãos ♦</strong></p>
+                <p>lembre que os ciclos podem ser de vários tamanhos, cabe a você decidir onde os seus terminam e/ou começam e rumar para o próximo....</p>
+                <p>o mundo não fica parado esperando dar meia noite para voltar a girar no "ano novo".....</p>
+                <p>resumindo, não importa quando estiver lendo este texto, esse é o momento de encerrar o ciclo e abandonar tudo que te incomoda e começar um novo ciclo, uma nova vida, uma versão atualizada, revisada de quem é você, de hoje em diante....</p>
+                <p>uma nova jornada com apoio de uma equipe fiel e cativa ou com acréscimo de outros com novas especialidades e habilidades necessárias para seguir confiante....</p>
+                <p>no jogo da vida sempre está na sua vez, apenas role os dados....</p>
+                <p>o poeta rainer maria rilke nos convida: "deixe tudo acontecer com você: beleza e terror. apenas siga em frente. nenhum sentimento é final"....</p>
+                <p>os ciclos nos ensinam que nada permanece, que tudo flui, que cada fim contém em si um novo começo....</p>
+                <p>talvez a verdadeira liberdade esteja em reconhecer que podemos iniciar um novo ciclo a qualquer momento.... não precisamos esperar pelo ano novo, pelo aniversário, pela segunda-feira....</p>
+                <p>podemos declarar "agora" como o início de algo novo.... como escreveu fernando pessoa: "para viajar basta existir".... para recomeçar, basta decidir....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ ciclos culturais e naturais ♦</strong></p>
+                <p>nas tradições ancestrais, os ciclos eram celebrados e honrados....</p>
+                <p>as estações do ano, as fases da lua, os solstícios e equinócios marcavam momentos de transição e renovação....</p>
+                <p>essas culturas entendiam que viver em harmonia com os ciclos naturais era viver em sabedoria....</p>
+                <p>o conceito hindu de samsara fala sobre a roda de nascimento, morte e renascimento..... não apenas como reencarnação, mas como metáfora para os pequenos ciclos que vivemos diariamente.... cada respiração é um pequeno ciclo de vida e morte, cada noite de sono é uma pequena morte seguida de um renascimento matinal....</p>
+                <p>talvez a verdadeira sabedoria não esteja em escapar dos ciclos, mas em dançar conscientemente com eles, reconhecendo sua beleza e inevitabilidade....</p>
+                <p>na cultura maia, o calendário não era linear, mas circular.... o tempo não "passava", mas "retornava"....</p>
+                <p>essa visão cíclica permitia uma relação diferente com o tempo, menos ansiosa, menos obcecada com a idéia de "progresso linear"....</p>
+                <p>talvez tenhamos algo a aprender com essa sabedoria antiga....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ a arte de encerrar ciclos ♦</strong></p>
+                <p>há uma arte em saber encerrar ciclos....</p>
+                <p>não falo apenas sobre começar algo novo, mas também sobre honrar o que está terminando....</p>
+                <p>como fazemos o luto de uma fase que se encerra???</p>
+                <p>como celebramos as aprendizagens, mesmo aquelas que vieram através da dor????</p>
+                <p>a psicóloga elisabeth kübler-ross identificou cinco estágios do luto: negação, raiva, negociação, depressão e aceitação....</p>
+                <p>talvez esses mesmos estágios se apliquem a qualquer ciclo que encerramos....</p>
+                <p>resistimos ao fim, nos revoltamos contra ele, tentamos negociar mais tempo, sentimos a tristeza da despedida e, finalmente, aceitamos o encerramento como parte natural da vida....</p>
+                <p>encerrar um ciclo conscientemente é um ato de coragem e de amor próprio....</p>
+                <p>é reconhecer que algo já cumpriu seu propósito em nossa vida e que é hora de abrir espaço para novas experiências, novos aprendizados, novos caminhos....</p>
+                <p>mas aqui está o segredo que poucos percebem: não precisamos esperar pelo "momento perfeito" para encerrar um ciclo.... não existe hora certa, data especial ou ritual específico que seja necessário....</p>
+                <p>o poder de declarar um ciclo encerrado está em nossas mãos, a qualquer instante....</p>
+                <p>pense em quantas vezes você adiou uma mudança importante porque "ainda não era o momento"....</p>
+                <p>quantas vezes você permaneceu em situações que já não faziam sentido porque "era preciso esperar o fim do ano" ou "terminar este projeto" ou "esperar esta fase passar"....</p>
+                <p>e se você soubesse que pode, agora mesmo, neste exato momento, declarar: "este ciclo está encerrado"?????</p>
+                <p>e se o poder de recomeçar estivesse sempre disponível, a cada respiração, a cada batida do coração???</p>
+                <p>como escreveu clarice lispector: "não se preocupe em entender, viver ultrapassa qualquer entendimento"....</p>
+                <p>talvez não precisemos entender completamente um ciclo para declará-lo encerrado.... </p>
+                <p>talvez o próprio ato de encerrar seja o que nos permite, finalmente, compreender.......</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ o eterno retorno e o agora ♦</strong></p>
+                <p>nietzsche propôs a idéia do "eterno retorno", um pensamento experimental: e se você tivesse que viver esta mesma vida, exatamente como ela é, infinitas vezes, cada alegria, cada dor, cada momento banal, repetidos eternamente.... como você viveria sabendo disso????</p>
+                <p>essa pergunta nos convida a uma reflexão profunda sobre como habitamos esse fluxo constante entre o que fomos e o que seremos....</p>
+                <p>se cada momento fosse se repetir infinitamente, como você o viveria?????</p>
+                <p>com pressa para que passe logo ou com a atenção plena de quem sabe que cada segundo é precioso e irrepetível em sua singularidade???</p>
+                <p>mas o eterno retorno não é apenas um exercício filosófico abstrato, é um convite para vivermos cada momento como se fosse, simultaneamente, a primeira e a última vez....</p>
+                <p>é um chamado para abandonarmos a idéia de que a vida "real" está sempre em outro lugar, em outro tempo....</p>
+                <p>quando compreendemos verdadeiramente que podemos recomeçar a qualquer momento, algo transformador acontece: percebemos que não estamos presos a calendários, datas comemorativas ou momentos especiais para mudarmos....</p>
+                <p>a transformação não precisa esperar pelo ano novo, pelo aniversário, pela segunda-feira.... ela pode acontecer agora, neste exato instante, neste entre-lugar que habitamos....</p>
+                <p>como sugere o filósofo gilles deleuze, talvez o tempo não seja uma linha reta nem um círculo fechado, mas um labirinto....</p>
+                <p>um espaço onde passado e futuro se encontram e se reconfiguram constantemente.... </p>
+                <p>nesse labirinto temporal, cada decisão que tomamos abre novos caminhos, novas possibilidades, novos ciclos....</p>
+                <p>e talvez seja essa a maior lição dos ciclos: eles não são prisões que nos mantêm girando eternamente no mesmo lugar, mas espirais que nos oferecem, a cada volta, a oportunidade de escolher um novo caminho....</p>
+                <p>a cada instante, temos a chance de dizer: "a partir daqui, serei diferente".... não porque o calendário mudou, mas porque nós decidimos mudar....</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ a ponte parra novos eus ♦</strong></p>
+                <p>este entendimento dos ciclos como oportunidades constantes de recomeço nos leva naturalmente a questionar quem somos....</p>
+                <p>se podemos recomeçar a qualquer momento, então quem é esse "eu" que persiste através das mudanças??? quem somos nós, além das máscaras que usamos e dos papéis que desempenhamos???</p>
+                <p>talvez sejamos, como sugere o budismo, não uma entidade fixa e imutável, mas um processo em constante transformação....</p>
+                <p>talvez sejamos menos um "ser" e mais um "tornar-se"....</p>
+                <p>menos uma identidade estática e mais um fluxo de experiências, percepções e escolhas....</p>
+                <p>e se assim for, então cada recomeço não é apenas uma mudança externa, mas uma oportunidade de reconhecer e explorar novos aspectos de quem somos....</p>
+                <p>cada ciclo que encerramos nos permite abandonar velhas máscaras e experimentar novas formas de ser e estar no mundo....</p>
+                <p>enfim, até a próxima viagem pelos intrincados caminhos da vida!!!!</p>
+            <br>
+            <hr class="divisor-fino-longo">
+                <p><strong>♦ lá e de volta outra vez ♦</strong></p>
+                <p>quais ciclos está tentando apressar em sua vida? consegue identificar momentos em que deixou de viver o presente por estar ansioso pelo futuro???</p>
+                <p>já experimentou a sensação de encerrar conscientemente um ciclo e iniciar outro, sem esperar por datas ou momentos específicos?????</p>
+            <br>
+                <p>quer mergulhar em outras reflexões profundas???</p>
+                <p>no último texto, exploramos o universo das verdades absolutas.....</p>
+                <p>vale a pena conferir!...</p>
+            <br>
+                <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                    <p><center>__________________________________</center></p>
+                <p><center>não prometo respostas.....</center></p>
+                <p><center>mas te convido pra conversas interessantes......</center></p>
+                    <p><center>__________________________________</center></p>
+            <br>
+            <br>
+                <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+                 `
+        },
     
     // d002. verdades absolutas
         {
@@ -127,6 +274,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
