@@ -22,19 +22,19 @@ const postsData = [
                 <p>uma hora, um dia, um ano, uma vida.....</p>
                 <p>a gente vive na ânsia de novos começos, mas esquecemos que já começamos e que o que realmente deveríamos estar focando é nos fins.... ou no fim......</p>
                 <p>não de uma forma lamentosa, por algo estar acabando, mas de uma forma a aproveitarmos cada momento até que chegue o fim....</p>
-                <p>é bem provável que você, inconscientemente, esteja torcendo e vivendo pra que ciclos acabem, tão focada(o) nas possibilidades, que nem mesmo são certezas, de um novo ciclo, que deixa de viver o presente.....</p>
+                <p>é bem provável que você, inconscientemente, esteja torcendo e vivendo pra que ciclos acabem e tão focada(o) nas possibilidades, que nem mesmo são certezas, de um novo ciclo, que deixa de viver o presente¹.....</p>
                 <p>torcendo para a hora passar e o dia de trabalho se encerrar, não vê a hora da semana chegar ao fim, que cheguem as férias, que o ano novo comece e tudo seja diferente....</p>
                 <p>sem perceber você está deixando passar o único momento que você realmente pode aproveitar e se sentir viva(o).... o agora...</p>
                 <p>como diria o filósofo alan watts, estamos sempre "chegando" a algum lugar, mas nunca realmente "estamos" em lugar algum....</p>
-                <p>vivemos em função de um futuro que, quando chega, já se transforma em outro futuro a ser alcançado....</p>
-                <p>essa corrida sem fim nos leva a uma espécie de amnésia existencial, onde o presente é apenas uma ponte estreita entre um passado que já se foi e um futuro que ainda não chegou....</p>
+                <p>vivemos em função de um futuro que, quando chega, já é substituido por outro futuro a ser alcançado....</p>
+                <p>essa corrida sem fim nos leva a uma espécie de amnésia existencial, onde o presente¹ é apenas uma ponte estreita entre um passado que já se foi e um futuro que ainda não chegou....</p>
                 <p>esquecemos de habitar o instante, de saborear a experiência imediata da vida....</p>
             <br>
             <hr class="divisor-fino-longo">
                 <p><strong>♦ a geometria da existência ♦</strong></p>
                 <p>qualquer ponto de um círculo é um começo, um fim e um recomeço....</p>
                 <p>mas além disso é um ângulo de visão que nunca mais poderá ser apreciado novamente... pois a cada volta nos tornamos diferentes e apreciamos o ciclo modificado pelo tempo e por nós mesmas(os)....</p>
-                <p>hoje, dia 12 de maio, está distante um ano do próximo dia 12 de maio.... é assim que comemoramos aniversários, é o nosso reinício de ciclo...... então, todos os dias é um reinício de ciclo, todas horas, todos os momentos....</p>
+                <p>hoje, dia 29 de dezembro, está distante um ano do próximo dia 29 de dezembro.... é assim que comemoramos aniversários, é o nosso reinício de ciclo...... então, todos os dias é um reinício de ciclo, todas horas, todos os momentos....</p>
                 <p>sendo assim, porque esperar a segunda para iniciar na academia, as férias para descansar e cuidar de si, o ano virar para colocar em prática metas de mudança....</p>
                 <p>quando fazemos isso, procrastinamos nossa vida, nosso principal ciclo, e não percebemos que a vida está passando.....</p>
                 <p>o filósofo heráclito já nos alertava que "não podemos entrar duas vezes no mesmo rio", pois tanto o rio quanto nós já somos outros....</p>
@@ -45,12 +45,12 @@ const postsData = [
                 <p>assim também são nossos dias, nossas semanas, nossos anos.... padrões que se repetem, mas sempre com novas nuances, novas texturas, novas possibilidades....</p>
             <br>
             <hr class="divisor-fino-longo">
-                <p><strong>♦ a finitude e o presente ♦</strong></p>
+                <p><strong>♦ a finitude e o presente¹ ♦</strong></p>
                 <p>até porque um dia vamos morrer.... mas um pequeno beagle extrovertido, de humor delicado, respondeu ao seu dono: "é verdade, mas em todos os outros dias não!!!"</p>
-                <p>por isso, fique um pouco no aqui, olhe ao redor, respire fundo, esteja presente, experimente o agora, aprecie os detalhes, não adie a vida.....</p>
+                <p>por isso, fique um pouco no aqui, olhe ao redor, respire fundo, esteja presente¹, experimente o agora, aprecie os detalhes, não adie a vida.....</p>
                 <p>e, principalmente, não fique presa(o) no que te incomoda, porque está esperando o momento certo de mudar.....</p>
                 <p>como nos ensina a filosofia zen, "quando você está sentado, apenas sente-se; quando você está andando, apenas ande"....</p>
-                <p>a prática da atenção plena nos convida a habitar integralmente cada momento, reconhecendo que o presente é o único tempo que realmente existe....</p>
+                <p>a prática da atenção plena nos convida a habitar integralmente cada momento, reconhecendo que o presente¹ é o único tempo que realmente existe....</p>
                 <p>o filósofo martin heidegger falava sobre o "dasein" (ser-aí), nossa condição de estarmos lançados no mundo, sempre em relação com o tempo....</p>
                 <p>nossa autenticidade depende de como nos relacionamos com nossa finitude, de como abraçamos nossa temporalidade....</p>
                 <p>a consciência da morte não precisa ser um peso, mas pode ser justamente o que dá sabor à vida....</p>
@@ -130,8 +130,14 @@ const postsData = [
             <br>
             <hr class="divisor-fino-longo">
                 <p><strong>♦ lá e de volta outra vez ♦</strong></p>
-                <p>quais ciclos está tentando apressar em sua vida? consegue identificar momentos em que deixou de viver o presente por estar ansioso pelo futuro???</p>
+                <p>quais ciclos está tentando apressar em sua vida? consegue identificar momentos em que deixou de viver o presente¹ por estar ansioso pelo futuro???</p>
                 <p>já experimentou a sensação de encerrar conscientemente um ciclo e iniciar outro, sem esperar por datas ou momentos específicos?????</p>
+            <br>
+            <br>
+            <br>
+            <div class="pos-scriptum">
+                <p><strong>¹</strong>: em um próximo texto falarei sobre o presente e sua 'não-existência'</p>
+            </div>
             <br>
             <hr class="divisor-fino-longo">
                 <p>quer mergulhar em outras reflexões profundas???</p>
@@ -275,6 +281,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
