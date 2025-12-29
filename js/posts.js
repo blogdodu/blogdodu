@@ -13,7 +13,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-ciclos.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "",
+        imageCaption: "...revela...",
         content: `
                 <p>ciclos, ah os ciclos... a dança incessante do tempo que nos envolve, nos impulsiona e nos transforma..... um eterno recomeço, uma jornada que nos leva de um ponto a outro, revelando novas paisagens e novas perspectivas....</p>
             <br>
@@ -133,6 +133,7 @@ const postsData = [
                 <p>quais ciclos está tentando apressar em sua vida? consegue identificar momentos em que deixou de viver o presente por estar ansioso pelo futuro???</p>
                 <p>já experimentou a sensação de encerrar conscientemente um ciclo e iniciar outro, sem esperar por datas ou momentos específicos?????</p>
             <br>
+            <hr class="divisor-fino-longo">
                 <p>quer mergulhar em outras reflexões profundas???</p>
                 <p>no último texto, exploramos o universo das verdades absolutas.....</p>
                 <p>vale a pena conferir!...</p>
@@ -274,6 +275,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
