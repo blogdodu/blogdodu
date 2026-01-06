@@ -7,7 +7,7 @@ const postsData = [
         title: "vai¹ com medo mesmo!!!! - ed3",
         date: "05 jan 2026",
         readingTime: "5 min de leitura",
-        category: "ensaios & provocações",
+        category: "ensaios e provocações",
         categoryId: "#caminhos",
         author: "du",
         authorId: "#autores",
@@ -386,6 +386,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
