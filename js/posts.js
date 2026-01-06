@@ -95,6 +95,9 @@ const postsData = [
             <p>no último texto, exploramos o universo das "verdades absolutas".....</p>
             <p>vale a pena conferir!...</p>
         <br>
+            <p><strong><center>um ótimo 2026 pra você!!!!</center></strong></p>
+		<br>
+		<br>
             <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
                 <p><center>__________________________________</center></p>
             <p><center>não prometo respostas.....</center></p>
@@ -386,6 +389,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
