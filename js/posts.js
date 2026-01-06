@@ -4,8 +4,8 @@ const postsData = [
 // d004. vai¹ com Medo Mesmo
     {
         id: "vai-com-medo-mesmo-dd3",
-        title: "vai¹ com medo mesmo!!!! - ed2",
-        date: "17 mar 2025",
+        title: "vai¹ com medo mesmo!!!! - ed4",
+        date: "05 jan 2026",
         readingTime: "5 min de leitura",
         category: "ensaios & provocações",
         categoryId: "#caminhos",
@@ -386,6 +386,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
