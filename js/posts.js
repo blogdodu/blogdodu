@@ -3,8 +3,8 @@ const postsData = [
 
 // d004. vai¹ com Medo Mesmo
     {
-        id: "vai-com-medo-mesmo-dd3",
-        title: "vai¹ com medo mesmo!!!! - ed4",
+        id: "vai-com-medo-mesmo-ed3",
+        title: "vai¹ com medo mesmo!!!! - ed3",
         date: "05 jan 2026",
         readingTime: "5 min de leitura",
         category: "ensaios & provocações",
@@ -108,8 +108,8 @@ const postsData = [
     
 // d003. Ciclos
     {
-        id: "ciclos-dd8",
-        title: "ciclos",
+        id: "ciclos-ed2",
+        title: "ciclos - ed2",
         date: "29 dez 2025",
         readingTime: "8 min de leitura",
         category: "ensaios e provocações",
@@ -386,6 +386,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
