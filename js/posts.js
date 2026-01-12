@@ -1,6 +1,106 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// d005. erre com gosto
+    {
+        id: "erre-com-gosto-ed4",
+        title: "erre com gosto!!! - ed4",
+        date: "24 mar 2025",
+        readingTime: "5 min de leitura",
+        category: "ensaios e provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-erre-com-gosto.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "...do...",
+        content: `
+        	<p>o que vale mais, acertar algo no "chute" ou errar com convicção das escolhas feitas???</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ a sociedade da perfeição ♦</strong></p>
+        <br>
+        	<p>freqüentemente ouvimos a frase "errar é humano", por vezes esta é seguida por "mas permanecer no erro é burrice", mas quase nunca dedicamos tempo a aprender a errar e aprender com o erro....</p>
+        	<p>vivemos em um mundo de exaustivas cobranças, necessitando sermos obedientes, educados, preparados, dedicados, corretos, coerentes, asseados, polidos, etc. etc. etc.....</p>
+        	<p>não há espaço para falhas... ora, mas se "errar é humano", não há, assim, espaço para o sê-lo e, quando minimamente teimamos em ser humanos, somos repreendidos e punidos...</p>
+        	<p>isso, inclusive, pode ser uma justificativa válida para a realidade tão desumana que vivemos....</p>
+        	<p>então, nada mais justo, que nos debruçarmos sobre erro, aprender a errar e errar com gosto, pois a melhor forma de saber o que funciona é saber tudo que não funciona e deve ser evitado...</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ aprender a errar ♦</strong></p>
+        <br>
+        	<p>é como se reconhecêssemos o "direito ao erro" como algo fundamental para o desenvolvimento humano.....</p>
+        	<p>assim como uma criança precisa cair para aprender a andar, nós precisamos errar para aprender a viver...</p>
+        	<p>negar esse direito é sufocar a criatividade, a ousadia e o próprio espírito de descoberta.....</p>
+        	<p>imagine, por exemplo, se picasso tivesse temido o “erro” e se limitado às técnicas tradicionais de pintura..... jamais teria revolucionado o mundo da arte com suas formas geométricas e perspectivas fragmentadas....</p>
+        	<p>o cubismo, movimento que transformou a maneira como vemos o mundo, e seu impacto na pintura, rompendo com as regras “corretas” estabelecidas da época, nunca teria nascido...</p>
+        	<p>na música, o "erro" também se revela como fonte de criação..... miles davis, um dos maiores nomes do jazz, incentivava seus músicos a improvisar, a explorar novas sonoridades, sem medo de errar.....</p>
+        	<p>essa liberdade criativa deu origem a momentos mágicos e inesperados, transformando cada apresentação em uma experiência única e irrepetível....</p>
+        	<p>o próprio conceito de "nota errada" é relativo..... em sistemas musicais como o microtonalismo, notas que seriam consideradas "erradas" na música ocidental ganham novos significados e beleza, expandindo os limites da harmonia e da melodia......</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ aprendizado e não punição ♦</strong></p>
+        <br>
+        	<p>então como podemos criar espaços, físicos e sociais, onde o erro seja visto não como um fracasso, mas como uma oportunidade de aprendizado???</p>
+        	<p>em vez de punir o erro, devemos incentivar a experimentação, a curiosidade e o pensamento crítico… o erro, nesse contexto, se torna um aliado no processo de construção do conhecimento, ajudando a desenvolver a autonomia, a resiliência e a confiança nas próprias capacidades.....</p>
+        	<p>o nosso presente é repleto de decisões e escolhas, e fazê-las é necessário, implicando, assim, em decidir sobre o que abriremos mão e em que confiaremos para prosseguir, pois toda escolha é um processo de perda das outras possibilidades.....</p>
+        	<p>talvez por isso lamentamos tanto pelo erro de ter escolhido algo que não supra as nossas necessidades, pensando que outra alternativa fosse capaz de saciar ou resolver o problema em questão...</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ a importância da convicção (mesmo no erro) ♦</strong></p>
+        <br>
+        	<p>mas o erro não é uma perda, é apenas uma conseqüência possível do agir, e assim como no acerto, ao aprender um caminho, as questões que devem ser tratadas, então, são a causa, a escolha, a reflexão sobre esta e o resultado dela...</p>
+        	<p>"se você não sabe para onde ir, qualquer caminho serve", esta frase de lewis carroll, dita pelo gato cheshire à alice na obra alice no país das maravilhas, é um argumento muito interessante para este nosso processo...</p>
+        	<p>ao nos depararmos com a necessidade de escolha, seja ela qual for, precisamos saber pra onde estamos indo para assim basear nossa decisão...</p>
+        	<p>reduza suas hipóteses a apenas duas neste momento, como forma de exercício, ao caminhar em uma estrada em busca de uma casa, por exemplo, chegando a uma bifurcação, onde se apresentam dois caminhos...</p>
+        	<p>mesmo não sabendo qual é o correto, precisará escolher para que possa continuar a caminhar rumo a seu destino, mas se esta escolha for feita sem critério algum, “no chute”, mesmo que se alcance a casa que era desejada, o sucesso será um acaso, pura sorte, e nada será aprendido e apreendido com a jornada...</p>
+        	<p>se, em outra ocasião da vida, você se encontrar na mesma bifurcação, buscando a mesma casa, muito provável, não se lembrará a escolha feita, por ter sido esta sem critério...</p>
+        	<p>isso tudo, pensando que o sucesso da jornada foi condicionado a apenas uma escolha reduzida a somente duas alternativas...</p>
+        	<p>podemos adensar este exemplo, colocando no percurso três momentos de escolha, com três alternativas cada (seguir em frente, virar a direita ou virar a esquerda) e assim já reduzimos a probabilidade de acerto de um caminho escolhido, que antes era de 50% para 3,7%, pois existirão 27 pontos de chegada diferentes...</p>
+        	<p>neste caso, mesmo que as escolhas levem a um fracasso, ter convicção do que foi escolhido significa que um caminho que não leva ao resultado pretendido foi aprendido e não será repetido...</p>
+        	<p>da mesma maneira, se você "chuta" uma resposta em uma questão de múltipla escolha e acerta, este fato em nada te prepara para acertar novamente a mesma questão, nem evita que possa repetir um erro, caso seu "chute" não tenha sido na alternativa correta....</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ o aprendizado consciente ♦</strong></p>
+        <br>
+        	<p>ou seja, é melhor que se erre com convicções que te levem a uma opção específica e, assim, se aprenda qual caminho não repetir...</p>
+        	<p>por isso a afirmação "erre com gosto", título deste texto.... acredite e embase sua escolha, mesmo que as convicções escolhidas te levem ao erro, para que possa aprender independente do resultado......</p>
+        	<p>se não aprender um caminho para o sucesso, pelo menos, que se conheça um caminho que leve ao fracasso que não será repetido.....</p>
+        	<p>portanto, erro ou acerto não deveriam importar num processo de aprendizagem, pois os dois, se alcançados com consciência das escolhas que levaram a tal resultado, contribuem para o conhecimento...</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ encarando nossos erros (e os dos outros) ♦</strong></p>
+        <br>
+        	<p>agora aquelas nossas inquietações...</p>
+        	<p>quantas vezes você não se viu decepcionada(o) com um fracasso, sendo que este também é uma forma de engrandecer seu conhecimento???</p>
+        	<p>como tem se portado frente aos erros de pessoas que o cercam? você tem ajudado estas pessoas a observarem o que aprenderam com este erro????</p>
+        	<p>e quantas vezes você hesitou fazer algo, com receio do resultado, quando a real conquista é aprender????</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        <br>
+            <p>antes de finalizar repito: o que vale mais, acertar algo no "chute" ou errar com convicção das escolhas feitas???</p>
+            <p>e, se foi com convivção das escolhas, o resultado, ainda que não seja o esperado, é um erro????</p>
+        <br>
+        <br>
+        <br>
+            <p>compartilhe suas experiências nos comentários...</p>
+            <p>sua opinião é importante....</p>
+        <br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, exploramos as minúncias do "medo".....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+        `
+    },	
+	
 // d004. vai¹ com Medo Mesmo
     {
         id: "vai-com-medo-mesmo-ed3",
@@ -389,6 +489,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
