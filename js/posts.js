@@ -1,7 +1,7 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-// 06. tô passado
+// d006. tô passado
     {
         id: "to-passado-dd5",
         title: "tô passado!!! - ed4",
@@ -77,7 +77,7 @@ const postsData = [
     {
         id: "erre-com-gosto-ed4",
         title: "erre com gosto!!! - ed4",
-        date: "24 mar 2025",
+        date: "12 jan 2026",
         readingTime: "5 min de leitura",
         category: "ensaios e provocações",
         categoryId: "#caminhos",
@@ -561,6 +561,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
