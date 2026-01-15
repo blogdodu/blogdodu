@@ -1,7 +1,78 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 06. tô passado
+    {
+        id: "to-passado-dd5",
+        title: "tô passado!!! - ed4",
+        date: "19 jan 2026",
+        readingTime: "3 min de leitura",
+        category: "ensaios e provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-to-passado.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "...que...",
+        content: `
+        	<p>a cada momento estamos morrendo e deixando pra trás o que éramos, como um fantasma que se esvai na lembrança...</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ o fantasma do que fomos ♦</strong></p>
+        <br>
+        	<p>mas a vida, em sua dança incessante, também nos concede a graça da renovação e a cada dia temos nossa história acrescida de novas páginas....</p>
+        	<p>e o passado gravado em pedra, como uma lápide de sepultura, a cada novo instante, se transforma em algo vivo, palpitante e fresco, cabendo a nós decidir o que de novo é escrito neste manual, neste mapa, para qualquer um entender o que somos, o quem que nos tornamos....</p>
+        	<p>o passado é um passo dado a ferro quente, que deixa marcas indeléveis em nossa pele.... é pano liso, que aos poucos vai se assentando em nosso corpo, como ao vestir uma roupa recém passada, ainda quente, em um dia abrasador de verão — talvez por isso, de tempos em tempos, temos dificuldade em aceitá-lo... é uma memória que, em sua própria imutabilidade, se torna sensação fluida e mutável, como o próprio tempo.....</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ a constante transformação do ser ♦</strong></p>
+        <br>
+        	<p>somos seres em constante transformação, como se a vida fosse um palco onde diferentes personagens se alternam em nossos corpos. —  em algum momento devo tratar, aqui, dos números e seus significados, mas, por hora, adianto um significado, o do número 7, que representa o "infinito".....</p>
+        	<p>faço isso, simplesmente, para ressaltar uma grande coincidência — há cada 7 anos, todas as células de nosso corpo morrem (algumas tem ciclos menores, mas, no geral, após 7 anos nenhuma célula persiste e são substituídas por novas, nos fazendo completos outros eus a cada ciclo de 7 anos...</p>
+        	<p>assim como no paradoxo do navio de teseu, sua personagem é a mesma que foi em outros tempos ou uma completamente nova que se apresenta de presente????</p>
+        	<p>é como se a própria natureza nos concedesse oportunidades de recomeços e um passaporte para a imortalidade.... a cada instante, estamos sete anos à frente de algum momento de nossa vida, infinitamente novos, com um infinito de possibilidades de novos passados.....</p>
+        	<p>portanto, não importa o que passa por nós, temos sempre a oportunidade, no presente, de agirmos diferente, estamos sempre preparados para um futuro melhor, em que possamos buscar escrever o passado que nos agrade.....</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ protagonistas da própria história ♦</strong></p>
+        <br>
+        	<p>vou retornar a este conceito nos próximos dois textos, mas o mais importante é entender que só você se faz prisioneira(o) e realeza de seu tempo.....</p>
+        	<p>ao mesmo tempo e a todo momento e, da mesma forma, também cabe a você decidir se sanará as expectativas dos que o cercam sobre quem você é e como esperam que aja segundo sua história....</p>
+        	<p>lembre-se que a pena e o tinteiro estão sempre sobre o seu domínio e cabe a você decidir se, em sua história, você será um personagem secundário, coadjuvante ou protagonista, se merece uma cena triste ou feliz e principalmente, que apenas o passado está escrito, mas ele se escreve a cada novo agora e, sendo assim, o passado, então, não é um peso, mas uma bússola...</p>
+        	<p>ele indica o caminho que percorremos, os aprendizados que acumulamos e as feridas que cicatrizaram.... mas é no agora, o momento em que a decisão reside, o momento em que podemos escolher como serão as novas linhas da nossa história....</p>
+        	<p>somos como o marinheiro que, ao navegar pelos mares da vida, carrega consigo as histórias dos seus ancestrais, as lembranças dos portos visitados, dos naufrágios superados, mas também a liberdade de traçar um novo curso, de explorar novos horizontes...</p>
+        	<p>afinal, quem escreve a nossa história, somos nós..... cada decisão, cada ação, cada pensamento, esculpe um novo caminho, redefine o nosso passado....</p>
+        <br>
+        <hr class="divisor-fino-longo">
+        	<p><strong>♦ reflexões finais ♦</strong></p>
+        <br>
+        	<p>então, que tipo de história você deseja escrever????</p>
+        	<p>que novo eu você pretende que seja lido???</p>
+        	<p>o que te impede de começar um novo capítulo, ou mesmo uma nova história?????</p>
+        	<p>o tempo é um rio que flui eternamente, e a cada novo instante, uma nova oportunidade de reescrever o passado que te inspire....</p>
+        	<p>espalhe estas inquietações para outras(os) e até a próxima verdade absoluta!!!!</p>
+        <br>
+        <br>
+        <br>
+            <p>compartilhe suas experiências nos comentários...</p>
+            <p>sua opinião é importante....</p>
+        <br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, pulamos de cabeça no "erro".....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+        `
+    },
 
+	
 // d005. erre com gosto
     {
         id: "erre-com-gosto-ed4",
@@ -490,6 +561,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
