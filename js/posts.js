@@ -5,7 +5,7 @@ const postsData = [
     {
         id: "to-passado-dd5",
         title: "tô passado!!! - ed4",
-        date: "14 jan 2026",
+        date: "19 jan 2026",
         readingTime: "3 min de leitura",
         category: "ensaios e provocações",
         categoryId: "#caminhos",
@@ -561,6 +561,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
