@@ -22,7 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 2. Função de Renderização (Lista de Posts) ---
+    // --- 2. Auxiliar de Agendamento ---
+    // Converte "24 mar 2025" em um objeto Date real para comparação
+    function converterDataParaComparacao(dataStr) {
+        const meses = {
+            jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+            jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
+        };
+        const partes = dataStr.split(' ');
+        if (partes.length < 3) return new Date(); // Fallback caso a data esteja mal formatada
+        return new Date(partes[2], meses[partes[1]], partes[0]);
+    }
+
+    // --- 3. Função de Renderização (Lista de Posts) ---
     function renderizarListaPosts(filtroCategoria = null, postsForcados = null) {
         const feedContainer = document.getElementById('textos-lista');
         const tituloSecao = document.querySelector('#textos h2'); 
@@ -31,40 +43,49 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!feedContainer || typeof postsData === 'undefined') return;
 
         feedContainer.innerHTML = '';
+
+        // --- FILTRO DE AGENDAMENTO ---
+        const hoje = new Date();
+        hoje.setHours(0, 0, 0, 0); // Considera apenas o dia, ignorando a hora exata
+
+        // Filtramos os dados originais para mostrar apenas o que já foi "lançado"
+        const postsPublicados = postsData.filter(post => {
+            return converterDataParaComparacao(post.date) <= hoje;
+        });
+
         let postsParaExibir = [];
         let modoVisualizacao = ''; 
         
-        // PRIORIDADE 1: Busca
+        // PRIORIDADE 1: Busca (filtrando para não mostrar agendados)
         if (postsForcados) {
-            postsParaExibir = postsForcados;
+            postsParaExibir = postsForcados.filter(post => converterDataParaComparacao(post.date) <= hoje);
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
             if(areaLeitura) areaLeitura.classList.add('largura-expandida');
         }
-        // PRIORIDADE 2: Filtro de Categoria (Caminhos) -> Lista Invertida
+        // PRIORIDADE 2: Filtro de Categoria
         else if (filtroCategoria) {
-            postsParaExibir = postsData.filter(post => post.category === filtroCategoria).reverse();
+            postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
             if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
             if(tituloSecao) tituloSecao.innerText = filtroCategoria; 
         } 
-        // PRIORIDADE 3: Feed Padrão (Textos) -> Grade Normal
+        // PRIORIDADE 3: Feed Padrão
         else {
-            postsParaExibir = postsData;
+            postsParaExibir = postsPublicados;
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
             if(areaLeitura) areaLeitura.classList.add('largura-expandida');
             if(tituloSecao) tituloSecao.innerText = 'textos';
         }
 
-        // Renderiza
+        // Renderiza na tela
         if (postsParaExibir.length > 0) {
             postsParaExibir.forEach(post => {
                 const article = document.createElement('article');
                 
                 if (modoVisualizacao === 'grid') {
-                    // Grid: Cartão com Autor/Tempo
                     article.className = 'post-card animacao-entrada';
                     article.innerHTML = `
                         <a href="#post-${post.id}">
@@ -78,10 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                     ${post.author} . ${post.readingTime}
                                 </div>
                             </div>
-                        </a>
-                    `;
+                        </a>`;
                 } else {
-                    // Lista: Texto com Resumo
                     const tempDiv = document.createElement("div");
                     tempDiv.innerHTML = post.content;
                     const textOnly = tempDiv.textContent || tempDiv.innerText || "";
@@ -93,8 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <small>${post.date}</small>
                             <h3>${post.title}</h3>
                             <p>${resumo}</p>
-                        </a>
-                    `;
+                        </a>`;
                 }
                 feedContainer.appendChild(article);
             });
@@ -103,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 3. Lógica da Busca ---
+    // --- 4. Lógica da Busca ---
     const campoBusca = document.getElementById('campo-busca');
     if (campoBusca) {
         campoBusca.addEventListener('input', function(e) {
@@ -121,11 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 4. FUNÇÃO DE COMPARTILHAMENTO ---
+    // --- 5. Compartilhamento e Comentários (Disqus) ---
     function gerarBotoesShare(titulo, url) {
         const texto = encodeURIComponent(titulo);
         const link = encodeURIComponent(url);
-
         return `
             <div class="share-section">
                 <p class="share-title">compartilhar essa idéia:</p>
@@ -136,14 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="btn-share" onclick="navigator.clipboard.writeText('${url}').then(() => alert('link copiado!'))">Copiar Link</button>
                 </div>
             </div>
-            <div id="disqus_thread"></div>
-        `;
+            <div id="disqus_thread"></div>`;
     }
 
-    // --- 5. FUNÇÃO DO DISQUS ---
     function carregarDisqus(postId, postTitle) {
-        var disqus_shortname = 'blogdodu-teste'; // Troque pelo seu shortname real
-
+        var disqus_shortname = 'blogdodu-teste'; 
         if (window.DISQUS) {
             window.DISQUS.reset({
                 reload: true,
@@ -163,7 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 6. Sistema de Roteamento ---
     function roteador() {
-        // RESETAR SCROLL E BARRA DE LEITURA
         window.scrollTo(0, 0);
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
@@ -175,15 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const linksMenu = document.querySelectorAll('.links-internos a');
         const navGlobal = document.getElementById('navegacao-global');
         
-        // Limpezas
         if(campoBusca) campoBusca.value = '';
         const areaLeitura = document.querySelector('.area-leitura');
         if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
 
         const containerBusca = document.querySelector('.container-busca');
         if(containerBusca) {
-            if(hash === '#textos' || hash === '') containerBusca.style.display = 'block';
-            else containerBusca.style.display = 'none';
+            containerBusca.style.display = (hash === '#textos' || hash === '') ? 'block' : 'none';
         }
 
         const modal = document.getElementById("modal-foto");
@@ -191,54 +202,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!capa || !conteudo) return;
 
-        // --- Estado Inicial (Capa) ---
+        // Estado Inicial (Capa)
         if (!hash || hash === '#' || hash === '') {
             conteudo.classList.add('hidden');
             capa.style.display = 'flex';
-            
             if(navGlobal) navGlobal.classList.add('ocultar-desktop');
-
-            capa.classList.remove('animacao-entrada');
-            void capa.offsetWidth;
-            capa.classList.add('animacao-entrada');
-
-            // --- CORREÇÃO: Limpa o estado ativo de todos os links ao ir para a capa ---
             linksMenu.forEach(link => link.classList.remove('link-ativo'));
             return;
         }
 
-        // --- Páginas Internas ---
+        // Páginas Internas
         capa.style.display = 'none';
         conteudo.classList.remove('hidden');
-        
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
-
         todasSecoes.forEach(secao => secao.style.display = 'none');
 
-        // --- ROTA DE POST ---
+        // ROTA DE POST (com trava de agendamento)
         if (hash.startsWith('#post-')) {
             const postId = hash.replace('#post-', '');
             const postIndex = postsData.findIndex(p => p.id === postId);
             const post = postsData[postIndex];
 
-            if (post) {
+            const hoje = new Date();
+            hoje.setHours(0,0,0,0);
+
+            // Verifica se o post existe E se a data já chegou
+            if (post && converterDataParaComparacao(post.date) <= hoje) {
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
                 document.getElementById('dynamic-time').innerText = post.readingTime;
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                if(post.category === "ensaios & provocações") catLink.href = "#cat-ensaios";
-                else if(post.category === "conversas") catLink.href = "#cat-conversas";
-                else catLink.href = "#caminhos";
+                catLink.href = (post.category === "ensaios & provocações") ? "#cat-ensaios" : (post.category === "conversas") ? "#cat-conversas" : "#caminhos";
 
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
-                if (post.author === 'du') {
-                    authLink.href = "#sobre";
-                } else {
-                    authLink.href = post.authorId;
-                }
+                authLink.href = (post.author === 'du') ? "#sobre" : post.authorId;
 
                 document.getElementById('dynamic-content').innerHTML = post.content;
                 
@@ -247,29 +247,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.alt = post.imageAlt;
                 document.getElementById('dynamic-caption').innerText = post.imageCaption;
 
-                const urlAtual = window.location.href;
-                const htmlShare = gerarBotoesShare(post.title, urlAtual);
-                const socialArea = document.getElementById('social-area');
-                if (socialArea) {
-                    socialArea.innerHTML = htmlShare;
-                }
+                document.getElementById('social-area').innerHTML = gerarBotoesShare(post.title, window.location.href);
                 carregarDisqus(post.id, post.title);
 
                 const prevContainer = document.getElementById('nav-prev-area');
                 const nextContainer = document.getElementById('nav-next-area');
                 prevContainer.innerHTML = '';
                 nextContainer.innerHTML = '';
-                const nextPost = postsData[postIndex - 1]; 
-                const prevPost = postsData[postIndex + 1]; 
+
+                // Navegação inteligente (só sugere posts que já foram publicados)
+                const postsPublicados = postsData.filter(p => converterDataParaComparacao(p.date) <= hoje);
+                const currentIdxInPublicados = postsPublicados.findIndex(p => p.id === postId);
+                
+                const nextPost = postsPublicados[currentIdxInPublicados - 1]; 
+                const prevPost = postsPublicados[currentIdxInPublicados + 1]; 
+
                 if (prevPost) prevContainer.innerHTML = `<a href="#post-${prevPost.id}" class="nav-item nav-prev"><span class="nav-label">&larr; anterior</span><div class="nav-thumb-wrapper"><img src="${prevPost.image}"></div><span class="nav-title">${prevPost.title}</span></a>`;
                 if (nextPost) nextContainer.innerHTML = `<a href="#post-${nextPost.id}" class="nav-item nav-next"><span class="nav-label">próximo &rarr;</span><div class="nav-thumb-wrapper"><img src="${nextPost.image}"></div><span class="nav-title">${nextPost.title}</span></a>`;
 
                 const postView = document.getElementById('post-view');
                 postView.style.display = 'block';
                 postView.classList.add('animacao-entrada');
+            } else {
+                // Se o post for futuro ou não existir, manda de volta pros textos
+                window.location.hash = '#textos';
             }
         } 
-        // --- ROTA FEED GERAL ---
         else if (hash === '#textos') {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
@@ -278,19 +281,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaPosts(null); 
             }
         }
-        // --- ROTA CATEGORIAS ---
         else if (hash.startsWith('#cat-')) {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let categoriaNome = '';
-                if (hash === '#cat-ensaios') categoriaNome = 'ensaios & provocações';
-                else if (hash === '#cat-conversas') categoriaNome = 'conversas';
-                renderizarListaPosts(categoriaNome); 
+                let cat = (hash === '#cat-ensaios') ? 'ensaios & provocações' : (hash === '#cat-conversas') ? 'conversas' : '';
+                renderizarListaPosts(cat); 
             }
         }
-        // --- OUTRAS SEÇÕES ---
         else {
             const secaoAtiva = document.querySelector(hash);
             if (secaoAtiva) {
@@ -299,81 +298,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Menu Ativo
         linksMenu.forEach(link => {
-            link.classList.remove('link-ativo');
-            if (link.getAttribute('href') === hash) link.classList.add('link-ativo');
+            link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
         });
     }
 
-    roteador();
     window.addEventListener('hashchange', roteador);
+    roteador();
 
-    // --- 7. Modal de Zoom (CORRIGIDO PARA FLEXBOX e CLIQUE GLOBAL) ---
+    // --- 7. Zoom Foto de Perfil ---
     const imgPerfil = document.getElementById("foto-perfil");
     const modal = document.getElementById("modal-foto");
     const modalImg = document.getElementById("img-ampliada");
-    const span = document.getElementsByClassName("fechar-modal")[0];
-
     if (imgPerfil && modal) {
         imgPerfil.onclick = function() {
-            // Usa FLEX para centralizar com o novo CSS
             modal.style.display = "flex"; 
             modalImg.src = this.src;
-            modalImg.classList.add('zoom-animacao');
         }
+        modal.onclick = function() { modal.style.display = "none"; }
     }
-    
-    // Fechar ao clicar no X
-    if (span) span.onclick = function() { modal.style.display = "none"; }
-    
-    // Fechar ao clicar em QUALQUER lugar do modal (fundo ou imagem)
-    if (modal) modal.onclick = function() { modal.style.display = "none"; }
 
-    // --- 8. Menu Hamburguer (Mobile) ---
+    // --- 8. Menu Hamburguer ---
     const menuBtn = document.getElementById('menu-btn');
     const menuLista = document.getElementById('menu-lista');
-    const linksMenuMobile = document.querySelectorAll('.links-internos a');
-
     if (menuBtn && menuLista) {
         menuBtn.addEventListener('click', () => {
             menuLista.classList.toggle('menu-aberto');
             menuBtn.classList.toggle('ativo');
         });
-
-        linksMenuMobile.forEach(link => {
+        document.querySelectorAll('.links-internos a').forEach(link => {
             link.addEventListener('click', () => {
                 menuLista.classList.remove('menu-aberto');
                 menuBtn.classList.remove('ativo');
             });
         });
-
-        window.addEventListener('scroll', () => {
-            if(menuLista.classList.contains('menu-aberto')) {
-                menuLista.classList.remove('menu-aberto');
-                menuBtn.classList.remove('ativo');
-            }
-        });
     }
 
     // --- 9. Botão Voltar ---
-    const botoesVoltar = document.querySelectorAll('.seta-voltar');
-    botoesVoltar.forEach(botao => {
-        botao.addEventListener('click', function(e) {
+    document.querySelectorAll('.seta-voltar').forEach(botao => {
+        botao.addEventListener('click', (e) => {
             e.preventDefault();
             window.history.back();
         });
     });
     
     // --- 10. Barra de Progresso ---
-    window.onscroll = function() {
-        atualizarBarraProgresso();
-    };
-
-    function atualizarBarraProgresso() {
+    window.addEventListener('scroll', () => {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        document.getElementById("barra-leitura").style.height = scrolled + "%";
-    }
+        const barra = document.getElementById("barra-leitura");
+        if(barra) barra.style.height = scrolled + "%";
+    });
 });
