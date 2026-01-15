@@ -1,6 +1,26 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+//teste
+	
+{
+    id: "",
+    title: "",
+    date: "",
+    readingTime: "1 min de leitura",
+    category: "ensaios e provocações",
+    categoryId: "#caminhos",
+    author: "du",
+    authorId: "#autores",
+    image: "",
+    imageAlt: "imagem ilustrativa",
+    imageCaption: "...do...",
+    content: `
+        <div style="text-align: left;"><p></p><center style="text-align: left;"><hr class="divisor-fino-longo"></center><center style="text-align: left;"><strong>♦ teste ♦</strong></center><center style="text-align: left;"><strong><br></strong></center><center style="text-align: left;">teste</center><center style="text-align: left;"><br></center><center style="text-align: left;"><div class="pos-scriptum"><p><strong>ps.:</strong> teste</p></center></p></center><p></p></center></p>
+    `
+},
+
+	
 // d005. erre com gosto
     {
         id: "erre-com-gosto-ed4",
@@ -489,6 +509,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
