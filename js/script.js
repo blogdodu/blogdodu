@@ -65,6 +65,51 @@ document.addEventListener('DOMContentLoaded', () => {
             if(tituloSecao) tituloSecao.innerText = 'textos';
         }
 
+
+        // Função auxiliar para converter a data do blog (ex: "15 jan 2026") em um objeto de data real
+        function converterDataParaComparacao(dataStr) {
+        const meses = {
+            jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+            jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
+        };
+        const partes = dataStr.split(' ');
+        // Retorna um objeto Date: ano, mês, dia
+        return new Date(partes[2], meses[partes[1]], partes[0]);
+        }
+
+        function renderizarListaPosts(filtroCategoria = null, postsForcados = null) {
+        const feedContainer = document.querySelector('.feed-container');
+        if (!feedContainer) return;
+
+        feedContainer.innerHTML = '';
+
+        // 1. Pegamos todos os posts
+        let postsParaExibir = postsForcados || postsData;
+
+        // 2. A MÁGICA DO AGENDAMENTO:
+        // Filtra os posts para mostrar APENAS os que a data já chegou ou passou
+        const hoje = new Date();
+        hoje.setHours(0, 0, 0, 0); // Zera as horas para comparar apenas o dia
+
+        postsParaExibir = postsParaExibir.filter(post => {
+        const dataDoPost = converterDataParaComparacao(post.date);
+        return dataDoPost <= hoje; 
+        });
+
+        // 3. Aplica o filtro de categoria (se houver)
+        if (filtroCategoria) {
+        postsParaExibir = postsParaExibir.filter(post => post.categoryId === filtroCategoria);
+        }
+
+        // ... restante do código de renderização (o loop forEach que você já tem)
+        postsParaExibir.forEach(post => {
+        // (mantenha o código de criação dos cards aqui...)
+        });
+        }
+
+
+
+        
         // Renderiza
         if (postsParaExibir.length > 0) {
             postsParaExibir.forEach(post => {
@@ -408,6 +453,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
 
