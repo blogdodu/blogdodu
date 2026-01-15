@@ -38,12 +38,14 @@ body {
     hyphens: auto;
 }
 
-h1, h2, h3, 
+h1,
+h2,
+h3,
 .logo-menu,
-.menu-capa, 
-.menu-fixo, 
-.assinatura, 
-small, 
+.menu-capa,
+.menu-fixo,
+.assinatura,
+small,
 .tag-post,
 .item-lista,
 .seta-voltar,
@@ -52,7 +54,8 @@ small,
 .nav-label,
 .nav-title,
 .mobile-copyright {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+}
 }
 
 .animacao-entrada {
@@ -1050,4 +1053,5 @@ h2 {
     .menu-fixo.ocultar-desktop {
         display: none;
     }
+
 }
