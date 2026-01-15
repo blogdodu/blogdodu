@@ -22,17 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-  // --- 2. Auxiliar de Agendamento ---
-    // Converte "24 mar 2025" em um objeto Date real para comparação
-    function converterDataParaComparacao(dataStr) {
-        const meses = {
-            jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
-            jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
-        };
-        const partes = dataStr.split(' ');
-        return new Date(partes[2], meses[partes[1]], partes[0]);
-    }
-
     // --- 2. Função de Renderização (Lista de Posts) ---
     function renderizarListaPosts(filtroCategoria = null, postsForcados = null) {
         const feedContainer = document.getElementById('textos-lista');
@@ -42,18 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!feedContainer || typeof postsData === 'undefined') return;
 
         feedContainer.innerHTML = '';
-// --- FILTRO DE AGENDAMENTO ---
-        // Só permite ver posts cuja data seja hoje ou no passado
-        const hoje = new Date();
-        hoje.setHours(0, 0, 0, 0);
-
-        const postsVisiveis = postsData.filter(post => {
-            const dataPost = converterDataParaComparacao(post.date);
-            return dataPost <= hoje;
-        });
-
-        let postsParaExibir = [];
-        let modoVisualizacao = ''; 
         let postsParaExibir = [];
         let modoVisualizacao = ''; 
         
