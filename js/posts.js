@@ -1,9 +1,78 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// d008. não existência
+    {
+        id: "presenteie-se-com-a-nao-existencia-ed6",
+        title: "presenteie-se com a não existência",
+        date: "02 fev 2026", 
+        readingTime: "3 min de leitura",
+        category: "ensaios & provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-nao-existencia.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "...olhos...",
+        content: `
+			<p>após encontrarmos uma visão do que é o passado e o futuro, podemos agora nos concentrar em outros assuntos, como no presente e o fato dele não existir...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ a busca pelo presente ♦</strong></p>
+		<br>
+			<p>buscar o presente, como algo que exista, esbarra em um primeiro problema: com qual grandeza dividiremos o tempo???</p>
+			<p>se pensamos em anos, hoje, 27.06.2024, 2023 e todos os anos que o precedem são o passado, assim como 2025 e os anos que o sucedem são o futuro, restando em 2024 a falsa idéia de ser este o presente...</p>
+			<p>falsa idéia porque é de total consenso que o mês de janeiro não é mais presente, tão pouco dezembro assim também....</p>
+			<p>encontramos aqui uma necessidade de uma nova grandeza de escala e a mais imediata é a acabamos de usar, o mês...</p>
+			<p>sendo assim maio e os meses que o precedem já são também passado, assim como julho e seus sucessores já se apresentam como futuro, nos deixando, novamente, a falsa idéia de que este mês de junho é o presente...</p>
+			<p>então seguimos com a necessidade de outra grandeza para encontrar o presente, o dia, assim teremos o ontem, o hoje e o amanhã, as horas, os minutos, os segundos, os milésimos e infinitas divisões do tempo, que apenas diminuirão a percepção do espaço que distancia o passado do futuro, mas nunca nos apresentarão onde está o presente, simplesmente, porque ele não existe....</p>
+			<p>chegar a esta conclusão parece ser como receber um presente de grego, mas na verdade é o oposto...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ presente apenas como presença ♦</strong></p>
+		<br>
+			<p>o presente, enquanto tempo, realmente não existe, mas existe enquanto presença, enquanto uma gratificação de nos sentirmos ligados a tudo que está no passado e nas possibilidades de futuros que nos são apresentadas....</p>
+			<p>estar presente, é receber de presente a oportunidade de conexão com o fluxo que é estar vivo.....</p>
+			<p>estar presente, é saber que nossa bagagem de vida, nossos trajetos, nossas quedas, nossas vitórias, nossas perdas, tudo nos trouxe até aqui.....</p>
+			<p>tudo isso está conectado com o passado de tudo e de todos que nos cercam e continuarão a nos levar ao futuro, talvez agora, com um pouco mais de consciência...</p>
+			<p>façamos o exercício de pensar na blusa ou na roupa que está vestindo agora, ela foi costurada, antes desenhada, pensada.....</p>
+			<p>os materiais que a fazem existir precisaram ser produzidos, colhidos, plantados, cuidados, regados.....</p>
+			<p>todas as pessoas envolvidas nesse processo precisaram se dedicar, precisaram apreender conhecimentos e técnicas, precisaram se alimentar...</p>
+			<p>esse alimento precisou ser, igualmente cultivado, cuidado, colhido, preparado em panelas e recipientes que foram construídos através de matérias-primas que foram extraídas, mineradas, forjadas, tratadas, projetadas por ainda mais pessoas e pessoas e pessoas....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ a engrenagem da humanidade (e a responsabilidade coletiva) ♦</strong></p>
+		<br>
+			<p>a consciência do presente é saber quão rico é o passado de cada pequena coisa, quão dependentes do outro é a nossa existência e como devemos ser agradecidos ao que e quem nos trouxe até aqui e nos levará para frente.....</p>
+			<p>mas, além disso, a consciência de que não podemos quebrar esta engrenagem, essa grande família à qual todos pertencemos, chamada humanidade, nos traz a conclusão de que devemos pensar e agir não apenas em nosso próprio interesse, mas 	<p>em prol do coletivo....</p>
+			<p>como vimos, milhares de pessoas desempenham suas funções essenciais a está engrenagem, nos juntando a este contrato mundial chamado de sociedade... uma sociedade de iguais......</p>
+			<p>então a cada momento, respire o ar, saboreando seu frescor e refletindo o que o trouxe até você...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ o tempo e a natureza das verdades ♦</strong></p>
+		<br>
+			<p>encerro assim uma primeira abordagem desta trilogia do tempo, que não pretende encerrar assunto algum e nem gravar em pedra nenhum conceito, mas levantar pequenas reflexões sobre cada tema e chegar à verdades absolutas, como todas são, até que chegue a hora de abandoná-las e colocar melhores em seus lugares....</p>
+			<p>compartilhe suas experiências nos comentários...</p>
+			<p>sua opinião é importante......</p>
+		<br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, falamos sobre como construir o nosso futuro.....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>		
+             `
+    },
+	
 // d007. tô passado
 	{
-        id: "quem-sabe-no-futuro-dd06",
+        id: "quem-sabe-no-futuro-ed5",
         title: "quem sabe no futuro",
         date: "26 jan 2026",
         readingTime: "4 min de leitura",
@@ -61,7 +130,7 @@ const postsData = [
 			<p>sua opinião é importante......</p>
 		<br>
             <p>quer mergulhar em outras reflexões profundas???</p>
-            <p>no último texto, _________________________.....</p>
+            <p>no último texto, desvendamos como o passado acontece.....</p>
             <p>vale a pena conferir!...</p>
         <br>
             <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -635,6 +704,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
