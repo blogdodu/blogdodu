@@ -1,6 +1,80 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// d007. tô passado
+	{
+        id: "quem-sabe-no-futuro-dd06",
+        title: "quem sabe no futuro",
+        date: "26 jan 2026",
+        readingTime: "4 min de leitura",
+        category: "ensaios & provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-quem-sabe-no-futuro.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "...os...",
+        content: `
+			<p>a cada momento estamos experimentando novas realidades...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ o futuro como presente contínuo ♦</strong></p>
+		<br>
+			<p>o futuro não é um destino distante, um ponto final no mapa da vida.... ele é uma dança constante aconntecendo a cada momento, como um "presente" que se desdobra em cada instante, moldado pelas nossas escolhas e pelas realidades que nos cercam e que fica gravado, por nossas mãos, em nosso passado....</p>
+			<p>não importa se é um segundo ou menos, ou mesmo um ano a frente, ambos os momentos estão no futuro e acontecerão de alguma forma, às vezes, não da forma que queremos ou planejamos, mas acontecerão, pois o tempo continuará apesar de nós...</p>
+			<p>certos disso, cabe a nós aprendermos a lidar com o que pode vir a ser as nossas opções de futuro, seja com esperança, seja com espera, seja com apatia, seja com ânsia, seja com ansiedade, seja com desespero, seja com confiança, seja com inércia... ou qualquer outra postura...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ a imensidão das escolhas futuras ♦</strong></p>
+		<br>
+			<p>toda materialização do futuro é criada a partir de nossas escolhas, mesmo que estas sejam condicionadas ou limitadas, pelas realidades que nos cercam...</p>
+			<p>essa é uma certeza que nada tem haver com conseguirmos alcançar uma meta ou não... isso tem mais haver com processo do que com o próprio tempo... (talvez tenha que discorrer melhor sobre o processo a que me refiro futuramente e assim o faça, por hora, nos concentremos no tempo).....</p>
+			<p>sendo assim um ano a frente, tem o acúmulo de 12 mêses de seqüenciais alternativas, 365 dias de decisões consecutivas, 31.536.000 segundos de ações frente ao que se apresentará em nossas realidades...</p>
+			<p>são escolhas demais para administrarmos, ou mesmo para no futuro, nos culparmos pelas que serão tomadas....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ meditação: administrando o futuro no presente ♦</strong></p>
+		<br>
+			<p>mas se o futuro é, sem qualquer dúvida, para onde caminhamos deixo aqui a primeira pergunta: para onde você caminha??? agora, no "presente"....</p>
+			<p>você já deve ter ouvido que o futuro são como páginas em branco na nossa história, mas talvez, não tenha refletido que o parágrafo a seguir, que a palavra ou a letra a frente, já faz parte de seu futuro, já é uma página em branco, já é uma escolha... o futuro nos atropela constantemente...</p>
+			<p>por ser um número infinito de escolhas que precisam ser tomadas a cada mísero tempo futuro, nosso ser, corpo e mente, automatizam quase tudo quanto possível, cabe a nós apenas pinçarmos o que realmente queremos focar e escolher ativamente... em que vamos direcionar nosso pensamento...</p>
+			<p>se você já percebeu, a meditação, nesse sentido, nada mais é do que uma ferramenta poderosa de administração do nosso futuro..... ela nos permite observar o fluxo incessante de pensamentos e emoções, nos dando a oportunidade de escolher quais pensamentos queremos nutrir, quais ações queremos realizar....</p>
+			<p>a meditação nos coloca em contato com o nosso "eu" interior, permitindo que escolhamos o caminho que queremos trilhar, construindo um futuro que esteja em consonância com os nossos valores e sonhos.... vivenciar uma consciência presente é meditar ativamente e saber que, a qualquer momento, podemos refletir sobre a escolha de um agora...</p>
+			<p>mas, como disse antes, essas escolhas são condicionadas a nossas realidades e, muitas vezes, não enxergamos uma opção que nos agrade... mas, de um ponto de vista, a alternativa menos pior também é a melhor escolha e toda pequena mudança já torna sua realidade outra, com novas e sucessivas alternativas...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ o futuro distante: expectativas vs. realidade ♦</strong></p>
+		<br>
+			<p>por último, gostaria de levantar mais uma questão sobre o futuro, não este próximo, mas um próximo mais distante, como um ano a frente como exemplo já citado...</p>
+			<p>onde você quer estar daqui um ano, não é, necessariamente, onde você estará daqui um ano..... embora este último é o lugar conseqüente das suas escolhas, mas o primeiro é, acima de tudo, fruto da sua realidade presente...</p>
+			<p>no caminho, você experimentará outras realidades, que te apontarão outros lugares onde estar, pois terá vivido outras experiências de realidades presentes...</p>
+			<p>sendo otimista, às vezes, nos encontraremos em lugares que alcançamos em muito menos tempo do que planejado, não fazendo sentido permanecer nele até o tempo que idealizamos ser necessário......</p>
+			<p>ou, sendo pessimista, às vezes, nos projetamos, precipitadamente, em lugares que só alcançaremos com um pouco mais de tempo...</p>
+			<p>agora, sendo realistas, talvez nem mesmo lembraremos onde um ano antes gostaríamos de estar nesse futuro que acontece agora, pois, na nossa perspectiva mais reduzida de tempo, estaremos mais preocupados em viver as escolhas e as realidades que serão presentes em nossas vidas...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ como encarar o futuro??? ♦</strong></p>
+		<br>
+			<p>se alguma idéia de futuro, não ficou muito clara no momento, decida se você deve permanecer na dúvida, abandonar a questão, refletir mais sobre ou questionar... só você é capaz e fará essa escolha... eu, por outro lado, já adianto que escolherei responder as questões enviadas, ou não!!!</p>
+			<p>pra onde você está indo???</p>
+			<p>compartilhe suas experiências nos comentários...</p>
+			<p>sua opinião é importante......</p>
+		<br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, _________________________.....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+         `
+    },
+	
 // d006. tô passado
     {
         id: "to-passado-dd5",
@@ -561,6 +635,7 @@ const postsData = [
     },
 
 ];
+
 
 
 
