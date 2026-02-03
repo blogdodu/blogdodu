@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function carregarDisqus(postId, postTitle) {
-        var disqus_shortname = 'blogdodu'; 
+        var disqus_shortname = 'blog-do-du-oficial-2026'; 
         if (window.DISQUS) {
             window.DISQUS.reset({
                 reload: true,
@@ -351,5 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if(barra) barra.style.height = scrolled + "%";
     });
 });
+
 
 
