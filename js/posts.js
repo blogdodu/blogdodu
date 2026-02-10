@@ -1,10 +1,91 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// d009. família e familiar
+    {
+        id: "o-que-e-familia-e-familiar-e-o-que-eu-tenho-a-ver-com-isso-ed8",
+        title: "o que é família e familiar e o que eu tenho a ver com isso? - ed8",
+        date: "09 fev 2026", 
+        readingTime: "4 min de leitura",
+        category: "ensaios & provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-familia-e-familiar.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "...vêem",
+        content: `	
+			<p>e se eu te disser que a idéia que você tem sobre família pode estar te impedindo de encontrar a seu verdadeiro grupo familiar????</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ desconstruindo para construir ♦</strong></p>
+		<br>
+			<p>bem vinda(o) de volta!!!!</p>
+			<p>agora que já entende o que eu penso sobre verdades, erro, medo e como compreendo o tempo, vou iniciar uma trilogia desconstrutiva dos três "pais opressores" dos indivíduos.... família, religião e estado...</p>
+			<p>vamos juntos entender o que foi, o que é, onde se manifesta, o porquê e qual o significado de cada um..... e o mais importante: como vencer a opressão imposta por eles (consciente e inconscientemente) e exercer o controle de nossas próprias vidas para além de suas amarras...</p>
+			<p>e pra começar, precisamos entender o que é família e familiar....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ para além do óbvio ♦</strong></p>
+		<br>
+			<p>provavelmente já temos um entendimento profundo que nem mesmo nos damos conta sobre este assunto e usamos essas palavras para situações e coisas que vão além do primeiro conceito de família que vem a nossa cabeça......</p>
+			<p>"vocês são minha segunda família"</p>
+			<p>"esse cheiro me é familiar"</p>
+			<p>"nossa empresa é uma família"</p>
+			<p>"me sinto parte da família"</p>
+			<p>"sua familiaridade com estes programas são primordiais para ocupar este cargo"</p>
+			<p>"separe os objetos em famílias de acordo com sua vontade"</p>
+			<p>em nenhuma destas frases há referência a parentesco ou consangüinidade, então o que define uma família???</p>
+			<p>precisamos, então, ampliar nossa visão, olhando o conceito de família para além dos laços sangüíneos</p>
+			<p>família pode ser entendida como um grupo, nem sempre unido por grau de parentesco, mas que possui algum nível de ligação.... num sentido figurativo, é também uma união por convergência de interesses e/ou convicções.....</p>
+			<p>biologicamente, trata da filogenia de grupos com características essenciais semelhantes...</p>
+			<p>legalmente, é um contrato social entre indivíduos, estendido aos seus responsáveis e dependentes, consangüíneos ou não, em níveis genealógicos verticais e horizontais, reconhecidos e protegidos por lei....</p>
+			<p>tão breve, o entendimento de familiar é tudo que se relaciona a similaridade, proximidade, ligação, reconhecimento e afins... e todos estes entendimentos estão corretos e correlacionados.....</p>
+			<p>logo, família é todo grupo em que encontramos semelhança, que partilhamos interesses, que comungamos de laços de força, afeto, proximidade e reconhecimento....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ parentes vs. familiares ♦</strong></p>
+		<br>
+			<p>desta forma se pararmos para pensar, um pensar extremamente crítico e livre de quaisquer amarras de pré-conceitos e preconceitos, muitos parentes são menos familiares, e, por conseguinte, família, que muitos amigos e até mesmo pets...</p>
+			<p>"família é quem educa" - então professores fazem parte da família, livros, amigos, desenhos, jogos, músicas, erros, dores e perdas também são família.... e sim, são, sem nenhuma dúvida...</p>
+			<p>"família sempre nos protege" - assim como um teto, um medo, um equipamento de segurança, ou um parapeito....</p>
+			<p>esta é uma ampliação absurda destes conceitos, mas extremamente necessária para nos descolarmos dos conceitos mais simplórios a que muitos estão presos....</p>
+			<p>família é algo único, porém plural.....</p>
+			<p>há diferentes formas de família, homem e mulher cis, homem e mulher trans, homem e homem, mulher e mulher, homem, homem e mulher, mulher, mulher e mulher, homem e mulher bi, mulher e homem bi, homem e cachorro, mulher e gato, mulher e plantinhas, homem e calopsita, um indivíduo separado ou solteiro, grupo de amigos, time, equipe, fã-clube e etc... com filhos, sem filhos, adotados, gerados, barrigas de aluguel, agregados de outra relação....</p>
+			<p>parafraseando simone de beauvoir, 'não se nasce família, torna-se família'¹</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ reconhecendo nossas famílias ♦</strong></p>
+		<br>
+			<p>é só após entendermos que o conceito é muito mais amplo que podemos refletir quem faz parte das nossas famílias, pois as vezes temos muito mais familiaridade com um amigo que mora longe do que com a tia que mora do outro lado da rua, ou com o irmão do quarto ao lado....</p>
+			<p>e quem se diz familiar mas você ainda não se aproximou.... comece por aí, escreva nos comentários, quem é o seu familiar mais próximo e com qual quer estreitar os laços, dar um abraço e dizer como lhe quer por perto e se como sente semelhante....</p>
+			<p>e não, uma forma família não anula a outra, até porque, se você já entendeu, família é algo pessoal, cada um tem a(s) sua(s)....</p>
+		<br>
+		<br>
+		<br>
+		<div class="pos-scriptum">
+			<p>¹ parafrase de "não se nasce mulher, torna-se mulher", em o segundo sexo (beauvoir, simone), que assim como família é um conceito com camadas históricamente construídas a partir de uma imposição patriarcal.....
+		</div>
+		<br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>nos últimos textos, mergulhamos no entendimento do tempo.....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+    },
+	
 // d008. não existência
     {
-        id: "presenteie-se-com-a-nao-existencia-ed6",
-        title: "presenteie-se com a não existência",
+        id: "presenteie-se-com-a-nao-existencia-ed7",
+        title: "presenteie-se com a não existência - ed7",
         date: "02 fev 2026", 
         readingTime: "3 min de leitura",
         category: "ensaios & provocações",
@@ -72,8 +153,8 @@ const postsData = [
 	
 // d007. tô passado
 	{
-        id: "quem-sabe-no-futuro-ed5",
-        title: "quem sabe no futuro",
+        id: "quem-sabe-no-futuro-ed6",
+        title: "quem sabe no futuro - ed6",
         date: "26 jan 2026",
         readingTime: "4 min de leitura",
         category: "ensaios & provocações",
@@ -146,8 +227,8 @@ const postsData = [
 	
 // d006. tô passado
     {
-        id: "to-passado-dd5",
-        title: "tô passado!!! - ed4",
+        id: "to-passado-ed5",
+        title: "tô passado!!! - ed5",
         date: "19 jan 2026",
         readingTime: "3 min de leitura",
         category: "ensaios e provocações",
@@ -703,3 +784,4 @@ const postsData = [
         `
     },
 ];
+
