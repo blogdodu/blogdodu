@@ -1,6 +1,168 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 11. pátria amada
+    {
+        id: "patria-amada-ed10",
+        title: "pátria amada - ed10",
+        date: "20 abr 2026",
+        readingTime: "3 min de leitura",
+        category: "ensaios & provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-patria-amada.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "15",
+        content: `
+			<p>e se o estado, em vez de nos proteger, fosse a maior ameaça à nossa liberdade???</p>
+			<p>hoje chegamos ao fim desta e importante trilogia desconstrutiva... dos três "pais opressores" dos indivíduos.... a família, a religião e agora o estado...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ para além do território ♦</strong></p>
+		<br>
+			<p>então, bem vinda(o) de volta!!!!</p>
+			<p>continuamos a singrar os rios da reflexão para entender o que foi, o que é, onde é, porquê, qual o significado de cada um dos três e como vencer a opressão destes, bem como exercer o controle de nossas próprias vidas para além deles...</p>
+			<p>nesta jornada, agora devemos responder: o que é estado????</p>
+			<p>você já conhece a estrutura dos textos anteriores, pois os três opressores são praticamente iguais, logo, também é provável que já tenhamos um entendimento profundo que nem mesmo nos damos conta sobre este assunto e usamos essas palavras para situações e coisas que vão além do primeiro conceito de estado que vem a nossa cabeça..</p>
+			<p>"em que estado o paciente chegou ao hospital"</p>
+			<p>"em que estado estava a água do lago"</p>
+			<p>"estou em um estado de nervos"</p>
+			<p>"a situação é de estado de calamidade pública"</p>
+			<p>"qual o seu estado civil?"</p>
+			<p>"aquele primeiro beijo me deixou num estado de espírito que nunca havia experimentado"</p>
+			<p>e como das últimas vezes, neste momento você já entendeu, em nenhuma destas frases há referência ao local, às delimitações territoriais, ao governo de um povo, sua pátria ou os primeiros significados que saltam em nossas mentes, então o que é estado???</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ a origem da palavra ♦</strong></p>
+		<br>
+			<p>estado é uma palavra do português que tem sua origem no latin status - modo de estar, situação, condição...</p>
+			<p>é um conjunto de qualidades ou características com que as coisas se apresentam, um conjunto de condições em que se encontram em determinado momento, a condição física de uma pessoa ou animal, ou de alguma parte de seu corpo, ou de um material, a condição emocional, psicológica ou moral de um indivíduo em dado momento, que influencia seu modo de encarar as situações, os acontecimentos, ou a situação social ou profissional de um indivíduo...</p>
+			<p>dos três pais opressores este é o de entendimento, paradoxalmente, mais simples e complexo ao mesmo tempo...</p>
+			<p>desta forma teremos que pensar um pouco mais, "aquele" pensar, um pensar extremamente crítico e livre de quaisquer amarras de pré-conceitos e preconceitos, estado é como se encontra cada parte e cada todo.... é a força de coe(r)são para se ser... do individual e coletivamente....</p>
+			<p>e daí deriva a compreensão do que realmente é o estado, enquanto sociedade, enquanto condição em que nos encontramos...</p>
+			<p>logo, não fazemos parte de um estado, estamos estado, seja em qual estado estejamos.... somos estados diferentes, partes componentes de um estado todo...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ um retrato do momento ♦</strong></p>
+		<br>
+			<p>mas acima de tudo, o estado não é, ele "está" o retrato de um momento, de um tempo, de um conjunto de características, condições que compõem e que têm a força de coe(r)são para que este continue a ocorrer....</p>
+			<p>nós, enquanto indivíduos somos e exercemos o estado, sujeitando-nos, em conjunto, às normas que, em primeiro lugar, nos faz este estado, e lutando contra as mesmas, quando estas nos forçam a sermos apenas partes....</p>
+			<p>no caso, o estado é um pacto social entre todos os que o são, mas sem esquecer de que é para estes mesmos que o são, para que assim, e só assim, possa continuar a sê-lo.... ainda que para isso seja necessário se apresentar em outro, um novo, estado...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ seu papel no estado ♦</strong></p>
+		<br>
+			<p>reflita como você vem desempenhando seu papel de e no estado.....</p>
+			<p>o que mudou em sua visão de estado???</p>
+			<p>de que forma você tem se submetido ou resistido às normas do estado que vive???</p>
+			<p>que tipo de estado você deseja construir em si e para si no futuro????</p>
+		<br>
+            <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, _________________________.....</p>
+            <p>vale a pena conferir!...</p>
+        <br>
+            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+            <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
+        <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+             `
+    },
+	
+// d010. religiosamente
+    {
+        id: "religiosamente-ou-ao-gosto-ed9",
+        title: "religiosamente ou ao gosto - ed9",
+        date: "13 abr 2026",
+        readingTime: "5 min de leitura",
+        category: "ensaios & provocações",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-religiosamente.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "3",
+        content: `	
+			<p>seguimos por aqui com a trilogia desconstrutiva dos três "pais opressores" dos indivíduos.... família, religião e estado...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ para além do senso comum ♦</strong></p>
+		<br>
+			<p>então, bem vinda(o) de volta!!!!</p>
+			<p>singramos os rios da reflexão para entender o que foi, o que é, onde é, porquê, qual o significado de cada um dos três e como vencer a opressão destes, bem como exercer o controle de nossas próprias vidas para além deles...</p>
+			<p>o que é religião ou religiosidade??</p>
+			<p>sigo a mesma estrutura do texto anterior, pois os três opressores são praticamente iguais, logo, também é provável que já tenhamos um entendimento profundo, que nem mesmo nos damos conta, sobre este assunto e usamos essas palavras para situações e coisas que vão além do primeiro conceito de religião que vem a nossa cabeça...</p>
+			<p>"minha paixão por este time é como uma religião"</p>
+			<p>"eu acordo todos os dias, religiosamente, às 6h da manhã, sem precisar de despertador"</p>
+			<p>"ele trata tudo de forma muito metódica e com uma rigorosidade religiosa"</p>
+			<p>"se dedicar com religiosidade, sem falhar é fundamental para se dominar um instrumento"</p>
+			<p>"ela é uma religiosa defensora dos direitos humanos."</p>
+			<p>e aqui você já entendeu, em nenhuma destas frases há referência ao divino ou ao espiritual, então o que é religião???</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ as raízes da palavra ♦</strong></p>
+		<br>
+			<p>religião é uma palavra do português que deriva do latin religio, que tem sua origem disputada por outras dois termos: relegere e religare. o que nos leva a necessidade de nos debruçarmos sobre os significados destes....</p>
+			<p>relegere é reler, revisitar, retomar o que estava largado, é uma busca incessante por algo que depende de mais uma leitura, de mais um ponto de vista, de mais entendimento, de uma melhor interpretação....</p>
+			<p>já religare é religar, atar, apertar, juntar, prender, amarrar, é encontrar uma forma de criar laços, de unir, de combinar de fazer um sentido maior enquanto forma coletiva, para além da unidade...</p>
+			<p>a partir desses entendimentos, essa busca constante por significado, inerente ao relegere, nos convida a questionar, a reavaliar e a enriquecer nossa compreensão do mundo à medida que evoluímos.... é um processo contínuo de aprendizado e descoberta.</p>
+			<p>enquanto a união, característica do religare, não se limita apenas aos laços entre pessoas... podemos encontrar essa conexão em diversas esferas da vida..... na relação com a natureza, na expressão artística, na busca por um propósito de vida e até mesmo na paixão pela ciência....</p>
+			<p>temos, então, um entendimento de religião um pouco mais complexo do que o foi o de família e que ele até pode suprir o lugar superficial de uma carência espiritual, bastando apenas imbuí-lo de relações etéreas extras ao seu real significado....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ encontros: consigo, com padrões e/ou com compreensões ♦</strong></p>
+		<br>
+			<p>desta forma, se pararmos para pensar, um pensar extremamente crítico e livre de quaisquer amarras de pré-conceitos e preconceitos, religião é um encontro, ou a busca deste encontrar.....</p>
+			<p>seja encontrar uma forma de agir que melhor se encaixe a nossa realidade particular, para assim repetí-la de forma a nos encontrarmos e nos reconhecermos nela;</p>
+			<p>seja para encontrar um padrão, em que ações e conseqüências encontram sempre o mesmo momento ou condições para voltar a acontecer;</p>
+			<p>ou seja para encontrar uma compreensão maior, dotada de mais camadas de vivências, que a cada novo olhar, nos dá uma nova leitura do que havíamos antes compreendido...</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ ciência e religião: irmãs na busca por respostas ♦</strong></p>
+		<br>
+			<p>então, não há lógica alguma em afastar a ciência da religião, uma vez que as duas são submissas a uma religiosidade, uma rigorosidade de extremamente consciência.....</p>
+			<p>ambas, em sua essência, buscam respostas para as grandes questões da existência: quem somos??, de onde viemos????, para onde vamos???</p>
+			<p>com a diferença, que uma tem base em aspirações sobre aquilo que vai além de sua compreensão e a outra em absorver a compreensão dos fatos, se restringindo apenas àquilo que está posto....</p>
+			<p>porém, ambas buscam nos conectar com algo maior que nós mesmos, com a busca pelo conhecimento e pela compreensão da nossa existência.</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ a religião como caminho pessoal e mutável ♦</strong></p>
+		<br>
+			<p>da mesma forma, também não faz sentido algum buscar a religião correta, ainda mais se esta não se permite se ler novamente, ser compreendida de outra forma, por cada pessoa, por cada tempo cheio de suas novas vivências.....</p>
+			<p>se assim for ela, esse torna-se um caminho limitante, afinal, a religião deve ser releitura e reconexão, fazendo mais sentido abraçarmos a idéia de que cada indivíduo tem o direito de encontrar seu próprio caminho, sua própria verdade.....</p>
+			<p>e essa verdade pode se transformar ao longo da vida, impulsionada por novas experiências e reflexões (inclusive falamos disso em outro texto)...</p>
+			<p>esta é uma ampliação aparentemente absurda destes conceitos, mas extremamente necessária para nos descolarmos dos conceitos mais simplórios a que muitos estão presas(os)....</p>
+			<p>quer dizer que há diferentes maneiras de ser religioso???</p>
+			<p>sim, uma para cada pessoa e as vezes uma forma de ser se parece um pouco, em alguns pontos, com outra, ou mesmo não se parece em nada com outras tantas, mas mesmo assim são equivalentes, em conceito, com todas as suas semelhanças e diferenças, mas sempre equivalentes....</p>
+			<p>é só após entendermos que o conceito é muito mais amplo, que podemos refletir qual a minha ou a sua visão mundo de agora, pois logo em seguida já teremos experimentado mais vivências e poderemos ter uma nova leitura.....</p>
+			<p>ou a mesma, mais forte ou mais fraca que a anterior..... lembra de como funcionam as verdades???</p>
+			<p>isso sem falar que podemos ser mais religiosas(os) em um aspecto que outro....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<p><strong>♦ onde reside sua religiosidade???? ♦</strong></p>
+		<br>
+			<p>comece por aí, escreva nos comentários, ou me manda mensagem pelo instagram, em que você é mais religiosa(o), em que se empenha mais em encontrar.....</p>
+			<p>e não, não há resultado de uma religião que seja igual a outro, para a mesma pessoa ou para outra, até porque, se você já entendeu, o que encontramos religiosamente necessita e será algo pessoal e efêmero, cada um tem a(s) sua(s)....</p>
+		<br>
+   	        <p>quer mergulhar em outras reflexões profundas???</p>
+            <p>no último texto, seguimos essa nova sequência de textos, que chamo de trilogia dos "pais" opressores, falando sobre religião.....</p>
+            <p>vale a pena conferir!...</p>
+       	<br>
+   	        <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+                <p><center>__________________________________</center></p>
+            <p><center>não prometo respostas.....</center></p>
+       	    <p><center>mas te convido pra conversas interessantes......</center></p>
+           	    <p><center>__________________________________</center></p>
+   	    <br>
+        <br>
+            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>		
+		`
+    },
+		
 // d009. família e familiar
     {
         id: "o-que-e-familia-e-familiar-e-o-que-eu-tenho-a-ver-com-isso-ed8",
@@ -151,7 +313,7 @@ const postsData = [
              `
     },
 	
-// d007. tô passado
+// d007. quem sabe no futuro
 	{
         id: "quem-sabe-no-futuro-ed6",
         title: "quem sabe no futuro - ed6",
@@ -397,7 +559,7 @@ const postsData = [
         `
     },	
 	
-// d004. vai¹ com Medo Mesmo
+// d004. vai¹ com medo mesmo
     {
         id: "vai-com-medo-mesmo-ed3",
         title: "vai¹ com medo mesmo!!!! - ed3",
@@ -488,7 +650,7 @@ const postsData = [
             <p>sua opinião é importante....</p>
         <br>
             <p>quer mergulhar em outras reflexões profundas???</p>
-            <p>no último texto, exploramos o universo das "verdades absolutas".....</p>
+            <p>no último texto, exploramos as voltas, começos e fins de um cíclo.....</p>
             <p>vale a pena conferir!...</p>
         <br>
             <p><strong><center>um ótimo 2026 pra você!!!!</center></strong></p>
