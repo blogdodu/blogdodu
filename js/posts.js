@@ -124,7 +124,7 @@ const postsData = [
 		<hr class="divisor-fino-longo">
 			<p><strong>♦ ciência e religião: irmãs na busca por respostas ♦</strong></p>
 		<br>
-			<p>então, não há lógica alguma em afastar a ciência da religião, uma vez que as duas são submissas a uma religiosidade, uma rigorosidade de extremamente consciência.....</p>
+			<p>então, não há lógica alguma em afastar a ciência da religião, uma vez que as duas são submissas a uma religiosidade, uma rigorosidade de extrema consciência.....</p>
 			<p>ambas, em sua essência, buscam respostas para as grandes questões da existência: quem somos??, de onde viemos????, para onde vamos???</p>
 			<p>com a diferença, que uma tem base em aspirações sobre aquilo que vai além de sua compreensão e a outra em absorver a compreensão dos fatos, se restringindo apenas àquilo que está posto....</p>
 			<p>porém, ambas buscam nos conectar com algo maior que nós mesmos, com a busca pelo conhecimento e pela compreensão da nossa existência.</p>
