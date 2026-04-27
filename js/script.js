@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : (hash === '#cat-conversas') ? 'conversas' : '';
+                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : (hash === '#cat-conversas') ? 'conversas' ;
                 renderizarListaPosts(cat); 
             }
         }
