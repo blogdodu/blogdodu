@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : (post.category === "conversas") ? "#cat-conversas" : "#caminhos";
+                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : (post.category === "conversas") ? "#cat-conversas" : "#caminhos": (post.category === "poesia e música") ? "#cat-conversas" : "#caminhos";
 
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
