@@ -13,7 +13,7 @@ author: "du",
 authorId: "#autores",
 image: "img/post-descortinando-pudor.png",
 imageAlt: "imagem ilustrativa",
-imageCaption: "/"5"/",
+imageCaption: "\"5"\",
 content: 
 `
 	<p>pudor, uma palavra freqüentemente associada à limitações, nos remetendo a uma sensação de recato e preservação...</p>
@@ -168,7 +168,7 @@ author: "du",
 authorId: "#autores",
 image: "img/post-jellyfish.png",
 imageAlt: "imagem ilustrativa",
-imageCaption: "/"20"/",
+imageCaption: "\"20"\",
 content: 
 `
 	<p>quantas palavras foram jogadas?!?!<br>
