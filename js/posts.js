@@ -198,7 +198,7 @@ const postsData = [
 			<p>que tipo de estado você deseja construir em si e para si no futuro????</p>
 		<br>
             <p>quer mergulhar em outras reflexões profundas???</p>
-            <p>no último texto, _________________________.....</p>
+            <p>no último texto, seguimos essa nova sequência de textos, que chamo de trilogia dos "pais opressores", falando sobre religião.....</p>
             <p>vale a pena conferir!...</p>
         <br>
             <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -288,7 +288,7 @@ const postsData = [
 			<p>e não, não há resultado de uma religião que seja igual a outro, para a mesma pessoa ou para outra, até porque, se você já entendeu, o que encontramos religiosamente necessita e será algo pessoal e efêmero, cada um tem a(s) sua(s)....</p>
 		<br>
    	        <p>quer mergulhar em outras reflexões profundas???</p>
-            <p>no último texto, seguimos essa nova sequência de textos, que chamo de trilogia dos "pais" opressores, falando sobre religião.....</p>
+            <p>no último texto, seguimos essa nova sequência de textos, que chamo de trilogia dos "pais opressores", falando sobre 'familiaridades'.....</p>
             <p>vale a pena conferir!...</p>
        	<br>
    	        <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
