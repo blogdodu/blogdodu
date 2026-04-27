@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : (post.category === "conversas") ? "#cat-conversas";
+                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : (post.category === "poesia e música") ? "#cat-poesias" : (post.category === "conversas") ? "#cat-conversas";
 
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : (hash === '#cat-conversas') ? 'conversas' ;
+                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : (hash === '#cat-poesias') ? 'poesia e música' : (hash === '#cat-conversas') ? 'conversas' : ' ';
                 renderizarListaPosts(cat); 
             }
         }
