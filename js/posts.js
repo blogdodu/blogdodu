@@ -14,7 +14,7 @@ const postsData = [
         imageAlt: "imagem ilustrativa",
         imageCaption: "14",
         content: `
-			<p>esse ensaio é uma expansão do primeiro post do instagram @venturimdu, mas não pretende ser o fim, como todos nossos outros ensaios, este é combustível para pensarmos e discutirmos um pouco mais, um pouco além e um pouco mais profundamente sobre....</p>
+			<p>esse ensaio é uma expansão do primeiro post do instagram @eduardobuback, mas não pretende ser o fim.... como todos nossos outros ensaios, este é combustível para pensarmos e discutirmos um mais, um pouco além e um pouco mais profundamente sobre....</p>
 		<br>
 		<hr class="divisor-fino-longo">
 			<p><strong>♦ o espelho e as máscaras ♦</strong></p>
@@ -23,12 +23,12 @@ const postsData = [
 			<p>a cada dia, sempre que nos olhamos no espelho, somos convidadas(os) a encarar a imagem que ele nos devolve....</p>
 			<p>no entanto, essa que vemos é apenas um reflexo, uma superfície plana que captura algo momentâneo, a superfície de um certo ângulo, incapaz de revelar a totalidade de quem somos...</p>
 			<p>ou seja, apenas uma das nossas muitas faces — uma máscara, por assim dizer........</p>
-			<p>vivemos num teatro onde nos fragmentamos, constantemente usando esses adereços para atender às demandas de nosso meio, da sociedade, dos papéis que escolhemos ou fomos forçadas a desempenhar....</p>
+			<p>vivemos num teatro onde nos fragmentamos, constantemente usando esses adereços para atender às demandas de nosso meio, da sociedade, dos papéis que escolhemos ou fomos forçadas(os) a desempenhar....</p>
 			<p>no entanto, até que ponto essas máscaras representam quem somos? e mais, até que ponto conseguimos suportar o peso de tantos "eus" que precisam coabitar em uma só existência???</p>
 			<p>esses "eus", que carregamos com nós, são múltiplos e fragmentados...</p>
 			<p>somos profissionais, amigas(os), amantes, filhas(os) e muito mais.......</p>
 			<p>essas multiplicidades não nos tornam incoerentes, mas, ao contrário, nos constituem enquanto criaturas complexas, cheias de camadas e profundidades que nem sempre compreendemos..</p>
-			<p>é, justamente, essa pluralidade que nos faz únicas e únicos, nos faz personalidades múltiplas, nos faz coisas inteiras, ainda que sempre divididas entre as expectativas externas e os diálogos internos.....</p>
+			<p>é, justamente, essa pluralidade que nos faz únicas(os), nos faz personalidades múltiplas, nos faz coisas inteiras, ainda que sempre divididas entre as expectativas externas e os diálogos internos.....</p>
 			<p>e, ao longo dessa dança com as máscaras, não é raro que nos percamos...</p>
 		<br>
 		<hr class="divisor-fino-longo">
@@ -36,7 +36,7 @@ const postsData = [
 		<br>
 			<p>o conceito de máscaras é algo que permeia várias tradições filosóficas. na grécia antiga, os atores utilizavam máscaras para desempenhar diferentes papéis nas tragédias e comédias........</p>
 			<p>esse mesmo conceito nos serve como metáfora para pensar nossas próprias máscaras sociais...</p>
-			<p>elas não são apenas disfarces, mas também uma tentativa de comunicar e se comunicar com outra pessoa/realidade.....</p>
+			<p>elas não são apenas disfarces, mas também uma tentativa de comunicar (expressar) e se comunicar (conectar) com outra pessoa/realidade.....</p>
 			<p>usamos as máscaras para sermos vistas(os), aceitas(os), compreendidas(os)...</p>
 			<p>e, no entanto, essas mesmas máscaras podem nos afastar de quem somos de verdade....</p>
 			<p>a partir de uma busca incessante por validação, vamos nos moldando e ajustando conforme as expectativas alheias, até o ponto em que a máscara já não mais reflete quem somos, mas quem desejamos que o mundo veja......</p>
@@ -46,7 +46,7 @@ const postsData = [
 			<p>nos protegem do julgamento alheio, mas também nos aprisionam em papéis que, muitas vezes, não escolhemos conscientemente....</p>
 		<br>
 		<hr class="divisor-fino-longo">
-			<p><strong>♦ a filosofia por trás das máscaras ♦</strong></p>
+			<p><strong>♦ a máscaras digitais♦</strong></p>
 		<br>
 			<p>nas redes sociais, essa questão é ainda mais acentuada, as máscaras se tornam mais polidas, editadas, cheias de filtros e ilusões..</p>
 			<p>passamos a projetar uma versão de nós que nem sempre corresponde à nossa realidade material....</p>
@@ -62,10 +62,10 @@ const postsData = [
 		<br>
 			<p>auto-aceitar-se, porém, é um desafio constante...</p>
 			<p>não basta conhecer-se, saber das próprias forças e fragilidades...</p>
-			<p>é necessário, sobretudo, abraçar essas falhas, as partes nossas que não se encaixam nas expectativas....</p>
+			<p>é necessário, sobretudo, abraçar as falhas, as partes nossas que não se encaixam nas expectativas....</p>
 			<p>é reconhecer o desconforto, a fragilidade e, a partir disso, seguir em frente..</p>
-			<p>o caminho da aceitação não é linear e raramente é fácil, muitas vezes, envolve confrontar quem pensamos ser com quem realmente somos...</p> 
-			<p>e esse encontro pode ser perturbador, porque nos obriga a tirar a máscara e, pela primeira vez, encarar a verdade nua e crua......</p>
+			<p>mas o caminho da aceitação não é linear e raramente é fácil, muitas vezes, envolve confrontar quem pensamos ser com quem realmente somos...</p> 
+			<p>e esse encontro pode ser perturbador, porque nos obriga a tirar as máscaras e, pela primeira vez, encarar a verdade nua e crua......</p>
 			<p>como nos provocou simone de beauvoir com seu 'não se nasce mulher, torna-se', poderíamos refletir sobre como as identidades que assumimos são construções sociais, muitas vezes impostas por estruturas opressoras....</p>
 			<p>não nascemos nós mesmas(os), mas somos constantemente moldadas(os) por expectativas externas, algumas das quais reforçam hierarquias e desigualdades que precisamos questionar....</p>
 		<br>
@@ -73,7 +73,7 @@ const postsData = [
 			<p><strong>♦ tradições filosóficas e o encontro consigo ♦</strong></p>
 		<br>
 			<p>a filosofia budista fala sobre o desapego, a idéia de que devemos nos desprender de nossas projeções e ilusões para alcançarmos a paz interior..</p>
-			<p>eu diria ir até o papel em branco que sempre fomos, somos e seremos....</p>
+			<p>um esvaziamento necessário para que possamos, como eu diria, ir até o papel em branco que sempre fomos, somos e seremos....</p>
 			<p>esse processo, no entanto, pode ser doloroso, pois exige o abandono dessas máscaras que cultivamos ao longo de anos...</p>
 			<p>já as tradições gregas, como o estoicismo, pregam a resiliência frente às adversidades, a capacidade de permanecer firme diante do sofrimento e, acima de tudo, de superar a si...</p>
 			<p>esse desafio de superar-se, talvez, seja o mais difícil de todos, é um exercício contínuo, pois requer que sejamos vulneráveis, que nos aceitemos por completo, como vazios que somos, para, então, transcendermos todas nossas limitações.....</p>
@@ -96,7 +96,7 @@ const postsData = [
 			<p><strong>♦ o eterno recomeço ♦</strong></p>
 		<br>
 			<p>é nesse ponto que surge a necessidade de recomeçar....</p>
-			<p>como sísifo, condenado a eternamente empurrar sua pedra montanha acima apenas para vê-la rolar novamente até o sopé, também nós nos encontramos num ciclo constante de construção e desconstrução de nós mesmas(os)....</p>
+			<p>como sísifo, condenado a eternamente empurrar sua pedra montanha acima, apenas para vê-la rolar novamente até o sopé, também nós nos encontramos num ciclo constante de construção e desconstrução de nós mesmas(os)....</p>
 			<p>mas, diferente do que pode parecer, não há absurdo nessa repetição — como nos ensina albert camus, é justamente nesse eterno recomeçar que podemos encontrar sentido e, paradoxalmente, liberdade....</p>
 			<p>pois cada vez que a pedra rola montanha abaixo, temos a oportunidade de escolher empurrá-la novamente, de forma consciente, transformando o que seria punição em ato de rebeldia e afirmação....</p>
 			<p>e todos os dias recomeçamos o processo de nos conhecermos, nos aceitarmos e nos superarmos...</p>
@@ -108,7 +108,7 @@ const postsData = [
 		<hr class="divisor-fino-longo">
 			<p><strong>♦ um convite a reflexão ♦</strong></p>
 		<br>
-			<p>para quem quiser seguir refletindo sobre essas questões, vez ou outra, estarei compartilhando mais pensamentos e diálogos sobre identidade, auto-aceitação e superação no meu perfil do instagram @venturimdu ou talvez, em breve, no canal do youtube @venturimdu, onde esses temas podem ganhar novas camadas em vídeos e conversas mais profundas....</p>
+			<p>para quem quiser seguir refletindo sobre essas questões, vez ou outra, estarei compartilhando mais pensamentos e diálogos sobre identidade, auto-aceitação e superação no meu perfil do instagram @eduardobuback ou talvez, em breve, em um canal do youtube @venturimdu, onde esses temas podem ganhar novas camadas em vídeos e conversas mais profundas....</p>
 			<p>acompanhe, participe e vamos juntas(os) trilhar esse caminho.....</p>
 			<p>"cair, levantar e seguir,</p>
 			<p>sempre recomeçar...</p>
@@ -122,23 +122,23 @@ const postsData = [
 		<hr class="divisor-fino-longo">
 			<p><strong>♦ nos palcos da vida ♦</strong></p>
 		<br>
-			<p>e você, quais máscaras usa no seu dia a dia? consegue identificar momentos em que se sente mais autêntica(o) e momentos em que a performance social parece dominar???</p>
+			<p>e você, quais máscaras usa no seu dia-a-dia? consegue identificar momentos em que se sente mais autêntica(o) e momentos em que a performance social parece dominar???</p>
 			<p>já teve a experiência de se quebrar e se reconstruir, descobrindo novas facetas de si mesma(o) no processo?????</p>
 			<p>talvez o verdadeiro desafio não seja eliminar todas as máscaras — afinal, elas também são parte de quem somos e de como navegamos o mundo social — mas desenvolver a consciência de quando estamos usando cada uma, e garantir que, por trás de todas elas, ainda nos reconheçamos....</p>
 			<br>
 		            <p>quer mergulhar em outras reflexões profundas???</p>
-		            <p>no último texto, _________________________.....</p>
-        		    <p>vale a pena conferir!...</p>
+		            <p>no último texto, fechamos a trilogia dos "pais opressores" com o estado.....</p>
+		            <p>vale a pena conferir!...</p>
 		        <br>
-        		    <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
-		                <p><center>__________________________________</center></p>
-        		    <p><center>não prometo respostas.....</center></p>
-		            <p><center>mas te convido pra conversas interessantes......</center></p>
-        		        <p><center>__________________________________</center></p>
+		            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+    		            <p><center>__________________________________</center></p>
+		            <p><center>não prometo respostas.....</center></p>
+    		        <p><center>mas te convido pra conversas interessantes......</center></p>
+                <p><center>__________________________________</center></p>
 		        <br>
-        		<br>
+		        <br>
 		            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
-             `
+			`
     },
 // 11. pátria amada
     {
