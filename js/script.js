@@ -23,14 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- 2. Auxiliar de Agendamento ---
-    // Converte "24 mar 2025" em um objeto Date real para comparação
     function converterDataParaComparacao(dataStr) {
         const meses = {
             jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
             jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
         };
         const partes = dataStr.split(' ');
-        if (partes.length < 3) return new Date(); // Fallback caso a data esteja mal formatada
+        if (partes.length < 3) return new Date(); 
         return new Date(partes[2], meses[partes[1]], partes[0]);
     }
 
@@ -46,9 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- FILTRO DE AGENDAMENTO ---
         const hoje = new Date();
-        hoje.setHours(0, 0, 0, 0); // Considera apenas o dia, ignorando a hora exata
+        hoje.setHours(0, 0, 0, 0); 
 
-        // Filtramos os dados originais para mostrar apenas o que já foi "lançado"
         const postsPublicados = postsData.filter(post => {
             return converterDataParaComparacao(post.date) <= hoje;
         });
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let postsParaExibir = [];
         let modoVisualizacao = ''; 
         
-        // PRIORIDADE 1: Busca (filtrando para não mostrar agendados)
+        // PRIORIDADE 1: Busca
         if (postsForcados) {
             postsParaExibir = postsForcados.filter(post => converterDataParaComparacao(post.date) <= hoje);
             modoVisualizacao = 'grid';
@@ -217,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
         todasSecoes.forEach(secao => secao.style.display = 'none');
 
-        // ROTA DE POST (com trava de agendamento)
+        // ROTA DE POST
         if (hash.startsWith('#post-')) {
             const postId = hash.replace('#post-', '');
             const postIndex = postsData.findIndex(p => p.id === postId);
@@ -226,7 +224,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const hoje = new Date();
             hoje.setHours(0,0,0,0);
 
-            // Verifica se o post existe E se a data já chegou
             if (post && converterDataParaComparacao(post.date) <= hoje) {
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
@@ -234,7 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : (post.category === "poesia e música") ? "#cat-poesias" : (post.category === "conversas") ? "#cat-conversas";
+                
+                // --- CORREÇÃO AQUI: Adicionado a rota para a nova categoria ---
+                catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : 
+                               (post.category === "conversas") ? "#cat-conversas" : 
+                               (post.category === "poesia e música") ? "#cat-poesias" : "#";
 
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
@@ -255,7 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevContainer.innerHTML = '';
                 nextContainer.innerHTML = '';
 
-                // Navegação inteligente (só sugere posts que já foram publicados)
                 const postsPublicados = postsData.filter(p => converterDataParaComparacao(p.date) <= hoje);
                 const currentIdxInPublicados = postsPublicados.findIndex(p => p.id === postId);
                 
@@ -269,7 +269,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 postView.style.display = 'block';
                 postView.classList.add('animacao-entrada');
             } else {
-                // Se o post for futuro ou não existir, manda de volta pros textos
                 window.location.hash = '#textos';
             }
         } 
@@ -286,7 +285,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : (hash === '#cat-poesias') ? 'poesia e música' : (hash === '#cat-conversas') ? 'conversas' : ' ';
+                
+                // --- CORREÇÃO AQUI: Sintaxe consertada para funcionar as 3 categorias ---
+                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : 
+                          (hash === '#cat-conversas') ? 'conversas' : 
+                          (hash === '#cat-poesias') ? 'poesia e música' : '';
+                          
                 renderizarListaPosts(cat); 
             }
         }
@@ -351,6 +355,3 @@ document.addEventListener('DOMContentLoaded', () => {
         if(barra) barra.style.height = scrolled + "%";
     });
 });
-
-
-
