@@ -5,7 +5,7 @@ const postsData = [
     {
         id: "jellyfish-dd13",
         title: "jellyfish",
-        date: "27 abr 2026",
+        date: "01 mai 2026",
         readingTime: "2 min de leitura",
         category: "poesia e música",
         categoryId: "#caminhos",
