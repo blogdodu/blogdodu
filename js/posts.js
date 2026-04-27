@@ -1,5 +1,86 @@
 const postsData = [
     // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
+
+// 13. Jellyfish
+    {
+        id: "jellyfish-dd13",
+        title: "jellyfish",
+        date: "27 abr 2026",
+        readingTime: "2 min de leitura",
+        category: "poesia e música",
+        categoryId: "#caminhos",
+        author: "du",
+        authorId: "#autores",
+        image: "img/post-jellyfish.png",
+        imageAlt: "imagem ilustrativa",
+        imageCaption: "5",
+        content: `
+			<p>quantas palavras foram jogadas?!?!<br>
+			quantos olhares foram trocados?!?!<br>
+			era muita espera,<br>
+			ânsia que o passo do outro viesse<br>
+			era a cura de uma vida escura<br>
+			louca vontade de se saciar</p>
+		
+			<p>quantas mensagens trocadas?!?!<br>
+			quantas insônias divididas?!?!<br>
+			respostas tão rápidas<br>
+			mentes esperando a conexão do corpo<br>
+			a ação que na voz se cala<br>
+			o frio que no toque ferve de arrepiar</p>
+		
+			<p>luz que penumbra em sons suaves<br>
+			energia que pulsa em lascivos olhares<br>
+			o vestido leve que toca o chão<br>
+			e não havia mais nada<br>
+			era a tua mais completa tradução</p>
+		
+			<p>minutos imensos de um intenso beijo<br>
+			será que valeu a espera???<br>
+			ou foi tempo perdido???<br>
+			vamos rápido desperdiçar lentamente<br>
+			cada momento um no outro,<br>
+			ao som das batidas de um grande álbum de amor pequeno</p>
+		
+			<p>dedos acariciando a pele quente<br>
+			suavemente dos pés a cabeça<br>
+			tanta vontade de devorá-la,<br>
+			de arder em você, delicada água-viva<br>
+			tanta calma ao saborear cada cheiro<br>
+			cada arrepio, respirado e gemido<br>
+			com meus lábios tocando os seus<br>
+			já embebidos em puro prazer<br>
+			tínhamos um ao outro uma noite inteira</p>
+		
+			<p>a cama macia, também era massagem<br>
+			na varanda a brisa e a vista do mar em paisagem<br>
+			com ondas em forma e som, movimento e entrega<br>
+			ah! quantas vezes você viu as estrelas naquela noite!!!<br>
+			uma noite inteira,<br>
+			ainda que somente a primeira…</p>
+		<br>
+		<hr class="divisor-fino-longo">
+		<br>
+			<p>celebrando um novo ciclo ou mesmo exibindo outro eu:</p>
+			<p>às sextas serei poesia....</p>
+		<br>
+		<hr class="divisor-fino-longo">
+			<br>
+		            <p>quer mergulhar em reflexões profundas???</p>
+		            <p>no último texto, abordamos as várias camadas que nos compõem.....</p>
+		            <p>vale a pena conferir!...</p>
+		        <br>
+		            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+		                <p><center>__________________________________</center></p>
+		            <p><center>não prometo respostas.....</center></p>
+		            <p><center>mas te convido pra conversas interessantes......</center></p>
+		                <p><center>__________________________________</center></p>
+		        <br>
+		        <br>
+		            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+             `
+    },
+	
 // 12. Meus Eus e os Outros
     {
         id: "meus-eus-e-os-outros-ed11",
