@@ -13,7 +13,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-jellyfish.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "5",
+        imageCaption: "/"5"/",
         content: `
 			<p>quantas palavras foram jogadas?!?!<br>
 			quantos olhares foram trocados?!?!<br>
