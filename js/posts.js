@@ -12,7 +12,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-meus-eus.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "14",
+        imageCaption: "\"14\"",
         content: `
 			<p>esse ensaio é uma expansão do primeiro post do instagram @eduardobuback, mas não pretende ser o fim.... como todos nossos outros ensaios, este é combustível para pensarmos e discutirmos um mais, um pouco além e um pouco mais profundamente sobre....</p>
 		<br>
@@ -152,7 +152,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-patria-amada.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "15",
+        imageCaption: "\"15\"",
         content: `
 			<p>e se o estado, em vez de nos proteger, fosse a maior ameaça à nossa liberdade???</p>
 			<p>hoje chegamos ao fim desta e importante trilogia desconstrutiva... dos três "pais opressores" dos indivíduos.... a família, a religião e agora o estado...</p>
@@ -224,7 +224,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-religiosamente.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "3",
+        imageCaption: "\"3\"",
         content: `	
 			<p>seguimos por aqui com a trilogia desconstrutiva dos três "pais opressores" dos indivíduos.... família, religião e estado...</p>
 		<br>
@@ -314,7 +314,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-familia-e-familiar.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...vêem",
+        imageCaption: "\"...vêem\"",
         content: `	
 			<p>e se eu te disser que a idéia que você tem sobre família pode estar te impedindo de encontrar a seu verdadeiro grupo familiar????</p>
 		<br>
@@ -395,7 +395,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-nao-existencia.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...olhos...",
+        imageCaption: "\"...olhos...\"",
         content: `
 			<p>após encontrarmos uma visão do que é o passado e o futuro, podemos agora nos concentrar em outros assuntos, como no presente e o fato dele não existir...</p>
 		<br>
@@ -464,7 +464,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-quem-sabe-no-futuro.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...os...",
+        imageCaption: "\"...os...\"",
         content: `
 			<p>a cada momento estamos experimentando novas realidades...</p>
 		<br>
@@ -538,7 +538,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-to-passado.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...que...",
+        imageCaption: "\"...que...\"",
         content: `
         	<p>a cada momento estamos morrendo e deixando pra trás o que éramos, como um fantasma que se esvai na lembrança...</p>
         <br>
@@ -610,7 +610,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-erre-com-gosto.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...do...",
+        imageCaption: "\"...do...\"",
         content: `
         	<p>o que vale mais, acertar algo no "chute" ou errar com convicção das escolhas feitas???</p>
         <br>
@@ -710,7 +710,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-vai-com-medo.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...mais...",
+        imageCaption: "\"...mais...\"",
         content: `
             <p>às vezes é muito difícil fazer algo, por mais simples que seja, simplesmente pelo fato dos medos que sentimos...</p>
         	<p>medo de ser ignorada(o), medo de ser ridicularizada(o), medo de não ser compreendida(o), medo de não ser aceita(o), medo de não conseguir alcançar o almejado, medo de perder a oportunidade com algo insuficiente, medo de ser visto apenas pelo erro que cometemos, ou até mesmo medo de sentir medo no processo....</p>
@@ -818,7 +818,7 @@ const postsData = [
         authorId: "#autores",
         image: "img/post-ciclos.png",
         imageAlt: "imagem ilustrativa",
-        imageCaption: "...revela...",
+        imageCaption: "\"...revela...\"",
         content: `
                 <p>ciclos, ah os ciclos... a dança incessante do tempo que nos envolve, nos impulsiona e nos transforma..... um eterno recomeço, uma jornada que nos leva de um ponto a outro, revelando novas paisagens e novas perspectivas....</p>
             <br>
@@ -972,7 +972,7 @@ const postsData = [
             authorId: "#autores",
             image: "img/post-verdades.png",
             imageAlt: "imagem abstrata representando um labirinto",
-            imageCaption: "... presente...",
+            imageCaption: "\"...presente...\"",
             content: `
         	    <p><center>"não existem verdades absolutas”</center></p>
             <br>
