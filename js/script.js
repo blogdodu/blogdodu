@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // alerta de confirmação de email do supabase
     if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
         alert('e-mail confirmado com sucesso! você já pode entrar.');
-        // limpa o hash da url para manter a elegância
         window.history.replaceState(null, null, window.location.pathname);
     }
 
@@ -141,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentUser = null;
     let currentProfile = null;
     let postIdAtual = null;
+    let comentarioPaiAtual = null; // <- variável que controla se estamos respondendo a alguém
 
     function formatarDataAutoral(dataString) {
         const data = new Date(dataString);
@@ -173,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function abrirModalAuth() { modalAuth.style.display = 'flex'; }
     document.querySelector('.fechar-modal-auth')?.addEventListener('click', () => modalAuth.style.display = 'none');
     
-    // lógica de ver/ocultar senha
     document.querySelectorAll('.toggle-senha').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const input = e.target.previousElementSibling;
@@ -239,7 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             btnSubmit.innerText = 'cadastrando...';
-            // o username é enviado nos metadados para que o gatilho (trigger) do banco o capture
             const { data, error } = await supabase.auth.signUp({ 
                 email, 
                 password,
@@ -261,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    // likes e comentários
+    // likes 
     const btnLike = document.getElementById('btn-like');
     btnLike?.addEventListener('click', async () => {
         if (!gerenciarEstados()) return;
@@ -293,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // a lógica dos três passos do comentário
+    // comentários com resposta
     const inputComentario = document.getElementById('comentario-input');
     const grupoBotoes = document.getElementById('grupo-botoes-comentario');
     const btnIniciarEnvio = document.getElementById('btn-iniciar-envio');
@@ -308,18 +306,18 @@ document.addEventListener('DOMContentLoaded', () => {
     inputComentario?.addEventListener('input', () => {
         if (inputComentario.value.trim() !== '') {
             grupoBotoes.classList.remove('hidden');
-            // se começou a digitar, garante que só o botão 'enviar' apareça
             btnIniciarEnvio.classList.remove('hidden');
             btnCancelarEnvio.classList.add('hidden');
             btnConfirmarEnvio.classList.add('hidden');
             separadorBotoes.classList.add('hidden');
         } else {
             grupoBotoes.classList.add('hidden');
+            comentarioPaiAtual = null; // reseta se apagar tudo
+            inputComentario.placeholder = 'escreva seu comentário...';
         }
     });
 
     btnIniciarEnvio?.addEventListener('click', () => {
-        // o clique em 'enviar' revela as opções de confirmação
         btnIniciarEnvio.classList.add('hidden');
         btnCancelarEnvio.classList.remove('hidden');
         btnConfirmarEnvio.classList.remove('hidden');
@@ -327,11 +325,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     btnCancelarEnvio?.addEventListener('click', () => {
-        // volta pro estado anterior (apenas 'enviar') sem apagar o texto
         btnIniciarEnvio.classList.remove('hidden');
         btnCancelarEnvio.classList.add('hidden');
         btnConfirmarEnvio.classList.add('hidden');
         separadorBotoes.classList.add('hidden');
+        
+        // reseta o estado de resposta, mas não apaga o texto
+        comentarioPaiAtual = null;
+        inputComentario.placeholder = 'escreva seu comentário...';
         inputComentario.focus();
     });
 
@@ -341,9 +342,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (conteudo === '') return;
 
         document.getElementById('msg-erro').innerText = 'enviando...';
-        await supabase.from('comments').insert([{ post_id: postIdAtual, user_id: currentUser.id, content: conteudo }]);
         
+        // envia o comentário atrelando ao 'pai' se houver
+        await supabase.from('comments').insert([{ 
+            post_id: postIdAtual, 
+            user_id: currentUser.id, 
+            content: conteudo,
+            parent_id: comentarioPaiAtual 
+        }]);
+        
+        // limpa tudo após enviar
         inputComentario.value = '';
+        inputComentario.placeholder = 'escreva seu comentário...';
+        comentarioPaiAtual = null;
         grupoBotoes.classList.add('hidden');
         document.getElementById('msg-erro').innerText = '';
         carregarComentarios();
@@ -371,13 +382,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 const username = c.profiles?.username || 'anonimo';
                 
                 const p = document.createElement('p');
-                p.innerHTML = `${prefixo}<span class="comentario-meta">${dataFormatada} @${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
+                // aplicando a melhoria visual do cabeçalho
+                p.innerHTML = `${prefixo}<span class="comentario-data">${dataFormatada}</span> <span class="comentario-username">@${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
                 
                 const acoes = document.createElement('div');
                 acoes.className = 'comentario-acoes';
                 
                 const spanResponder = document.createElement('span');
                 spanResponder.innerText = 'responder';
+                
+                // lógica engatilhando o clique em responder
+                spanResponder.onclick = () => {
+                    if (!gerenciarEstados()) return;
+                    comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; // garante que a resposta fique no mesmo nível
+                    inputComentario.placeholder = `respondendo a @${username}...`;
+                    inputComentario.focus();
+                };
+
                 acoes.appendChild(spanResponder);
 
                 if (currentUser && (currentUser.id === c.user_id || currentProfile?.is_moderator)) {
@@ -470,7 +491,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.alt = post.imageAlt;
                 document.getElementById('dynamic-caption').innerText = post.imageCaption;
 
-                // correção da duplicação: injeta só os botões de share
                 const socialArea = document.getElementById('social-area');
                 if(socialArea) {
                     socialArea.innerHTML = gerarBotoesShare(post.title, window.location.href);
