@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // alerta de confirmação de email do supabase
+    if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
+        alert('e-mail confirmado com sucesso! você já pode entrar.');
+        // limpa o hash da url para manter a elegância
+        window.history.replaceState(null, null, window.location.pathname);
+    }
+
     // --- 1. lógica do tema (dark/light) ---
     const toggleCheckboxes = document.querySelectorAll('.theme-toggle-input');
     const temaSalvo = localStorage.getItem('theme');
@@ -232,18 +239,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             btnSubmit.innerText = 'cadastrando...';
-            const { data, error } = await supabase.auth.signUp({ email, password });
+            // o username é enviado nos metadados para que o gatilho (trigger) do banco o capture
+            const { data, error } = await supabase.auth.signUp({ 
+                email, 
+                password,
+                options: { data: { username: username } }
+            });
             btnSubmit.innerText = 'confirmar';
 
             if (error) {
                 alert('erro ao cadastrar: ' + error.message);
             } else {
-                if (data.user) {
-                    await supabase.from('profiles').insert([{ id: data.user.id, username: username }]);
-                }
-                alert('cadastro realizado! você já pode participar.');
+                alert('cadastro realizado! verifique seu e-mail para confirmar a conta antes de entrar.');
                 modalAuth.style.display = 'none';
-                iniciarInteracoes(postIdAtual);
             }
         }
     });
@@ -285,25 +293,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // a lógica dos três passos do comentário
     const inputComentario = document.getElementById('comentario-input');
-    const btnEnviarComentario = document.getElementById('btn-enviar-comentario');
+    const grupoBotoes = document.getElementById('grupo-botoes-comentario');
+    const btnIniciarEnvio = document.getElementById('btn-iniciar-envio');
+    const btnCancelarEnvio = document.getElementById('btn-cancelar-envio');
+    const btnConfirmarEnvio = document.getElementById('btn-confirmar-envio');
+    const separadorBotoes = document.getElementById('separador-botoes');
 
     inputComentario?.addEventListener('click', (e) => {
         if (!gerenciarEstados()) { e.preventDefault(); inputComentario.blur(); }
     });
 
     inputComentario?.addEventListener('input', () => {
-        btnEnviarComentario.innerText = inputComentario.value.trim() !== '' ? 'confirmar envio / cancelar' : 'escreva seu comentário';
+        if (inputComentario.value.trim() !== '') {
+            grupoBotoes.classList.remove('hidden');
+            // se começou a digitar, garante que só o botão 'enviar' apareça
+            btnIniciarEnvio.classList.remove('hidden');
+            btnCancelarEnvio.classList.add('hidden');
+            btnConfirmarEnvio.classList.add('hidden');
+            separadorBotoes.classList.add('hidden');
+        } else {
+            grupoBotoes.classList.add('hidden');
+        }
     });
 
-    btnEnviarComentario?.addEventListener('click', async () => {
-        if (!gerenciarEstados()) return;
-        if (btnEnviarComentario.innerText.includes('cancelar')) {
-            inputComentario.value = '';
-            btnEnviarComentario.innerText = 'enviar';
-            return;
-        }
+    btnIniciarEnvio?.addEventListener('click', () => {
+        // o clique em 'enviar' revela as opções de confirmação
+        btnIniciarEnvio.classList.add('hidden');
+        btnCancelarEnvio.classList.remove('hidden');
+        btnConfirmarEnvio.classList.remove('hidden');
+        separadorBotoes.classList.remove('hidden');
+    });
 
+    btnCancelarEnvio?.addEventListener('click', () => {
+        // volta pro estado anterior (apenas 'enviar') sem apagar o texto
+        btnIniciarEnvio.classList.remove('hidden');
+        btnCancelarEnvio.classList.add('hidden');
+        btnConfirmarEnvio.classList.add('hidden');
+        separadorBotoes.classList.add('hidden');
+        inputComentario.focus();
+    });
+
+    btnConfirmarEnvio?.addEventListener('click', async () => {
+        if (!gerenciarEstados()) return;
         const conteudo = inputComentario.value.trim();
         if (conteudo === '') return;
 
@@ -311,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await supabase.from('comments').insert([{ post_id: postIdAtual, user_id: currentUser.id, content: conteudo }]);
         
         inputComentario.value = '';
-        btnEnviarComentario.innerText = 'enviar';
+        grupoBotoes.classList.add('hidden');
         document.getElementById('msg-erro').innerText = '';
         carregarComentarios();
     });
