@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Lógica do Tema (Dark/Light) - Sincronizada ---
+    // --- 1. lógica do tema (dark/light) ---
     const toggleCheckboxes = document.querySelectorAll('.theme-toggle-input');
     const temaSalvo = localStorage.getItem('theme');
     
@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     toggleCheckboxes.forEach(box => {
-        box.addEventListener('change', () => {
-            setTema(!box.checked);
-        });
+        box.addEventListener('change', () => setTema(!box.checked));
     });
 
-    // --- 2. Auxiliar de Agendamento ---
+    // --- 2. auxiliar de agendamento ---
     function converterDataParaComparacao(dataStr) {
         const meses = {
             jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
@@ -33,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Date(partes[2], meses[partes[1]], partes[0]);
     }
 
-    // --- 3. Função de Renderização (Lista de Posts) ---
+    // --- 3. função de renderização (lista de posts) ---
     function renderizarListaPosts(filtroCategoria = null, postsForcados = null) {
         const feedContainer = document.getElementById('textos-lista');
         const tituloSecao = document.querySelector('#textos h2'); 
@@ -43,34 +41,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         feedContainer.innerHTML = '';
 
-        // --- FILTRO DE AGENDAMENTO ---
         const hoje = new Date();
         hoje.setHours(0, 0, 0, 0); 
 
-        const postsPublicados = postsData.filter(post => {
-            return converterDataParaComparacao(post.date) <= hoje;
-        });
+        const postsPublicados = postsData.filter(post => converterDataParaComparacao(post.date) <= hoje);
 
         let postsParaExibir = [];
         let modoVisualizacao = ''; 
         
-        // PRIORIDADE 1: Busca
         if (postsForcados) {
             postsParaExibir = postsForcados.filter(post => converterDataParaComparacao(post.date) <= hoje);
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
             if(areaLeitura) areaLeitura.classList.add('largura-expandida');
-        }
-        // PRIORIDADE 2: Filtro de Categoria
-        else if (filtroCategoria) {
+        } else if (filtroCategoria) {
             postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
             if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
             if(tituloSecao) tituloSecao.innerText = filtroCategoria; 
-        } 
-        // PRIORIDADE 3: Feed Padrão
-        else {
+        } else {
             postsParaExibir = postsPublicados;
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
@@ -78,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(tituloSecao) tituloSecao.innerText = 'textos';
         }
 
-        // Renderiza na tela
         if (postsParaExibir.length > 0) {
             postsParaExibir.forEach(post => {
                 const article = document.createElement('article');
@@ -93,9 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <div class="card-content">
                                 <small>${post.date}</small>
                                 <h3>${post.title}</h3>
-                                <div class="card-meta">
-                                    ${post.author} . ${post.readingTime}
-                                </div>
+                                <div class="card-meta">${post.author} . ${post.readingTime}</div>
                             </div>
                         </a>`;
                 } else {
@@ -119,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 4. Lógica da Busca ---
+    // --- 4. lógica da busca ---
     const campoBusca = document.getElementById('campo-busca');
     if (campoBusca) {
         campoBusca.addEventListener('input', function(e) {
@@ -137,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 5. Compartilhamento e Comentários (Disqus) ---
+    // --- 5. compartilhamento ---
     function gerarBotoesShare(titulo, url) {
         const texto = encodeURIComponent(titulo);
         const link = encodeURIComponent(url);
@@ -145,35 +132,234 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="share-section">
                 <p class="share-title">compartilhar essa idéia:</p>
                 <div class="share-buttons">
-                    <a href="https://api.whatsapp.com/send?text=${texto}%20${link}" target="_blank" class="btn-share">WhatsApp</a>
-                    <a href="https://twitter.com/intent/tweet?text=${texto}&url=${link}" target="_blank" class="btn-share">X / Twitter</a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=${link}" target="_blank" class="btn-share">Facebook</a>
-                    <button class="btn-share" onclick="navigator.clipboard.writeText('${url}').then(() => alert('link copiado!'))">Copiar Link</button>
+                    <a href="https://api.whatsapp.com/send?text=${texto}%20${link}" target="_blank" class="btn-share">whatsapp</a>
+                    <a href="https://twitter.com/intent/tweet?text=${texto}&url=${link}" target="_blank" class="btn-share">x / twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${link}" target="_blank" class="btn-share">facebook</a>
+                    <button class="btn-share" onclick="navigator.clipboard.writeText('${url}').then(() => alert('link copiado!'))">copiar link</button>
                 </div>
-            </div>
-            <div id="disqus_thread"></div>`;
+            </div>`;
     }
 
-    function carregarDisqus(postId, postTitle) {
-        var disqus_shortname = 'blog-do-du-oficial-2026'; 
-        if (window.DISQUS) {
-            window.DISQUS.reset({
-                reload: true,
-                config: function () {
-                    this.page.identifier = postId;
-                    this.page.url = window.location.href;
-                    this.page.title = postTitle;
-                }
-            });
+    // --- 6. sistema autoral de interações (supabase) ---
+    const supabaseUrl = 'https://ypfwdlkuxxhiqonyxshg.supabase.co';
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwZndkbGt1eHhoaXFvbnl4c2hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTQ2MzQsImV4cCI6MjA5MzQzMDYzNH0.mfCDB7r9ELvkqjQyWSzI4kG3oY31ro5xdw3WnxijG0M';
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    let currentUser = null;
+    let currentProfile = null;
+    let postIdAtual = null;
+
+    function formatarDataAutoral(dataString) {
+        const data = new Date(dataString);
+        const ano = data.getFullYear();
+        const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+        const mes = meses[data.getMonth()];
+        const dia = String(data.getDate()).padStart(2, '0');
+        const horas = String(data.getHours()).padStart(2, '0');
+        const minutos = String(data.getMinutes()).padStart(2, '0');
+        return `${ano}.${mes}.${dia} - ${horas}h${minutos}`;
+    }
+
+    async function verificarSessao() {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session) {
+            currentUser = session.user;
+            const { data } = await supabase.from('profiles').select('*').eq('id', currentUser.id).single();
+            currentProfile = data;
+            document.getElementById('auth-status-text').innerText = `logado como @${currentProfile?.username || 'leitor'} | sair`;
         } else {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+            currentUser = null;
+            currentProfile = null;
+            document.getElementById('auth-status-text').innerText = 'cadastrar-se / entrar';
         }
     }
 
-    // --- 6. Sistema de Roteamento ---
+    // modal e autenticação
+    const modalAuth = document.getElementById('modal-auth');
+    const formAuth = document.getElementById('form-auth');
+    const toggleAuthMode = document.getElementById('toggle-auth-mode');
+    const authUsernameInput = document.getElementById('auth-username');
+    const authTitulo = document.getElementById('auth-titulo');
+    let isLoginMode = true;
+
+    function abrirModalAuth() { modalAuth.style.display = 'flex'; }
+    document.querySelector('.fechar-modal-auth')?.addEventListener('click', () => modalAuth.style.display = 'none');
+    
+    document.getElementById('auth-status-text')?.addEventListener('click', async () => {
+        if (currentUser) {
+            await supabase.auth.signOut();
+            verificarSessao();
+            carregarLikes();
+        } else {
+            abrirModalAuth();
+        }
+    });
+
+    toggleAuthMode?.addEventListener('click', () => {
+        isLoginMode = !isLoginMode;
+        authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
+        toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
+        authUsernameInput.style.display = isLoginMode ? 'none' : 'block';
+        authUsernameInput.required = !isLoginMode;
+    });
+
+    // força o username para minúsculas enquanto digita
+    authUsernameInput?.addEventListener('input', (e) => {
+        e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
+    });
+
+    formAuth?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('auth-email').value;
+        const password = document.getElementById('auth-senha').value;
+        const username = authUsernameInput.value;
+
+        if (isLoginMode) {
+            const { error } = await supabase.auth.signInWithPassword({ email, password });
+            if (error) alert('usuário ou senha incorretos.');
+            else { modalAuth.style.display = 'none'; iniciarInteracoes(postIdAtual); }
+        } else {
+            const { data, error } = await supabase.auth.signUp({ email, password });
+            if (error) alert('erro ao cadastrar.');
+            else {
+                // salva o perfil do usuário recém criado
+                if (data.user) {
+                    await supabase.from('profiles').insert([{ id: data.user.id, username: username }]);
+                }
+                alert('cadastro realizado! você já pode participar.');
+                modalAuth.style.display = 'none';
+                iniciarInteracoes(postIdAtual);
+            }
+        }
+    });
+
+    function gerenciarEstados() {
+        if (!currentUser) { abrirModalAuth(); return false; }
+        return true;
+    }
+
+    // interações: likes e comentários
+    const btnLike = document.getElementById('btn-like');
+    btnLike?.addEventListener('click', async () => {
+        if (!gerenciarEstados()) return;
+        
+        if (btnLike.innerText === '♡') {
+            btnLike.innerText = '♥';
+            btnLike.classList.add('curtido');
+            await supabase.from('likes').insert([{ post_id: postIdAtual, user_id: currentUser.id }]);
+        } else {
+            btnLike.innerText = '♡';
+            btnLike.classList.remove('curtido');
+            await supabase.from('likes').delete().match({ post_id: postIdAtual, user_id: currentUser.id });
+        }
+        carregarLikes();
+    });
+
+    async function carregarLikes() {
+        const { count } = await supabase.from('likes').select('*', { count: 'exact', head: true }).eq('post_id', postIdAtual);
+        document.getElementById('like-count').innerText = count || 0;
+
+        if (currentUser) {
+            const { data } = await supabase.from('likes').select('*').match({ post_id: postIdAtual, user_id: currentUser.id });
+            if (data && data.length > 0) {
+                btnLike.innerText = '♥';
+                btnLike.classList.add('curtido');
+            } else {
+                btnLike.innerText = '♡';
+                btnLike.classList.remove('curtido');
+            }
+        }
+    }
+
+    const inputComentario = document.getElementById('comentario-input');
+    const btnEnviarComentario = document.getElementById('btn-enviar-comentario');
+
+    inputComentario?.addEventListener('click', (e) => {
+        if (!gerenciarEstados()) { e.preventDefault(); inputComentario.blur(); }
+    });
+
+    inputComentario?.addEventListener('input', () => {
+        btnEnviarComentario.innerText = inputComentario.value.trim() !== '' ? 'confirmar envio / cancelar' : 'escreva seu comentário';
+    });
+
+    btnEnviarComentario?.addEventListener('click', async () => {
+        if (!gerenciarEstados()) return;
+        
+        if (btnEnviarComentario.innerText.includes('cancelar')) {
+            inputComentario.value = '';
+            btnEnviarComentario.innerText = 'enviar';
+            return;
+        }
+
+        const conteudo = inputComentario.value.trim();
+        if (conteudo === '') return;
+
+        document.getElementById('msg-erro').innerText = 'enviando...';
+        await supabase.from('comments').insert([{ post_id: postIdAtual, user_id: currentUser.id, content: conteudo }]);
+        
+        inputComentario.value = '';
+        btnEnviarComentario.innerText = 'enviar';
+        document.getElementById('msg-erro').innerText = '';
+        carregarComentarios();
+    });
+
+    async function carregarComentarios() {
+        const lista = document.getElementById('lista-comentarios');
+        lista.innerHTML = '<span class="msg-discreta">carregando ideias...</span>';
+
+        const { data: comentarios } = await supabase
+            .from('comments')
+            .select('*, profiles(username, is_moderator)')
+            .eq('post_id', postIdAtual)
+            .order('created_at', { ascending: true });
+
+        lista.innerHTML = '';
+        
+        if(comentarios) {
+            comentarios.forEach(c => {
+                const div = document.createElement('div');
+                div.className = c.parent_id ? 'comentario-item comentario-resposta' : 'comentario-item';
+                
+                const prefixo = c.parent_id ? ' - ' : '';
+                const dataFormatada = formatarDataAutoral(c.created_at);
+                const username = c.profiles?.username || 'anonimo';
+                
+                const p = document.createElement('p');
+                p.innerHTML = `${prefixo}<span class="comentario-meta">${dataFormatada} @${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
+                
+                const acoes = document.createElement('div');
+                acoes.className = 'comentario-acoes';
+                
+                const spanResponder = document.createElement('span');
+                spanResponder.innerText = 'responder';
+                acoes.appendChild(spanResponder);
+
+                if (currentUser && (currentUser.id === c.user_id || currentProfile?.is_moderator)) {
+                    const spanApagar = document.createElement('span');
+                    spanApagar.innerText = 'apagar';
+                    spanApagar.onclick = async () => {
+                        await supabase.from('comments').delete().eq('id', c.id);
+                        carregarComentarios();
+                    };
+                    acoes.appendChild(spanApagar);
+                }
+
+                div.appendChild(p);
+                div.appendChild(acoes);
+                lista.appendChild(div);
+            });
+        }
+    }
+
+    async function iniciarInteracoes(postId) {
+        postIdAtual = postId;
+        await verificarSessao();
+        carregarLikes();
+        carregarComentarios();
+    }
+
+
+    // --- 7. sistema de roteamento ---
     function roteador() {
         window.scrollTo(0, 0);
         const barraLeitura = document.getElementById("barra-leitura");
@@ -200,7 +386,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!capa || !conteudo) return;
 
-        // Estado Inicial (Capa)
         if (!hash || hash === '#' || hash === '') {
             conteudo.classList.add('hidden');
             capa.style.display = 'flex';
@@ -209,13 +394,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Páginas Internas
         capa.style.display = 'none';
         conteudo.classList.remove('hidden');
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
         todasSecoes.forEach(secao => secao.style.display = 'none');
 
-        // ROTA DE POST
         if (hash.startsWith('#post-')) {
             const postId = hash.replace('#post-', '');
             const postIndex = postsData.findIndex(p => p.id === postId);
@@ -231,8 +414,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const catLink = document.getElementById('dynamic-cat');
                 catLink.innerText = post.category;
-                
-                // --- CORREÇÃO AQUI: Adicionado a rota para a nova categoria ---
                 catLink.href = (post.category === "ensaios e provocações") ? "#cat-ensaios" : 
                                (post.category === "conversas") ? "#cat-conversas" : 
                                (post.category === "poesia e música") ? "#cat-poesias" : "#";
@@ -248,8 +429,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.alt = post.imageAlt;
                 document.getElementById('dynamic-caption').innerText = post.imageCaption;
 
-                document.getElementById('social-area').innerHTML = gerarBotoesShare(post.title, window.location.href);
-                carregarDisqus(post.id, post.title);
+                // removemos o disqus daqui e inserimos as chamadas autorais
+                const socialArea = document.getElementById('social-area');
+                if(socialArea) {
+                    const shareHtml = gerarBotoesShare(post.title, window.location.href);
+                    // garante que a div de interação fique abaixo dos botões de share
+                    const interacaoHtml = document.getElementById('interacao-autoral').outerHTML;
+                    socialArea.innerHTML = shareHtml + interacaoHtml;
+                }
+                
+                // inicia a lógica do supabase para este post
+                iniciarInteracoes(post.id);
 
                 const prevContainer = document.getElementById('nav-prev-area');
                 const nextContainer = document.getElementById('nav-next-area');
@@ -285,8 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                
-                // --- CORREÇÃO AQUI: Sintaxe consertada para funcionar as 3 categorias ---
                 let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : 
                           (hash === '#cat-conversas') ? 'conversas' : 
                           (hash === '#cat-poesias') ? 'poesia e música' : '';
@@ -310,19 +498,19 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', roteador);
     roteador();
 
-    // --- 7. Zoom Foto de Perfil ---
+    // --- 8. zoom foto de perfil ---
     const imgPerfil = document.getElementById("foto-perfil");
-    const modal = document.getElementById("modal-foto");
+    const modalFoto = document.getElementById("modal-foto");
     const modalImg = document.getElementById("img-ampliada");
-    if (imgPerfil && modal) {
+    if (imgPerfil && modalFoto) {
         imgPerfil.onclick = function() {
-            modal.style.display = "flex"; 
+            modalFoto.style.display = "flex"; 
             modalImg.src = this.src;
         }
-        modal.onclick = function() { modal.style.display = "none"; }
+        modalFoto.onclick = function() { modalFoto.style.display = "none"; }
     }
 
-    // --- 8. Menu Hamburguer ---
+    // --- 9. menu hamburguer ---
     const menuBtn = document.getElementById('menu-btn');
     const menuLista = document.getElementById('menu-lista');
     if (menuBtn && menuLista) {
@@ -338,7 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 9. Botão Voltar ---
+    // --- 10. botão voltar ---
     document.querySelectorAll('.seta-voltar').forEach(botao => {
         botao.addEventListener('click', (e) => {
             e.preventDefault();
@@ -346,7 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // --- 10. Barra de Progresso ---
+    // --- 11. barra de progresso ---
     window.addEventListener('scroll', () => {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
