@@ -948,7 +948,19 @@ h2 {
     line-height: 1.5;
 }
 
-.comentario-meta { font-weight: bold; }
+.comentario-data {
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--accent-color);
+    margin-right: 5px;
+}
+
+.comentario-username {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
 .comentario-conteudo { display: inline; }
 
 .comentario-acoes {
