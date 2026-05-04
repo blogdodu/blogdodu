@@ -1200,3 +1200,25 @@ h2 {
         display: none;
     }
 }
+
+/* --- inputs com botão de revelar senha --- */
+.input-com-icone {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-senha {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    cursor: pointer;
+    user-select: none;
+    font-family: inherit;
+    transition: color 0.3s;
+}
+
+.toggle-senha:hover {
+    color: var(--text-color);
+}
