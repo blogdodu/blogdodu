@@ -3,31 +3,33 @@
 
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK01Z0LGHY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FK01Z0LGHY');
-</script>
     <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FK01Z0LGHY');
+    </script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- supabase cdn para o banco de dados -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>blog do du | letras, arte e vida</title>
-    
+
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-    
+
 <body>
 
     <div id="barra-leitura"></div>
@@ -83,6 +85,21 @@
     <div id="modal-foto" class="modal">
         <span class="fechar-modal">&times;</span>
         <img class="modal-conteudo" id="img-ampliada">
+    </div>
+
+    <!-- modal de login minimalista -->
+    <div id="modal-auth" class="modal">
+        <div class="modal-auth-conteudo">
+            <span class="fechar-modal-auth">&times;</span>
+            <h3 id="auth-titulo">entrar</h3>
+            <form id="form-auth">
+                <input type="email" id="auth-email" placeholder="seu e-mail..." required>
+                <input type="password" id="auth-senha" placeholder="sua senha..." required>
+                <input type="text" id="auth-username" placeholder="escolha um @username..." class="hidden">
+                <button type="submit" id="btn-auth-submit">confirmar</button>
+            </form>
+            <span id="toggle-auth-mode" class="auth-link">não tem conta? cadastrar-se.</span>
+        </div>
     </div>
 
     <section id="capa" class="animacao-entrada">
@@ -187,6 +204,29 @@
 
                     <div id="social-area"></div>
                     
+                    <!-- nova seção autoral de interações -->
+                    <div id="interacao-autoral" class="interacao-container">
+                        <div class="linha-interacao">
+                            <button id="btn-like" class="btn-icone">♡</button>
+                            <span id="like-count">0</span>
+                            <div class="auth-status-container">
+                                <span id="auth-status-text" class="auth-link">cadastrar-se / entrar</span>
+                            </div>
+                        </div>
+
+                        <div class="form-comentario">
+                            <textarea id="comentario-input" placeholder="escreva seu comentário..." rows="1" autocomplete="off"></textarea>
+                            <div class="acoes-form">
+                                <span id="msg-erro" class="msg-discreta"></span>
+                                <button id="btn-enviar-comentario" class="btn-texto">enviar</button>
+                            </div>
+                        </div>
+
+                        <div id="lista-comentarios" class="lista-comentarios">
+                            <!-- os comentários serão injetados aqui via javascript -->
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -237,7 +277,7 @@
                     <h2>contato</h2>
                 </div>
                 <p>se você tem um pedido, uma sugestão, quer enviar uma mensagem ou tem interesse em parcerias, sinta-se à vontade para me escrever..... </p><br>
-                <p><strong>'eu mesmo'<strong>¹</strong>  leio cada e-mail!!!</strong></p>
+                <p><strong>'eu mesmo'¹  leio cada e-mail!!!</strong></p>
                     <hr class="divisor-fino-longo">
                 <p style="font-size: 1.1rem; font-weight: bold;">
                     <a href="mailto:pix.ducanal@gmail.com" style="color: var(--text-color);">pix.ducanal@gmail.com</a>
@@ -259,4 +299,3 @@
 </body>
 
 </html>
-
