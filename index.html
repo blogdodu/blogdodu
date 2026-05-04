@@ -87,7 +87,7 @@
         <img class="modal-conteudo" id="img-ampliada">
     </div>
 
-<!-- modal de login minimalista -->
+    <!-- modal de login minimalista -->
     <div id="modal-auth" class="modal">
         <div class="modal-auth-conteudo">
             <span class="fechar-modal-auth">&times;</span>
@@ -215,7 +215,6 @@
 
                     <div id="social-area"></div>
                     
-                    <!-- nova seção autoral de interações -->
                     <div id="interacao-autoral" class="interacao-container">
                         <div class="linha-interacao">
                             <button id="btn-like" class="btn-icone">♡</button>
@@ -229,12 +228,16 @@
                             <textarea id="comentario-input" placeholder="escreva seu comentário..." rows="1" autocomplete="off"></textarea>
                             <div class="acoes-form">
                                 <span id="msg-erro" class="msg-discreta"></span>
-                                <button id="btn-enviar-comentario" class="btn-texto">enviar</button>
+                                <div id="grupo-botoes-comentario" class="hidden">
+                                    <button id="btn-iniciar-envio" class="btn-texto">enviar</button>
+                                    <button id="btn-cancelar-envio" class="btn-texto hidden">cancelar</button>
+                                    <span id="separador-botoes" class="hidden">/</span>
+                                    <button id="btn-confirmar-envio" class="btn-texto hidden">confirmar envio</button>
+                                </div>
                             </div>
                         </div>
 
                         <div id="lista-comentarios" class="lista-comentarios">
-                            <!-- os comentários serão injetados aqui via javascript -->
                         </div>
                     </div>
                     
