@@ -87,15 +87,26 @@
         <img class="modal-conteudo" id="img-ampliada">
     </div>
 
-    <!-- modal de login minimalista -->
+<!-- modal de login minimalista -->
     <div id="modal-auth" class="modal">
         <div class="modal-auth-conteudo">
             <span class="fechar-modal-auth">&times;</span>
             <h3 id="auth-titulo">entrar</h3>
             <form id="form-auth">
                 <input type="email" id="auth-email" placeholder="seu e-mail..." required>
-                <input type="password" id="auth-senha" placeholder="sua senha..." required>
-                <input type="text" id="auth-username" placeholder="escolha um @username..." class="hidden">
+                
+                <div class="input-com-icone">
+                    <input type="password" id="auth-senha" placeholder="sua senha..." required>
+                    <span class="toggle-senha">ver</span>
+                </div>
+
+                <div class="input-com-icone auth-cadastro-extra hidden">
+                    <input type="password" id="auth-senha-confirma" placeholder="confirme sua senha...">
+                    <span class="toggle-senha">ver</span>
+                </div>
+
+                <input type="text" id="auth-username" placeholder="escolha um @username..." class="auth-cadastro-extra hidden">
+                
                 <button type="submit" id="btn-auth-submit">confirmar</button>
             </form>
             <span id="toggle-auth-mode" class="auth-link">não tem conta? cadastrar-se.</span>
