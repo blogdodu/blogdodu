@@ -10,11 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleCheckboxes.forEach(box => box.checked = !isLight);
     };
 
-    if (temaSalvo === 'light') {
-        setTema(true);
-    } else {
-        setTema(false);
-    }
+    if (temaSalvo === 'light') setTema(true);
+    else setTema(false);
 
     toggleCheckboxes.forEach(box => {
         box.addEventListener('change', () => setTema(!box.checked));
@@ -22,10 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 2. auxiliar de agendamento ---
     function converterDataParaComparacao(dataStr) {
-        const meses = {
-            jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
-            jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11
-        };
+        const meses = { jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5, jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11 };
         const partes = dataStr.split(' ');
         if (partes.length < 3) return new Date(); 
         return new Date(partes[2], meses[partes[1]], partes[0]);
@@ -40,12 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!feedContainer || typeof postsData === 'undefined') return;
 
         feedContainer.innerHTML = '';
-
         const hoje = new Date();
         hoje.setHours(0, 0, 0, 0); 
 
         const postsPublicados = postsData.filter(post => converterDataParaComparacao(post.date) <= hoje);
-
         let postsParaExibir = [];
         let modoVisualizacao = ''; 
         
@@ -71,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (postsParaExibir.length > 0) {
             postsParaExibir.forEach(post => {
                 const article = document.createElement('article');
-                
                 if (modoVisualizacao === 'grid') {
                     article.className = 'post-card animacao-entrada';
                     article.innerHTML = `
@@ -111,14 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (campoBusca) {
         campoBusca.addEventListener('input', function(e) {
             const termo = e.target.value.toLowerCase();
-            if (termo === '') {
-                renderizarListaPosts(null);
-                return;
-            }
+            if (termo === '') { renderizarListaPosts(null); return; }
             const resultados = postsData.filter(post => {
-                const titulo = post.title.toLowerCase();
-                const conteudo = post.content.toLowerCase();
-                return titulo.includes(termo) || conteudo.includes(termo);
+                return post.title.toLowerCase().includes(termo) || post.content.toLowerCase().includes(termo);
             });
             renderizarListaPosts(null, resultados);
         });
@@ -153,11 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = new Date(dataString);
         const ano = data.getFullYear();
         const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-        const mes = meses[data.getMonth()];
-        const dia = String(data.getDate()).padStart(2, '0');
-        const horas = String(data.getHours()).padStart(2, '0');
-        const minutos = String(data.getMinutes()).padStart(2, '0');
-        return `${ano}.${mes}.${dia} - ${horas}h${minutos}`;
+        return `${ano}.${meses[data.getMonth()]}.${String(data.getDate()).padStart(2, '0')} - ${String(data.getHours()).padStart(2, '0')}h${String(data.getMinutes()).padStart(2, '0')}`;
     }
 
     async function verificarSessao() {
@@ -174,37 +156,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // modal e autenticação
+    // modal de autenticação e visibilidade de senha
     const modalAuth = document.getElementById('modal-auth');
     const formAuth = document.getElementById('form-auth');
     const toggleAuthMode = document.getElementById('toggle-auth-mode');
-    const authUsernameInput = document.getElementById('auth-username');
     const authTitulo = document.getElementById('auth-titulo');
     let isLoginMode = true;
 
     function abrirModalAuth() { modalAuth.style.display = 'flex'; }
     document.querySelector('.fechar-modal-auth')?.addEventListener('click', () => modalAuth.style.display = 'none');
     
+    // lógica de ver/ocultar senha
+    document.querySelectorAll('.toggle-senha').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const input = e.target.previousElementSibling;
+            if (input.type === 'password') {
+                input.type = 'text';
+                e.target.innerText = 'ocultar';
+            } else {
+                input.type = 'password';
+                e.target.innerText = 'ver';
+            }
+        });
+    });
+
     document.getElementById('auth-status-text')?.addEventListener('click', async () => {
         if (currentUser) {
             await supabase.auth.signOut();
             verificarSessao();
             carregarLikes();
-        } else {
-            abrirModalAuth();
-        }
+        } else abrirModalAuth();
     });
 
     toggleAuthMode?.addEventListener('click', () => {
         isLoginMode = !isLoginMode;
         authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
         toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
-        authUsernameInput.style.display = isLoginMode ? 'none' : 'block';
-        authUsernameInput.required = !isLoginMode;
+        
+        const extras = document.querySelectorAll('.auth-cadastro-extra');
+        extras.forEach(el => {
+            if (isLoginMode) {
+                el.classList.add('hidden');
+                el.removeAttribute('required');
+            } else {
+                el.classList.remove('hidden');
+                el.setAttribute('required', 'required');
+            }
+        });
     });
 
-    // força o username para minúsculas enquanto digita
-    authUsernameInput?.addEventListener('input', (e) => {
+    document.getElementById('auth-username')?.addEventListener('input', (e) => {
         e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
     });
 
@@ -212,17 +213,31 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const email = document.getElementById('auth-email').value;
         const password = document.getElementById('auth-senha').value;
-        const username = authUsernameInput.value;
+        const btnSubmit = document.getElementById('btn-auth-submit');
 
         if (isLoginMode) {
+            btnSubmit.innerText = 'entrando...';
             const { error } = await supabase.auth.signInWithPassword({ email, password });
-            if (error) alert('usuário ou senha incorretos.');
+            btnSubmit.innerText = 'confirmar';
+            
+            if (error) alert('e-mail ou senha incorretos.');
             else { modalAuth.style.display = 'none'; iniciarInteracoes(postIdAtual); }
         } else {
+            const confirmPassword = document.getElementById('auth-senha-confirma').value;
+            const username = document.getElementById('auth-username').value;
+            
+            if (password !== confirmPassword) {
+                alert('as senhas não coincidem.');
+                return;
+            }
+
+            btnSubmit.innerText = 'cadastrando...';
             const { data, error } = await supabase.auth.signUp({ email, password });
-            if (error) alert('erro ao cadastrar.');
-            else {
-                // salva o perfil do usuário recém criado
+            btnSubmit.innerText = 'confirmar';
+
+            if (error) {
+                alert('erro ao cadastrar: ' + error.message);
+            } else {
                 if (data.user) {
                     await supabase.from('profiles').insert([{ id: data.user.id, username: username }]);
                 }
@@ -238,11 +253,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    // interações: likes e comentários
+    // likes e comentários
     const btnLike = document.getElementById('btn-like');
     btnLike?.addEventListener('click', async () => {
         if (!gerenciarEstados()) return;
-        
         if (btnLike.innerText === '♡') {
             btnLike.innerText = '♥';
             btnLike.classList.add('curtido');
@@ -284,7 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnEnviarComentario?.addEventListener('click', async () => {
         if (!gerenciarEstados()) return;
-        
         if (btnEnviarComentario.innerText.includes('cancelar')) {
             inputComentario.value = '';
             btnEnviarComentario.innerText = 'enviar';
@@ -377,9 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
 
         const containerBusca = document.querySelector('.container-busca');
-        if(containerBusca) {
-            containerBusca.style.display = (hash === '#textos' || hash === '') ? 'block' : 'none';
-        }
+        if(containerBusca) containerBusca.style.display = (hash === '#textos' || hash === '') ? 'block' : 'none';
 
         const modal = document.getElementById("modal-foto");
         if (modal && modal.style.display === "flex") modal.style.display = "none";
@@ -401,9 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (hash.startsWith('#post-')) {
             const postId = hash.replace('#post-', '');
-            const postIndex = postsData.findIndex(p => p.id === postId);
-            const post = postsData[postIndex];
-
+            const post = postsData.find(p => p.id === postId);
             const hoje = new Date();
             hoje.setHours(0,0,0,0);
 
@@ -421,7 +430,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
                 authLink.href = (post.author === 'du') ? "#sobre" : post.authorId;
-
                 document.getElementById('dynamic-content').innerHTML = post.content;
                 
                 const img = document.getElementById('dynamic-image');
@@ -429,16 +437,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.alt = post.imageAlt;
                 document.getElementById('dynamic-caption').innerText = post.imageCaption;
 
-                // removemos o disqus daqui e inserimos as chamadas autorais
+                // correção da duplicação: injeta só os botões de share
                 const socialArea = document.getElementById('social-area');
                 if(socialArea) {
-                    const shareHtml = gerarBotoesShare(post.title, window.location.href);
-                    // garante que a div de interação fique abaixo dos botões de share
-                    const interacaoHtml = document.getElementById('interacao-autoral').outerHTML;
-                    socialArea.innerHTML = shareHtml + interacaoHtml;
+                    socialArea.innerHTML = gerarBotoesShare(post.title, window.location.href);
                 }
                 
-                // inicia a lógica do supabase para este post
                 iniciarInteracoes(post.id);
 
                 const prevContainer = document.getElementById('nav-prev-area');
@@ -448,7 +452,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const postsPublicados = postsData.filter(p => converterDataParaComparacao(p.date) <= hoje);
                 const currentIdxInPublicados = postsPublicados.findIndex(p => p.id === postId);
-                
                 const nextPost = postsPublicados[currentIdxInPublicados - 1]; 
                 const prevPost = postsPublicados[currentIdxInPublicados + 1]; 
 
@@ -478,7 +481,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : 
                           (hash === '#cat-conversas') ? 'conversas' : 
                           (hash === '#cat-poesias') ? 'poesia e música' : '';
-                          
                 renderizarListaPosts(cat); 
             }
         }
