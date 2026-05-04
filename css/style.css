@@ -918,6 +918,12 @@ h2 {
     align-items: center;
 }
 
+#grupo-botoes-comentario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .btn-texto {
     background: transparent;
     border: none;
@@ -1006,7 +1012,7 @@ h2 {
     border-bottom-color: var(--text-color);
 }
 
-.modal-auth-conteudo button {
+.modal-auth-conteudo button[type="submit"] {
     width: 100%;
     background: transparent;
     border: 1px solid var(--line-color);
@@ -1018,9 +1024,31 @@ h2 {
     transition: all 0.3s;
 }
 
-.modal-auth-conteudo button:hover {
+.modal-auth-conteudo button[type="submit"]:hover {
     background: var(--text-color);
     color: var(--bg-color);
+}
+
+/* --- inputs com botão de revelar senha --- */
+.input-com-icone {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-senha {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    cursor: pointer;
+    user-select: none;
+    font-family: inherit;
+    transition: color 0.3s;
+}
+
+.toggle-senha:hover {
+    color: var(--text-color);
 }
 
 /* --- AJUSTES MOBILE (Telas menores que 768px) --- */
@@ -1184,7 +1212,6 @@ h2 {
         opacity: 1 !important;
     }
     
-    /* ajustes do modal de auth para telas pequenas */
     .modal-auth-conteudo {
         padding: 30px 20px;
         width: 95%;
@@ -1199,26 +1226,4 @@ h2 {
     .menu-fixo.ocultar-desktop {
         display: none;
     }
-}
-
-/* --- inputs com botão de revelar senha --- */
-.input-com-icone {
-    position: relative;
-    width: 100%;
-}
-
-.toggle-senha {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    font-size: 0.85rem;
-    color: var(--accent-color);
-    cursor: pointer;
-    user-select: none;
-    font-family: inherit;
-    transition: color 0.3s;
-}
-
-.toggle-senha:hover {
-    color: var(--text-color);
 }
