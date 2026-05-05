@@ -1,13 +1,137 @@
 const postsData = [
 // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 17. o ritmo
+{
+id: "o-ritmo-ed15",
+title: "o ritmo - ed15",
+date: "25 mai 2026",
+readingTime: "2 min de leitura",
+category: "ensaios e provocações",
+categoryId: "#caminhos",
+author: "du",
+authorId: "#autores",
+image: "img/post-o-ritmo.png",
+imageAlt: "imagem ilustrativa",
+imageCaption: "\"12\"",
+content: `
+	<p>esse é o fim de mais uma trilogia, e talvez por isso, ao contrário do texto anterior, este se prolongue um pouco mais, pois tem, em si, a função de amarrar as idéias de minimalismo, essencialismo, slow-living e, quem sabe, ser um pouco audaz e lançar mão de um amálgama entre os três estilos......</p>
+	<p>esta mistura talvez já exista, em certa parte, entre os dois primeiros aqui tratados, embora, como foi visto, é uma associação feita de forma equivocada, a priori...</p>
+	<p>e tal discrepância só se fez possível por partirmos do conhecimento de suas origens e trilhando seu transbordamento, da arte e da filosofia, respectivamente....</p>
+	<p>então, utilizaremos do mesmo princípio para conhecer o slow-living...</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ uma revolução contra a pressa ♦</strong></p>
+<br>
+	<p>enquanto o minimalismo se origina na arte e o essencialismo na filosofia, o slow-living tem sua origem na política, numa postura ativista contrária à normalização do fast-food...</p>
+	<p>na segunda metade da década de 80, chegava ao centro histórico de roma (itália), a primeira loja da maior rede de fast-food do mundo, o que gerou atitudes de protestos, lideradas pelo jornalista carlos petrini (hoje embaixador da boa vontade da fao, organização das nações unidas para a alimentação e a agricultura)...</p>
+	<p>a este movimento de resistência se deu o nome de slow-food, contrapondo o fast-food, buscando um outro modo de se relacionar com o alimento, reatando os laços de contato e de prazer com todo o processo que gira em torno do alimento (plantio, cultivo, distribuição, cuidados, preparo, experimentação, convívio, experiências e etc).....</p>
+	<p>ou seja, gerar uma maior aproximação com o tempo e carinho que são necessários para desfrutar de sensações únicas, seja pelo sabor gerado, seja pela consciência do esforço (pessoal e coletivo, em cadeia) necessário para o resultado, seja pela aproximação com outras pessoas, com o alimento e consigo mesma(o)...</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ da comida para a vida ♦</strong></p>
+<br>
+	<p>e, assim como no minimalismo e no essencialismo, essas características transbordaram para um estilo de vida chamado de slow-living...</p>
+	<p>não mais lento, mas mais presente, contrário ao mais rápido e a menor paciência de uma vida "fast", vivenciando, assim, todo o processo, independentemente de falhas ou sucessos, priorizando aqui a consciência do consumo contra, não só à quantidade, mas à velocidade deste.....</p>
+	<p>o movimento slow expandiu-se para diversas áreas: slow cities (cidades que valorizam qualidade de vida sobre crescimento), slow fashion (moda sustentável e atemporal), slow travel (viagens imersivas), slow parenting (criação de filhas(os) com menos pressão e mais presença), até slow media (consumo consciente de informação) e slow content (conteúdos de consumo lento em oposição aos "shorts" e ao "2x")...</p>
+	<p>como observa carl honoré em seu livro "devagar: como um movimento mundial está desafiando o culto da velocidade": "a filosofia slow não se trata de fazer tudo em câmera lenta..... trata-se de fazer as coisas na velocidade certa – às vezes rápido, às vezes devagar, e às vezes em algum ponto intermediário".......</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ a tirania da velocidade ♦</strong></p>
+<br>
+	<p>vivemos em uma época onde a velocidade é quase uma religião.....</p>
+	<p>"tempo é dinheiro", nos diz o capitalismo.....</p>
+	<p>"otimize cada segundo", sugere a cultura da produtividade.....</p>
+	<p>"não perca tempo", advertem os gurus do sucesso...</p>
+	<p>a filósofa byung-chul han, em seu livro "sociedade do cansaço", argumenta que essa aceleração constante nos leva a um estado de exaustão crônica, tanto física quanto mental......</p>
+	<p>para ele, a "violência neuronal" da hiper-atenção e multitarefa está criando uma sociedade de pessoas esgotadas e deprimidas...</p>
+	<p>a tecnologia, que prometia nos liberar e dar mais tempo livre, muitas vezes fez o oposto.....</p>
+	<p>estamos sempre disponíveis, sempre conectadas(os), sempre respondendo, sempre consumindo informação....</p>
+	<p>o tempo entre o desejo e sua satisfação foi reduzido a quase nada e esse imediatismo todo, essa pressa entre querer e ter acaba roubando o tempo precioso da espera, da antecipação, da reflexão, do descanso e de momentos quietos......</p>
+	<p>essas "não ações" seriam, justamente, o terreno fértil necessário para entendermos melhor quem somos, cada uma(m) de nós em sua essência, e como as coisas realmente são......</p>
+	<p>mas, sem essa pausa, como podemos conversar de verdade e nos conectar com os resultados do que fazemos????</p>
+	<p>como apreciar e sentir atentamente o processo inteiro para poder, quem sabe, ajustá-lo, melhorá-lo em seus detalhes????</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ a prática no cotidiano ♦</strong></p>
+<br>
+	<p>o slow-living se manifesta em pequenas práticas cotidianas:</p>
+	<p>* ler um livro, só se preocupando com a leitura no tempo destinado a isso;</p>
+	<p>* estar envolvida(o) por inteiro com aquilo que se faz a cada momento e apreciar o que se recebe;</p>
+	<p>* buscar a calma para entender o que se coloca em nossa presença e o que ela nos provoca;</p>
+	<p>* comer sem distrações, saboreando cada garfada;</p>
+	<p>* caminhar prestando atenção ao entorno, em vez de sempre correr;</p>
+	<p>* conversar realmente escutando, não apenas esperando sua vez de falar;</p>
+	<p>* trabalhar com foco total em uma tarefa, em vez de multitarefas constantes;</p>
+	<p>* desconectar-se regularmente da tecnologia para reconectar-se consigo mesma(o);</p>
+	<p>* cultivar hobbies que exigem paciência e atenção: jardinagem, artesanato, cozinha.</p>
+	<p>como sugere thich nhat hanh, mestre zen e defensor da atenção plena: "a paz está em cada passo.... o objetivo é o próprio caminho"...</p>
+	<p>essa idéia de valorizar o processo, não apenas o resultado, é central no slow-living.....</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ os extremos e seus riscos ♦</strong></p>
+<br>
+	<p>assim, como um minimalismo extremo tira nossa individualidade, requisitando o essencialismo como solução e expansão.....</p>
+	<p>um essencialismo extremo, primeiramente, nos fecha a novas sensações e conhecimentos que poderiam revelar uma conexão com algo distante da realidade atual....</p>
+	<p>e posteriormente nos coloca numa corrida desesperada para experimentar tudo que cabe em uma vida tão curta.... requisitando agora ajustes do slow-living.....</p>
+	<p>mas, como disse no início, este texto pretende apresentar um enlace entre os três estilos de vida apresentados, uma vida extremamente "slow" também ocasionará problemas....</p>
+	<p>o que vai nos determinar uma ligação não linear, mas sim circular entre os três....</p>
+	<p>explico melhor, o extremo de uma vida "slow" acarretaria em apreciar tudo em excesso, até o seu fim, caso contrário não apreciaríamos em sua totalidade....</p>
+	<p>há aqui o risco de um retorno a uma maximização indiscriminada, fazendo com que um excesso crie outras carências, fechando o ciclo novamente com a necessidade do pensamento minimalista......</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ o amálgama da tríade consciente ♦</strong></p>
+<br>
+	<p>esse conceito circular é um todo, ao meu ver, muito maior e mais forte que a soma das partes....</p>
+	<p>os três estilos se caracterizam por um consumo mais consciente das coisas, um viver mais focado e um menor desperdício de vida, não vivendo aquilo que não somos ou não queremos.....</p>
+	<p>podemos visualizar estes três conceitos como dimensões complementares de uma vida consciente:</p>
+	<p>* o minimalismo nos pergunta: "do que realmente preciso????"</p>
+	<p>* o essencialismo questiona: "o que realmente importa para mim???"</p>
+	<p>* o slow-living indaga: "como posso estar plenamente presente neste momento???????"</p>
+	<p>juntos, formam uma abordagem holística que nos ajuda a navegar a complexidade da vida contemporânea com mais intencionalidade e menos automatismo...</p>
+	<p>é se reconectar com a essência cíclica da natureza, tudo vem de algum lugar, ocupa um espaço, contém uma energia, que precisa retornar a lugar, espaço e energia outros, em equivalência, para uma permanência efêmera do todo, e só assim continuarmos presentes nesta permanência....</p>
+	<p>o filósofo e ecologista david abram argumenta que perdemos nossa conexão sensorial com o mundo natural, com os ritmos do dia e da noite, das estações, das marés...</p>
+	<p>essa tríade nos convida a recuperar essa sintonia com os ciclos naturais, a reconhecer que somos parte de algo maior......</p>
+	<p>em um mundo que valoriza o linear, o progresso constante, o crescimento sem fim, esse conceito nos lembra da sabedoria do circular, do cíclico, do ritmo natural de expansão e contração, atividade e descanso...</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ um convite à reflexão pessoal ♦</strong></p>
+<br>
+	<p>não vou deixar nenhuma pergunta aqui, já deixei algumas no texto e acredito que as que vocês mesmas(os) podem fazer serão muito mais fortes e significativas à essência pessoal de cada uma(m).....</p>
+	<p>espero que as leituras estejam sendo boas jornadas para vocês, assim como é para mim escrever as paisagens deste caminhar.....</p>
+	<p>talvez a verdadeira sabedoria esteja em encontrar nosso próprio ritmo, aquele que nos permite viver de acordo com nossas necessidades essenciais, sem excessos que nos distraem do que realmente importa, e com a presença plena que nos permite saborear cada momento...</p>
+	<p>como diria o poeta mario quintana: "não faças da tua vida um rascunho, poderás não ter tempo de passá-la a limpo"...</p>
+<br>
+<br>
+<br>
+<div class="pos-scriptum">
+	<p>ps.: estou tentando manter uma freqüência semanal e ter sugestões de assuntos já seria uma considerável contribuição..... não hesite em fazê-las aqui ou na dm do instagram</p>
+</div>
+	<p>no mais, até mais!!!</p>
+
+	<br>
+		<p>quer mergulhar em outras reflexões profundas???</p>
+		<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+		<p>vale a pena conferir!...</p>
+	<br>
+		<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+		<p><center>__________________________________</center></p>
+		<p><center>não prometo respostas.....</center></p>
+		<p><center>mas te convido pra conversas interessantes......</center></p>
+		<p><center>__________________________________</center></p>
+	<br>
+	<br>
+		<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+`
+},
+
 // 16. a essência
 {
 id: "a-essencia-ed14",
 title: "a essência - ed14",
 date: "18 mai 2026",
 readingTime: "2 min de leitura",
-category: "poesias e versos",
+category: "ensaios e provocações",
 categoryId: "#caminhos",
 author: "du",
 authorId: "#autores",
@@ -95,7 +219,7 @@ content: `
 
 	<br>
 		<p>quer mergulhar em outras reflexões profundas???</p>
-		<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+		<p>no último texto, tiramos a primeira casca dessa nossa trilogia, falando sobre minimalismo.....</p>
 		<p>vale a pena conferir!...</p>
 	<br>
 		<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
