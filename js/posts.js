@@ -1,6 +1,116 @@
 const postsData = [
 // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 15. o mínimo
+{
+id: "o-minimo-ed13",
+title: "o mínimo - ed13",
+date: "11 mai 2026",
+readingTime: "2 min de leitura",
+category: "ensaios e provocações",
+categoryId: "#caminhos",
+author: "du",
+authorId: "#autores",
+image: "img/post-o-minimo.png",
+imageAlt: "imagem ilustrativa",
+imageCaption: "\"13\"",
+content: `
+	<p>coincidentemente, ou não, este blog tem lançado mão do formato de ensaios em trilogias, três assuntos que, de alguma forma, se complementam e se fortalecem ao estarem juntos, ou em seqüência...</p>
+	<p>(ainda vou falar sobre o 3 e os outros números)</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ a origem ♦</strong></p>
+<br>
+	<p>e para o primeiro assunto desta nova trilogia levanto a seguinte questão: como se expressar com o mínimo de material, de forma, de gesto e etc.????</p>
+	<p>este foi o mote inicial do minimalismo, um movimento das artes visuais, um estilo que surge entre o fim dos anos 50 e início de 60, em oposição aos excessos do expressionismo abstrato que estava em voga...</p>
+	<p>"menos é mais", dizia o arquiteto ludwig mies van der rohe, uma das figuras centrais do movimento modernista que influenciou profundamente o minimalismo...</p>
+	<p>esta frase, aparentemente simples, carrega em si uma revolução no pensamento estético e, posteriormente, existencial...</p>
+	<p>o minimalismo foi se desdobrando das artes visuais para arquitetura, moda, fotografia, música e outros campos......</p>
+	<p>e em cada caso, se apropriou de diferentes significados que podem ser atribuídos ao seu pensamento e para traduzí-lo.....</p>
+	<p>mas em todos, o ponto de partida é: tirar tudo que for possível, sem que se comprometa a qualidade e a função básica do que se produz....</p>
+	<p>evitando-se desperdícios e consumindo somente o necessário...</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ além da arte ♦</strong></p>
+<br>
+	<p>contudo, nesse texto, não estou interessado em adentrar em cada minúcia da história do estilo e de suas(eus) artistas, mas sim em um desdobramento em específico: quando o movimento transborda as barreiras da arte e passa a se tornar um estilo de vida......</p>
+	<p>um estilo de baixo consumo, de primor pela qualidade frente a quantidade, essa última desnecessária em quase todos os momentos e realidades...</p>
+	<p>um estilo que se caracteriza pela simplicidade e aversão aos excessos de uma sociedade extremamente consumista......</p>
+	<p>aqui, o minimalismo encontra ecos em filosofias muito mais antigas.....</p>
+	<p>o estoicismo de sêneca e marco aurélio já nos convidava a viver com menos, a valorizar o que é essencial e a não nos deixarmos escravizar por posses materiais....</p>
+	<p>"é pobre não quem tem pouco, mas quem deseja muito", já dizia sêneca há quase dois mil anos...</p>
+	<p>já nas tradições orientais, o zen budismo e o conceito japonês de "wabi-sabi" (a beleza da imperfeição e da impermanência) também dialoga profundamente com o minimalismo contemporâneo......</p>
+	<p>e não é por acaso que muitas(os) praticantes do minimalismo encontram na meditação e nas práticas contemplativas um caminho complementar.....</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ o que realmente precisamos??? ♦</strong></p>
+<br>
+	<p>no minimalismo como estilo de vida, o objetivo, assim como na arte, é de abrirmos mão de tudo o que não é necessário e de toda a quantidade excedente daquilo que é necessário.....</p>
+	<p>uma questão que pode ser bem simples, mas também muito complexa, quando somos levadas(os) a pensar no que é realmente necessário.....</p>
+	<p>o que é necessário para mim, não é o mesmo que para você, na sua realidade, e mais ainda, será que o que achamos necessário realmente assim o é, ou apenas transmite o apego material a um estilo consumista ou acomodado que já estamos acostumadas(os)???</p>
+	<p>daí vêm os termos como destralhe, desapego, limpeza, esvaziamento e etc......</p>
+	<p>mas em que o nível de minimalismo, se é que há um nível além do mínimo, que devemos chegar???</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ quanto é o suficiente??? ♦</strong></p>
+<br>
+	<p>vamos fazer um pequeno exercício, precisamos nos vestir, assim está pactuado na sociedade (veja como o mínimo é diferente de uma pessoa para outra, indivíduos em sociedades naturistas não têm esta preocupação).....</p>
+	<p>mas o quanto precisamos de roupa para estarmos vestidas(os)????</p>
+	<p>precisamos de um conjunto de roupas íntimas e de um conjunto de roupas que nos cubram.....</p>
+	<p>exs.: cueca, bermuda e camisa, ou calcinha, sutiã e vestido, ou calcinha calça e camisa, ou cueca, saia e top, ou qualquer outra combinação...</p>
+	<p>porém, apenas um conjunto destes não é o suficiente, pois as roupas, com o uso, se sujam e precisam ser lavadas e neste momento não podem estar nos vestindo, logo precisamos não apenas de um conjunto, mas mais de um.....</p>
+	<p>quantos??? dois, sete, trinta, cem, trezentos e sessenta e seis???</p>
+	<p>o mínimo depende de cada uma(um) fazer a conta de quantos dias demoram entre uma lavagem e outra de roupas..... qual a margem de segurança a mais que precisa para casos excepcionais....</p>
+	<p>em um caso extremo de minimalismo, poderíamos ter apenas 2 conjuntos, contudo todos os dias precisaríamos lavar o conjunto que não estamos usando, o que gera, nesse caso, um excesso de lavagens necessárias no dia-a-dia...... seria esse excesso de lavagens condizente com a idéia de mínimo???</p>
+	<p>eu, por exemplo, possuo atualmente 14 camisetas, foi o número que, no meu caso, nas minhas condições atuais, se apresentou como o mínimo que satisfaz minhas necessidades.........</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ o paradoxo do minimalismo contemporâneo ♦</strong></p>
+<br>
+	<p>é interessante observar como o minimalismo, nascido como crítica ao consumismo, às vezes é cooptado pelo próprio sistema que critica......</p>
+	<p>hoje vemos "minimalismos de luxo", onde poucas peças caríssimas substituem muitas peças baratas de qualidade similar, mas sem pertencer a uma marca conhecida.....</p>
+	<p>a questão que se coloca é: estamos realmente consumindo menos ou apenas consumindo diferente????</p>
+	<p>o verdadeiro minimalismo não é sobre ter menos só por ter menos, mas é sobre liberdade...... liberdade do excesso, liberdade da pressão social para consumir, liberdade para focar no que realmente importa....</p>
+	<p>como diria henry david thoreau, que praticava um tipo de minimalismo em sua cabana às margens do lago walden no século XIX: "o preço da qualquer coisa é a quantidade de vida que você troca por ela"......</p>
+	<p>quando acumulamos coisas, estamos trocando nossa vida (tempo, energia, dinheiro) por elas...</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ necessário versus essencial ♦</strong></p>
+<br>
+	<p>observe que em todo o texto tenho tentado não falar sobre o que é essencial (pois isso será assunto do essencialismo), mas sim sobre o que é necessário...</p>
+	<p>e sim, você só necessita de um copo, um prato, uma colher, uma faca, um garfo e etc.....</p>
+	<p>todo o "a mais" só continua sendo o mínimo, se for necessário no seu dia-a-dia.....</p>
+	<p>mas nestes assuntos, ao contrário das outras trilogias, sinto a necessidade de transbordar de um texto para o outro e, somente após a soma dos três, construir uma consistência com a real importância que sinto necessária.....</p>
+	<p>então, se sentir que algo está parecendo incompleto, espere até a conclusão dos três textos....</p>
+<br>
+	<hr class="divisor-fino-longo">
+	<p><strong>♦ o minimalismo e o planeta ♦</strong></p>
+<br>
+	<p>há ainda uma dimensão que não podemos ignorar: a ambiental.....</p>
+	<p>em um planeta com recursos finitos, o consumo desenfreado não é apenas uma questão pessoal, mas sim coletiva e ética...</p>
+	<p>cada objeto que compramos tem uma 'pegada ecológica' - matérias-primas extraídas, energia para produção, transporte, embalagem e, eventualmente, descarte....</p>
+	<p>o minimalismo, ao nos convidar a consumir menos, também nos convida a reduzir nosso impacto no planeta...</p>
+	<p>como diria a ativista ambiental annie leonard: "não podemos ter um sistema econômico que valoriza o crescimento infinito em um planeta finito"...</p>
+	<p>o minimalismo, nesse sentido, não é apenas uma escolha estética ou filosófica, mas também política e ecológica....</p>
+	<p>continuamos o assunto no próximo texto ao tratar do essencialismo...</p>
+	<p>até lá, pense no que você não precisou no último ano, que está apenas ocupando espaço/tempo em sua casa e sua vida..... e encontre suas verdades...</p>
+	<p>no mais, até mais!!!</p>
+	<br>
+		<p>quer mergulhar em outras reflexões profundas???</p>
+		<p>no último ensaio, exploramos os limites do que é permitido pelos outros e por nós mesmas(os).....</p>
+		<p>vale a pena conferir!...</p>
+	<br>
+		<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+		<p><center>__________________________________</center></p>
+		<p><center>não prometo respostas.....</center></p>
+		<p><center>mas te convido pra conversas interessantes......</center></p>
+		<p><center>__________________________________</center></p>
+	<br>
+	<br>
+		<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+`
+},
+
 // 14. descortinando o pudor
 {
 id: "descortinando-o-pudor-entre-a-intimidade-e-a-autenticidade-ed12",
