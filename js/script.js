@@ -432,6 +432,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
 
+        // --- INÍCIO PADRÃO DE TÍTULO PARA O SEO ---
+        // define o título base para qualquer página, e se for um post ele muda mais abaixo
+        document.title = "blog do du | letras, arte e vida";
+        
         const hash = window.location.hash;
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
@@ -471,6 +475,24 @@ document.addEventListener('DOMContentLoaded', () => {
             hoje.setHours(0,0,0,0);
 
             if (post && converterDataParaComparacao(post.date) <= hoje) {
+                
+                // --- INÍCIO DO CURATIVO SEO: TÍTULO ESPECÍFICO DO POST ---
+                document.title = `${post.title.toLowerCase()} | blog do du`;
+
+                const tempDiv = document.createElement("div");
+                tempDiv.innerHTML = post.content;
+                const textOnly = tempDiv.textContent || tempDiv.innerText || "";
+                const resumoLimpo = textOnly.substring(0, 150).trim() + "...";
+
+                let metaDescription = document.querySelector('meta[name="description"]');
+                if (!metaDescription) {
+                    metaDescription = document.createElement('meta');
+                    metaDescription.name = "description";
+                    document.head.appendChild(metaDescription);
+                }
+                metaDescription.content = resumoLimpo;
+                // --- FIM DO CURATIVO SEO ---
+
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
                 document.getElementById('dynamic-time').innerText = post.readingTime;
