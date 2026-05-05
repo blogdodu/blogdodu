@@ -4,7 +4,7 @@ const postsData = [
 },
 // 18. pausa para o café
 {
-id: "pausa-para-o-café-ed16",
+id: "pausa-para-o-cafe-ed16",
 title: "pausa para o café - ed16",
 date: "01 jun 2026",
 readingTime: "3 min de leitura",
