@@ -1,7 +1,6 @@
 const postsData = [
 // --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-},
 // 18. pausa para o café
 {
 id: "pausa-para-o-cafe-ed16",
