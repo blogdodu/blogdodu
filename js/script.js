@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Memória de scroll para navegação interna
+    const scrollPositions = {};
+
     // alerta de confirmação de email do supabase
     if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
         alert('e-mail confirmado com sucesso! você já pode entrar.');
@@ -159,11 +162,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             secaoPerfil.innerHTML = `
                 <div class="titulo-com-voltar">
-                    <a href="#autor-${autor.id}" class="seta-voltar">&lt;</a>
+                    <a href="#autor-${autor.id}" class="seta-voltar" id="voltar-perfil-dinamico">&lt;</a>
                     <h2>${catName}</h2>
                 </div>
                 <div id="lista-textos-autor" class="feed-list"></div>
             `;
+            
+            // Listener para voltar preservando histórico/scroll
+            const btnVoltar = document.getElementById('voltar-perfil-dinamico');
+            if(btnVoltar) {
+                btnVoltar.onclick = (e) => {
+                    e.preventDefault();
+                    window.history.back();
+                };
+            }
+
             renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
             return;
         }
@@ -218,7 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Vincula o clique da nova imagem ao modal de zoom
         const imgPerfil = secaoPerfil.querySelector('.foto-perfil-dinamica');
         const modalFoto = document.getElementById("modal-foto");
         const modalImg = document.getElementById("img-ampliada");
@@ -547,15 +559,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- 7. sistema de roteamento ---
+    let lastHash = "";
+
     function roteador() {
-        window.scrollTo(0, 0);
+        const hash = window.location.hash || '#';
+        
+        // Salva a posição do scroll da página que está SAINDO
+        if (lastHash && !lastHash.startsWith('#post-')) {
+            scrollPositions[lastHash] = window.scrollY;
+        }
+        lastHash = hash;
+
+        // Reset da barra de leitura
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
 
         document.title = "blog do du | letras, arte e vida";
         
-        let hash = window.location.hash;
-        if (hash === '#sobre') hash = '#autor-du';
+        let hashParaProcessar = hash;
+        if (hash === '#sobre') hashParaProcessar = '#autor-du';
 
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
@@ -568,14 +590,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
 
         const containerBusca = document.querySelector('.container-busca');
-        if(containerBusca) containerBusca.style.display = (hash === '#textos' || hash === '') ? 'block' : 'none';
+        if(containerBusca) containerBusca.style.display = (hashParaProcessar === '#textos' || hashParaProcessar === '#') ? 'block' : 'none';
 
         const modal = document.getElementById("modal-foto");
         if (modal && modal.style.display === "flex") modal.style.display = "none";
 
         if (!capa || !conteudo) return;
 
-        if (!hash || hash === '#' || hash === '') {
+        if (hashParaProcessar === '#') {
             conteudo.classList.add('hidden');
             capa.style.display = 'flex';
             if(navGlobal) navGlobal.classList.add('ocultar-desktop');
@@ -588,29 +610,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
         todasSecoes.forEach(secao => secao.style.display = 'none');
 
-        if (hash.startsWith('#post-')) {
-            const postId = hash.replace('#post-', '');
+        if (hashParaProcessar.startsWith('#post-')) {
+            const postId = hashParaProcessar.replace('#post-', '');
             const post = postsData.find(p => p.id === postId);
             const hoje = new Date();
             hoje.setHours(0,0,0,0);
 
             if (post && converterDataParaComparacao(post.date) <= hoje) {
-                
                 document.title = `${post.title.toLowerCase()} | blog do du`;
-
-                const tempDiv = document.createElement("div");
-                tempDiv.innerHTML = post.content;
-                const textOnly = tempDiv.textContent || tempDiv.innerText || "";
-                const resumoLimpo = textOnly.substring(0, 150).trim() + "...";
-
-                let metaDescription = document.querySelector('meta[name="description"]');
-                if (!metaDescription) {
-                    metaDescription = document.createElement('meta');
-                    metaDescription.name = "description";
-                    document.head.appendChild(metaDescription);
-                }
-                metaDescription.content = resumoLimpo;
-
+                
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
                 document.getElementById('dynamic-time').innerText = post.readingTime;
@@ -654,11 +662,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const postView = document.getElementById('post-view');
                 postView.style.display = 'block';
                 postView.classList.add('animacao-entrada');
+                window.scrollTo(0,0);
             } else {
                 window.location.hash = '#textos';
             }
         } 
-        else if (hash === '#textos') {
+        else if (hashParaProcessar === '#textos') {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
@@ -666,18 +675,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaPosts(null); 
             }
         }
-        else if (hash.startsWith('#cat-')) {
+        else if (hashParaProcessar.startsWith('#cat-')) {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : 
-                          (hash === '#cat-conversas') ? 'conversas' : 
-                          (hash === '#cat-poesias') ? 'poesia e música' : '';
+                let cat = (hashParaProcessar === '#cat-ensaios') ? 'ensaios e provocações' : 
+                          (hashParaProcessar === '#cat-conversas') ? 'conversas' : 
+                          (hashParaProcessar === '#cat-poesias') ? 'poesia e música' : '';
                 renderizarListaPosts(cat); 
             }
         }
-        else if (hash === '#autores') {
+        else if (hashParaProcessar === '#autores') {
             const secaoAutoras = document.getElementById('autores');
             if(secaoAutoras) {
                 secaoAutoras.style.display = 'block';
@@ -685,8 +694,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaAutoras();
             }
         }
-        else if (hash.startsWith('#autor-')) {
-            const path = hash.replace('#autor-', ''); 
+        else if (hashParaProcessar.startsWith('#autor-')) {
+            const path = hashParaProcessar.replace('#autor-', ''); 
             const parts = path.split('/cat-');
             const autorId = parts[0];
             const catSufix = parts[1] || null;
@@ -694,18 +703,30 @@ document.addEventListener('DOMContentLoaded', () => {
             renderizarPerfilAutor(autorId, catSufix);
         }
         else {
-            const secaoAtiva = document.querySelector(hash);
+            const secaoAtiva = document.querySelector(hashParaProcessar);
             if (secaoAtiva) {
                 secaoAtiva.style.display = 'block';
                 secaoAtiva.classList.add('animacao-entrada');
             }
         }
 
+        // Tenta restaurar o scroll se houver algo salvo
+        setTimeout(() => {
+            if (scrollPositions[hashParaProcessar]) {
+                window.scrollTo({
+                    top: scrollPositions[hashParaProcessar],
+                    behavior: 'instant'
+                });
+            } else if (!hashParaProcessar.startsWith('#post-')) {
+                window.scrollTo(0, 0);
+            }
+        }, 30);
+
         linksMenu.forEach(link => {
-            if (link.getAttribute('href') === '#sobre' && hash.startsWith('#autor-du')) {
+            if (link.getAttribute('href') === '#sobre' && hashParaProcessar.startsWith('#autor-du')) {
                 link.classList.add('link-ativo');
             } else {
-                link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
+                link.classList.toggle('link-ativo', link.getAttribute('href') === hashParaProcessar);
             }
         });
     }
@@ -714,14 +735,11 @@ document.addEventListener('DOMContentLoaded', () => {
     roteador();
 
     // --- 8. Lógica Global do Modal de Zoom ---
-    // Agora configuramos o fechamento UMA VEZ no carregamento da página
     const modalFoto = document.getElementById("modal-foto");
     const fecharModal = document.querySelector(".fechar-modal");
 
     if (modalFoto) {
-        // Fecha clicando no X
-        fecharModal.onclick = () => modalFoto.style.display = "none";
-        // Fecha clicando fora da imagem
+        if(fecharModal) fecharModal.onclick = () => modalFoto.style.display = "none";
         modalFoto.onclick = (e) => { if (e.target === modalFoto) modalFoto.style.display = "none"; };
     }
 
@@ -744,6 +762,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 10. botão voltar ---
     document.querySelectorAll('.seta-voltar').forEach(botao => {
         botao.addEventListener('click', (e) => {
+            if (botao.id === 'voltar-perfil-dinamico') return; // Ignora se for o dinâmico já tratado
             e.preventDefault();
             window.history.back();
         });
