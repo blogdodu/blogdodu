@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
         secaoPerfil.style.display = 'block';
 
-        // LÓGICA DE CATEGORIA (DENTRO DO AUTOR)
         if (catSufix) {
             let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
                           (catSufix === 'conversas') ? 'conversas' : 
@@ -156,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             document.title = `${catName} | ${autor.nome}`;
             
-            // Salvamos o conteúdo original da Bio se ele existir para não perdê-lo
             if (!secaoPerfil.hasAttribute('data-perfil-cache')) {
                 secaoPerfil.setAttribute('data-perfil-cache', secaoPerfil.innerHTML);
             }
@@ -169,21 +167,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="lista-textos-autor" class="feed-list"></div>
             `;
             
-            window.scrollTo(0, 0); // Para categorias, subimos para o topo
+            window.scrollTo(0, 0); 
             renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
             return;
         }
 
-        // SE ESTAMOS VOLTANDO PARA A BIO PRINCIPAL
-        // Se já existe um cache da bio e o autor é o mesmo, restauramos sem reconstruir
         if (secaoPerfil.getAttribute('data-autor-atual') === autorId && secaoPerfil.getAttribute('data-perfil-cache')) {
             secaoPerfil.innerHTML = secaoPerfil.getAttribute('data-perfil-cache');
             document.title = `${tituloPagina} | blog do du`;
-            // Não damos window.scrollTo(0,0) aqui! O navegador cuidará de voltar à posição anterior.
             return;
         }
 
-        // SE É UM PERFIL NOVO SENDO CARREGADO
         secaoPerfil.setAttribute('data-autor-atual', autorId);
         secaoPerfil.classList.add('animacao-entrada');
         document.title = `${tituloPagina} | blog do du`;
@@ -237,7 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // Salva este estado no cache para voltas rápidas
         secaoPerfil.setAttribute('data-perfil-cache', secaoPerfil.innerHTML);
 
         const imgPerfil = secaoPerfil.querySelector('.foto-perfil-dinamica');
@@ -575,6 +568,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.title = "blog do du | letras, arte e vida";
         
         let hash = window.location.hash;
+        
+        // NORMALIZAÇÃO DE ROTA PARA O AUTOR PRINCIPAL
         if (hash === '#sobre') hash = '#autor-du';
 
         const capa = document.getElementById('capa');
@@ -607,9 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
         conteudo.classList.remove('hidden');
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
         
-        // Esconde as seções
         todasSecoes.forEach(secao => {
-             // Se estivermos em um sub-caminho do autor, não escondemos a seção de perfil agora
              if (hash.startsWith('#autor-') && secao.id === 'perfil-autor') {
                  secao.style.display = 'block';
              } else {
@@ -717,10 +710,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         linksMenu.forEach(link => {
-            if (link.getAttribute('href') === '#sobre' && hash.startsWith('#autor-du')) {
+            const href = link.getAttribute('href');
+            if ((href === '#sobre' || href === '#autor-du') && hash.startsWith('#autor-du')) {
                 link.classList.add('link-ativo');
             } else {
-                link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
+                link.classList.toggle('link-ativo', href === hash);
             }
         });
     }
