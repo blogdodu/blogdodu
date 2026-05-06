@@ -133,6 +133,46 @@
     <main id="conteudo" class="hidden">
     
         <div class="area-leitura">
+            
+            <section id="sobre" class="conteudo-bloco secao-conteudo">
+                <div class="titulo-com-voltar">
+                    <a href="#" class="seta-voltar">&lt;</a>
+                    <h2>sobre</h2>
+                </div>
+
+                <div class="sobre-container">
+                    <div class="sobre-foto">
+                        <img src="img/du-perfil.jpg" alt="foto do du" id="foto-perfil">
+                        <span class="legenda-foto">eu, você, nós e além!!!</span>
+                    </div>
+
+                    <div class="sobre-texto">
+                        <p class="destaque">oi.... eu sou o du....</p><br>
+                        <p>e esse é o <strong>blog do du</strong>, um espaço onde junto tudo que sou e o que me tange......</p><br>
+                        <p>acho que não sei existir de um jeito só: sou designer, fotógrafo, músico, compositor, iluminador cênico, cenógrafo, produtor artístico cultural, massoterapeuta e 'otras cositas más'... rsrsrs..... ah! e claro, nas horas mais intensas, <strong>escritor</strong>....</p><br>
+                        <p>desde 2019 venho enfrentando uma depressão e escrever tem sido uma forma de respirar..... cada texto é um passo..... cada palavra, uma tentativa de voltar a sentir.....</p><br>
+                        <p>e disso nasce esse blog, de uma <strong>vontade de compartilhar, de criar conexões</strong> em tempos de tanta distração.....</p><br>
+                        <p>uma proposta de <strong>slow content</strong>..</p><br>
+                        <hr class="divisor-fino-longo">
+                        <div class="chamada-final">
+                            <p>não prometo respostas.....</p>
+                            <p>mas te convido pra conversas interessantes......</p>
+                            <hr class="divisor-fino-longo"><br>
+                            <p class="assinatura">vem junto, que a gente se encontra nas palavras....</p>
+                        </div>
+
+                        <div id="apoio-template" class="apoio-container">
+                            <p>considere apoiar o projeto <strong>a partir de R$ 5,oo</strong></p>
+                            <p><a href="https://apoia.se/blogdodu"><strong>https://apoia.se/blogdodu</strong></a></p>
+                            <div class="pix-info">
+                                <p>chave pix para apoiar diretamente:</p>
+                                <p><strong>pix.ducanal@gmail.com</strong></p>
+                                <p class="detalhe">(sim, é um email feio e sem glamour - mas o café que ele proporciona é real e aquece o coração....)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section id="post-view" class="conteudo-bloco secao-conteudo" style="display: none;">
                 <div class="titulo-com-voltar">
@@ -230,18 +270,19 @@
                 </div>
             </section>
 
-            <!-- NOVA SEÇÃO LISTA DE AUTORAS(ES) DINÂMICA -->
-            <section id="autoras" class="conteudo-bloco secao-conteudo" style="display: none;">
+            <section id="autores" class="conteudo-bloco secao-conteudo">
                 <div class="titulo-com-voltar">
                     <a href="#" class="seta-voltar">&lt;</a>
                     <h2>autoras(es)</h2>
                 </div>
-                <p style="margin-bottom: 30px;">espero sempre poder aumentar essa lista, que começa, humildemente comigo</p>
-                <div id="lista-autoras" class="feed-grid"></div>
-            </section>
-
-            <!-- NOVA SEÇÃO PERFIL DO AUTOR (A casca que será preenchida pelo javascript) -->
-            <section id="perfil-autor" class="conteudo-bloco secao-conteudo" style="display: none;">
+                    <p>espero sempre poder aumentar essa lista, que começa, humildemente comigo</p>
+                    <br>
+                <div class="lista-simples">
+                    <a href="#sobre" class="item-lista">
+                        <span>du</span>
+                        <span style="color: var(--accent-color);">criador & curador</span>
+                    </a>
+                </div>
             </section>
 
             <section id="contato" class="conteudo-bloco secao-conteudo">
@@ -266,8 +307,6 @@
         </div>
     </main>
 
-    <!-- adicionamos o motor dos autores antes dos posts -->
-    <script src="js/authors.js"></script>
     <script src="js/posts.js"></script>
     <script src="js/script.js"></script>
 
