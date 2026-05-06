@@ -1,5 +1,3 @@
-scripts.js
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // alerta de confirmação de email do supabase
