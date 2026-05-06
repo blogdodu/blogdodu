@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 3. função de renderização (lista de posts) ---
-    // agora ela aceita filtro por autor e sabe em qual div jogar os textos!
     function renderizarListaPosts(filtroCategoria = null, postsForcados = null, filtroAutor = null, targetId = 'textos-lista') {
         const feedContainer = document.getElementById(targetId);
         const tituloSecao = document.querySelector('#textos h2'); 
@@ -60,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.remove('largura-expandida');
             if(tituloSecao && targetId === 'textos-lista') tituloSecao.innerText = filtroCategoria; 
         } else if (filtroAutor) {
-            // filtra puxando só os textos do autor específico
             postsParaExibir = postsPublicados.filter(post => post.author.toLowerCase() === filtroAutor.toLowerCase()).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
@@ -109,24 +107,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-// --- renderização da lista de autores (com rastreador) ---
+    // --- renderização da lista de autores (versão minimalista) ---
     function renderizarListaAutoras() {
         const container = document.getElementById('lista-autoras');
-        
-        console.log("1. procurando a div lista-autoras:", container);
-        console.log("2. procurando os dados dos autores:", typeof authorsData !== 'undefined' ? authorsData : "ARQUIVO NÃO ENCONTRADO OU COM ERRO");
-
-        if (!container || typeof authorsData === 'undefined') {
-            console.log("3. ABORTANDO! falta a div ou os dados.");
-            return;
-        }
+        if (!container || typeof authorsData === 'undefined') return;
         
         container.innerHTML = '';
         container.className = 'lista-simples';
         
         authorsData.forEach(autor => {
             const link = document.createElement('a');
-            link.href = `#autor-${autor.id}`;
+            link.href = `#autor-${autor.id}`; 
             link.className = 'item-lista animacao-entrada';
             
             link.innerHTML = `
@@ -135,19 +126,17 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             
             container.appendChild(link);
-            console.log("4. autor adicionado:", autor.nome);
         });
     }
-    
+
     // --- renderização do perfil do autor individual ---
     function renderizarPerfilAutor(autorId) {
         const secaoPerfil = document.getElementById('perfil-autor');
         if (!secaoPerfil || typeof authorsData === 'undefined') return;
 
         const autor = authorsData.find(a => a.id === autorId);
-        if (!autor) { window.location.hash = '#autoras'; return; }
+        if (!autor) { window.location.hash = '#autores'; return; }
 
-        // se for o du, o título volta a ser "sobre" para manter a sua estética
         const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
 
         document.title = `${tituloPagina} | blog do du`;
@@ -174,8 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${apoioHtml}
                 </div>
             </div>
-<br>
-<br>
+
             <hr class="divisor-fino-longo" style="margin: 40px 0;">
             
             <div class="perfil-textos">
@@ -184,7 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        // refaz a ligação mágica do clique na foto para o zoom (agora dinâmico!)
         const imgPerfilDynamic = document.getElementById(`foto-perfil-${autor.id}`);
         if (imgPerfilDynamic) {
             imgPerfilDynamic.onclick = function() {
@@ -197,7 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // chama a função para injetar os posts dessa pessoa
         renderizarListaPosts(null, null, autor.id, 'lista-textos-autor');
     }
 
@@ -524,7 +510,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.title = "blog do du | letras, arte e vida";
         
-        // intercepta o link #sobre antigo para direcionar pro novo autor-du
         let hash = window.location.hash;
         if (hash === '#sobre') hash = '#autor-du';
 
@@ -648,8 +633,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaPosts(cat); 
             }
         }
-        else if (hash === '#autoras') {
-            const secaoAutoras = document.getElementById('autoras');
+        else if (hash === '#autores') {
+            const secaoAutoras = document.getElementById('autores');
             if(secaoAutoras) {
                 secaoAutoras.style.display = 'block';
                 secaoAutoras.classList.add('animacao-entrada');
@@ -669,7 +654,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         linksMenu.forEach(link => {
-            // arrumando o visual do menu pra deixar "sobre" ativo se for o seu autor
             if (link.getAttribute('href') === '#sobre' && hash === '#autor-du') {
                 link.classList.add('link-ativo');
             } else {
