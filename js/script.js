@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Memória de scroll para navegação interna
-    const scrollPositions = {};
-
     // alerta de confirmação de email do supabase
     if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
         alert('e-mail confirmado com sucesso! você já pode entrar.');
@@ -149,9 +146,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!autor) { window.location.hash = '#autores'; return; }
 
         const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
-        
+
+        // Se estamos mudando de autor, limpamos a seção para reconstruir
+        if (secaoPerfil.getAttribute('data-autor-atual') !== autorId) {
+            secaoPerfil.innerHTML = ''; 
+            secaoPerfil.setAttribute('data-autor-atual', autorId);
+        }
+
         secaoPerfil.style.display = 'block';
-        secaoPerfil.classList.add('animacao-entrada');
 
         if (catSufix) {
             let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
@@ -160,28 +162,28 @@ document.addEventListener('DOMContentLoaded', () => {
             
             document.title = `${catName} | ${autor.nome}`;
 
+            // Criamos uma "view" de categoria por cima para não destruir o perfil original
             secaoPerfil.innerHTML = `
                 <div class="titulo-com-voltar">
-                    <a href="#autor-${autor.id}" class="seta-voltar" id="voltar-perfil-dinamico">&lt;</a>
+                    <a href="#autor-${autor.id}" class="seta-voltar">&lt;</a>
                     <h2>${catName}</h2>
                 </div>
                 <div id="lista-textos-autor" class="feed-list"></div>
             `;
-            
-            // Listener para voltar preservando histórico/scroll
-            const btnVoltar = document.getElementById('voltar-perfil-dinamico');
-            if(btnVoltar) {
-                btnVoltar.onclick = (e) => {
-                    e.preventDefault();
-                    window.history.back();
-                };
-            }
-
             renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
             return;
         }
 
+        // Se o perfil já estiver renderizado (ex: voltando da categoria), não fazemos nada
+        // Isso preserva a posição do scroll exatamente como nas outras partes do site.
+        if (secaoPerfil.querySelector('.sobre-container')) {
+             document.title = `${tituloPagina} | blog do du`;
+             return; 
+        }
+
         document.title = `${tituloPagina} | blog do du`;
+        secaoPerfil.classList.add('animacao-entrada');
+
         let legendaHtml = autor.legenda_foto ? `<span class="legenda-foto">${autor.legenda_foto}</span>` : '';
         let apoioHtml = autor.apoio ? autor.apoio : '';
 
@@ -559,25 +561,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- 7. sistema de roteamento ---
-    let lastHash = "";
-
     function roteador() {
-        const hash = window.location.hash || '#';
-        
-        // Salva a posição do scroll da página que está SAINDO
-        if (lastHash && !lastHash.startsWith('#post-')) {
-            scrollPositions[lastHash] = window.scrollY;
-        }
-        lastHash = hash;
-
-        // Reset da barra de leitura
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
 
         document.title = "blog do du | letras, arte e vida";
         
-        let hashParaProcessar = hash;
-        if (hash === '#sobre') hashParaProcessar = '#autor-du';
+        let hash = window.location.hash;
+        if (hash === '#sobre') hash = '#autor-du';
 
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
@@ -590,14 +581,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
 
         const containerBusca = document.querySelector('.container-busca');
-        if(containerBusca) containerBusca.style.display = (hashParaProcessar === '#textos' || hashParaProcessar === '#') ? 'block' : 'none';
+        if(containerBusca) containerBusca.style.display = (hash === '#textos' || hash === '') ? 'block' : 'none';
 
         const modal = document.getElementById("modal-foto");
         if (modal && modal.style.display === "flex") modal.style.display = "none";
 
         if (!capa || !conteudo) return;
 
-        if (hashParaProcessar === '#') {
+        if (!hash || hash === '#' || hash === '') {
             conteudo.classList.add('hidden');
             capa.style.display = 'flex';
             if(navGlobal) navGlobal.classList.add('ocultar-desktop');
@@ -608,17 +599,26 @@ document.addEventListener('DOMContentLoaded', () => {
         capa.style.display = 'none';
         conteudo.classList.remove('hidden');
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
-        todasSecoes.forEach(secao => secao.style.display = 'none');
+        
+        // Esconde todas as seções EXCETO se estivermos no perfil
+        // Se estivermos voltando para o perfil principal, não queremos esconder e mostrar denovo se ele já estiver visível
+        todasSecoes.forEach(secao => {
+             if (hash.startsWith('#autor-') && secao.id === 'perfil-autor') {
+                 // Deixa o perfil visível
+             } else {
+                 secao.style.display = 'none';
+             }
+        });
 
-        if (hashParaProcessar.startsWith('#post-')) {
-            const postId = hashParaProcessar.replace('#post-', '');
+        if (hash.startsWith('#post-')) {
+            window.scrollTo(0, 0); // Sempre topo ao ler post
+            const postId = hash.replace('#post-', '');
             const post = postsData.find(p => p.id === postId);
             const hoje = new Date();
             hoje.setHours(0,0,0,0);
 
             if (post && converterDataParaComparacao(post.date) <= hoje) {
                 document.title = `${post.title.toLowerCase()} | blog do du`;
-                
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
                 document.getElementById('dynamic-time').innerText = post.readingTime;
@@ -662,12 +662,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const postView = document.getElementById('post-view');
                 postView.style.display = 'block';
                 postView.classList.add('animacao-entrada');
-                window.scrollTo(0,0);
             } else {
                 window.location.hash = '#textos';
             }
         } 
-        else if (hashParaProcessar === '#textos') {
+        else if (hash === '#textos') {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
@@ -675,18 +674,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaPosts(null); 
             }
         }
-        else if (hashParaProcessar.startsWith('#cat-')) {
+        else if (hash.startsWith('#cat-')) {
             const secaoTextos = document.getElementById('textos');
             if(secaoTextos) {
                 secaoTextos.style.display = 'block';
                 secaoTextos.classList.add('animacao-entrada');
-                let cat = (hashParaProcessar === '#cat-ensaios') ? 'ensaios e provocações' : 
-                          (hashParaProcessar === '#cat-conversas') ? 'conversas' : 
-                          (hashParaProcessar === '#cat-poesias') ? 'poesia e música' : '';
+                let cat = (hash === '#cat-ensaios') ? 'ensaios e provocações' : 
+                          (hash === '#cat-conversas') ? 'conversas' : 
+                          (hash === '#cat-poesias') ? 'poesia e música' : '';
                 renderizarListaPosts(cat); 
             }
         }
-        else if (hashParaProcessar === '#autores') {
+        else if (hash === '#autores') {
             const secaoAutoras = document.getElementById('autores');
             if(secaoAutoras) {
                 secaoAutoras.style.display = 'block';
@@ -694,8 +693,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaAutoras();
             }
         }
-        else if (hashParaProcessar.startsWith('#autor-')) {
-            const path = hashParaProcessar.replace('#autor-', ''); 
+        else if (hash.startsWith('#autor-')) {
+            const path = hash.replace('#autor-', ''); 
             const parts = path.split('/cat-');
             const autorId = parts[0];
             const catSufix = parts[1] || null;
@@ -703,30 +702,18 @@ document.addEventListener('DOMContentLoaded', () => {
             renderizarPerfilAutor(autorId, catSufix);
         }
         else {
-            const secaoAtiva = document.querySelector(hashParaProcessar);
+            const secaoAtiva = document.querySelector(hash);
             if (secaoAtiva) {
                 secaoAtiva.style.display = 'block';
                 secaoAtiva.classList.add('animacao-entrada');
             }
         }
 
-        // Tenta restaurar o scroll se houver algo salvo
-        setTimeout(() => {
-            if (scrollPositions[hashParaProcessar]) {
-                window.scrollTo({
-                    top: scrollPositions[hashParaProcessar],
-                    behavior: 'instant'
-                });
-            } else if (!hashParaProcessar.startsWith('#post-')) {
-                window.scrollTo(0, 0);
-            }
-        }, 30);
-
         linksMenu.forEach(link => {
-            if (link.getAttribute('href') === '#sobre' && hashParaProcessar.startsWith('#autor-du')) {
+            if (link.getAttribute('href') === '#sobre' && hash.startsWith('#autor-du')) {
                 link.classList.add('link-ativo');
             } else {
-                link.classList.toggle('link-ativo', link.getAttribute('href') === hashParaProcessar);
+                link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
             }
         });
     }
@@ -739,7 +726,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fecharModal = document.querySelector(".fechar-modal");
 
     if (modalFoto) {
-        if(fecharModal) fecharModal.onclick = () => modalFoto.style.display = "none";
+        fecharModal.onclick = () => modalFoto.style.display = "none";
         modalFoto.onclick = (e) => { if (e.target === modalFoto) modalFoto.style.display = "none"; };
     }
 
@@ -762,7 +749,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 10. botão voltar ---
     document.querySelectorAll('.seta-voltar').forEach(botao => {
         botao.addEventListener('click', (e) => {
-            if (botao.id === 'voltar-perfil-dinamico') return; // Ignora se for o dinâmico já tratado
             e.preventDefault();
             window.history.back();
         });
