@@ -109,29 +109,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- renderização da lista de autores ---
-    function renderizarListaAutores() {
+// --- renderização da lista de autores ---
+    function renderizarListaAutoras() {
         const container = document.getElementById('lista-autoras');
         if (!container || typeof authorsData === 'undefined') return;
+        
         container.innerHTML = '';
         
+        // garante que o container use a sua classe css minimalista
+        container.className = 'lista-simples';
+        
         authorsData.forEach(autor => {
-            const article = document.createElement('article');
-            article.className = 'post-card animacao-entrada';
-            article.innerHTML = `
-                <a href="#autor-${autor.id}">
-                    <div class="card-image-wrapper" style="text-align: center; padding-top: 20px;">
-                        <img src="${autor.foto}" alt="${autor.nome}" loading="lazy" style="border-radius: 50%; aspect-ratio: 1/1; object-fit: cover; width: 120px; height: 120px; margin: 0 auto; display: inline-block;">
-                    </div>
-                    <div class="card-content" style="text-align: center;">
-                        <h3>${autor.nome}</h3>
-                        <div class="card-meta" style="justify-content: center;">${autor.papel}</div>
-                    </div>
-                </a>`;
-            container.appendChild(article);
+            const link = document.createElement('a');
+            link.href = `#autor-${autor.id}`; // mantém o link dinâmico para o perfil
+            link.className = 'item-lista animacao-entrada';
+            
+            link.innerHTML = `
+                <span>${autor.nome}</span>
+                <span style="color: var(--accent-color);">${autor.papel}</span>
+            `;
+            
+            container.appendChild(link);
         });
     }
-
+    
     // --- renderização do perfil do autor individual ---
     function renderizarPerfilAutor(autorId) {
         const secaoPerfil = document.getElementById('perfil-autor');
