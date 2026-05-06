@@ -146,23 +146,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!autor) { window.location.hash = '#autores'; return; }
 
         const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
-
-        // Se estamos mudando de autor, limpamos a seção para reconstruir
-        if (secaoPerfil.getAttribute('data-autor-atual') !== autorId) {
-            secaoPerfil.innerHTML = ''; 
-            secaoPerfil.setAttribute('data-autor-atual', autorId);
-        }
-
         secaoPerfil.style.display = 'block';
 
+        // LÓGICA DE CATEGORIA (DENTRO DO AUTOR)
         if (catSufix) {
             let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
                           (catSufix === 'conversas') ? 'conversas' : 
                           (catSufix === 'poesias') ? 'poesia e música' : '';
             
             document.title = `${catName} | ${autor.nome}`;
+            
+            // Salvamos o conteúdo original da Bio se ele existir para não perdê-lo
+            if (!secaoPerfil.hasAttribute('data-perfil-cache')) {
+                secaoPerfil.setAttribute('data-perfil-cache', secaoPerfil.innerHTML);
+            }
 
-            // Criamos uma "view" de categoria por cima para não destruir o perfil original
             secaoPerfil.innerHTML = `
                 <div class="titulo-com-voltar">
                     <a href="#autor-${autor.id}" class="seta-voltar">&lt;</a>
@@ -170,19 +168,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div id="lista-textos-autor" class="feed-list"></div>
             `;
+            
+            window.scrollTo(0, 0); // Para categorias, subimos para o topo
             renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
             return;
         }
 
-        // Se o perfil já estiver renderizado (ex: voltando da categoria), não fazemos nada
-        // Isso preserva a posição do scroll exatamente como nas outras partes do site.
-        if (secaoPerfil.querySelector('.sobre-container')) {
-             document.title = `${tituloPagina} | blog do du`;
-             return; 
+        // SE ESTAMOS VOLTANDO PARA A BIO PRINCIPAL
+        // Se já existe um cache da bio e o autor é o mesmo, restauramos sem reconstruir
+        if (secaoPerfil.getAttribute('data-autor-atual') === autorId && secaoPerfil.getAttribute('data-perfil-cache')) {
+            secaoPerfil.innerHTML = secaoPerfil.getAttribute('data-perfil-cache');
+            document.title = `${tituloPagina} | blog do du`;
+            // Não damos window.scrollTo(0,0) aqui! O navegador cuidará de voltar à posição anterior.
+            return;
         }
 
-        document.title = `${tituloPagina} | blog do du`;
+        // SE É UM PERFIL NOVO SENDO CARREGADO
+        secaoPerfil.setAttribute('data-autor-atual', autorId);
         secaoPerfil.classList.add('animacao-entrada');
+        document.title = `${tituloPagina} | blog do du`;
 
         let legendaHtml = autor.legenda_foto ? `<span class="legenda-foto">${autor.legenda_foto}</span>` : '';
         let apoioHtml = autor.apoio ? autor.apoio : '';
@@ -232,6 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+
+        // Salva este estado no cache para voltas rápidas
+        secaoPerfil.setAttribute('data-perfil-cache', secaoPerfil.innerHTML);
 
         const imgPerfil = secaoPerfil.querySelector('.foto-perfil-dinamica');
         const modalFoto = document.getElementById("modal-foto");
@@ -600,18 +607,18 @@ document.addEventListener('DOMContentLoaded', () => {
         conteudo.classList.remove('hidden');
         if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
         
-        // Esconde todas as seções EXCETO se estivermos no perfil
-        // Se estivermos voltando para o perfil principal, não queremos esconder e mostrar denovo se ele já estiver visível
+        // Esconde as seções
         todasSecoes.forEach(secao => {
+             // Se estivermos em um sub-caminho do autor, não escondemos a seção de perfil agora
              if (hash.startsWith('#autor-') && secao.id === 'perfil-autor') {
-                 // Deixa o perfil visível
+                 secao.style.display = 'block';
              } else {
                  secao.style.display = 'none';
              }
         });
 
         if (hash.startsWith('#post-')) {
-            window.scrollTo(0, 0); // Sempre topo ao ler post
+            window.scrollTo(0, 0); 
             const postId = hash.replace('#post-', '');
             const post = postsData.find(p => p.id === postId);
             const hoje = new Date();
