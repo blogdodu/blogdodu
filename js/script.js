@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.add('largura-expandida');
         
         } else if (filtroCategoria && filtroAutor) {
-            // NOVIDADE: Filtra por Categoria E Autor (Micro-Caminhos do Autor)
-            // Usa .reverse() para exibir do mais antigo pro mais novo (crescente cronológica)
+            // Micro-Caminhos do Autor (Crescente)
             postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria && post.author.toLowerCase() === filtroAutor.toLowerCase()).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
@@ -69,13 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if(tituloSecao && targetId === 'textos-lista') tituloSecao.innerText = filtroCategoria; 
         
         } else if (filtroAutor) {
-            // fallback caso precise puxar todos do autor (decrescente)
             postsParaExibir = postsPublicados.filter(post => post.author.toLowerCase() === filtroAutor.toLowerCase());
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
         
         } else {
-            // Textos Globais (Decrescente: do mais novo pro mais antigo)
+            // Textos Globais (Decrescente)
             postsParaExibir = postsPublicados;
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
@@ -151,38 +149,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!autor) { window.location.hash = '#autores'; return; }
 
         const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
-        document.title = `${tituloPagina} | blog do du`;
         
         secaoPerfil.style.display = 'block';
         secaoPerfil.classList.add('animacao-entrada');
 
+        // Se houver sufixo de categoria, limpamos a bio para mostrar só a lista (comportamento de "nova página")
+        if (catSufix) {
+            let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
+                          (catSufix === 'conversas') ? 'conversas' : 
+                          (catSufix === 'poesias') ? 'poesia e música' : '';
+            
+            document.title = `${catName} | ${autor.nome}`;
+
+            secaoPerfil.innerHTML = `
+                <div class="titulo-com-voltar">
+                    <a href="#autor-${autor.id}" class="seta-voltar">&lt;</a>
+                    <h2>${catName}</h2>
+                </div>
+                <div id="lista-textos-autor" class="feed-list"></div>
+            `;
+            renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
+            return; // Interrompe aqui para não carregar a bio abaixo
+        }
+
+        // Caso contrário, carrega o perfil completo (Bio + Menu de Caminhos)
+        document.title = `${tituloPagina} | blog do du`;
         let legendaHtml = autor.legenda_foto ? `<span class="legenda-foto">${autor.legenda_foto}</span>` : '';
         let apoioHtml = autor.apoio ? autor.apoio : '';
 
-        // NOVIDADE: Verifica quais caminhos esse autor já publicou
         const hoje = new Date();
         hoje.setHours(0,0,0,0);
         const postsDoAutor = postsData.filter(p => p.author.toLowerCase() === autor.id.toLowerCase() && converterDataParaComparacao(p.date) <= hoje);
-        const categoriasAtivas = [...new Set(postsDoAutor.map(p => p.category))]; // Tira as categorias repetidas
+        const categoriasAtivas = [...new Set(postsDoAutor.map(p => p.category))];
 
         let caminhosHtml = '';
-        if (categoriasAtivas.length > 0) {
-            categoriasAtivas.forEach(cat => {
-                let catSlug = (cat === 'ensaios e provocações') ? 'ensaios' : 
-                              (cat === 'conversas') ? 'conversas' : 
-                              (cat === 'poesia e música') ? 'poesias' : 'outros';
-                
-                // Destaca o caminho ativo se ele foi clicado
-                let isAtivo = (catSufix === catSlug) ? 'style="color: var(--accent-color); font-weight: bold;"' : '';
-                
-                caminhosHtml += `<a href="#autor-${autor.id}/cat-${catSlug}" class="item-lista">
-                                    <span ${isAtivo}>${cat}</span> 
-                                    <span ${isAtivo}>&rarr;</span>
-                                 </a>`;
-            });
-        } else {
-            caminhosHtml = '<p style="text-align: center; opacity: 0.6; font-family:Courier New;">ainda construindo seus caminhos...</p>';
-        }
+        categoriasAtivas.forEach(cat => {
+            let catSlug = (cat === 'ensaios e provocações') ? 'ensaios' : 
+                          (cat === 'conversas') ? 'conversas' : 
+                          (cat === 'poesia e música') ? 'poesias' : 'outros';
+            
+            caminhosHtml += `<a href="#autor-${autor.id}/cat-${catSlug}" class="item-lista">
+                                <span>${cat}</span> 
+                                <span>&rarr;</span>
+                             </a>`;
+        });
 
         secaoPerfil.innerHTML = `
             <div class="titulo-com-voltar">
@@ -210,7 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="lista-simples">
                     ${caminhosHtml}
                 </div>
-                <div id="lista-textos-autor" class="feed-list" style="margin-top: 40px;"></div>
             </div>
         `;
 
@@ -224,14 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalImg.src = this.src;
                 }
             }
-        }
-
-        // Renderiza os posts apenas se o leitor clicou em um dos micro-caminhos
-        if (catSufix) {
-            let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
-                          (catSufix === 'conversas') ? 'conversas' : 
-                          (catSufix === 'poesias') ? 'poesia e música' : '';
-            renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
         }
     }
 
@@ -690,7 +691,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         else if (hash.startsWith('#autor-')) {
-            // NOVIDADE: O roteador agora consegue ler caminhos do tipo #autor-du/cat-poesias
             const path = hash.replace('#autor-', ''); 
             const parts = path.split('/cat-');
             const autorId = parts[0];
