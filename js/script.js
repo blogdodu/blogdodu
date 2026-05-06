@@ -164,10 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
 
-            <hr class="divisor-fino-longo" style="margin: 40px 0;">
+<br>
+<br>
 
-<br>
-<br>
+            <hr class="divisor-fino-longo" style="margin: 40px 0;">
             
             <div class="perfil-textos">
                 <h3 style="margin-bottom: 30px; text-align: center;">textos de ${autor.nome}</h3>
