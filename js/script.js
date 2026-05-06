@@ -109,19 +109,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-// --- renderização da lista de autores ---
+// --- renderização da lista de autores (com rastreador) ---
     function renderizarListaAutoras() {
         const container = document.getElementById('lista-autoras');
-        if (!container || typeof authorsData === 'undefined') return;
+        
+        console.log("1. procurando a div lista-autoras:", container);
+        console.log("2. procurando os dados dos autores:", typeof authorsData !== 'undefined' ? authorsData : "ARQUIVO NÃO ENCONTRADO OU COM ERRO");
+
+        if (!container || typeof authorsData === 'undefined') {
+            console.log("3. ABORTANDO! falta a div ou os dados.");
+            return;
+        }
         
         container.innerHTML = '';
-        
-        // garante que o container use a sua classe css minimalista
         container.className = 'lista-simples';
         
         authorsData.forEach(autor => {
             const link = document.createElement('a');
-            link.href = `#autor-${autor.id}`; // mantém o link dinâmico para o perfil
+            link.href = `#autor-${autor.id}`;
             link.className = 'item-lista animacao-entrada';
             
             link.innerHTML = `
@@ -130,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             
             container.appendChild(link);
+            console.log("4. autor adicionado:", autor.nome);
         });
     }
     
