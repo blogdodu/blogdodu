@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-// --- renderização do perfil do autor individual ---
+    // --- renderização do perfil do autor individual ---
     function renderizarPerfilAutor(autorId) {
         const secaoPerfil = document.getElementById('perfil-autor');
         if (!secaoPerfil || typeof authorsData === 'undefined') return;
@@ -190,10 +190,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // chama a função para injetar os posts dessa pessoa
-        renderizarListaPosts(null, null, autor.id, 'lista-textos-autor');
-    }
-    
-        // chama a função para injetar os posts dessa pessoa no container que acabamos de criar
         renderizarListaPosts(null, null, autor.id, 'lista-textos-autor');
     }
 
