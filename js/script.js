@@ -32,8 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 3. função de renderização (lista de posts) ---
-    function renderizarListaPosts(filtroCategoria = null, postsForcados = null) {
-        const feedContainer = document.getElementById('textos-lista');
+    // agora ela aceita filtro por autor e sabe em qual div jogar os textos!
+    function renderizarListaPosts(filtroCategoria = null, postsForcados = null, filtroAutor = null, targetId = 'textos-lista') {
+        const feedContainer = document.getElementById(targetId);
         const tituloSecao = document.querySelector('#textos h2'); 
         const areaLeitura = document.querySelector('.area-leitura');
 
@@ -51,19 +52,24 @@ document.addEventListener('DOMContentLoaded', () => {
             postsParaExibir = postsForcados.filter(post => converterDataParaComparacao(post.date) <= hoje);
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
-            if(areaLeitura) areaLeitura.classList.add('largura-expandida');
+            if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.add('largura-expandida');
         } else if (filtroCategoria) {
             postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
-            if(areaLeitura) areaLeitura.classList.remove('largura-expandida');
-            if(tituloSecao) tituloSecao.innerText = filtroCategoria; 
+            if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.remove('largura-expandida');
+            if(tituloSecao && targetId === 'textos-lista') tituloSecao.innerText = filtroCategoria; 
+        } else if (filtroAutor) {
+            // filtra puxando só os textos do autor específico
+            postsParaExibir = postsPublicados.filter(post => post.author.toLowerCase() === filtroAutor.toLowerCase()).reverse();
+            modoVisualizacao = 'lista';
+            feedContainer.className = 'feed-list';
         } else {
             postsParaExibir = postsPublicados;
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
-            if(areaLeitura) areaLeitura.classList.add('largura-expandida');
-            if(tituloSecao) tituloSecao.innerText = 'textos';
+            if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.add('largura-expandida');
+            if(tituloSecao && targetId === 'textos-lista') tituloSecao.innerText = 'textos';
         }
 
         if (postsParaExibir.length > 0) {
@@ -103,6 +109,94 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- renderização da lista de autores ---
+    function renderizarListaAutoras() {
+        const container = document.getElementById('lista-autoras');
+        if (!container || typeof authorsData === 'undefined') return;
+        container.innerHTML = '';
+        
+        authorsData.forEach(autor => {
+            const article = document.createElement('article');
+            article.className = 'post-card animacao-entrada';
+            article.innerHTML = `
+                <a href="#autor-${autor.id}">
+                    <div class="card-image-wrapper" style="text-align: center; padding-top: 20px;">
+                        <img src="${autor.foto}" alt="${autor.nome}" loading="lazy" style="border-radius: 50%; aspect-ratio: 1/1; object-fit: cover; width: 120px; height: 120px; margin: 0 auto; display: inline-block;">
+                    </div>
+                    <div class="card-content" style="text-align: center;">
+                        <h3>${autor.nome}</h3>
+                        <div class="card-meta" style="justify-content: center;">${autor.papel}</div>
+                    </div>
+                </a>`;
+            container.appendChild(article);
+        });
+    }
+
+// --- renderização do perfil do autor individual ---
+    function renderizarPerfilAutor(autorId) {
+        const secaoPerfil = document.getElementById('perfil-autor');
+        if (!secaoPerfil || typeof authorsData === 'undefined') return;
+
+        const autor = authorsData.find(a => a.id === autorId);
+        if (!autor) { window.location.hash = '#autoras'; return; }
+
+        // se for o du, o título volta a ser "sobre" para manter a sua estética
+        const tituloPagina = autor.id === 'du' ? 'sobre' : autor.nome;
+
+        document.title = `${tituloPagina} | blog do du`;
+        secaoPerfil.style.display = 'block';
+        secaoPerfil.classList.add('animacao-entrada');
+
+        let legendaHtml = autor.legenda_foto ? `<span class="legenda-foto">${autor.legenda_foto}</span>` : '';
+        let apoioHtml = autor.apoio ? autor.apoio : '';
+
+        secaoPerfil.innerHTML = `
+            <div class="titulo-com-voltar">
+                <a href="#" class="seta-voltar" onclick="window.history.back(); return false;">&lt;</a>
+                <h2>${tituloPagina}</h2>
+            </div>
+
+            <div class="sobre-container">
+                <div class="sobre-foto">
+                    <img src="${autor.foto}" alt="foto de ${autor.nome}" id="foto-perfil-${autor.id}" style="cursor: pointer;">
+                    ${legendaHtml}
+                </div>
+
+                <div class="sobre-texto">
+                    ${autor.bio}
+                    ${apoioHtml}
+                </div>
+            </div>
+
+            <hr class="divisor-fino-longo" style="margin: 40px 0;">
+            
+            <div class="perfil-textos">
+                <h3 style="margin-bottom: 30px; text-align: center;">textos de ${autor.nome}</h3>
+                <div id="lista-textos-autor" class="feed-list"></div>
+            </div>
+        `;
+
+        // refaz a ligação mágica do clique na foto para o zoom (agora dinâmico!)
+        const imgPerfilDynamic = document.getElementById(`foto-perfil-${autor.id}`);
+        if (imgPerfilDynamic) {
+            imgPerfilDynamic.onclick = function() {
+                const modalFoto = document.getElementById("modal-foto");
+                const modalImg = document.getElementById("img-ampliada");
+                if (modalFoto && modalImg) {
+                    modalFoto.style.display = "flex"; 
+                    modalImg.src = this.src;
+                }
+            }
+        }
+
+        // chama a função para injetar os posts dessa pessoa
+        renderizarListaPosts(null, null, autor.id, 'lista-textos-autor');
+    }
+    
+        // chama a função para injetar os posts dessa pessoa no container que acabamos de criar
+        renderizarListaPosts(null, null, autor.id, 'lista-textos-autor');
+    }
+
     // --- 4. lógica da busca ---
     const campoBusca = document.getElementById('campo-busca');
     if (campoBusca) {
@@ -140,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentUser = null;
     let currentProfile = null;
     let postIdAtual = null;
-    let comentarioPaiAtual = null; // <- variável que controla se estamos respondendo a alguém
+    let comentarioPaiAtual = null; 
 
     function formatarDataAutoral(dataString) {
         const data = new Date(dataString);
@@ -163,7 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // modal de autenticação e visibilidade de senha
     const modalAuth = document.getElementById('modal-auth');
     const formAuth = document.getElementById('form-auth');
     const toggleAuthMode = document.getElementById('toggle-auth-mode');
@@ -259,7 +352,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     }
 
-    // likes 
     const btnLike = document.getElementById('btn-like');
     btnLike?.addEventListener('click', async () => {
         if (!gerenciarEstados()) return;
@@ -291,7 +383,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // comentários com resposta
     const inputComentario = document.getElementById('comentario-input');
     const grupoBotoes = document.getElementById('grupo-botoes-comentario');
     const btnIniciarEnvio = document.getElementById('btn-iniciar-envio');
@@ -312,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
             separadorBotoes.classList.add('hidden');
         } else {
             grupoBotoes.classList.add('hidden');
-            comentarioPaiAtual = null; // reseta se apagar tudo
+            comentarioPaiAtual = null; 
             inputComentario.placeholder = 'escreva seu comentário...';
         }
     });
@@ -330,7 +421,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnConfirmarEnvio.classList.add('hidden');
         separadorBotoes.classList.add('hidden');
         
-        // reseta o estado de resposta, mas não apaga o texto
         comentarioPaiAtual = null;
         inputComentario.placeholder = 'escreva seu comentário...';
         inputComentario.focus();
@@ -343,7 +433,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('msg-erro').innerText = 'enviando...';
         
-        // envia o comentário atrelando ao 'pai' se houver
         await supabase.from('comments').insert([{ 
             post_id: postIdAtual, 
             user_id: currentUser.id, 
@@ -351,7 +440,6 @@ document.addEventListener('DOMContentLoaded', () => {
             parent_id: comentarioPaiAtual 
         }]);
         
-        // limpa tudo após enviar
         inputComentario.value = '';
         inputComentario.placeholder = 'escreva seu comentário...';
         comentarioPaiAtual = null;
@@ -382,7 +470,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const username = c.profiles?.username || 'anonimo';
                 
                 const p = document.createElement('p');
-                // aplicando a melhoria visual do cabeçalho
                 p.innerHTML = `${prefixo}<span class="comentario-data">${dataFormatada}</span> <span class="comentario-username">@${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
                 
                 const acoes = document.createElement('div');
@@ -391,10 +478,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const spanResponder = document.createElement('span');
                 spanResponder.innerText = 'responder';
                 
-                // lógica engatilhando o clique em responder
                 spanResponder.onclick = () => {
                     if (!gerenciarEstados()) return;
-                    comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; // garante que a resposta fique no mesmo nível
+                    comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; 
                     inputComentario.placeholder = `respondendo a @${username}...`;
                     inputComentario.focus();
                 };
@@ -432,11 +518,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const barraLeitura = document.getElementById("barra-leitura");
         if(barraLeitura) barraLeitura.style.height = "0%";
 
-        // --- INÍCIO PADRÃO DE TÍTULO PARA O SEO ---
-        // define o título base para qualquer página, e se for um post ele muda mais abaixo
         document.title = "blog do du | letras, arte e vida";
         
-        const hash = window.location.hash;
+        // intercepta o link #sobre antigo para direcionar pro novo autor-du
+        let hash = window.location.hash;
+        if (hash === '#sobre') hash = '#autor-du';
+
         const capa = document.getElementById('capa');
         const conteudo = document.getElementById('conteudo');
         const todasSecoes = document.querySelectorAll('.secao-conteudo');
@@ -476,7 +563,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (post && converterDataParaComparacao(post.date) <= hoje) {
                 
-                // --- INÍCIO DO CURATIVO SEO: TÍTULO ESPECÍFICO DO POST ---
                 document.title = `${post.title.toLowerCase()} | blog do du`;
 
                 const tempDiv = document.createElement("div");
@@ -491,7 +577,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.head.appendChild(metaDescription);
                 }
                 metaDescription.content = resumoLimpo;
-                // --- FIM DO CURATIVO SEO ---
 
                 document.getElementById('dynamic-title').innerText = post.title;
                 document.getElementById('dynamic-date').innerText = post.date;
@@ -505,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const authLink = document.getElementById('dynamic-author');
                 authLink.innerText = post.author;
-                authLink.href = (post.author === 'du') ? "#sobre" : post.authorId;
+                authLink.href = `#autor-${post.author.toLowerCase()}`;
                 document.getElementById('dynamic-content').innerHTML = post.content;
                 
                 const img = document.getElementById('dynamic-image');
@@ -559,6 +644,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderizarListaPosts(cat); 
             }
         }
+        else if (hash === '#autoras') {
+            const secaoAutoras = document.getElementById('autoras');
+            if(secaoAutoras) {
+                secaoAutoras.style.display = 'block';
+                secaoAutoras.classList.add('animacao-entrada');
+                renderizarListaAutoras();
+            }
+        }
+        else if (hash.startsWith('#autor-')) {
+            const autorId = hash.replace('#autor-', '');
+            renderizarPerfilAutor(autorId);
+        }
         else {
             const secaoAtiva = document.querySelector(hash);
             if (secaoAtiva) {
@@ -568,7 +665,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         linksMenu.forEach(link => {
-            link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
+            // arrumando o visual do menu pra deixar "sobre" ativo se for o seu autor
+            if (link.getAttribute('href') === '#sobre' && hash === '#autor-du') {
+                link.classList.add('link-ativo');
+            } else {
+                link.classList.toggle('link-ativo', link.getAttribute('href') === hash);
+            }
         });
     }
 
