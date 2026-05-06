@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${apoioHtml}
                 </div>
             </div>
-
+<br>
+<br>
             <hr class="divisor-fino-longo" style="margin: 40px 0;">
             
             <div class="perfil-textos">
