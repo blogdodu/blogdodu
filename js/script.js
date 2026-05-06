@@ -54,13 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if(areaLeitura && targetId === 'textos-lista') areaLeitura.classList.add('largura-expandida');
         
         } else if (filtroCategoria && filtroAutor) {
-            // Micro-Caminhos do Autor (Crescente)
             postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria && post.author.toLowerCase() === filtroAutor.toLowerCase()).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
         
         } else if (filtroCategoria) {
-            // Caminhos Globais (Crescente)
             postsParaExibir = postsPublicados.filter(post => post.category === filtroCategoria).reverse();
             modoVisualizacao = 'lista';
             feedContainer.className = 'feed-list';
@@ -73,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
             feedContainer.className = 'feed-list';
         
         } else {
-            // Textos Globais (Decrescente)
             postsParaExibir = postsPublicados;
             modoVisualizacao = 'grid';
             feedContainer.className = 'feed-grid';
@@ -153,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
         secaoPerfil.style.display = 'block';
         secaoPerfil.classList.add('animacao-entrada');
 
-        // Se houver sufixo de categoria, limpamos a bio para mostrar só a lista (comportamento de "nova página")
         if (catSufix) {
             let catName = (catSufix === 'ensaios') ? 'ensaios e provocações' : 
                           (catSufix === 'conversas') ? 'conversas' : 
@@ -169,10 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="lista-textos-autor" class="feed-list"></div>
             `;
             renderizarListaPosts(catName, null, autor.id, 'lista-textos-autor');
-            return; // Interrompe aqui para não carregar a bio abaixo
+            return;
         }
 
-        // Caso contrário, carrega o perfil completo (Bio + Menu de Caminhos)
         document.title = `${tituloPagina} | blog do du`;
         let legendaHtml = autor.legenda_foto ? `<span class="legenda-foto">${autor.legenda_foto}</span>` : '';
         let apoioHtml = autor.apoio ? autor.apoio : '';
@@ -202,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="sobre-container">
                 <div class="sobre-foto">
-                    <img src="${autor.foto}" alt="foto de ${autor.nome}" id="foto-perfil-${autor.id}" style="cursor: pointer;">
+                    <img src="${autor.foto}" alt="foto de ${autor.nome}" class="foto-perfil-dinamica" style="cursor: pointer;">
                     ${legendaHtml}
                 </div>
 
@@ -223,15 +218,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        const imgPerfilDynamic = document.getElementById(`foto-perfil-${autor.id}`);
-        if (imgPerfilDynamic) {
-            imgPerfilDynamic.onclick = function() {
-                const modalFoto = document.getElementById("modal-foto");
-                const modalImg = document.getElementById("img-ampliada");
-                if (modalFoto && modalImg) {
-                    modalFoto.style.display = "flex"; 
-                    modalImg.src = this.src;
-                }
+        // Vincula o clique da nova imagem ao modal de zoom
+        const imgPerfil = secaoPerfil.querySelector('.foto-perfil-dinamica');
+        const modalFoto = document.getElementById("modal-foto");
+        const modalImg = document.getElementById("img-ampliada");
+        
+        if (imgPerfil && modalFoto) {
+            imgPerfil.onclick = function() {
+                modalFoto.style.display = "flex"; 
+                modalImg.src = this.src;
             }
         }
     }
@@ -265,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
     }
 
-    // --- 6. sistema autoral de interações (supabase) ---
+    // --- 6. sistema autoral de interações ---
     const supabaseUrl = 'https://ypfwdlkuxxhiqonyxshg.supabase.co';
     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwZndkbGt1eHhoaXFvbnl4c2hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTQ2MzQsImV4cCI6MjA5MzQzMDYzNH0.mfCDB7r9ELvkqjQyWSzI4kG3oY31ro5xdw3WnxijG0M';
     const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
@@ -718,16 +713,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', roteador);
     roteador();
 
-    // --- 8. zoom foto de perfil ---
-    const imgPerfil = document.getElementById("foto-perfil");
+    // --- 8. Lógica Global do Modal de Zoom ---
+    // Agora configuramos o fechamento UMA VEZ no carregamento da página
     const modalFoto = document.getElementById("modal-foto");
-    const modalImg = document.getElementById("img-ampliada");
-    if (imgPerfil && modalFoto) {
-        imgPerfil.onclick = function() {
-            modalFoto.style.display = "flex"; 
-            modalImg.src = this.src;
-        }
-        modalFoto.onclick = function() { modalFoto.style.display = "none"; }
+    const fecharModal = document.querySelector(".fechar-modal");
+
+    if (modalFoto) {
+        // Fecha clicando no X
+        fecharModal.onclick = () => modalFoto.style.display = "none";
+        // Fecha clicando fora da imagem
+        modalFoto.onclick = (e) => { if (e.target === modalFoto) modalFoto.style.display = "none"; };
     }
 
     // --- 9. menu hamburguer ---
