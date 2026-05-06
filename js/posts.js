@@ -6,7 +6,7 @@ const postsData = [
 id: "pausa-para-o-cafe-ed16",
 title: "pausa para o café - ed16",
 date: "01 jun 2026",
-readingTime: "3 min de leitura",
+readingTime: "4 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
 author: "du",
