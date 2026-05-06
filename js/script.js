@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <hr class="divisor-fino-longo" style="margin: 40px 0;">
             
             <div class="perfil-textos">
-                <h3 style="margin-bottom: 30px; text-align: center;">caminhos de ${autor.nome}</h3>
+                <h3 style="margin-bottom: 30px; text-align: center;">${autor.nome} - textos</h3>
                 <div class="lista-simples">
                     ${caminhosHtml}
                 </div>
