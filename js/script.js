@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- renderização da lista de autores ---
-    function renderizarListaAutoras() {
+    function renderizarListaAutores() {
         const container = document.getElementById('lista-autoras');
         if (!container || typeof authorsData === 'undefined') return;
         container.innerHTML = '';
