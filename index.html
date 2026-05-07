@@ -1,38 +1,49 @@
 <!DOCTYPE html>
+
+
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK01Z0LGHY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FK01Z0LGHY');
-    </script>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <title>blog do du | letras, arte e vida</title>
+        <meta name="description" content="letras, arte e vida - o blog do du se propõe ser um respiro contra a pressa do mundo, com ensaios, poesia e troca de idéias para desacelerar e contemplar o presente...">
 
-    <!-- supabase cdn para o banco de dados -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <title>blog do du | letras, arte e vida</title>
+        <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK01Z0LGHY">
+            </script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FK01Z0LGHY');
+            </script>
+
+            <script>
+                window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+            </script>
+            <script defer src="/_vercel/insights/script.js">
+            </script>
+    
+            <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+            </script>
 </head>
+
+
 
 <body>
 
-    <div id="barra-leitura"></div>
+    <div id="barra-leitura">
+    </div>
 
     <div class="toggle-container desktop-only">
         <label class="switch">
@@ -78,20 +89,29 @@
         </div>
     </nav>
 
+
+
+
+    
     <div class="footer-global desktop-only">
         <p><strong>©2026 blogdodu</strong></p>
     </div>
 
+
+
+
+    
     <div id="modal-foto" class="modal">
         <span class="fechar-modal">&times;</span>
         <img class="modal-conteudo" id="img-ampliada">
     </div>
 
-    <!-- modal de login minimalista -->
+<!-- modal de login minimalista -->
     <div id="modal-auth" class="modal">
         <div class="modal-auth-conteudo">
             <span class="fechar-modal-auth">&times;</span>
             <h3 id="auth-titulo">entrar</h3>
+            
             <form id="form-auth">
                 <input type="email" id="auth-email" placeholder="seu e-mail..." required>
                 
@@ -109,6 +129,7 @@
                 
                 <button type="submit" id="btn-auth-submit">confirmar</button>
             </form>
+            
             <span id="toggle-auth-mode" class="auth-link">não tem conta? cadastrar-se.</span>
         </div>
     </div>
@@ -127,14 +148,18 @@
                     <li><a href="#contato">contato</a></li>
                 </ul>
             </nav>
+            
         </div>
     </section>
 
-    <main id="conteudo" class="hidden">
-    
-        <div class="area-leitura">
 
+
+
+    
+    <main id="conteudo" class="hidden">
+        <div class="area-leitura">
             <section id="post-view" class="conteudo-bloco secao-conteudo" style="display: none;">
+
                 <div class="titulo-com-voltar">
                     <a href="#textos" class="seta-voltar">&lt;</a>
                     <h2 id="dynamic-title">Titulo do Post</h2>
@@ -150,27 +175,32 @@
                 <div class="corpo-post">
                     <br><br><br>
                     
-                    <div id="dynamic-content"></div>
+                    <div id="dynamic-content">
+                    </div>
 
                     <div class="apoio-container" style="margin-top: 60px;">
                         <p>considere apoiar o projeto <strong>a partir de R$ 5,oo</strong></p>
                         <p><a href="https://apoia.se/blogdodu"><strong>https://apoia.se/blogdodu</strong></a></p>
+                        
                         <div class="pix-info">
                             <p>chave pix para apoiar diretamente:</p>
                             <p><strong>pix.ducanal@gmail.com</strong></p>
                             <p class="detalhe">(sim, é um email feio e sem glamour - mas o café que ele proporciona é real e aquece o coração....)</p>
                         </div>
+                        
                     </div>
 
                     <div class="navigation-layout">
-                        <div id="nav-prev-area"></div>
+                        <div id="nav-prev-area">
+                        </div>
 
                         <div class="post-capa-center">
                             <img id="dynamic-image" src="" alt="">
                             <span id="dynamic-caption" class="legenda-foto"></span>
                         </div>
 
-                        <div id="nav-next-area"></div>
+                        <div id="nav-next-area">
+                        </div>
                     </div>
 
                     <div id="social-area"></div>
@@ -179,13 +209,16 @@
                         <div class="linha-interacao">
                             <button id="btn-like" class="btn-icone">♡</button>
                             <span id="like-count">0</span>
+                            
                             <div class="auth-status-container">
                                 <span id="auth-status-text" class="auth-link">cadastrar-se / entrar</span>
                             </div>
+                            
                         </div>
 
                         <div class="form-comentario">
                             <textarea id="comentario-input" placeholder="escreva seu comentário..." rows="1" autocomplete="off"></textarea>
+                            
                             <div class="acoes-form">
                                 <span id="msg-erro" class="msg-discreta"></span>
                                 <div id="grupo-botoes-comentario" class="hidden">
@@ -195,6 +228,7 @@
                                     <button id="btn-confirmar-envio" class="btn-texto hidden">confirmar envio</button>
                                 </div>
                             </div>
+
                         </div>
 
                         <div id="lista-comentarios" class="lista-comentarios">
@@ -266,6 +300,10 @@
         </div>
     </main>
 
+
+
+
+    
     <!-- adicionamos o motor dos autores antes dos posts -->
     <script src="js/authors.js"></script>
     <script src="js/posts.js"></script>
