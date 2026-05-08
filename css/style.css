@@ -1239,7 +1239,7 @@ h2 {
         display: none;
     }
 
-    .nav-global.hidden {
+    #navegacao-global.hidden {
     display: none !important;
     }
 }
