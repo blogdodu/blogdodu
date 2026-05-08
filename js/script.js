@@ -593,14 +593,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!hash || hash === '#' || hash === '') {
             conteudo.classList.add('hidden');
             capa.style.display = 'flex';
-            if(navGlobal) navGlobal.classList.add('ocultar-desktop');
+            if(navGlobal) navGlobal.classList.add('hidden');
             linksMenu.forEach(link => link.classList.remove('link-ativo'));
             return;
         }
 
         capa.style.display = 'none';
         conteudo.classList.remove('hidden');
-        if(navGlobal) navGlobal.classList.remove('ocultar-desktop');
+        if(navGlobal) navGlobal.classList.remove('hidden');
         
         todasSecoes.forEach(secao => {
              if (hash.startsWith('#autor-') && secao.id === 'perfil-autor') {
