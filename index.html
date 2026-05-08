@@ -38,25 +38,23 @@
 			</script>
 	</head>
 
+<body>
+    <div id="barra-leitura">
+    </div>
+
+    <div class="toggle-container desktop-only">
+        <label class="switch">
+            <input type="checkbox" class="theme-toggle-input" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="mobile-top-bar">
+        <a href="#" class="logo-menu">blog do du</a>
+    </div>
 
 
-	<body>
 
-			<div id="barra-leitura">
-			</div>
-
-			<div class="toggle-container desktop-only">
-				<label class="switch">
-					<input type="checkbox" class="theme-toggle-input" checked>
-					<span class="slider"></span>
-				</label>
-			</div>
-
-			<div class="mobile-top-bar">
-				<a href="#" class="logo-menu">blog do du</a>
-			</div>
-
-		
     <div class="mobile-bottom-bar">
         <div class="menu-hamburguer" id="menu-btn">
             <span></span>
@@ -76,27 +74,24 @@
         </div>
     </div>
 
-	
-			<nav class="menu-fixo" id="navegacao-global">
-				<div class="menu-container">
-					<a href="#" class="logo-menu desktop-only">blog do du</a>
+    <nav class="menu-fixo" id="navegacao-global">
+        <div class="menu-container">
+            <a href="#" class="logo-menu desktop-only">blog do du</a>
 
-					<ul class="links-internos" id="menu-lista">
-						<li><a href="#sobre" id="link-sobre">sobre</a></li>
-						<li><a href="#textos" id="link-textos">textos</a></li>
-						<li><a href="#caminhos" id="link-caminhos">caminhos</a></li>
-						<li><a href="#autores" id="link-autores">autoras(es)</a></li>
-						<li><a href="#contato" id="link-contato">contato</a></li>
-					</ul>
-				</div>
-			</nav>
-
+            <ul class="links-internos" id="menu-lista">
+                <li><a href="#sobre" id="link-sobre">sobre</a></li>
+                <li><a href="#textos" id="link-textos">textos</a></li>
+                <li><a href="#caminhos" id="link-caminhos">caminhos</a></li>
+                <li><a href="#autores" id="link-autores">autoras(es)</a></li>
+                <li><a href="#contato" id="link-contato">contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="footer-global desktop-only">
         <p><strong>©2026 blogdodu</strong></p>
     </div>
 
-    
     <div id="modal-foto" class="modal">
         <span class="fechar-modal">&times;</span>
         <img class="modal-conteudo" id="img-ampliada">
@@ -148,10 +143,6 @@
         </div>
     </section>
 
-
-
-
-    
     <main id="conteudo" class="hidden">
         <div class="area-leitura">
             <section id="post-view" class="conteudo-bloco secao-conteudo" style="display: none;">
@@ -296,10 +287,6 @@
         </div>
     </main>
 
-
-
-
-    
     <!-- adicionamos o motor dos autores antes dos posts -->
     <script src="js/authors.js"></script>
     <script src="js/posts.js"></script>
