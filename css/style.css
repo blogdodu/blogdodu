@@ -1238,4 +1238,8 @@ h2 {
     .menu-fixo.ocultar-desktop {
         display: none;
     }
+
+    .nav-global.hidden {
+    display: none !important;
+    }
 }
