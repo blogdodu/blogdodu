@@ -674,7 +674,7 @@ content:
 {
 id: "meus-eus-e-os-outros-ed11",
 title: "meus eus e os outros - ed11",
-date: "27 mar 2026",
+date: "27 abr 2026",
 readingTime: "7 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -986,7 +986,7 @@ content:
 {
 id: "o-que-e-familia-e-familiar-e-o-que-eu-tenho-a-ver-com-isso-ed8",
 title: "o que é família e familiar e o que eu tenho a ver com isso? - ed8",
-date: "09 fev 2026", 
+date: "06 abr 2026", 
 readingTime: "4 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1070,7 +1070,7 @@ content:
 {
 id: "presenteie-se-com-a-nao-existencia-ed7",
 title: "presenteie-se com a não existência - ed7",
-date: "02 fev 2026", 
+date: "30 mar 2026", 
 readingTime: "3 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1142,7 +1142,7 @@ content:
 {
 id: "quem-sabe-no-futuro-ed6",
 title: "quem sabe no futuro - ed6",
-date: "26 jan 2026",
+date: "23 mar 2026",
 readingTime: "4 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1219,7 +1219,7 @@ content:
 {
 id: "to-passado-ed5",
 title: "tô passado!!! - ed5",
-date: "19 jan 2026",
+date: "16 mar 2026",
 readingTime: "3 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1293,7 +1293,7 @@ content:
 {
 id: "erre-com-gosto-ed4",
 title: "erre com gosto!!! - ed4",
-date: "12 jan 2026",
+date: "09 mar 2026",
 readingTime: "5 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1396,7 +1396,7 @@ content:
 {
 id: "vai-com-medo-mesmo-ed3",
 title: "vai¹ com medo mesmo!!!! - ed3",
-date: "05 jan 2026",
+date: "02 mar 2026",
 readingTime: "5 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1488,8 +1488,6 @@ content:
 		<p>no último texto, exploramos as voltas, começos e fins de um cíclo.....</p>
 		<p>vale a pena conferir!...</p>
 	<br>
-		<p><strong><center>um ótimo 2026 pra você!!!!</center></strong></p>
-	<br>
 	<br>
 		<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
 		<p><center>__________________________________</center></p>
@@ -1507,7 +1505,7 @@ content:
 {
 id: "ciclos-ed2",
 title: "ciclos - ed2",
-date: "29 dez 2025",
+date: "23 fev 2026",
 readingTime: "8 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1674,7 +1672,7 @@ content:
 {
 id: "apenas-verdades-absolutas-ed1",
 title: "apenas verdades absolutas - ed1",
-date: "22 dez 2025",
+date: "16 fev 2026",
 readingTime: "3 min de leitura",
 category: "ensaios e provocações",
 categoryId: "#caminhos",
@@ -1758,7 +1756,7 @@ content:
 {
 id: "isso-e-so-o-re-comeco-cd1",
 title: '"isso é só o (re)começo" - cd1',
-date: "19 dez 2025",
+date: "09 fev 2026",
 readingTime: "3 min de leitura",
 category: "conversas",
 categoryId: "#caminhos",
