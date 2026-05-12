@@ -550,6 +550,8 @@ const renderizarPost = (postId) =>
 
 	if (post)
 	{
+		// NOVO: Acorda o Supabase para carregar likes e comentários específicos deste post!
+		iniciarInteracoes(postId);
 		document.getElementById('post-titulo').innerText = post.title;
 		document.getElementById('post-data').innerText = post.date;
 		document.getElementById('post-tempo').innerText = post.readingTime;
@@ -800,6 +802,380 @@ document.querySelectorAll
 
 window.addEventListener
 ('popstate', rotear);
+
+
+
+
+// ......... MOTOR DE INTERAÇÕES E SUPABASE .........
+const supabaseUrl = 'https://ypfwdlkuxxhiqonyxshg.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwZndkbGt1eHhoaXFvbnl4c2hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTQ2MzQsImV4cCI6MjA5MzQzMDYzNH0.mfCDB7r9ELvkqjQyWSzI4kG3oY31ro5xdw3WnxijG0M';
+const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+let currentUser = null;
+let currentProfile = null;
+let postIdAtual = null;
+let comentarioPaiAtual = null; 
+
+// alerta de confirmação de email
+if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token'))
+{
+	alert('e-mail confirmado com sucesso! você já pode entrar.');
+	window.history.replaceState(null, null, window.location.pathname);
+}
+
+const formatarDataAutoral = (dataString) =>
+{
+	const data = new Date(dataString);
+	const ano = data.getFullYear();
+	const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+	return `${ano}.${meses[data.getMonth()]}.${String(data.getDate()).padStart(2, '0')} - ${String(data.getHours()).padStart(2, '0')}h${String(data.getMinutes()).padStart(2, '0')}`;
+};
+
+const verificarSessao = async () =>
+{
+	const { data: { session } } = await supabase.auth.getSession();
+	if (session)
+	{
+		currentUser = session.user;
+		const { data } = await supabase.from('profiles').select('*').eq('id', currentUser.id).single();
+		currentProfile = data;
+		document.getElementById('auth-status-text').innerText = `logado como @${currentProfile?.username || 'leitor'} | sair`;
+	}
+	else
+	{
+		currentUser = null;
+		currentProfile = null;
+		document.getElementById('auth-status-text').innerText = 'cadastrar-se / entrar';
+	}
+};
+
+// Modal Auth Lógica
+const modalAuth = document.getElementById('modal-auth');
+const formAuth = document.getElementById('form-auth');
+const toggleAuthMode = document.getElementById('toggle-auth-mode');
+const authTitulo = document.getElementById('auth-titulo');
+let isLoginMode = true;
+
+const abrirModalAuth = () => { modalAuth.style.display = 'flex'; };
+document.querySelector('.fechar-modal-auth')?.addEventListener('click', () => modalAuth.style.display = 'none');
+
+document.querySelectorAll('.toggle-senha').forEach
+(btn =>
+	{
+		btn.addEventListener
+		('click', (e) =>
+			{
+				const input = e.target.previousElementSibling;
+				if (input.type === 'password')
+				{
+					input.type = 'text';
+					e.target.innerText = 'ocultar';
+				}
+				else
+				{
+					input.type = 'password';
+					e.target.innerText = 'ver';
+				}
+			}
+		);
+	}
+);
+
+document.getElementById('auth-status-text')?.addEventListener
+('click', async () =>
+	{
+		if (currentUser)
+		{
+			await supabase.auth.signOut();
+			verificarSessao();
+			carregarLikes();
+		}
+		else abrirModalAuth();
+	}
+);
+
+toggleAuthMode?.addEventListener
+('click', () =>
+	{
+		isLoginMode = !isLoginMode;
+		authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
+		toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
+	
+		document.querySelectorAll('.auth-cadastro-extra').forEach
+		(el =>
+			{
+				if (isLoginMode)
+				{
+					el.classList.add('hidden');
+					el.removeAttribute('required');
+				}
+				else
+				{
+					el.classList.remove('hidden');
+					el.setAttribute('required', 'required');
+				}
+			}
+		);
+	}
+);
+
+document.getElementById('auth-username')?.addEventListener
+('input', (e) =>
+	{
+		e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
+	}
+);
+
+formAuth?.addEventListener
+('submit', async (e) =>
+	{
+		e.preventDefault();
+		const email = document.getElementById('auth-email').value;
+		const password = document.getElementById('auth-senha').value;
+		const btnSubmit = document.getElementById('btn-auth-submit');
+
+		if (isLoginMode)
+		{
+			btnSubmit.innerText = 'entrando...';
+			const { error } = await supabase.auth.signInWithPassword({ email, password });
+			btnSubmit.innerText = 'confirmar';
+		
+			if (error) alert('e-mail ou senha incorretos.');
+			else { modalAuth.style.display = 'none'; iniciarInteracoes(postIdAtual); }
+		}
+		else
+		{
+			const confirmPassword = document.getElementById('auth-senha-confirma').value;
+			const username = document.getElementById('auth-username').value;
+			
+			if (password !== confirmPassword)
+			{
+				alert('as senhas não coincidem.');
+				return;
+			}
+
+			btnSubmit.innerText = 'cadastrando...';
+			const { error } = await supabase.auth.signUp
+			({ 
+				email, password, options: { data: { username: username } }
+			});
+			btnSubmit.innerText = 'confirmar';
+
+			if (error) alert('erro ao cadastrar: ' + error.message);
+			else
+			{	
+				alert('cadastro realizado! verifique seu e-mail para confirmar a conta antes de entrar.');
+				modalAuth.style.display = 'none';
+			}
+		}
+	}
+);
+
+const gerenciarEstados = () =>
+{
+	if (!currentUser) { abrirModalAuth(); return false; }
+	return true;
+};
+
+// Lógica de Likes
+const btnLike = document.getElementById('btn-like');
+btnLike?.addEventListener
+('click', async () =>
+	{
+		if (!gerenciarEstados()) return;
+		if (btnLike.innerText === '♡')
+		{
+			btnLike.innerText = '❤︎';
+			btnLike.style.opacity = '1';
+			await supabase.from('likes').insert([{ post_id: postIdAtual, user_id: currentUser.id }]);
+		}
+		else
+		{
+			btnLike.innerText = '♡';
+			btnLike.style.opacity = '0.5';
+			await supabase.from('likes').delete().match({ post_id: postIdAtual, user_id: currentUser.id });
+		}
+		carregarLikes();
+	}
+);
+
+const carregarLikes = async () =>
+{
+	const { count } = await supabase.from('likes').select('*', { count: 'exact', head: true }).eq('post_id', postIdAtual);
+	document.getElementById('like-count').innerText = count || 0;
+
+	if (currentUser)
+	{
+		const { data } = await supabase.from('likes').select('*').match({ post_id: postIdAtual, user_id: currentUser.id });
+		if (data && data.length > 0)
+		{
+			btnLike.innerText = '❤︎';
+			btnLike.style.opacity = '1';
+		}
+		else
+		{
+			btnLike.innerText = '♡';
+			btnLike.style.opacity = '0.5';
+		}
+	}
+};
+
+// Lógica de Comentários
+const inputComentario = document.getElementById('comentario-input');
+const grupoBotoes = document.getElementById('grupo-botoes-comentario');
+const btnIniciarEnvio = document.getElementById('btn-iniciar-envio');
+const btnCancelarEnvio = document.getElementById('btn-cancelar-envio');
+const btnConfirmarEnvio = document.getElementById('btn-confirmar-envio');
+const separadorBotoes = document.getElementById('separador-botoes');
+
+inputComentario?.addEventListener
+('click', (e) =>
+	{
+		if (!gerenciarEstados()) { e.preventDefault(); inputComentario.blur(); }
+	}
+);
+
+inputComentario?.addEventListener
+('input', () =>
+	{
+		if (inputComentario.value.trim() !== '')
+		{
+			grupoBotoes.classList.remove('hidden');
+			btnIniciarEnvio.classList.remove('hidden');
+			btnCancelarEnvio.classList.add('hidden');
+			btnConfirmarEnvio.classList.add('hidden');
+			separadorBotoes.classList.add('hidden');
+		}
+		else
+		{
+			grupoBotoes.classList.add('hidden');
+			comentarioPaiAtual = null; 
+			inputComentario.placeholder = 'escreva seu comentário...';
+		}
+	}
+);
+
+btnIniciarEnvio?.addEventListener
+('click', () =>
+	{
+		btnIniciarEnvio.classList.add('hidden');
+		btnCancelarEnvio.classList.remove('hidden');
+		btnConfirmarEnvio.classList.remove('hidden');
+		separadorBotoes.classList.remove('hidden');
+	}
+);
+
+btnCancelarEnvio?.addEventListener
+('click', () =>
+	{
+		btnIniciarEnvio.classList.remove('hidden');
+		btnCancelarEnvio.classList.add('hidden');
+		btnConfirmarEnvio.classList.add('hidden');
+		separadorBotoes.classList.add('hidden');
+		comentarioPaiAtual = null;
+		inputComentario.placeholder = 'escreva seu comentário...';
+		inputComentario.focus();
+	}
+);
+
+btnConfirmarEnvio?.addEventListener
+('click', async () =>
+	{
+		if (!gerenciarEstados()) return;
+		const conteudo = inputComentario.value.trim();
+		if (conteudo === '') return;
+
+		document.getElementById('msg-erro').innerText = 'enviando...';
+		await supabase.from('comments').insert
+		([{ 
+			post_id: postIdAtual, user_id: currentUser.id, content: conteudo, parent_id: comentarioPaiAtual 
+		}]);
+		
+		inputComentario.value = '';
+		inputComentario.placeholder = 'escreva seu comentário...';
+		comentarioPaiAtual = null;
+		grupoBotoes.classList.add('hidden');
+		document.getElementById('msg-erro').innerText = '';
+		carregarComentarios();
+	}
+);
+
+const carregarComentarios = async () =>
+{
+	const lista = document.getElementById('lista-comentarios');
+	lista.innerHTML = '<span class="msg-discreta">carregando ideias...</span>';
+
+	const { data: comentarios } = await supabase
+		.from('comments')
+		.select('*, profiles(username, is_moderator)')
+		.eq('post_id', postIdAtual)
+		.order('created_at', { ascending: true });
+
+	lista.innerHTML = '';
+	
+	if(comentarios)
+	{
+		comentarios.forEach
+		(c =>
+			{
+				const div = document.createElement('div');
+				div.className = c.parent_id ? 'comentario-item comentario-resposta' : 'comentario-item';
+				
+				const prefixo = c.parent_id ? ' - ' : '';
+				const dataFormatada = formatarDataAutoral(c.created_at);
+				const username = c.profiles?.username || 'anonimo';
+				
+				const p = document.createElement('p');
+				p.innerHTML = `${prefixo}<span class="comentario-data">${dataFormatada}</span> <span class="comentario-username">@${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
+				
+				const acoes = document.createElement('div');
+				acoes.className = 'comentario-acoes';
+				
+				const spanResponder = document.createElement('span');
+				spanResponder.innerText = 'responder';
+				spanResponder.onclick = () =>
+				{
+					if (!gerenciarEstados()) return;
+					comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; 
+					inputComentario.placeholder = `respondendo a @${username}...`;
+					inputComentario.focus();
+				};
+				acoes.appendChild(spanResponder);
+
+				if (currentUser && (currentUser.id === c.user_id || currentProfile?.is_moderator))
+				{
+					const spanApagar = document.createElement('span');
+					spanApagar.innerText = 'apagar';
+					spanApagar.onclick = async () =>
+					{
+						await supabase.from('comments').delete().eq('id', c.id);
+						carregarComentarios();
+					};
+					acoes.appendChild(spanApagar);
+				}
+
+				div.appendChild(p);
+				div.appendChild(acoes);
+				lista.appendChild(div);
+			}
+		);
+	}
+};
+
+const iniciarInteracoes = async (postId) =>
+{
+	postIdAtual = postId;
+	await verificarSessao();
+	carregarLikes();
+	carregarComentarios();
+};
+
+// chama pra verificar a sessão ao carregar a página
+verificarSessao();
+
+
+
+
 
 tratarLinksLegados();
 
