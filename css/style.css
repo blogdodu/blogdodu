@@ -245,10 +245,11 @@ body
 	font-weight: 800;
 }
 
-.link-ativo
+.lista-links a.link-ativo,
+.lista-links-mobile a.link-ativo
 {
 	font-weight: bold;
-	color: var(--cor-txt);
+	color: var(--cor-txt); /* agora sim, a luz acende com força máxima! */
 	pointer-events: none;
 }
 
