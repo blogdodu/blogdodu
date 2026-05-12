@@ -248,7 +248,7 @@ body
 .link-ativo
 {
 	font-weight: bold;
-	opacity: var(--cor-txt);
+	color: var(--cor-txt);
 	pointer-events: none;
 }
 
