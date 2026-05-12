@@ -1198,6 +1198,8 @@ body
 								font-size: 0.7rem;
 								opacity: 0.4;
 								white-space: nowrap;
+								text-decoration: none;
+								color: var(--cor-sbg);
 							}
 
 
