@@ -1,297 +1,252 @@
 <!DOCTYPE html>
-
-
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-		<title>blog do du | letras, arte e vida</title>
-		<meta name="description" content="letras, arte e vida - o blog do du se propõe ser um respiro contra a pressa do mundo, com ensaios, poesia e troca de idéias para desacelerar e contemplar o presente...">
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" href="css/style.css">
 
 
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-FK01Z0LGHY">
-			</script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-FK01Z0LGHY');
-			</script>
 
-			<script>
-				window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-			</script>
-			<script defer src="/_vercel/insights/script.js">
-			</script>
 
-			<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
-			</script>
-	</head>
+<head>
+	<!-- ......... área base: informações gerais de funcionamento básico ......... -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- ......... área editável: informações características do blog ......... -->
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<title>blog do du | letras, arte e vida</title>
+	<meta name="description" content="letras, arte e vida - o blog do du se propõe ser um respiro contra a pressa do mundo, com ensaios, poesia e troca de idéias para desacelerar e contemplar o presente...">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+
+
+	<!-- ......... área editável: robôs de análise ......... -->
+	<!-- ......... robô de análise do google analytics......... -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FK01Z0LGHY">
+	</script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-FK01Z0LGHY');
+	</script>
+
+	<script>
+		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+	</script>
+
+
+	<!-- ......... robô de análise do google vercel......... -->
+	<script defer src="/_vercel/insights/script.js">
+	</script>
+
+	<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+	</script>
+</head>
+
+
+
 
 <body>
-    <div id="barra-leitura">
-    </div>
-
-    <div class="toggle-container desktop-only">
-        <label class="switch">
-            <input type="checkbox" class="theme-toggle-input" checked>
-            <span class="slider"></span>
-        </label>
-    </div>
-
-    <div class="mobile-top-bar">
-        <a href="#" class="logo-menu">blog do du</a>
-    </div>
+	<!-- função: barra de progresso de leitura -->
+	<div id="barra-leitura-progresso"></div>
 
 
+	<!-- função: seletor de modo claro/escuro -->
+	<div class="toggle-container desktop-only">
+		<label class="switch">
+			<input type="checkbox" class="theme-toggle-input" checked aria-label="alternar tema escuro">
+			<span class="slider"></span>
+		</label>
+	</div>
 
-    <div class="mobile-bottom-bar">
-        <div class="menu-hamburguer" id="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <div class="mobile-copyright">
-            ©2026 blogdodu
-        </div>
-        
-        <div class="toggle-container">
-            <label class="switch">
-                <input type="checkbox" class="theme-toggle-input" checked>
-                <span class="slider"></span>
-            </label>
-        </div>
-    </div>
 
-    <nav class="menu-fixo" id="navegacao-global">
-        <div class="menu-container">
-            <a href="#" class="logo-menu desktop-only">blog do du</a>
+	<!-- função: capa do site -->
+	<section id="capa-inicial">
+		<div class="conteudo-capa">
+			<h1 class="logo-gigante" translate="no">blog do du</h1>
+			<h2 class="subtitulo-capa">poesia • filosofia • arte • vida</h2>
+			<nav class="menu-capa desktop-only">
+				<ul class="lista-links">
+					<li><a href="/about" data-link class="forca-minuscula">sobre</a></li>
+					<li><a href="/texts" data-link class="forca-minuscula">textos</a></li>
+					<li><a href="/ways" data-link class="forca-minuscula">caminhos</a></li>
+					<li><a href="/authors" data-link class="forca-minuscula">autoras(es)</a></li>
+					<li><a href="/contact" data-link class="forca-minuscula">contato</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="rodape-capa">©2026 blogdodu</div>
+	</section>
 
-            <ul class="links-internos" id="menu-lista">
-                <li><a href="#sobre" id="link-sobre">sobre</a></li>
-                <li><a href="#textos" id="link-textos">textos</a></li>
-                <li><a href="#caminhos" id="link-caminhos">caminhos</a></li>
-                <li><a href="#autores" id="link-autores">autoras(es)</a></li>
-                <li><a href="#contato" id="link-contato">contato</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="footer-global desktop-only">
-        <p><strong>©2026 blogdodu</strong></p>
-    </div>
+	<!-- função: menu de navegação -->
+	<header id="cabecalho-principal" class="hidden">
+		<nav class="menu-navegacao">
+			<a href="/" class="logo" data-link translate="no">blog do du</a>
+			<ul class="lista-links desktop-only">
+				<li><a href="/about" data-link class="forca-minuscula">sobre</a></li>
+				<li><a href="/texts" data-link class="forca-minuscula">textos</a></li>
+				<li><a href="/ways" data-link class="forca-minuscula">caminhos</a></li>
+				<li><a href="/authors" data-link class="forca-minuscula">autoras(es)</a></li>
+				<li><a href="/contact" data-link class="forca-minuscula">contato</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <div id="modal-foto" class="modal">
-        <span class="fechar-modal">&times;</span>
-        <img class="modal-conteudo" id="img-ampliada">
-    </div>
 
-<!-- modal de login minimalista -->
-    <div id="modal-auth" class="modal">
-        <div class="modal-auth-conteudo">
-            <span class="fechar-modal-auth">&times;</span>
-            <h3 id="auth-titulo">entrar</h3>
-            
-            <form id="form-auth">
-                <input type="email" id="auth-email" placeholder="seu e-mail..." required>
-                
-                <div class="input-com-icone">
-                    <input type="password" id="auth-senha" placeholder="sua senha..." required>
-                    <span class="toggle-senha">ver</span>
-                </div>
+	<!-- função: menu de navegação mobile -->
+	<div id="barra-mobile" class="mobile-only">
+		<div class="coluna-mobile lateral">
+			<div class="menu-hamburguer" id="menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="coluna-mobile central">
+			<span class="copyright-mobile">©2026 blogdodu</span>
+		</div>
+		<div class="coluna-mobile lateral direita">
+			<div class="toggle-container-mobile">
+				<label class="switch">
+					<input type="checkbox" class="theme-toggle-input" checked>
+					<span class="slider"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div id="painel-menu-mobile" class="mobile-only hidden">
+		<nav class="navegacao-mobile">
+			<ul class="lista-links-mobile">
+				<li><a href="/about" data-link class="forca-minuscula">sobre</a></li>
+				<li><a href="/texts" data-link class="forca-minuscula">textos</a></li>
+				<li><a href="/ways" data-link class="forca-minuscula">caminhos</a></li>
+				<li><a href="/authors" data-link class="forca-minuscula">autoras(es)</a></li>
+				<li><a href="/contact" data-link class="forca-minuscula">contato</a></li>
+			</ul>
+		</nav>
+	</div>
 
-                <div class="input-com-icone auth-cadastro-extra hidden">
-                    <input type="password" id="auth-senha-confirma" placeholder="confirme sua senha...">
-                    <span class="toggle-senha">ver</span>
-                </div>
 
-                <input type="text" id="auth-username" placeholder="escolha um @username..." class="auth-cadastro-extra hidden">
-                
-                <button type="submit" id="btn-auth-submit">confirmar</button>
-            </form>
-            
-            <span id="toggle-auth-mode" class="auth-link">não tem conta? cadastrar-se.</span>
-        </div>
-    </div>
 
-    <section id="capa" class="animacao-entrada">
-        <div class="conteudo-capa">
-            <h1>blog do du</h1>
-            <p class="subtitulo">poesia  •  filosofia  •  arte  •  vida</p>
-            
-            <nav class="menu-capa">
-                <ul>
-                    <li><a href="#sobre">sobre</a></li>
-                    <li><a href="#textos">textos</a></li>
-                    <li><a href="#caminhos">caminhos</a></li>
-                    <li><a href="#autores">autoras(es)</a></li>
-                    <li><a href="#contato">contato</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-    </section>
 
-    <main id="conteudo" class="hidden">
-        <div class="area-leitura">
-            <section id="post-view" class="conteudo-bloco secao-conteudo" style="display: none;">
+	<!-- função: conteúdos das páginas -->
+	<main id="conteudo-principal" class="hidden">
 
-                <div class="titulo-com-voltar">
-                    <a href="#textos" class="seta-voltar">&lt;</a>
-                    <h2 id="dynamic-title">Titulo do Post</h2>
-                </div>
-                
-                <div class="meta-post">
-                    <small id="dynamic-date">Data</small>
-                    <small class="tag-post">
-                        <a href="#" id="dynamic-cat">Categoria</a> / <a href="#" id="dynamic-author">Autor</a> . <span id="dynamic-time">Tempo</span>
-                    </small>
-                </div>
-
-                <div class="corpo-post">
-                    <br><br><br>
-                    
-                    <div id="dynamic-content">
-                    </div>
-
-                    <div class="apoio-container" style="margin-top: 60px;">
-                        <p>considere apoiar o projeto <strong>a partir de R$ 5,oo</strong></p>
-                        <p><a href="https://apoia.se/blogdodu"><strong>https://apoia.se/blogdodu</strong></a></p>
-                        
-                        <div class="pix-info">
-                            <p>chave pix para apoiar diretamente:</p>
-                            <p><strong>pix.ducanal@gmail.com</strong></p>
-                            <p class="detalhe">(sim, é um email feio e sem glamour - mas o café que ele proporciona é real e aquece o coração....)</p>
-                        </div>
-                        
-                    </div>
-
-                    <div class="navigation-layout">
-                        <div id="nav-prev-area">
-                        </div>
-
-                        <div class="post-capa-center">
-                            <img id="dynamic-image" src="" alt="">
-                            <span id="dynamic-caption" class="legenda-foto"></span>
-                        </div>
-
-                        <div id="nav-next-area">
-                        </div>
-                    </div>
-
-                    <div id="social-area"></div>
-                    
-                    <div id="interacao-autoral" class="interacao-container">
-                        <div class="linha-interacao">
-                            <button id="btn-like" class="btn-icone">♡</button>
-                            <span id="like-count">0</span>
-                            
-                            <div class="auth-status-container">
-                                <span id="auth-status-text" class="auth-link">cadastrar-se / entrar</span>
-                            </div>
-                            
-                        </div>
-
-                        <div class="form-comentario">
-                            <textarea id="comentario-input" placeholder="escreva seu comentário..." rows="1" autocomplete="off"></textarea>
-                            
-                            <div class="acoes-form">
-                                <span id="msg-erro" class="msg-discreta"></span>
-                                <div id="grupo-botoes-comentario" class="hidden">
-                                    <button id="btn-iniciar-envio" class="btn-texto">enviar</button>
-                                    <button id="btn-cancelar-envio" class="btn-texto hidden">cancelar</button>
-                                    <span id="separador-botoes" class="hidden">/</span>
-                                    <button id="btn-confirmar-envio" class="btn-texto hidden">confirmar envio</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div id="lista-comentarios" class="lista-comentarios">
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section id="textos" class="conteudo-bloco secao-conteudo">
-                <div class="titulo-com-voltar">
-                    <a href="#" class="seta-voltar">&lt;</a>
-                    <h2>textos</h2>
-                </div>
+		<section id="pagina-about" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 id="titulo-author" class="titulo-sessao" class="forca-minuscula">sobre</h2>
+			</div>
     
-                <div class="container-busca">
-                    <input type="text" id="campo-busca" placeholder="busque por título, tema ou palavra..." autocomplete="off">
-                </div>
+			<div id="conteudo-perfil-author"></div>
+		</section>
 
-                <div id="textos-lista"></div>
-            </section>
+		<section id="pagina-texts" class="sessao-interna sessao-expandida">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 class="titulo-sessao forca-minuscula">textos</h2>
+			</div>
+						
+			<div class="container-busca">
+				<input type="text" id="campo-busca" placeholder="busque por título, tema ou palavra..." autocomplete="off">
+			</div>
+
+			<div id="grade-de-textos" class="grade-textos"></div>
+		</section>
+
+		<section id="pagina-ways" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 class="titulo-sessao" class="forca-minuscula">caminhos</h2>
+			</div>
+			
+			<div id="lista-caminhos" class="lista-simples"></div>
+		</section>
+
+		<section id="pagina-ways-results" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 id="titulo-categoria-ativa" class="titulo-sessao" class="forca-minuscula">caminho</h2>
+			</div>
+
+			<div id="lista-posts-categoria" class="lista-posts-resumo"></div>
+		</section>
+
+		<section id="pagina-authors" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 class="titulo-sessao" class="forca-minuscula">autoras(es)</h2>
+			</div>
+				<p style="margin-bottom: 30px;">espero sempre poder aumentar essa lista, que começa, humildemente comigo</p>
             
-            <section id="caminhos" class="conteudo-bloco secao-conteudo">
-                <div class="titulo-com-voltar">
-                    <a href="#" class="seta-voltar">&lt;</a>
-                    <h2>caminhos</h2>
-                </div>
+            <div id="lista-pessoas-autoras" class="lista-simples"></div>
+		</section>
 
-                <div class="lista-simples">
-                    <a href="#cat-ensaios" class="item-lista">ensaios e provocações <span>&rarr;</span></a>
-                    <a href="#cat-poesias" class="item-lista">poesia e música <span>&rarr;</span></a>
-                    <a href="#cat-conversas" class="item-lista">conversas <span>&rarr;</span></a>
-                </div>
-            </section>
+		<section id="pagina-post" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar" onclick="window.history.back(); return false;">&lt;</a>
+				<h2 id="post-titulo" class="titulo-sessao" class="forca-minuscula">título do texto</h2>
+			</div>
+			
+            <div class="meta-post">
+				<span id="post-data" class="meta-data">Data</span>
+				<span class="meta-tags">
+					<a href="#" id="post-categoria">Categoria</a> / 
+					<a href="#" id="post-author">Autor</a> . 
+					<span id="post-tempo">Tempo</span>
+				</span>
+			</div>
 
-            <!-- NOVA SEÇÃO LISTA DE AUTORAS(ES) DINÂMICA -->
-            <section id="autores" class="conteudo-bloco secao-conteudo" style="display: none;">
-                <div class="titulo-com-voltar">
-                    <a href="#" class="seta-voltar">&lt;</a>
-                    <h2>autoras(es)</h2>
-                </div>
-                <p style="margin-bottom: 30px;">espero sempre poder aumentar essa lista, que começa, humildemente comigo</p>
-                <div id="lista-autoras" class="feed-grid"></div>
-            </section>
+            <div id="post-conteudo" class="corpo-post"></div>
+		</section>
+		
+		<section id="pagina-contact" class="sessao-interna">
+			<div class="titulo-com-voltar">
+				<a href="#" class="seta-voltar">&lt;</a>
+				<h2 class="titulo-sessao" class="forca-minuscula">contato</h2>
+			</div>
+			<div class="corpo-sessao">
+					<p>se você tem um pedido, uma sugestão, quer enviar uma mensagem ou tem interesse em parcerias, sinta-se à vontade para me escrever..... </p>
+				<br>
+					<p><strong>'eu mesmo'¹ leio cada e-mail!!!</strong></p>
+				<hr class="divisor-fino-longo">
+					<p class="email-contato">
+							<a href="mailto:pix.ducanal@gmail.com">pix.ducanal@gmail.com</a>
+					</p>
+				<div class="espaco-respiro">
+				</div>
+					<p class="nota-rodape">¹ enquanto for viável....rsrrsr</p>
+				<br>
+				<div class="pos-scriptum">
+						<p><strong>ps.:</strong> até o momento o blog funciona na função "euquipe", desde a programação, design e textos..... qualquer coisa que dê errado a culpa é minha mesmo e pode relatar que vou tentar resolver.....rsrsrsr....</p>
+				</div>
+			</div>
+		</section>
+	</main>
 
-            <!-- NOVA SEÇÃO PERFIL DO AUTOR (A casca que será preenchida pelo javascript) -->
-            <section id="perfil-autor" class="conteudo-bloco secao-conteudo" style="display: none;">
-            </section>
 
-            <section id="contato" class="conteudo-bloco secao-conteudo">
-                <div class="titulo-com-voltar">
-                    <a href="#" class="seta-voltar">&lt;</a>
-                    <h2>contato</h2>
-                </div>
-                <p>se você tem um pedido, uma sugestão, quer enviar uma mensagem ou tem interesse em parcerias, sinta-se à vontade para me escrever..... </p><br>
-                <p><strong>'eu mesmo'¹  leio cada e-mail!!!</strong></p>
-                    <hr class="divisor-fino-longo">
-                <p style="font-size: 1.1rem; font-weight: bold;">
-                    <a href="mailto:pix.ducanal@gmail.com" style="color: var(--text-color);">pix.ducanal@gmail.com</a>
-                </p>
-                <br><br><br><br><br><br><br><br>
-                <p>¹ enquanto for viável....rsrrsr</p>
-                <br>
-                <div class="pos-scriptum">
-                    <p><strong>ps.:</strong> até o momento o blog funciona na função "euquipe", desde a programação, design e textos..... qualquer coisa que dê errado a culpa é minha mesmo e pode relatar que vou tentar resolver.....rsrsrsr....</p>
-                </div>
-            </section>
+	<!-- função: ampliação da foto de perfil -->
+	<div id="modal-foto" class="modal">
+		<img class="modal-conteudo" id="img-ampliada" alt="imagem ampliada">
+	</div>
 
-        </div>
-    </main>
 
-    <!-- adicionamos o motor dos autores antes dos posts -->
-    <script src="js/authors.js"></script>
-    <script src="js/posts.js"></script>
-    <script src="js/script.js"></script>
+	<div id="rodape-interno" class="desktop-only">
+		©2026 blogdodu
+	</div>
 
+    <script src="/js/script.js"></script>
+
+	<script src="/js/authors.js"></script>
+    <script src="/js/posts.js"></script>
 </body>
+
+
+
 
 </html>
