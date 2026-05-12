@@ -662,27 +662,6 @@ const renderizarPost = (postId) =>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ......... função: roteamento de páginas/sessões (roteador)
 const capaInicial = document.getElementById('capa-inicial');
 const cabecalhoPrincipal = document.getElementById('cabecalho-principal');
@@ -806,10 +785,21 @@ window.addEventListener
 
 
 
+
+
+
+
+
+
+
+
+
 // ......... MOTOR DE INTERAÇÕES E SUPABASE .........
 const supabaseUrl = 'https://ypfwdlkuxxhiqonyxshg.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlwZndkbGt1eHhoaXFvbnl4c2hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc4NTQ2MzQsImV4cCI6MjA5MzQzMDYzNH0.mfCDB7r9ELvkqjQyWSzI4kG3oY31ro5xdw3WnxijG0M';
-const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+// AQUI ESTÁ A MÁGICA: mudamos o nome para clienteSupabase para evitar colisões
+const clienteSupabase = window.supabase.createClient(supabaseUrl, supabaseKey);
 
 let currentUser = null;
 let currentProfile = null;
@@ -817,32 +807,26 @@ let postIdAtual = null;
 let comentarioPaiAtual = null; 
 
 // alerta de confirmação de email
-if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token'))
-{
+if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
 	alert('e-mail confirmado com sucesso! você já pode entrar.');
 	window.history.replaceState(null, null, window.location.pathname);
 }
 
-const formatarDataAutoral = (dataString) =>
-{
+const formatarDataAutoral = (dataString) => {
 	const data = new Date(dataString);
 	const ano = data.getFullYear();
 	const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
 	return `${ano}.${meses[data.getMonth()]}.${String(data.getDate()).padStart(2, '0')} - ${String(data.getHours()).padStart(2, '0')}h${String(data.getMinutes()).padStart(2, '0')}`;
 };
 
-const verificarSessao = async () =>
-{
-	const { data: { session } } = await supabase.auth.getSession();
-	if (session)
-	{
+const verificarSessao = async () => {
+	const { data: { session } } = await clienteSupabase.auth.getSession();
+	if (session) {
 		currentUser = session.user;
-		const { data } = await supabase.from('profiles').select('*').eq('id', currentUser.id).single();
+		const { data } = await clienteSupabase.from('profiles').select('*').eq('id', currentUser.id).single();
 		currentProfile = data;
 		document.getElementById('auth-status-text').innerText = `logado como @${currentProfile?.username || 'leitor'} | sair`;
-	}
-	else
-	{
+	} else {
 		currentUser = null;
 		currentProfile = null;
 		document.getElementById('auth-status-text').innerText = 'cadastrar-se / entrar';
@@ -859,161 +843,114 @@ let isLoginMode = true;
 const abrirModalAuth = () => { modalAuth.style.display = 'flex'; };
 document.querySelector('.fechar-modal-auth')?.addEventListener('click', () => modalAuth.style.display = 'none');
 
-document.querySelectorAll('.toggle-senha').forEach
-(btn =>
-	{
-		btn.addEventListener
-		('click', (e) =>
-			{
-				const input = e.target.previousElementSibling;
-				if (input.type === 'password')
-				{
-					input.type = 'text';
-					e.target.innerText = 'ocultar';
-				}
-				else
-				{
-					input.type = 'password';
-					e.target.innerText = 'ver';
-				}
-			}
-		);
-	}
-);
-
-document.getElementById('auth-status-text')?.addEventListener
-('click', async () =>
-	{
-		if (currentUser)
-		{
-			await supabase.auth.signOut();
-			verificarSessao();
-			carregarLikes();
+document.querySelectorAll('.toggle-senha').forEach(btn => {
+	btn.addEventListener('click', (e) => {
+		const input = e.target.previousElementSibling;
+		if (input.type === 'password') {
+			input.type = 'text';
+			e.target.innerText = 'ocultar';
+		} else {
+			input.type = 'password';
+			e.target.innerText = 'ver';
 		}
-		else abrirModalAuth();
-	}
-);
+	});
+});
 
-toggleAuthMode?.addEventListener
-('click', () =>
-	{
-		isLoginMode = !isLoginMode;
-		authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
-		toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
+document.getElementById('auth-status-text')?.addEventListener('click', async () => {
+	if (currentUser) {
+		await clienteSupabase.auth.signOut();
+		verificarSessao();
+		carregarLikes();
+	} else abrirModalAuth();
+});
+
+toggleAuthMode?.addEventListener('click', () => {
+	isLoginMode = !isLoginMode;
+	authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
+	toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
 	
-		document.querySelectorAll('.auth-cadastro-extra').forEach
-		(el =>
-			{
-				if (isLoginMode)
-				{
-					el.classList.add('hidden');
-					el.removeAttribute('required');
-				}
-				else
-				{
-					el.classList.remove('hidden');
-					el.setAttribute('required', 'required');
-				}
-			}
-		);
-	}
-);
+	document.querySelectorAll('.auth-cadastro-extra').forEach(el => {
+		if (isLoginMode) {
+			el.classList.add('hidden');
+			el.removeAttribute('required');
+		} else {
+			el.classList.remove('hidden');
+			el.setAttribute('required', 'required');
+		}
+	});
+});
 
-document.getElementById('auth-username')?.addEventListener
-('input', (e) =>
-	{
-		e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
-	}
-);
+document.getElementById('auth-username')?.addEventListener('input', (e) => {
+	e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
+});
 
-formAuth?.addEventListener
-('submit', async (e) =>
-	{
-		e.preventDefault();
-		const email = document.getElementById('auth-email').value;
-		const password = document.getElementById('auth-senha').value;
-		const btnSubmit = document.getElementById('btn-auth-submit');
+formAuth?.addEventListener('submit', async (e) => {
+	e.preventDefault();
+	const email = document.getElementById('auth-email').value;
+	const password = document.getElementById('auth-senha').value;
+	const btnSubmit = document.getElementById('btn-auth-submit');
 
-		if (isLoginMode)
-		{
-			btnSubmit.innerText = 'entrando...';
-			const { error } = await supabase.auth.signInWithPassword({ email, password });
-			btnSubmit.innerText = 'confirmar';
+	if (isLoginMode) {
+		btnSubmit.innerText = 'entrando...';
+		const { error } = await clienteSupabase.auth.signInWithPassword({ email, password });
+		btnSubmit.innerText = 'confirmar';
 		
-			if (error) alert('e-mail ou senha incorretos.');
-			else { modalAuth.style.display = 'none'; iniciarInteracoes(postIdAtual); }
+		if (error) alert('e-mail ou senha incorretos.');
+		else { modalAuth.style.display = 'none'; iniciarInteracoes(postIdAtual); }
+	} else {
+		const confirmPassword = document.getElementById('auth-senha-confirma').value;
+		const username = document.getElementById('auth-username').value;
+		
+		if (password !== confirmPassword) {
+			alert('as senhas não coincidem.');
+			return;
 		}
-		else
-		{
-			const confirmPassword = document.getElementById('auth-senha-confirma').value;
-			const username = document.getElementById('auth-username').value;
-			
-			if (password !== confirmPassword)
-			{
-				alert('as senhas não coincidem.');
-				return;
-			}
 
-			btnSubmit.innerText = 'cadastrando...';
-			const { error } = await supabase.auth.signUp
-			({ 
-				email, password, options: { data: { username: username } }
-			});
-			btnSubmit.innerText = 'confirmar';
+		btnSubmit.innerText = 'cadastrando...';
+		const { error } = await clienteSupabase.auth.signUp({ 
+			email, password, options: { data: { username: username } }
+		});
+		btnSubmit.innerText = 'confirmar';
 
-			if (error) alert('erro ao cadastrar: ' + error.message);
-			else
-			{	
-				alert('cadastro realizado! verifique seu e-mail para confirmar a conta antes de entrar.');
-				modalAuth.style.display = 'none';
-			}
+		if (error) alert('erro ao cadastrar: ' + error.message);
+		else {
+			alert('cadastro realizado! verifique seu e-mail para confirmar a conta antes de entrar.');
+			modalAuth.style.display = 'none';
 		}
 	}
-);
+});
 
-const gerenciarEstados = () =>
-{
+const gerenciarEstados = () => {
 	if (!currentUser) { abrirModalAuth(); return false; }
 	return true;
 };
 
 // Lógica de Likes
 const btnLike = document.getElementById('btn-like');
-btnLike?.addEventListener
-('click', async () =>
-	{
-		if (!gerenciarEstados()) return;
-		if (btnLike.innerText === '♡')
-		{
-			btnLike.innerText = '❤︎';
-			btnLike.style.opacity = '1';
-			await supabase.from('likes').insert([{ post_id: postIdAtual, user_id: currentUser.id }]);
-		}
-		else
-		{
-			btnLike.innerText = '♡';
-			btnLike.style.opacity = '0.5';
-			await supabase.from('likes').delete().match({ post_id: postIdAtual, user_id: currentUser.id });
-		}
-		carregarLikes();
+btnLike?.addEventListener('click', async () => {
+	if (!gerenciarEstados()) return;
+	if (btnLike.innerText === '♡') {
+		btnLike.innerText = '❤︎';
+		btnLike.style.opacity = '1';
+		await clienteSupabase.from('likes').insert([{ post_id: postIdAtual, user_id: currentUser.id }]);
+	} else {
+		btnLike.innerText = '♡';
+		btnLike.style.opacity = '0.5';
+		await clienteSupabase.from('likes').delete().match({ post_id: postIdAtual, user_id: currentUser.id });
 	}
-);
+	carregarLikes();
+});
 
-const carregarLikes = async () =>
-{
-	const { count } = await supabase.from('likes').select('*', { count: 'exact', head: true }).eq('post_id', postIdAtual);
+const carregarLikes = async () => {
+	const { count } = await clienteSupabase.from('likes').select('*', { count: 'exact', head: true }).eq('post_id', postIdAtual);
 	document.getElementById('like-count').innerText = count || 0;
 
-	if (currentUser)
-	{
-		const { data } = await supabase.from('likes').select('*').match({ post_id: postIdAtual, user_id: currentUser.id });
-		if (data && data.length > 0)
-		{
+	if (currentUser) {
+		const { data } = await clienteSupabase.from('likes').select('*').match({ post_id: postIdAtual, user_id: currentUser.id });
+		if (data && data.length > 0) {
 			btnLike.innerText = '❤︎';
 			btnLike.style.opacity = '1';
-		}
-		else
-		{
+		} else {
 			btnLike.innerText = '♡';
 			btnLike.style.opacity = '0.5';
 		}
@@ -1028,84 +965,64 @@ const btnCancelarEnvio = document.getElementById('btn-cancelar-envio');
 const btnConfirmarEnvio = document.getElementById('btn-confirmar-envio');
 const separadorBotoes = document.getElementById('separador-botoes');
 
-inputComentario?.addEventListener
-('click', (e) =>
-	{
-		if (!gerenciarEstados()) { e.preventDefault(); inputComentario.blur(); }
-	}
-);
+inputComentario?.addEventListener('click', (e) => {
+	if (!gerenciarEstados()) { e.preventDefault(); inputComentario.blur(); }
+});
 
-inputComentario?.addEventListener
-('input', () =>
-	{
-		if (inputComentario.value.trim() !== '')
-		{
-			grupoBotoes.classList.remove('hidden');
-			btnIniciarEnvio.classList.remove('hidden');
-			btnCancelarEnvio.classList.add('hidden');
-			btnConfirmarEnvio.classList.add('hidden');
-			separadorBotoes.classList.add('hidden');
-		}
-		else
-		{
-			grupoBotoes.classList.add('hidden');
-			comentarioPaiAtual = null; 
-			inputComentario.placeholder = 'escreva seu comentário...';
-		}
-	}
-);
-
-btnIniciarEnvio?.addEventListener
-('click', () =>
-	{
-		btnIniciarEnvio.classList.add('hidden');
-		btnCancelarEnvio.classList.remove('hidden');
-		btnConfirmarEnvio.classList.remove('hidden');
-		separadorBotoes.classList.remove('hidden');
-	}
-);
-
-btnCancelarEnvio?.addEventListener
-('click', () =>
-	{
+inputComentario?.addEventListener('input', () => {
+	if (inputComentario.value.trim() !== '') {
+		grupoBotoes.classList.remove('hidden');
 		btnIniciarEnvio.classList.remove('hidden');
 		btnCancelarEnvio.classList.add('hidden');
 		btnConfirmarEnvio.classList.add('hidden');
 		separadorBotoes.classList.add('hidden');
-		comentarioPaiAtual = null;
-		inputComentario.placeholder = 'escreva seu comentário...';
-		inputComentario.focus();
-	}
-);
-
-btnConfirmarEnvio?.addEventListener
-('click', async () =>
-	{
-		if (!gerenciarEstados()) return;
-		const conteudo = inputComentario.value.trim();
-		if (conteudo === '') return;
-
-		document.getElementById('msg-erro').innerText = 'enviando...';
-		await supabase.from('comments').insert
-		([{ 
-			post_id: postIdAtual, user_id: currentUser.id, content: conteudo, parent_id: comentarioPaiAtual 
-		}]);
-		
-		inputComentario.value = '';
-		inputComentario.placeholder = 'escreva seu comentário...';
-		comentarioPaiAtual = null;
+	} else {
 		grupoBotoes.classList.add('hidden');
-		document.getElementById('msg-erro').innerText = '';
-		carregarComentarios();
+		comentarioPaiAtual = null; 
+		inputComentario.placeholder = 'escreva seu comentário...';
 	}
-);
+});
 
-const carregarComentarios = async () =>
-{
+btnIniciarEnvio?.addEventListener('click', () => {
+	btnIniciarEnvio.classList.add('hidden');
+	btnCancelarEnvio.classList.remove('hidden');
+	btnConfirmarEnvio.classList.remove('hidden');
+	separadorBotoes.classList.remove('hidden');
+});
+
+btnCancelarEnvio?.addEventListener('click', () => {
+	btnIniciarEnvio.classList.remove('hidden');
+	btnCancelarEnvio.classList.add('hidden');
+	btnConfirmarEnvio.classList.add('hidden');
+	separadorBotoes.classList.add('hidden');
+	comentarioPaiAtual = null;
+	inputComentario.placeholder = 'escreva seu comentário...';
+	inputComentario.focus();
+});
+
+btnConfirmarEnvio?.addEventListener('click', async () => {
+	if (!gerenciarEstados()) return;
+	const conteudo = inputComentario.value.trim();
+	if (conteudo === '') return;
+
+	document.getElementById('msg-erro').innerText = 'enviando...';
+	await clienteSupabase.from('comments').insert([{ 
+		post_id: postIdAtual, user_id: currentUser.id, content: conteudo, parent_id: comentarioPaiAtual 
+	}]);
+	
+	inputComentario.value = '';
+	inputComentario.placeholder = 'escreva seu comentário...';
+	comentarioPaiAtual = null;
+	grupoBotoes.classList.add('hidden');
+	document.getElementById('msg-erro').innerText = '';
+	carregarComentarios();
+});
+
+const carregarComentarios = async () => {
 	const lista = document.getElementById('lista-comentarios');
 	lista.innerHTML = '<span class="msg-discreta">carregando ideias...</span>';
 
-	const { data: comentarios } = await supabase
+	const { data: comentarios } = await clienteSupabase
 		.from('comments')
 		.select('*, profiles(username, is_moderator)')
 		.eq('post_id', postIdAtual)
@@ -1113,57 +1030,49 @@ const carregarComentarios = async () =>
 
 	lista.innerHTML = '';
 	
-	if(comentarios)
-	{
-		comentarios.forEach
-		(c =>
-			{
-				const div = document.createElement('div');
-				div.className = c.parent_id ? 'comentario-item comentario-resposta' : 'comentario-item';
-				
-				const prefixo = c.parent_id ? ' - ' : '';
-				const dataFormatada = formatarDataAutoral(c.created_at);
-				const username = c.profiles?.username || 'anonimo';
-				
-				const p = document.createElement('p');
-				p.innerHTML = `${prefixo}<span class="comentario-data">${dataFormatada}</span> <span class="comentario-username">@${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
-				
-				const acoes = document.createElement('div');
-				acoes.className = 'comentario-acoes';
-				
-				const spanResponder = document.createElement('span');
-				spanResponder.innerText = 'responder';
-				spanResponder.onclick = () =>
-				{
-					if (!gerenciarEstados()) return;
-					comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; 
-					inputComentario.placeholder = `respondendo a @${username}...`;
-					inputComentario.focus();
+	if(comentarios) {
+		comentarios.forEach(c => {
+			const div = document.createElement('div');
+			div.className = c.parent_id ? 'comentario-item comentario-resposta' : 'comentario-item';
+			
+			const prefixo = c.parent_id ? ' - ' : '';
+			const dataFormatada = formatarDataAutoral(c.created_at);
+			const username = c.profiles?.username || 'anonimo';
+			
+			const p = document.createElement('p');
+			p.innerHTML = `${prefixo}<span class="comentario-data">${dataFormatada}</span> <span class="comentario-username">@${username}</span> : ${c.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
+			
+			const acoes = document.createElement('div');
+			acoes.className = 'comentario-acoes';
+			
+			const spanResponder = document.createElement('span');
+			spanResponder.innerText = 'responder';
+			spanResponder.onclick = () => {
+				if (!gerenciarEstados()) return;
+				comentarioPaiAtual = c.parent_id ? c.parent_id : c.id; 
+				inputComentario.placeholder = `respondendo a @${username}...`;
+				inputComentario.focus();
+			};
+			acoes.appendChild(spanResponder);
+
+			if (currentUser && (currentUser.id === c.user_id || currentProfile?.is_moderator)) {
+				const spanApagar = document.createElement('span');
+				spanApagar.innerText = 'apagar';
+				spanApagar.onclick = async () => {
+					await clienteSupabase.from('comments').delete().eq('id', c.id);
+					carregarComentarios();
 				};
-				acoes.appendChild(spanResponder);
-
-				if (currentUser && (currentUser.id === c.user_id || currentProfile?.is_moderator))
-				{
-					const spanApagar = document.createElement('span');
-					spanApagar.innerText = 'apagar';
-					spanApagar.onclick = async () =>
-					{
-						await supabase.from('comments').delete().eq('id', c.id);
-						carregarComentarios();
-					};
-					acoes.appendChild(spanApagar);
-				}
-
-				div.appendChild(p);
-				div.appendChild(acoes);
-				lista.appendChild(div);
+				acoes.appendChild(spanApagar);
 			}
-		);
+
+			div.appendChild(p);
+			div.appendChild(acoes);
+			lista.appendChild(div);
+		});
 	}
 };
 
-const iniciarInteracoes = async (postId) =>
-{
+const iniciarInteracoes = async (postId) => {
 	postIdAtual = postId;
 	await verificarSessao();
 	carregarLikes();
@@ -1172,6 +1081,24 @@ const iniciarInteracoes = async (postId) =>
 
 // chama pra verificar a sessão ao carregar a página
 verificarSessao();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
