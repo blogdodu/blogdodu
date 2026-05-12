@@ -786,6 +786,13 @@ document.querySelectorAll
 				evento.preventDefault();
 				history.pushState(null, null, link.href);
 				rotear();
+				
+				// 1. Força a tela a subir instantaneamente ao clicar no menu
+				window.scrollTo(0, 0); 
+				
+				// 2. Garante que a barra amarela de progresso zere imediatamente
+				const barraProgresso = document.getElementById("barra-leitura-progresso");
+				if (barraProgresso) barraProgresso.style.height = "0%";
 			}
 		);
 	}
