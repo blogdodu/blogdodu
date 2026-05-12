@@ -39,11 +39,13 @@
 	</script>
 
 
-	<!-- ......... robô de análise do google vercel......... -->
+	<!-- ......... robô de análise do vercel......... -->
 	<script defer src="/_vercel/insights/script.js">
 	</script>
 
-	<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+
+	<!-- ......... robô de análise do supabase......... -->
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
 	</script>
 </head>
 
@@ -188,21 +190,34 @@
 		</section>
 
 		<section id="pagina-post" class="sessao-interna">
-			<div class="titulo-com-voltar">
-				<a href="#" class="seta-voltar" onclick="window.history.back(); return false;">&lt;</a>
-				<h2 id="post-titulo" class="titulo-sessao" class="forca-minuscula">título do texto</h2>
-			</div>
-			
-            <div class="meta-post">
-				<span id="post-data" class="meta-data">Data</span>
-				<span class="meta-tags">
-					<a href="#" id="post-categoria">Categoria</a> / 
-					<a href="#" id="post-author">Autor</a> . 
-					<span id="post-tempo">Tempo</span>
-				</span>
-			</div>
+			<div id="post-conteudo" class="corpo-post"></div>
 
-            <div id="post-conteudo" class="corpo-post"></div>
+			<div id="interacao-autoral" class="interacao-container">
+				<div class="linha-interacao">
+					<button id="btn-like" class="btn-icone">♡</button>
+					<span id="like-count">0</span>
+					
+					<div class="auth-status-container">
+						<span id="auth-status-text" class="auth-link">cadastrar-se / entrar</span>
+					</div>
+				</div>
+
+				<div class="form-comentario">
+					<textarea id="comentario-input" placeholder="escreva seu comentário..." rows="1" autocomplete="off"></textarea>
+					
+					<div class="acoes-form">
+						<span id="msg-erro" class="msg-discreta"></span>
+						<div id="grupo-botoes-comentario" class="hidden">
+							<button id="btn-iniciar-envio" class="btn-texto">enviar</button>
+							<button id="btn-cancelar-envio" class="btn-texto hidden">cancelar</button>
+							<span id="separador-botoes" class="hidden">/</span>
+							<button id="btn-confirmar-envio" class="btn-texto hidden">confirmar envio</button>
+						</div>
+					</div>
+				</div>
+
+				<div id="lista-comentarios" class="lista-comentarios"></div>
+			</div>
 		</section>
 		
 		<section id="pagina-contact" class="sessao-interna">
@@ -233,6 +248,38 @@
 	<!-- função: ampliação da foto de perfil -->
 	<div id="modal-foto" class="modal">
 		<img class="modal-conteudo" id="img-ampliada" alt="imagem ampliada">
+	</div>
+
+
+	<div id="modal-foto" class="modal">
+		<img class="modal-conteudo" id="img-ampliada" alt="imagem ampliada">
+	</div>
+
+	<div id="modal-auth" class="modal">
+		<div class="modal-auth-conteudo">
+			<span class="fechar-modal-auth">&times;</span>
+			<h3 id="auth-titulo" class="forca-minuscula">entrar</h3>
+			
+			<form id="form-auth">
+				<input type="email" id="auth-email" placeholder="seu e-mail..." required>
+				
+				<div class="input-com-icone">
+					<input type="password" id="auth-senha" placeholder="sua senha..." required>
+					<span class="toggle-senha">ver</span>
+				</div>
+
+				<div class="input-com-icone auth-cadastro-extra hidden">
+					<input type="password" id="auth-senha-confirma" placeholder="confirme sua senha...">
+					<span class="toggle-senha">ver</span>
+				</div>
+
+				<input type="text" id="auth-username" placeholder="escolha um @username..." class="auth-cadastro-extra hidden">
+				
+				<button type="submit" id="btn-auth-submit" class="forca-minuscula">confirmar</button>
+			</form>
+			
+			<span id="toggle-auth-mode" class="auth-link">não tem conta? cadastrar-se.</span>
+		</div>
 	</div>
 
 
