@@ -27,7 +27,7 @@ const tratarLinksLegados = () =>
 	if (hash && hash.startsWith('#post-'))
 	{
 		// extrai o ID (remove o '#post-')
-		constpostId = hash.replace('#post-', '');
+		const postId = hash.replace('#post-', '');
         
 		// redireciona para a nova estrutura de URL
 		const novaUrl = `/post/${postId}`;
@@ -37,9 +37,6 @@ const tratarLinksLegados = () =>
 		rotear();
 	}
 };
-
-// chame a função assim que o script carregar
-tratarLinksLegados();
 
 
 
@@ -663,6 +660,27 @@ const renderizarPost = (postId) =>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ......... função: roteamento de páginas/sessões (roteador)
 const capaInicial = document.getElementById('capa-inicial');
 const cabecalhoPrincipal = document.getElementById('cabecalho-principal');
@@ -775,6 +793,8 @@ document.querySelectorAll
 
 window.addEventListener
 ('popstate', rotear);
+
+tratarLinksLegados();
 
 rotear();
 
