@@ -280,7 +280,7 @@ const renderizarPerfilAuthor = (idBusca, tituloForcado = null) =>
 
 		// 2. Lógica para puxar os "caminhos" específicos desse autor
 		// Filtra os posts onde o slug do autor bate com o ID que estamos acessando
-		const postsDoAutor = postsData.filter(p => criarSlug(p.author) === author.id);
+		const postsDoAutor = obterPostsPublicados().filter(p => criarSlug(p.author) === author.id);
 
 		if (postsDoAutor.length > 0)
 		{
@@ -382,8 +382,8 @@ const renderizarCaminhos = () =>
 	const categoriasVistas = new Set();
 	const listaCategorias = [];
 
-	// extrai as categorias na ordem em que aparecem no posts.js
-	postsData.forEach(post =>
+	// extrai as categorias usando o filtro de tempo
+	obterPostsPublicados().forEach(post =>
 		{
 			if (!categoriasVistas.has(post.category))
 			{
@@ -437,7 +437,7 @@ const renderizarPostsPorCategoria = (slugBusca, authorSlug = null) =>
 
 	container.innerHTML = '';
 
-	const postsFiltrados = postsData.filter
+	const postsFiltrados = obterPostsPublicados().filter
 	(p =>
 		{
 			const categoriaBate = criarSlug(p.category) === slugBusca;
