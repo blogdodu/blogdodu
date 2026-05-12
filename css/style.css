@@ -232,7 +232,7 @@ body
 
 .lista-links a
 {
-	color: var(--cor-txt);
+	color: var(--cor-sbg);
 	text-decoration: none;
 	font-family: 'Courier Prime', monospace;
 	font-weight: 200;
@@ -248,7 +248,7 @@ body
 .link-ativo
 {
 	font-weight: bold;
-	opacity: 0.25;
+	opacity: var(--cor-txt);
 	pointer-events: none;
 }
 
@@ -1476,7 +1476,7 @@ body
 
 							.lista-links-mobile a
 							{
-								color: var(--cor-txt);
+								color: var(--cor-sbg);
 								text-decoration: none;
 								font-family: 'Courier Prime', monospace;
 								font-size: 1.1rem;
@@ -1486,6 +1486,7 @@ body
 							.lista-links-mobile a:hover
 							{
 								font-weight: bold;
+								color: var(--cor-txt);
 							}
 
 
