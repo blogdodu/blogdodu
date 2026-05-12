@@ -929,12 +929,12 @@ const gerenciarEstados = () => {
 const btnLike = document.getElementById('btn-like');
 btnLike?.addEventListener('click', async () => {
 	if (!gerenciarEstados()) return;
-	if (btnLike.innerText === '♡') {
+	if (btnLike.innerText === '𖹭') {
 		btnLike.innerText = '❤︎';
 		btnLike.style.opacity = '1';
 		await clienteSupabase.from('likes').insert([{ post_id: postIdAtual, user_id: currentUser.id }]);
 	} else {
-		btnLike.innerText = '♡';
+		btnLike.innerText = '𖹭';
 		btnLike.style.opacity = '0.5';
 		await clienteSupabase.from('likes').delete().match({ post_id: postIdAtual, user_id: currentUser.id });
 	}
@@ -951,7 +951,7 @@ const carregarLikes = async () => {
 			btnLike.innerText = '❤︎';
 			btnLike.style.opacity = '1';
 		} else {
-			btnLike.innerText = '♡';
+			btnLike.innerText = '𖹭';
 			btnLike.style.opacity = '0.5';
 		}
 	}
