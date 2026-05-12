@@ -1064,7 +1064,214 @@ body
 
 
 
+/* ......... estilos da área de interações (likes e comentários) ......... */
+.interacao-container
+{
+	margin-top: 80px;
+	padding-top: 30px;
+	border-top: 2px solid var(--cor-sbg);
+	font-family: 'Courier Prime', monospace;
+}
 
+.linha-interacao
+{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 40px;
+}
+
+.btn-icone
+{
+	background: none;
+	border: none;
+	color: var(--cor-txt);
+	font-size: 1.8rem;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.btn-icone:hover
+{
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+#like-count
+{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.auth-status-container
+{
+	margin-left: auto;
+}
+
+.auth-link, .comentario-acoes span
+{
+	font-size: 0.8rem;
+	color: var(--cor-acento);
+	cursor: pointer;
+	text-decoration: underline;
+	transition: color 0.3s;
+}
+
+.auth-link:hover, .comentario-acoes span:hover
+{
+	color: var(--cor-txt);
+}
+
+.form-comentario textarea
+{
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed var(--cor-borda);
+	color: var(--cor-txt);
+	font-family: 'Courier Prime', monospace;
+	font-size: 1rem;
+	padding: 10px 0;
+	resize: none;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.form-comentario textarea:focus
+{
+	border-bottom-style: solid;
+	border-color: var(--cor-txt);
+}
+
+.acoes-form
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	font-size: 0.8rem;
+}
+
+.btn-texto
+{
+	background: none;
+	border: none;
+	color: var(--cor-txt);
+	cursor: pointer;
+	font-family: 'Courier Prime', monospace;
+	font-weight: bold;
+	transition: opacity 0.3s;
+}
+
+.btn-texto:hover
+{
+	opacity: 0.6;
+}
+
+.msg-discreta
+{
+	color: var(--cor-acento);
+	font-style: italic;
+}
+
+.lista-comentarios
+{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.comentario-item
+{
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.comentario-resposta
+{
+	margin-left: 30px;
+	border-left: 2px solid var(--cor-borda);
+	padding-left: 15px;
+}
+
+.comentario-data { color: var(--cor-acento); font-size: 0.75rem; }
+.comentario-username { font-weight: bold; color: var(--cor-sbg); }
+.comentario-acoes { margin-top: 5px; display: flex; gap: 15px; }
+
+/* ......... estilos do modal de autenticação ......... */
+.modal-auth-conteudo
+{
+	background-color: var(--cor-bg);
+	border: 1px solid var(--cor-borda);
+	padding: 40px;
+	border-radius: 4px;
+	width: 90%;
+	max-width: 400px;
+	position: relative;
+	margin: auto;
+}
+
+.fechar-modal-auth
+{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--cor-acento);
+}
+
+.fechar-modal-auth:hover { color: var(--cor-txt); }
+
+#form-auth
+{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 30px 0;
+}
+
+#form-auth input
+{
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--cor-borda);
+	color: var(--cor-txt);
+	font-family: 'Courier Prime', monospace;
+	padding: 10px 0;
+	outline: none;
+}
+
+.input-com-icone { position: relative; }
+.toggle-senha
+{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	font-size: 0.75rem;
+	cursor: pointer;
+	color: var(--cor-acento);
+}
+
+#btn-auth-submit
+{
+	background-color: transparent;
+	border: 1px solid var(--cor-sbg);
+	color: var(--cor-txt);
+	padding: 12px;
+	cursor: pointer;
+	font-family: 'Courier Prime', monospace;
+	font-weight: bold;
+	transition: 0.3s;
+	margin-top: 10px;
+}
+
+#btn-auth-submit:hover
+{
+	background-color: var(--cor-sbg);
+}
 
 
 
