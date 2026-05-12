@@ -33,6 +33,7 @@ body.light-mode
 html
 {
 	scroll-behavior: smooth;
+	overflow-y: scroll;
 }
 
 body
@@ -1055,7 +1056,28 @@ body
 						}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 						
+
 
 /* ......... estilos das sessão autoras(es) ......... */
 
