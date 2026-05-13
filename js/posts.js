@@ -2,7 +2,7 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-	// 0018. pausa para o café
+	// 0019. pausa para o café
 	{
 		id: "pausa-para-o-cafe-ed16",
 		title: "pausa para o café - ed16",
@@ -14,7 +14,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-pausa-para-o-café.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"5\"",
+		imageCaption: "\"?\"",
 		content:
 		`
 				<p>ah, o café... essa poção escura e mágica que desperta os sentidos, acaricia a alma e traz um reconfortante calor à vida....</p>
@@ -93,7 +93,7 @@ const postsData =
 		`
 	},
 
-	// 0017. o ritmo
+	// 0018. o ritmo
 	{
 		id: "o-ritmo-ed15",
 		title: "o ritmo - ed15",
@@ -105,7 +105,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-o-ritmo.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"12\"",
+		imageCaption: "\"5\"",
 		content:
 		`
 				<p>esse é o fim de mais uma trilogia, e talvez por isso, ao contrário do texto anterior, este se prolongue um pouco mais, pois tem, em si, a função de amarrar as idéias de minimalismo, essencialismo, slow-living e, quem sabe, ser um pouco audaz e lançar mão de um amálgama entre os três estilos......</p>
@@ -220,7 +220,7 @@ const postsData =
 		`
 	},
 
-	// 0016. a essência
+	// 0017. a essência
 	{
 		id: "a-essencia-ed14",
 		title: "a essência - ed14",
@@ -232,7 +232,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-a-essencia.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"16\"",
+		imageCaption: "\"12\"",
 		content:
 		`
 				<p>continuando nossa jornada que partiu do minimalismo, vamos tratar agora do essencialismo.....</p>
@@ -331,6 +331,59 @@ const postsData =
 		`
 	},
 
+	
+	// 0015. Rosas para Minha Mãe
+	{
+		id: "rosas-para-minha-mae-ed13",
+		title: "Rosas para Minha Mãe - pja1",
+		date: "2026.mai.13",
+		readingTime: "1 min de leitura",
+		category: "poesia e música",
+		categoryId: "#ways",
+		author: "jefferson araújo",
+		authorId: "#authors",
+		image: "/img/post-rosas-para-minha-mae.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"16\"",
+		content:
+		`
+			<p>Mãe é palavra doce de falar...<br>
+			Divino feminino que abençoa!<br>
+			O mundo imenso começa no lar,<br>
+			com uma mãe para cada pessoa.</p>
+
+			<p>Mãe é a criatura mais importante!<br>
+			Seu seio sempre cheio de perdão...<br>
+			Ela tudo resolve num instante.<br>
+			Talvez pra isso a gente ouça um não!</p>
+
+			<p>Ser mãe é a maior forma de amor!...<br>
+			É rosa primorosa que perfuma.<br>
+			Ama o filho, seja ele como for...</p>
+
+			<p>Ter mãe é ter um começo de vida.<br>
+			Para isso, até Cristo escolheu uma.<br>
+			Por todos nós você é a mais querida!</p>
+
+
+			<br>
+				<p>quer mergulhar em outras reflexões profundas???</p>
+				<p>no último ensaio, exploramos os limites do que é permitido pelos outros e por nós mesmas(os).....</p>
+				<p>vale a pena conferir!...</p>
+			<br>
+				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+				<p><center>__________________________________</center></p>
+				<p><center>não prometo respostas.....</center></p>
+				<p><center>mas te convido pra conversas interessantes......</center></p>
+				<p><center>__________________________________</center></p>
+			<br>
+			<br>
+				<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+			<br>
+		`
+	},	
+	
+		
 	// 0015. o mínimo
 	{
 		id: "o-minimo-ed13",
