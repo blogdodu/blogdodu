@@ -332,10 +332,10 @@ const postsData =
 	},
 
 	
-	// 0015. Rosas para Minha Mãe
+	// 0015. rosas para minha mãe
 	{
 		id: "rosas-para-minha-mae-ed13",
-		title: "Rosas para Minha Mãe - pja1",
+		title: "rosas para minha mãe - pja1",
 		date: "2026.mai.13",
 		readingTime: "1 min de leitura",
 		category: "poesia e música",
@@ -347,6 +347,8 @@ const postsData =
 		imageCaption: "\"16\"",
 		content:
 		`
+			<p><strong>Rosas para Minha Mãe</strong></p>
+
 			<p>Mãe é palavra doce de falar...<br>
 			Divino feminino que abençoa!<br>
 			O mundo imenso começa no lar,<br>
