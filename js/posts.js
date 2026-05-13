@@ -376,13 +376,6 @@ const postsData =
 				<p>no último ensaio, exploramos os limites do que é permitido pelos outros e por nós mesmas(os).....</p>
 				<p>vale a pena conferir!...</p>
 			<br>
-				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
-				<p><center>__________________________________</center></p>
-				<p><center>não prometo respostas.....</center></p>
-				<p><center>mas te convido pra conversas interessantes......</center></p>
-				<p><center>__________________________________</center></p>
-			<br>
-			<br>
 				<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
 			<br>
 		`
