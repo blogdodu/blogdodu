@@ -364,11 +364,14 @@ const postsData =
 			<p>Ter mãe é ter um começo de vida.<br>
 			Para isso, até Cristo escolheu uma.<br>
 			Por todos nós você é a mais querida!</p>
+		<br>
+		<hr class="divisor-fino-longo">
+	
 
 
 			<br>
-				<p>quer mergulhar em reflexões profundas???</p>
-				<p>no último texto, tiramos a primeira casca de uma nova trilogia de ensaios, falando sobre minimalismo.....</p>
+				<p>quer mergulhar em outras reflexões profundas???</p>
+				<p>no último ensaio, exploramos os limites do que é permitido pelos outros e por nós mesmas(os).....</p>
 				<p>vale a pena conferir!...</p>
 			<br>
 				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
