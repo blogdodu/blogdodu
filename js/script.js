@@ -553,7 +553,12 @@ const renderizarPost = (postId) =>
 		// NOVO: Acorda o Supabase para carregar likes e comentários específicos deste post!
 		iniciarInteracoes(postId);
 		document.getElementById('post-titulo').innerText = post.title;
-		document.getElementById('post-data').innerText = post.date;
+
+		// separa a data pelos pontos e permite esconder os pontos no mobile
+		const dataFormatada = post.date.split('.').map
+		(parte => `<span>${parte}</span>`).join('<span class="ponto-desk">.</span>');
+		document.getElementById('post-data').innerHTML = dataFormatada;
+
 		document.getElementById('post-tempo').innerText = post.readingTime;
 
 		const authorLink = document.getElementById('post-author');
@@ -781,15 +786,6 @@ document.querySelectorAll
 
 window.addEventListener
 ('popstate', rotear);
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1081,25 +1077,6 @@ const iniciarInteracoes = async (postId) => {
 
 // chama pra verificar a sessão ao carregar a página
 verificarSessao();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
