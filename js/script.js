@@ -860,25 +860,86 @@ document.getElementById('auth-status-text')?.addEventListener('click', async () 
 	} else abrirModalAuth();
 });
 
-toggleAuthMode?.addEventListener('click', () => {
-	isLoginMode = !isLoginMode;
-	authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
-	toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
+toggleAuthMode?.addEventListener
+('click', () =>
+	{
+		isLoginMode = !isLoginMode;
+		authTitulo.innerText = isLoginMode ? 'entrar' : 'cadastrar-se';
+		toggleAuthMode.innerText = isLoginMode ? 'não tem conta? cadastrar-se.' : 'já tem conta? entrar.';
 	
-	document.querySelectorAll('.auth-cadastro-extra').forEach(el => {
-		if (isLoginMode) {
-			el.classList.add('hidden');
-			el.removeAttribute('required');
-		} else {
-			el.classList.remove('hidden');
-			el.setAttribute('required', 'required');
-		}
-	});
-});
+		document.querySelectorAll
+		('.auth-cadastro-extra').forEach(el =>
+			{
+				if (isLoginMode)
+				{
+					el.classList.add('hidden');
+					el.removeAttribute('required');
+				}
+				else
+				{
+					el.classList.remove('hidden');
+					el.setAttribute('required', 'required');
+				}
+
+				const linkRecuperar = document.getElementById('link-recuperar-senha');
+				if (linkRecuperar)
+				{
+					if (isLoginMode) linkRecuperar.classList.remove('hidden');
+					else linkRecuperar.classList.add('hidden');
+				}
+			}
+		);
+	}
+);
 
 document.getElementById('auth-username')?.addEventListener('input', (e) => {
 	e.target.value = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
 });
+
+// Ação de pedir resgate de senha
+document.getElementById('link-recuperar-senha')?.addEventListener('click', async (e) => {
+	e.preventDefault();
+	const email = document.getElementById('auth-email').value.trim();
+	
+	if (!email) {
+		alert('por favor, digite seu e-mail no campo acima para recuperar a senha.');
+		document.getElementById('auth-email').focus();
+		return;
+	}
+
+	const btnSubmit = document.getElementById('btn-auth-submit');
+	const textoOriginal = btnSubmit.innerText;
+	btnSubmit.innerText = 'enviando e-mail...';
+
+	const { error } = await clienteSupabase.auth.resetPasswordForEmail(email, {
+		redirectTo: window.location.origin, 
+	});
+
+	btnSubmit.innerText = textoOriginal;
+
+	if (error) {
+		alert('erro ao tentar recuperar: ' + error.message);
+	} else {
+		alert('te enviamos um e-mail com o link para redefinir a senha! verifique sua caixa de entrada (e o spam).');
+		modalAuth.style.display = 'none';
+	}
+});
+
+// Intercepta a volta do leitor quando clica no e-mail de resgate
+if (window.location.hash.includes('type=recovery')) {
+	setTimeout(() => {
+		const novaSenha = prompt('bem-vindo de volta! digite sua nova senha (mínimo 6 caracteres):');
+		if (novaSenha && novaSenha.length >= 6) {
+			clienteSupabase.auth.updateUser({ password: novaSenha }).then(({error}) => {
+				if(error) alert('erro ao atualizar a senha. tente novamente.');
+				else alert('senha atualizada com sucesso! você já pode aproveitar o blog.');
+			});
+		} else {
+			alert('senha inválida ou muito curta. tente fazer o login novamente e pedir um novo resgate se necessário.');
+		}
+		window.history.replaceState(null, null, window.location.pathname);
+	}, 500); // pequeno atraso para garantir que o supabase carregou a sessão do e-mail
+}
 
 formAuth?.addEventListener('submit', async (e) => {
 	e.preventDefault();
