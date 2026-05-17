@@ -1269,6 +1269,22 @@ body
 	margin-top: 10px;
 }
 
+.auth-link-secundario {
+	font-family: 'Courier Prime', monospace;
+	font-size: 0.75rem;
+	color: var(--cor-acento);
+	text-align: right;
+	margin-top: -10px; /* puxa o texto pra colar no campo de senha */
+	text-decoration: underline;
+	cursor: pointer;
+	transition: color 0.3s;
+	display: block;
+}
+
+.auth-link-secundario:hover {
+	color: var(--cor-txt);
+}
+
 #btn-auth-submit:hover
 {
 	background-color: var(--cor-sbg);
