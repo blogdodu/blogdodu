@@ -802,8 +802,39 @@ let currentProfile = null;
 let postIdAtual = null;
 let comentarioPaiAtual = null; 
 
-// alerta de confirmação de email
-if (window.location.hash.includes('type=signup') || window.location.hash.includes('access_token')) {
+// ......... VERIFICAÇÃO DE LINKS DO E-MAIL (Cadastro e Recuperação) .........
+const linkHash = window.location.hash;
+
+if (linkHash.includes('type=recovery'))
+{
+	// 1. Se for link de recuperar senha
+	setTimeout
+	(() =>
+		{
+			const novaSenha = prompt('bem-vindo de volta! digite sua nova senha (mínimo 6 caracteres):');
+			if (novaSenha && novaSenha.length >= 6)
+			{
+				clienteSupabase.auth.updateUser({ password: novaSenha }).then
+				(({error}) =>
+					{
+						if(error) alert('erro ao atualizar a senha. tente novamente.');
+						else alert('senha atualizada com sucesso! você já pode aproveitar o blog.');
+					}
+				);
+			}
+			else
+			{
+				alert('senha cancelada, inválida ou muito curta. tente fazer o login novamente e pedir um novo resgate se necessário.');
+			}
+			
+			window.history.replaceState(null, null, window.location.pathname);
+		}, 500
+	);
+
+}
+else if (linkHash.includes('type=signup') || (linkHash.includes('access_token') && !linkHash.includes('type=recovery')))
+{
+	// 2. Se for link apenas de confirmar cadastro novo
 	alert('e-mail confirmado com sucesso! você já pode entrar.');
 	window.history.replaceState(null, null, window.location.pathname);
 }
