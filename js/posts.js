@@ -2,7 +2,7 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-	// 0019. pausa para o café
+	// 0020. pausa para o café
 	{
 		id: "pausa-para-o-cafe-ed16",
 		title: "pausa para o café - ed16",
@@ -14,7 +14,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-pausa-para-o-café.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"?\"",
+		imageCaption: "\"mun•o\"",
 		content:
 		`
 				<p>ah, o café... essa poção escura e mágica que desperta os sentidos, acaricia a alma e traz um reconfortante calor à vida....</p>
@@ -93,7 +93,7 @@ const postsData =
 		`
 	},
 
-	// 0018. o ritmo
+	// 0019. o ritmo
 	{
 		id: "o-ritmo-ed15",
 		title: "o ritmo - ed15",
@@ -105,7 +105,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-o-ritmo.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"5\"",
+		imageCaption: "\"m•nte \"",
 		content:
 		`
 				<p>esse é o fim de mais uma trilogia, e talvez por isso, ao contrário do texto anterior, este se prolongue um pouco mais, pois tem, em si, a função de amarrar as idéias de minimalismo, essencialismo, slow-living e, quem sabe, ser um pouco audaz e lançar mão de um amálgama entre os três estilos......</p>
@@ -205,7 +205,8 @@ const postsData =
 
 			<br>
 				<p>quer mergulhar em outras reflexões profundas???</p>
-				<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+				<p>no último ensaio, falamos da nossa essência para lidar com nossas coisas.....</p>
+				<p>e no último texto, o autor jefferson araújo trouxe mais um de seuns poemas.....</p>
 				<p>vale a pena conferir!...</p>
 			<br>
 				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -219,6 +220,61 @@ const postsData =
 			<br>
 		`
 	},
+
+	// 0018. Jorge Sentou
+	{
+		id: "jorge-sentou-pja2",
+		title: "Jorge Sentou - pja2",
+		date: "2026.mai.20",
+		readingTime: "1 min de leitura",
+		category: "poesia e música",
+		categoryId: "#ways",
+		author: "jefferson araújo",
+		authorId: "#authors",
+		image: "/img/post-jorge-sentou.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"5\"",
+		content:
+		`
+			<p><strong>Jorge Sentou</strong></p>
+		<br>
+			<p>Ser aprendiz é condição eterna!<br>
+			Verdade é, mesmo que não se queira...<br>
+			Como na Alegoria da Caverna,<br>
+			tem gente que não percebe a cegueira.</p>
+
+			<p>Quando lhe mostram a luz, se consterna,<br>
+			por alguma sombra ainda se esgueira.<br>
+			A mão do vício já lhe afaga terna<br>
+			e tudo mais é apenas besteira!</p>
+
+			<p>Humildade calça todos os pés,<br>
+			mas nem todos usam esta sandália.<br>
+			Aquela gente tem outro viés...</p>
+
+			<p>Por possuir a cabeça grisalha,<br>
+			acha que pode passar através,<br>
+			que sua pedra não cabe mais talha.</p>
+			<br>
+			<br>
+			<br>
+				<div class="pos-scriptum">
+						<p>Ilustração de capa por Hilquias Scardua</p>
+				</div>
+			<br>
+			<hr class="divisor-fino-longo">
+
+
+			<br>
+				<p>quer mergulhar em outras reflexões profundas???</p>
+				<p>no meu último texto, compartilhei um soneto em homenagem ao dia das mães...</p>
+				<p>e no último ensaio, o blog deu seqüência ao ensaio sobre o minimalismo, tratando do essencialismo.....</p>
+				<p>vale a pena conferir!...</p>
+			<br>
+				<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+			<br>
+		`
+	},	
 
 	// 0017. a essência
 	{
@@ -316,7 +372,8 @@ const postsData =
 
 			<br>
 				<p>quer mergulhar em outras reflexões profundas???</p>
-				<p>no último texto, tiramos a primeira casca dessa nossa trilogia, falando sobre minimalismo.....</p>
+				<p>no último ensaio, tiramos a primeira casca dessa nossa trilogia, falando sobre minimalismo.....</p>
+				<p>e no último texto, tivemos a estréia de um novo autor com um soneto em homenagem ao dia das mães...</p>
 				<p>vale a pena conferir!...</p>
 			<br>
 				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -331,11 +388,10 @@ const postsData =
 		`
 	},
 
-	
-	// 0015. rosas para minha mãe
+		// 0016. Rosas para Minha Mãe
 	{
-		id: "rosas-para-minha-mae-ed13",
-		title: "rosas para minha mãe - pja1",
+		id: "rosas-para-minha-mae-pja1",
+		title: "Rosas para Minha Mãe - pja1",
 		date: "2026.mai.13",
 		readingTime: "1 min de leitura",
 		category: "poesia e música",
@@ -348,7 +404,7 @@ const postsData =
 		content:
 		`
 			<p><strong>Rosas para Minha Mãe</strong></p>
-
+		<br>
 			<p>Mãe é palavra doce de falar...<br>
 			Divino feminino que abençoa!<br>
 			O mundo imenso começa no lar,<br>
@@ -370,18 +426,16 @@ const postsData =
 		<hr class="divisor-fino-longo">
 	
 
-
 			<br>
 				<p>quer mergulhar em outras reflexões profundas???</p>
-				<p>no último ensaio, exploramos os limites do que é permitido pelos outros e por nós mesmas(os).....</p>
+				<p>no último ensaio, começamos a explorar como lidamos com nossas coisas.....</p>
 				<p>vale a pena conferir!...</p>
 			<br>
 				<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
 			<br>
 		`
 	},	
-	
-		
+			
 	// 0015. o mínimo
 	{
 		id: "o-minimo-ed13",
