@@ -2,11 +2,11 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-	// 0020. pausa para o café
+	// 0021. pausa para o café
 	{
 		id: "pausa-para-o-cafe-ed16",
 		title: "pausa para o café - ed16",
-		date: "2026.jun.01",
+		date: "2026.jun.08",
 		readingTime: "4 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -14,7 +14,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-pausa-para-o-café.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"mun•o\"",
+		imageCaption: "\"t•mpo\"",
 		content:
 		`
 				<p>ah, o café... essa poção escura e mágica que desperta os sentidos, acaricia a alma e traz um reconfortante calor à vida....</p>
@@ -78,7 +78,7 @@ const postsData =
 
 			<br>
 				<p>quer mergulhar em outras reflexões profundas???</p>
-				<p>no último texto, fechamos mais uma trilogia focado em sermos conscientes.....</p>
+				<p>no último texto, tivemos uma ótima conversa sobre o instagram.....</p>
 				<p>vale a pena conferir!...</p>
 			<br>
 				<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -90,6 +90,94 @@ const postsData =
 			<br>
 				<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
 			<br>
+		`
+	},
+
+	// 0020. pausa para o café
+	{
+		id: "venturimdu-cd2",
+		title: "venturimdu - cd2",
+		date: "2026.jun.01",
+		readingTime: "8 min de leitura",
+		category: "conversas",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-venturimdu.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"mun•o\"",
+		content:
+		`
+				<p>olá!!! hoje não teremos um ensaio por aqui..... apenas uma conversa de varanda, olho no olho..... o que não significa, necessariamente, que não será um momento reflexivo..... rsrsrs.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ começando do início, ou um pouco antes ♦</strong></p>
+			<br>
+				<p>bom, por onde começo?!?</p>
+				<p>há algum tempo trabalhando, entre outras muitas coisas, com design e com redes sociais, venho alimentando uma certa vontade visceral de andar na contramão dos caminhos que estamos trilhando com todas as possibilidades de ferramentas computacionais, online e offline.....</p>
+				<p>inclusive, já em 2013, dei uma palestra questionando se usamos o celular, a internet e outras ferramentas, ou se estamos deixando que elas nos usem......</p>
+				<p>são assuntos interessantes pra se aprofundar uma hora talvez, mas digo isso pra trazer o quão grande é esse incômodo em mim e por quanto tempo ele se arrasta.....</p>
+				<p>e nesse meu caminhar em 2017, ingresso no instagram, de início pensando-o como plataforma de divulgação e marketing, até que, aos poucos, passasse a enxergá-la como um espaço de manifestação pessoal.....</p>
+				<p>ali, conhecendo as entranhas do algoritmo e acompanhando suas mudanças, eu travava um duelo entre seguí-lo ou enfrentá-lo...... um duelo esquizofrênico, até certo ponto.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a vontade de mudar sendo geminada ♦</strong></p>
+			<br>
+				<p>mas, por volta de 2024, decido que, para o meu perfil “pessoal”, buscaria alguma autenticidade..... e isso significava nadar contra a maré de consumo que só se acelerava.....</p>
+				<p>eu queria um lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
+				<p>e por um momento, senti que o melhor seria tentar “tirar” as pessoas de lá e levá-las para espaços como este aqui onde o relógio corre no nosso ritmo e não há um código invisível ditando o que devemos ou não consumir.....</p>
+				<p>mas a verdade é que a praça pública de hoje é lá, e simplesmente virar as costas e abandonar o barco começou a me parecer mais uma fuga do que um posicionamento.....</p>
+				<p>nada contra a idéia 'lowprofile', até sou um pouco (ou muito, em alguns momentos....rsrsr), mas essa é uma possível solução individual e eu penso em algo que possa ser coletivo.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a estratégia do cavalo de tróia ♦</strong></p>
+			<br>
+				<p>foi então que a idéia tomou outra forma..... e se, em vez de tentar tirar as pessoas do instagram, eu usasse o meu perfil como uma espécie de 'cavalo de tróia' no meio daqueles feeds caóticos???</p>
+				<p>e se eu usasse a própria estrutura da ferramenta para entregar exatamente o oposto do que ela exige????</p>
+				<p>onde o algoritmo pede velocidade, eu entregaria lentidão..... onde ele exige excesso e barulho, eu traria o espaço em branco e o silêncio..... onde a regra é lutar pela atenção a qualquer custo, eu proporia a pausa.....</p>
+				<p>é contraditório??? é irônico???? com certeza...... mas percebi que jogar o jogo deles quebrando as regras lá dentro é a única forma de me manter naquele espaço com a minha sanidade criativa intacta.....</p>
+				<p>eu prefiro mil vezes perder para o algoritmo do que perder a minha autonomia e autenticidade.....</p>
+				<p>mas, para que esse 'cavalo de tróia' funcionasse, eu precisava de uma tela limpa, eu precisava esvaziar a sala.....</p>
+				<p>é por isso que quem visitar o meu perfil a partir de agora vai notar esse “reset”.....</p>
+				<p>e não é uma jogada de marketing para vender um curso, nem uma mera repaginação estética..... é uma faxina estrutural…. é o fechamento de um ciclo de consumo inconsciente e o início de um espaço intencional..... mesmo que o que havia antes já tivesse um pouco disso.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a casa nova ♦</strong></p>
+			<br>
+				<p>daqui pra frente, as coisas vão ser diferentes por lá... não quero mais te prender no feed. pelo contrário, eu quero que você passe por mim e sinta vontade de soltar o celular um pouco, de pensar em algo, de respirar fundo, de olhar pela janela.....</p>
+				<p>vou postar quando tiver o que dizer (muito provavelmente às quintas, mas sem amarras de um calendário)..... e o algoritmo, punitivo como é, muito provavelmente vai esconder meus posts de você..... mas quer saber??? que bom.... assim, a sua visita ao meu perfil deixará de ser um acidente, provocado por uma máquina, e passará a ser uma escolha sua.... uma visita intencional….. como é aqui.....</p>
+				<p>se você também sente esse cansaço e busca um consumo mais lento, seja bem-vinda(o) a essa loucura!!!!</p>
+				<p>mas repetindo e aprofundando, é por isso que, se você for lá no instagram agora, vai ver que a casa está diferente.....</p>
+				<p>eu precisei arquivar o passado e criar uma tela limpa..... as cores mudaram, ganharam a profundidade do marrom escuro, o respiro do creme e aquele toque de amarelo para despertar…. as mesmas cores daqui do blogdodu....</p>
+				<p>tem até a marca da xícara de café na mesa, ou na tela, para lembrar que o tempo que importa mesmo corre fora dali.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ sem regras, sem robôs ♦</strong></p>
+			<br>
+				<p>é um recomeço estético, sim, também, mas principalmente estrutural..... eu desenhei um espaço que, pelas regras de quem dita o jogo nas redes hoje, tem tudo para dar errado..... e espero que dê...</p>
+				<p>não tem nicho único, porque não sou(somos) monotonal(is).....</p>
+				<p>não é estritamente profissional e nem apenas pessoal, porque não há uma separação clara em mim que abandona o meu ser pessoal para trabalhar e vice-versa....</p>
+				<p>não tem obrigação de freqüência diária... não somos robôs......</p>
+				<p>não vai implorar por engajamento usando a estratégia da semana.....</p>
+				<p>e, acima de tudo, não está nem aí para o algoritmo.....</p>
+				<p>eu sei, parece uma loucura esquizofrênica..... construir toda uma identidade visual pensada nos mínimos detalhes, estudar a tipografia, valorizar as texturas e o espaço em branco, para depois dizer que não ligo se o instagram vai entregar isso ou não..... mas é justamente aí que mora o segredo do meu cavalo de tróia......</p>
+				<p>eu uso o design (um dos meus trabalhos), a estética e a própria plataforma para atrair o olhar, mas o que eu entrego lá dentro é um convite para desacelerar...</p>
+				<p>se você quiser me acompanhar essa jornada de recriação....... de conhecimento, aceitação e superação, a porta está aberta e o café tá no fogo.....</p>
+				<p>no mais, até mais!!!</p>
+
+				<br>
+					<p>quer mergulhar em outras reflexões profundas???</p>
+					<p>no último texto, fechamos a trilogia minimalismo - essencialismo - slow-living.....</p>
+					<p>vale a pena conferir!...</p>
+				<br>
+					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+					<p><center>__________________________________</center></p>
+					<p><center>não prometo respostas.....</center></p>
+					<p><center>mas te convido pra conversas interessantes......</center></p>
+					<p><center>__________________________________</center></p>
+				<br>
+				<br>
+					<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
 		`
 	},
 
