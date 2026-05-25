@@ -1197,7 +1197,7 @@ const postsData =
 	{
 		id: "o-que-e-familia-e-familiar-e-o-que-eu-tenho-a-ver-com-isso-ed8",
 		title: "o que é família e familiar e o que eu tenho a ver com isso? - ed8",
-		date: "2026.fev.09", 
+		date: "2026.abr.06", 
 		readingTime: "4 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1282,7 +1282,7 @@ const postsData =
 	{
 		id: "presenteie-se-com-a-nao-existencia-ed7",
 		title: "presenteie-se com a não existência - ed7",
-		date: "2026.fev.02", 
+		date: "2026.mar.30", 
 		readingTime: "3 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1355,7 +1355,7 @@ const postsData =
 	{
 		id: "quem-sabe-no-futuro-ed6",
 		title: "quem sabe no futuro - ed6",
-		date: "2026.jan.26",
+		date: "2026.mar.23",
 		readingTime: "4 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1433,7 +1433,7 @@ const postsData =
 	{
 		id: "to-passado-ed5",
 		title: "tô passado!!! - ed5",
-		date: "2026.jan.19",
+		date: "2026.mar.16",
 		readingTime: "3 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1508,7 +1508,7 @@ const postsData =
 	{
 		id: "erre-com-gosto-ed4",
 		title: "erre com gosto!!! - ed4",
-		date: "2026.jan.12",
+		date: "2026.mar.09",
 		readingTime: "5 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1612,7 +1612,7 @@ const postsData =
 	{
 	id: "vai-com-medo-mesmo-ed3",
 	title: "vai¹ com medo mesmo!!!! - ed3",
-	date: "2026.jan.05",
+	date: "2026.mar.02",
 	readingTime: "5 min de leitura",
 	category: "ensaios e provocações",
 	categoryId: "#ways",
@@ -1705,8 +1705,6 @@ const postsData =
 			<p>no último texto, exploramos as voltas, começos e fins de um cíclo.....</p>
 			<p>vale a pena conferir!...</p>
 		<br>
-			<p><strong><center>um ótimo 2026 pra você!!!!</center></strong></p>
-		<br>
 		<br>
 			<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
 			<p><center>__________________________________</center></p>
@@ -1724,7 +1722,7 @@ const postsData =
 	{
 		id: "ciclos-ed2",
 		title: "ciclos - ed2",
-		date: "2025.dez.29",
+		date: "2026.fev.23",
 		readingTime: "8 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
@@ -1892,7 +1890,7 @@ const postsData =
 	{
 	id: "apenas-verdades-absolutas-ed1",
 	title: "apenas verdades absolutas - ed1",
-	date: "2025.dez.22",
+	date: "2026.fev.16",
 	readingTime: "3 min de leitura",
 	category: "ensaios e provocações",
 	categoryId: "#ways",
@@ -1977,7 +1975,7 @@ const postsData =
 	{
 		id: "isso-e-so-o-re-comeco-cd1",
 		title: '"isso é só o (re)começo" - cd1',
-		date: "2025.dez.19",
+		date: "2026.fev.09",
 		readingTime: "3 min de leitura",
 		category: "conversas",
 		categoryId: "#ways",
