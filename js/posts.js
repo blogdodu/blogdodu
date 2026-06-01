@@ -121,7 +121,7 @@ const postsData =
 				<p>ali, conhecendo as entranhas do algoritmo e acompanhando suas mudanças, eu travava um duelo entre seguí-lo ou enfrentá-lo...... um duelo esquizofrênico, até certo ponto.....</p>
 			<br>
 				<hr class="divisor-fino-longo">
-				<p><strong>♦ a vontade de mudar sendo geminada ♦</strong></p>
+				<p><strong>♦ a vontade de mudar sendo germinada ♦</strong></p>
 			<br>
 				<p>mas, por volta de 2024, decido que, para o meu perfil “pessoal”, buscaria alguma autenticidade..... e isso significava nadar contra a maré de consumo que só se acelerava.....</p>
 				<p>eu queria um lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
