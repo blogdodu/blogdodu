@@ -124,10 +124,10 @@ const postsData =
 				<p><strong>♦ a vontade de mudar sendo germinada ♦</strong></p>
 			<br>
 				<p>mas, por volta de 2024, decido que, para o meu perfil “pessoal”, buscaria alguma autenticidade..... e isso significava nadar contra a maré de consumo que só se acelerava.....</p>
-				<p>eu queria um lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
+				<p>eu queria o lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
 				<p>e por um momento, senti que o melhor seria tentar “tirar” as pessoas de lá e levá-las para espaços como este aqui onde o relógio corre no nosso ritmo e não há um código invisível ditando o que devemos ou não consumir.....</p>
 				<p>mas a verdade é que a praça pública de hoje é lá, e simplesmente virar as costas e abandonar o barco começou a me parecer mais uma fuga do que um posicionamento.....</p>
-				<p>nada contra a idéia 'lowprofile', até sou um pouco (ou muito, em alguns momentos....rsrsr), mas essa é uma possível solução individual e eu penso em algo que possa ser coletivo.....</p>
+				<p>nada contra a idéia 'lowprofile', até sou um pouco (ou muito, em alguns momentos....rsrsr), mas essa é uma possível solução individual e eu venho pensando em algo que possa ser coletivo.....</p>
 			<br>
 				<hr class="divisor-fino-longo">
 				<p><strong>♦ a estratégia do cavalo de tróia ♦</strong></p>
