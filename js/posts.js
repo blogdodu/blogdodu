@@ -160,7 +160,7 @@ const postsData =
 				<p>não tem obrigação de freqüência diária... não somos robôs......</p>
 				<p>não vai implorar por engajamento usando a estratégia da semana.....</p>
 				<p>e, acima de tudo, não está nem aí para o algoritmo.....</p>
-				<p>eu sei, parece uma loucura esquizofrênica..... construir toda uma identidade visual pensada nos mínimos detalhes, estudar a tipografia, valorizar as texturas e o espaço em branco, para depois dizer que não ligo se o instagram vai entregar isso ou não..... mas é justamente aí que mora o segredo do meu cavalo de tróia......</p>
+				<p>eu sei, parece só uma loucura esquizofrênica..... construir toda uma identidade visual pensada nos mínimos detalhes, estudar a tipografia, valorizar as texturas e o espaço em branco, para depois dizer que não ligo se o instagram vai entregar isso ou não..... mas é justamente aí que mora o segredo do meu cavalo de tróia......</p>
 				<p>eu uso o design (um dos meus trabalhos), a estética e a própria plataforma para atrair o olhar, mas o que eu entrego lá dentro é um convite para desacelerar...</p>
 				<p>se você quiser me acompanhar essa jornada de recriação....... de conhecimento, aceitação e superação, a porta está aberta e o café tá no fogo.....</p>
 				<p>no mais, até mais!!!</p>
