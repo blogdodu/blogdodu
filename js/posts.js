@@ -2,6 +2,101 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 0022. semelhantes diferenças
+	{
+		id: "semelhantes-diferencas-ed17",
+		title: "semelhantes diferenças... ou complexas simplicidades - ed17",
+		date: "2026.jun.15",
+		readingTime: "7 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/semelhantes-diferencas.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"as•im\"",
+		content:
+		`
+				<p>nem tudo que é simples é fácil, nem complexo é sinônimo de difícil...</p>
+				<p>essas afirmações parecem claras e são, mas então por que recorrentemente nos pegamos tendo a compreensão errada, associando o fácil ao simples e o difícil ao complexo???</p>
+				<p>simples, não nos debruçamos de forma real e honesta sobre assuntos que nos parecem demasiado triviais e corriqueiros...</p>
+				<p>então este será um momento dedicado a este mergulho... uma reflexão sobre as nuances entre simplicidade e facilidade, complexidade e dificuldade, e como essas distinções moldam nossa percepção do mundo e nossas relações com os outros.....</p>
+				<p>como diria albert einstein: "tudo deve ser feito da forma mais simples possível, mas não mais simples que isso"..... uma lembrança de que a simplicidade tem seu valor e seu limite.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ desvendando o simples ♦</strong></p>
+			<br>
+				<p>o simples é tudo aquilo que não demanda muitas etapas, muitas ferramentas ou muitas habilidades, o que pode, à primeira vista, até se parecer com algo fácil, porém um não se traduz no outro, assim, tão facilmente na realidade...</p>
+				<p>pensemos num exemplo, contar de zero a um milhão em voz alta.... algo simples de se realizar, é bem provável que você já saiba a ordem dos números inteiros ou reais se está lendo este ensaio, mas, com certeza, teremos muita facilidade de levantar algumas dificuldades que podem atrapalhar a tornar este feito realizado....</p>
+				<p>o filósofo henry david thoreau nos lembra: "nossa vida é desperdiçada com detalhes... simplifique, simplifique"..... mas essa simplificação, paradoxalmente, pode exigir um esforço considerável.....</p>
+				<p>a simplicidade aparece em diversas manifestações culturais como um valor a ser buscado….</p>
+				<p>é a consagração do clássico 'menos é mais' do mies van der rohe, que reverbera na arquitetura minimalista de tadao ando, nas composições musicais de erik satie, na poesia concisa de paulo leminski quando escreve "don't worry / be happy / que o resto / é bobagem".....</p>
+				<p>todos buscam a essência, o mínimo necessário, mas essa busca é freqüentemente resultado de um longo e árduo processo.....</p>
+				<p>o cineasta ingmar bergman certa vez afirmou: "a simplicidade é a sofisticação final"..... uma frase que ecoa o pensamento de leonardo da vinci séculos antes, sugerindo que chegar ao simples pode ser o ápice de um complexo caminho de aprendizado e depuração.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a natureza do complexo ♦</strong></p>
+			<br>
+				<p>exatamente em oposição ao simples, algo complexo é tudo aquilo que demanda muitas etapas, quase sempre diferentes, ou aquilo que necessita de várias ferramentas ou diversas habilidades combinadas, o que pode nos colocar novamente frente a possibilidade de errar e associá-lo a algo difícil....</p>
+				<p>mas pense, um renomado chefe de cozinha, não vê dificuldade em preparar várias receitas complexas, que demandem a percepção de diversos detalhes e sutilezas que sequer são notadas por algum leigo em culinária.....</p>
+				<p>o filósofo edgar morin, em seu trabalho sobre o pensamento complexo, nos ensina que "a complexidade não é uma receita para conhecer o inesperado, mas ela nos torna prudentes, atentos, não nos deixa adormecer na aparente mecânica e na aparente trivialidade das determinações".....</p>
+				<p>a complexidade está presente em toda parte: na música de bach, com suas fugas intrincadas; nos romances de dostoiévski, com suas múltiplas camadas de significado e personagens profundamente desenvolvidos; nos filmes de christopher nolan, com suas narrativas não-lineares que desafiam nossa percepção do tempo.....</p>
+				<p>mas para os músicos experientes, para os leitores ávidos, para os cinéfilos dedicados, essa complexidade não representa necessariamente uma dificuldade - pode ser justamente o que os atrai e encanta.....</p>
+				<p>como observou o antropólogo clifford geertz: "o homem é um animal amarrado a teias de significados que ele mesmo teceu"..... a complexidade de nossas vidas sociais e culturais é parte do que nos define como humanos.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a relatividade na dificuldade ♦</strong></p>
+			<br>
+				<p>agora, visto o que é o simples e o complexo, conseguimos nos inclinar a conhecer e apreciar os significados de fácil e difícil...</p>
+				<p>o primeiro, é aquilo que não demanda grande esforço, por vezes esforço algum, seja esforço físico, mental ou temporal, enquanto o segundo, se torna difícil, por necessitar de um empenho substancial de energia, empenho intelectual ou mesmo um certo prazo...</p>
+				<p>porém, há nesta dualidade algo que não se encontra entre o simples e o complexo, uma relatividade da percepção e impacto da dificuldade que é pessoal, que é única para cada pessoa e realidade, pois algumas detêm mais conhecimento e preparo em determinada área que outro, ou tem mais ferramentas e recursos à sua disposição, ou uma realidade mais favorável que outros, tornando algo que pra alguns é difícil em algo fácil para outros, muitas vezes para poucos...</p>
+				<p>a filósofa simone de beauvoir levanta a idéia de que "o que é fácil nunca é excelente"..... uma provocação que nos convida a valorizar o esforço e a superação como caminhos para o crescimento..... mas que, apesar de entender, deixa de fora a excelência de quem já está preparada(o) para o desafio, tornando fácil alcançar ser excelente.....</p>
+				<p>na música "águas de março", tom jobim transforma o cotidiano em poesia quando canta "é pau, é pedra, é o fim do caminho"..... o simples se torna profundo, o cotidiano se torna arte, mas quantos conseguem criar tal beleza a partir do banal??? a facilidade ou dificuldade está no olhar, na capacidade, na experiência.....</p>
+				<p>o neurocientista daniel kahneman, em seu livro "rápido e devagar: duas formas de pensar", explora como nosso cérebro utiliza dois sistemas de pensamento: um rápido, intuitivo e emocional; outro mais lento, deliberativo e lógico. o que é difícil para um sistema pode ser fácil para outro, e vice-versa.....</p>
+				<p>poderíamos, ainda nos debruçarmos sobre outras dualidades que se confundem a estas, como entre rápido e devagar, excepcional e trivial, procedural e assistemático, mas acredito que você já consegue fazer isto facilmente sozinha(o)...</p>
+				<p>e, assim mesmo, quem sabe no futuro, algum(ns) destes temas esteja(m) em nosso foco...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ empatia nas diferenças ♦</strong></p>
+			<br>
+				<p>mas enfim, qual o intuito de se empenhar a discutir e entender mais profundamente esses termos???</p>
+				<p>simples, ao compreender as relações entre o simples e o complexo, entre o fácil e o difícil, e suas relatividades em nossa própria vida e na de outras pessoas, somos convidados a uma jornada mais empática.....</p>
+				<p>saber que as crianças vêem o mundo com simplicidade, mas são envolvidas em uma complexa jornada de aprendizado e descobertas e que os idosos, apesar da sabedoria acumulada, enfrentam desafios diferentes, como a adaptação às mudanças tecnológicas e culturais, por exemplo, é poder olhar para o outro, para suas dificuldades e facilidades, reconhecendo que o que é um desafio para nós pode ser uma tarefa simples para eles ou vice-versa......</p>
+				<p>o escritor marcel proust observou que "a verdadeira viagem de descobrimento não consiste em procurar novas paisagens, mas em ter novos olhos"..... essa mudança de perspectiva é essencial para a empatia.....</p>
+				<p>no filme "divertida mente" da pixar, vemos literalmente como diferentes emoções interpretam e reagem às mesmas situações.... o que é simples para a alegria pode ser complexo para o medo, o que é fácil para a raiva pode ser difícil para a tristeza..... essa metáfora visual nos ajuda a compreender como nossas próprias percepções são moldadas por nossas experiências e estados emocionais.....</p>
+				<p>a psicóloga brené brown, em seu trabalho sobre vulnerabilidade e empatia, nos lembra que "a empatia não tem script. ela não é uma habilidade, é uma escolha de vulnerabilidade"..... escolher ver o mundo através dos olhos do outro, reconhecendo que suas percepções de simplicidade, complexidade, facilidade e dificuldade são tão válidas quanto as nossas, mesmo quando diferentes.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ indo além ♦</strong></p>
+			<br>
+				<p>todo esse mergulho é uma oportunidade de abraçar a empatia como ferramenta de compreensão e conexão, afinal, todos trilhamos caminhos únicos....</p>
+				<p>ao acolher as peculiaridades de cada jornada, das fases da vida, das culturas e das experiências, tornamo-nos não apenas mais tolerantes, mas também mais capazes de aprender uns com os outros....</p>
+				<p>é nessa troca que desvendamos os, talvez novos, significados para o simples e o complexo, para o fácil e o difícil, transcendendo nossos próprios limites....</p>
+				<p>o poeta fernando pessoa, através de seu heterônimo alberto caeiro, nos ensina que "há bastante metafísica em não pensar em nada"..... às vezes, o que parece simples (não pensar em nada) pode ser profundamente difícil e revelador.....</p>
+				<p>na música "comida" dos titãs, quando cantam "a gente não quer só comida, a gente quer comida, diversão e arte", expressam como nossas necessidades transcendem o simples e o básico - um terceiro conceito diferente de simples e fácil - , buscando a complexidade que nos torna humanos.....</p>
+				<p>o filósofo martin heidegger argumentava que "os limites da minha lingüagem significam os limites do meu mundo"..... ao expandirmos nossa compreensão dos conceitos de simplicidade, complexidade, facilidade e dificuldade, expandimos também os limites do nosso mundo e nossa capacidade de conexão com os outros.....</p>
+				<p>é, portanto, mais do que compreender, é sentir, é vivenciar a realidade do outro, caminhar por um momento em outros sapatos e reconhecer que cada visão é apenas uma peça do vasto quebra-cabeça de cada existência....</p>
+				<p>é assim que, juntos, construímos pontes entre os mundos que habitamos e enriquecemos nossa compreensão do que é, afinal, a simplicidade e a complexidade, a facilidade e a dificuldade de se viver e de conviver...</p>
+				<p>como escreveu o poeta mário quintana: "são os passos que fazem os caminhos"..... cada passo em direção à compreensão do outro, por mais simples que pareça, pode ser o início de uma jornada transformadora.....</p>
+				<p>por ora, se empenhe em tornar aquilo que lhe é caro, cada dia mais fácil para tê-lo ou fazê-lo para si e para outrem apreciando todo o processo...</p>
+				<p>no mais, até mais!!!</p>
+
+				<br>
+					<p>quer mergulhar em outras reflexões profundas???</p>
+					<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+					<p>vale a pena conferir!...</p>
+				<br>
+					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+					<p><center>__________________________________</center></p>
+					<p><center>não prometo respostas.....</center></p>
+					<p><center>mas te convido pra conversas interessantes......</center></p>
+					<p><center>__________________________________</center></p>
+				<br>
+				<br>
+					<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
 	// 0021. pausa para o café
 	{
 		id: "pausa-para-o-cafe-ed16",
@@ -121,13 +216,13 @@ const postsData =
 				<p>ali, conhecendo as entranhas do algoritmo e acompanhando suas mudanças, eu travava um duelo entre seguí-lo ou enfrentá-lo...... um duelo esquizofrênico, até certo ponto.....</p>
 			<br>
 				<hr class="divisor-fino-longo">
-				<p><strong>♦ a vontade de mudar sendo germinada ♦</strong></p>
+				<p><strong>♦ a vontade de mudar sendo geminada ♦</strong></p>
 			<br>
 				<p>mas, por volta de 2024, decido que, para o meu perfil “pessoal”, buscaria alguma autenticidade..... e isso significava nadar contra a maré de consumo que só se acelerava.....</p>
-				<p>eu queria o lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
+				<p>eu queria um lento, consciente e intencional.... eu queria buscar formas de fazer a rede ser social para além do termo que a batizava......</p>
 				<p>e por um momento, senti que o melhor seria tentar “tirar” as pessoas de lá e levá-las para espaços como este aqui onde o relógio corre no nosso ritmo e não há um código invisível ditando o que devemos ou não consumir.....</p>
 				<p>mas a verdade é que a praça pública de hoje é lá, e simplesmente virar as costas e abandonar o barco começou a me parecer mais uma fuga do que um posicionamento.....</p>
-				<p>nada contra a idéia 'lowprofile', até sou um pouco (ou muito, em alguns momentos....rsrsr), mas essa é uma possível solução individual e eu venho pensando em algo que possa ser coletivo.....</p>
+				<p>nada contra a idéia 'lowprofile', até sou um pouco (ou muito, em alguns momentos....rsrsr), mas essa é uma possível solução individual e eu penso em algo que possa ser coletivo.....</p>
 			<br>
 				<hr class="divisor-fino-longo">
 				<p><strong>♦ a estratégia do cavalo de tróia ♦</strong></p>
@@ -160,7 +255,7 @@ const postsData =
 				<p>não tem obrigação de freqüência diária... não somos robôs......</p>
 				<p>não vai implorar por engajamento usando a estratégia da semana.....</p>
 				<p>e, acima de tudo, não está nem aí para o algoritmo.....</p>
-				<p>eu sei, parece só uma loucura esquizofrênica..... construir toda uma identidade visual pensada nos mínimos detalhes, estudar a tipografia, valorizar as texturas e o espaço em branco, para depois dizer que não ligo se o instagram vai entregar isso ou não..... mas é justamente aí que mora o segredo do meu cavalo de tróia......</p>
+				<p>eu sei, parece uma loucura esquizofrênica..... construir toda uma identidade visual pensada nos mínimos detalhes, estudar a tipografia, valorizar as texturas e o espaço em branco, para depois dizer que não ligo se o instagram vai entregar isso ou não..... mas é justamente aí que mora o segredo do meu cavalo de tróia......</p>
 				<p>eu uso o design (um dos meus trabalhos), a estética e a própria plataforma para atrair o olhar, mas o que eu entrego lá dentro é um convite para desacelerar...</p>
 				<p>se você quiser me acompanhar essa jornada de recriação....... de conhecimento, aceitação e superação, a porta está aberta e o café tá no fogo.....</p>
 				<p>no mais, até mais!!!</p>
