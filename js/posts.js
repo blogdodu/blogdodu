@@ -2,6 +2,247 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 0024. natal
+	{
+		id: "e natal!!!...?-ed19",
+		title: "é natal!!!...? - ed19",
+		date: "2026.jun.29",
+		readingTime: "9 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/natal.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"m•nte\"",
+		content:
+		`
+				<p>nem tudo que o calendário dita é o que a terra sente, nem o que o norte celebra é o que o sul vive.....</p>
+				<p>eu sei, essas afirmações são óbvias, mas então por que, recorrentemente, seguimos ritos que não pertencem ao nosso solo, que não se conectam com a natureza que nos cerca, por exemplo, por que comemorando o natal, por aqui, como é por lá, em dezembro, simulando um frio, neve e tradições que não fazem o menor sentido pra quem está no verão???</p>
+				<p>essas questões, que parecem sussurros de uma sabedoria ancestral, são freqüentemente abafadas pelo ruído de um mundo que insiste em uniformizar os ritmos....</p>
+				<p>simples, fomos ensinadas(os) a olhar para cima, para o hemisfério de lá, esquecendo que nossos pés pisam o hemisfério de cá....</p>
+				<p>então, este ensaio se propõe a ser um momento dedicado a iniciar este mergulho.... uma reflexão sobre como a roda do ano gira por essas bandas, o descompasso dos feriados do calendário e como a nossa realidade local muitas vezes grita em silêncio contra tradições que não nos abraçam..... começando pelo o que deveria ser o nosso natal....</p>
+				<p>como diria o artista uruguaio joaquín torres garcía: "nosso norte é o sul"..... uma provocação visual que nos lembra que a bússola da nossa identidade deve ser orientada pela nossa própria terra, pelo nosso próprio céu, pelo nosso próprio corpo.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a roda que gira em nós, apesar de nós ♦</strong></p>
+			<br>
+				<p>a roda do ano é um conceito antigo, uma celebração dos ciclos observados na natureza, marcados através de solstícios e equinócios, os também chamados sabbats..... algo simples de se entender se você vive onde essas tradições nasceram, no norte da europa, mas que se torna complexo quando tentamos encaixá-las na nossa realidade austral.... e muito mais tropical do que temperada, no caso do brasil.....</p>
+				<p>pensemos no exemplo que citei no início: faria mais sentido postarmos nossa árvore de natal no dia 25 de junho (como fiz no instagram para gerar esse estranhamento e começar uma possível reflexão por lá.....)</p>
+				<p>é um ¨erro¨ proposital, uma tentativa de resgate de uma visão, de um significado mais profundo.... </p>
+				<p>o dia 25 de junho equivale ao 25 de dezembro, três dias após o solstício de inverno, mas no nosso solstício de inverno....</p>
+				<p>é o yule do sul, o momento em que a luz começa a vencer a escuridão no nosso lado do mundo..... é o tempo de recolhimento, de introspecção, de semear as intenções, pois a esperança do ciclo renascer se cumpriu e a vida vai persistir mesmo sob rigor do frio..... é uma festa de otimismo e calor humano......</p>
+				<p>meu xará, o filósofo eduardo galeano, com sua voz que ecoa as dores e as belezas da américa latina, nos lembra: "a identidade não é uma peça de museu, quietinha na vitrine, mas a assombrosa síntese das contradições nossas de cada dia".....</p>
+				<p>e celebrar o nosso inverno, o nosso yule, é justamente abraçar essa síntese, é descolonizar o tempo, é reivindicar o nosso próprio ritmo..... é um ato de saúde mental e espiritual, de alinhamento com o corpo que responde à luz e à sombra do nosso próprio céu.....</p>
+				<p>e celebrar o renascimento da luz em junho em pleno inverno brasileiro, enquanto o resto do hemisfério, alienada e comercialmente, aceita sem questionar tradições que não são nossas e espera pelo verão para "natalizar", é abraçar essa contradição de forma consciente.....</p>
+				<p>é um ato de resistência poética, política e ancestral....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ o descompasso do olhar ♦</strong></p>
+			<br>
+				<p>exatamente em oposição à nossa realidade climática e biológica, vivemos feriados ditados por uma lógica de exportação cultural.....</p>
+				<p>como o sociólogo peruano aníbal quijano, ao tratar da 'colonialidade do poder', nos explica que o colonialismo não termina com a independência política, mas continua moldando nossa percepção de mundo, nossos saberes e nossos ritmos, nos convencendo de que o padrão do outro é o universal......</p>
+				<p>o papai noel de veludo vermelho e botas pesadas, criado para enfrentar a neve, desembarca em nossos shoppings sob um sol de 40 graus de dezembro, vendendo uma fantasia de inverno que não nos pertence.....</p>
+				<p>as músicas falam de "white christmas" enquanto buscamos a sombra de uma mangueira ou o frescor de uma praia.....</p>
+				<p>essa dissonância, por mais trivial que possa parecer, revela uma desconexão profunda com os ritmos naturais que deveriam nos guiar, pois, como ailton krenak (ambientalista, filósofo, poeta, escritor brasileiro e líder da etnia crenaque) nos alerta,  ¨estamos descolados do corpo da terra¨ e não há prova maior desse descolamento do que forçar nosso corpo, que é parte intrínseca da natureza, a ignorar seus próprios ciclos, o que impacta, direta ou indiretamente, nossa saúde física e mental, individual e coletivamente falando.....</p>
+				<p>milton nascimento, nos ensina a "afagar a terra / conhecer os desejos da terra / cio da terra, a propícia estação"..... mas como conhecer os desejos da terra se ignoramos quando ela quer dormir e quando ela quer despertar???</p>
+				<p>como podemos estar em saúde plena se nosso corpo, que é parte intrínseca da natureza, é forçado a ignorar seus próprios ciclos circadianos e sazonais, ditados pela luz e pela temperatura das estações do nosso hemisfério???</p>
+				<p>a complexidade desse descompasso está em toda parte: na publicidade que nos vende o aconchego do inverno em dezembro, nas escolas que ensinam as estações do ano com desenhos de folhas secas, típicas do canadá, em março, quando por aqui o outono tem cores e cheiros muito particulares que nem sempre batem com os livros didáticos.....</p>
+				<p>é um descompasso que silencia a sabedoria dos povos originários, que há milênios observam o céu e a terra para guiar suas vidas..... para os tupi-guarani, por exemplo, o "ara pyau" (tempo novo, primavera/verão) e o "ara ymã" (tempo velho, outono/inverno) são marcados pela posição do ¨kuruxu¨, mais conhecido como a constelação do cruzeiro do sul, pelo ¨guyra nhandu¨, ou constelação da ema, e por um conhecimento profundo e intrínseco ao nosso território...... o que permitiu, inclusive, a ¨construção¨ da floresta amazônica....</p>
+				<p>ignorar isso é ignorar uma parte vital de quem somos, a que chão pertencemos e de como ¨deveríamos¨ viver, segundo esse chão..... o que a filósofa brasileira, sueli carneiro, define como ¨epistemicídio¨, que é esse apagamento sistemático dos saberes locais.....</p>
+				<p>e uma senhora resposta visual a esse apagamento, talvez, esteja pairando agora mesmo nas imensas fotografias de sebastião salgado na exposição 'amazônia' (em cartaz, no recém inaugurado cais das artes).....</p>
+				<p>nas lentes de salgado, vemos uma terra que não pede licença ao norte, vemos os rios voadores e as populações originárias existindo em um tempo profundo, geológico, onde o ritmo não é ditado por relógios ou calendários comerciais, mas pela chuva, pela cheia e pelo sol. a fotografia dele grita o que nós esquecemos: a terra tem uma voz ensurdecedora, e nós somos apenas parte da sua respiração.....</p>
+				<p>mas para quem se permite observar, para quem se permite sentir o vento e a inclinação do sol, essa discrepância deixa de ser apenas um detalhe e passa a ser um convite ao despertar, à reconexão e, até mesmo, à cura.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a empatia com o solo e com o corpo ♦</strong></p>
+			<br>
+				<p>agora, com os olhos atentos a esse descompasso, conseguiremos nos inclinar a apreciar o que significa viver no sul com olhos de sul, com um corpo de sul, com uma alma de sul...</p>
+				<p>há nesta percepção algo que vai além da geografia, uma relatividade da cultura que é pessoal e coletiva.... algumas pessoas detêm o conhecimento dos ciclos naturais, outras seguem o fluxo comercial sem questionar, mas o impacto dessa desconexão é real para todos nós.....</p>
+				<p>é um impacto na nossa saúde, na nossa produtividade, na nossa capacidade de sonhar e de criar.... você já parou pra pensar que em plena estação onde o corpo pede um ritmo mais lento, mais refúgio, menos gasto de energia é o período do ano que tudo está no mais alto nível de cobrança e atividade????</p>
+				<p>no nosso inverno, já se passou aquele ¨vai não vai¨ do início do ano (que só começa depois do carnaval) e já estamos pensando em fazer o máximo até o meio da primavera, para podermos aproveitar o fim do ano e descansar, justo quando, no geral, o calor está insuportável e descansar é, muitas vezes, impossível.....</p>
+				<p>como vimos no último ensaio, simone de beauvoir levanta a idéia de que "o que é fácil nunca é excelente"..... e talvez seja fácil demais apenas seguir o calendário que nos dão, mas seria excelente e transformador nos esforçar para criar os nossos próprios ritos, que respeitem o nosso suor e o nosso frio.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ conectando mundos e tecendo o novo ♦</strong></p>
+			<br>
+				<p>mas enfim, qual o intuito de postar no instagram uma árvore de natal em junho ou toda essa discussão da roda do ano invertida??? qual o sentido em querer descolonizar o tempo?</p>
+				<p>simples, ao compreender que vivemos em um ritmo diferente do que nos é imposto, somos convidadas(os) a uma jornada mais empática com a nossa própria natureza e com a natureza ao nosso redor. é um convite à soberania do nosso tempo, à autonomia do nosso corpo, à resistência da nossa cultura.....</p>
+				<p>saber que enquanto o norte celebra o auge do verão (litha), nós estamos mergulhados no recolhimento do inverno (yule), é poder olhar para a nossa própria fragilidade e força, reconhecendo que cada fase tem seu valor, independentemente da celebrações que uma propaganda dita num outdoor na esquina......</p>
+				<p>inclusive é das celebrações de litha que vêm as tradições de fogueiras (e saltá-las), de bandeirinhas, de caçar o noivo para se casar com a noiva que ele engravidou em beltane (já numa roupagem moral, a partir do sincretismo com a igreja católica) e outros....</p>
+				<p>mas o escritor marcel proust observou que "a verdadeira viagem de descobrimento não consiste em procurar novas paisagens, mas em ter novos olhos"..... e ter "olhos de sul" é descobrir uma paisagem inteira que estava escondida sob camadas de tradições estrangeiras.....</p>
+				<p>é reencontrar a nossa própria sabedoria, a nossa própria medicina..... que em partes os povos originários conseguiram inserir nessa dinâmica, já que para esse período do ano havia comemorações para celebrar a colheita do avatí ou abatí, o milho pelos guaranis, e da mandioca, alimentos, cujas farinhas, serviriam para garantir uma alimentação consistente para o período de frio e menor atividade, de colheita e caça (porque os outros animais, além do bicho-homem, também se recolhem e/ou hibernam no inverno) e que tanto são abundantes na ¨culinária junina¨.......</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ indo além ♦</strong></p>
+			<br>
+				<p>todo esse mergulho é uma oportunidade de abraçar a nossa realidade como ferramenta de conexão.... afinal, a terra é uma só, mas suas batidas de coração ecoam de formas diferentes em cada canto.... e o nosso canto, o canto do sul, precisa ser ouvido, sentido e vivido, talvez revivido, principalmente por nós mesmos.....</p>
+				<p>ao acolher as peculiaridades do nosso hemisfério, tornamo-nos mais capazes de entender quem somos e de onde falamos.... é um ato de empoderamento, de resgate da nossa própria narrativa....</p>
+				<p>é nessa troca que desvendamos novos significados para o que é "época" e o que é "tradição", transcendendo os limites de um calendário comercial colonizado, para alcançar a liberdade de um calendário vital, um calendário que pulsa com a vida que nos cerca e que nos habita.....</p>
+				<p>e não precisamos começar do zero, pois exemplos práticos dessa resistência poética já pulsam na nossa arte.....</p>
+				<p>no cinema, "bacurau" nos mostra uma comunidade que, para sobreviver ao apagamento imposto pelo estrangeiro, recorre ao seu próprio museu, à sua geografia e à sua história, provando que fincar os pés no próprio chão é a nossa maior defesa.....</p>
+				<p>na literatura e nas artes visuais, ariano suassuna e o movimento armorial fizeram exatamente o que precisamos fazer com o nosso tempo: recusaram a importação de uma estética europeia que não nos cabia, para erguer uma cultura erudita, monumental e inquestionável feita a partir da poeira, do sol e da alma nordestina.....</p>
+				<p>em tantas manifestações pelo brasil, contra entregar a nossa terra, nossa vida, nosso passado e nosso futuro, com guerreiros empunhando suas lanças, arcos e flechas....</p>
+				<p>ou no máximo, pensando como a tropicália, que, influenciada pelo manifesto antropófago, nos ensinou a ¨comer¨ o que vem de fora, digerir e adaptar/incorporar ao nosso corpo o que nos é útil e descartar o que não nos serve e o que não se adequa a ao nosso chão</p>
+				<p>é assim que, juntas(os), construímos pontes entre o que recebemos e o que realmente vivemos, enriquecendo nossa compreensão do que é, afinal, a simplicidade de ser quem somos, onde estamos...</p>
+				<p>como escreveu mário quintana: "são os passos que fazem os caminhos"..... e que os nossos passos em direção ao sul sejam firmes, conscientes e cheios de beleza.....</p>
+				<p>por ora, se empenhe em observar a luz que muda lá fora e a vida que insiste em girar, no seu próprio tempo...</p>
+				<p>e celebrar o que o inverno nos pede, deixando ir o ¨tempo velho¨ com a esperança que o ¨tempo novo¨ virá com a primavera e que este é o momento de nos recolhermos com aquelas(es) que nos são próximas(os), celebrando a fartura de como foi nosso ano de plantio e colheitas, ao redor da mesa, e separando os grãos mais ¨bonitos¨, perto do fogo da lareira, para o próximo ciclo de semeadura..... é hora de fazer nossos votos de mudança, pois sabemos que atravessaremos mais esse inverno.....</p>
+				<p>no mais, até mais!!!</p>
+
+				<br>
+					<p>quer mergulhar em outras reflexões profundas???</p>
+					<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+					<p>vale a pena conferir!...</p>
+				<br>
+					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+					<p><center>__________________________________</center></p>
+					<p><center>não prometo respostas.....</center></p>
+					<p><center>mas te convido pra conversas interessantes......</center></p>
+					<p><center>__________________________________</center></p>
+				<br>
+				<br>
+					<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
+		// 0023. mudanças
+	{
+		id: "mudancas-ed18",
+		title: "mudanças - ed18",
+		date: "2026.jun.22",
+		readingTime: "10 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/mudancas.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"cor•o\"",
+		content:
+		`
+				<p>a gente ouve e fala tanto em mudança, mas será que a gente entende mesmo o que ela é, ou só repete o que ouve por aí????</p>
+				<p>porque, olha, a mudança não é só aquela coisa grandiosa que vira post no instagram, tipo "mudei de cidade!!!" ou "novo emprego!!!".... mas ela também é algo muito mais sutil, mais profundo, mais... a gente...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a mudança que não liga nem desliga ♦</strong></p>
+			<br>
+				<p>pensa no inverno que acaba de chegar..... ele não apareceu de repente, com um interruptor que ligou o frio e desligou o calor....</p>
+				<p>o primeiro dia do inverno não foi radicalmente diferente do último do outono, nem do segundo dessa “nova” estação.......</p>
+				<p>uma estação não é um ponto de parada, ela é o caminho, é um processo, uma transição suave, quase imperceptível no dia-a-dia, mas que, quando a gente se dá conta, já transformou a paisagem inteira….</p>
+				<p>uma estação é o que acontece entre um solstício e um equinócio, um período de fluxo, de adaptação..... e ainda assim, nenhum inverno é igual ao outro, nenhuma primavera se repete..... </p>
+				<p>a mudança é constante, mas nunca idêntica..... ela é efêmera, como tudo na vida, como a própria matéria que nos compõe...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a mudança que já é ♦</strong></p>
+			<br>
+				<p>seu corpo, agora, enquanto lê esse ensaio, já não é o mesmo de alguns segundos atrás..... células morrem, outras nascem, neurônios se reconectam.... </p>
+				<p>a gente é um rio em constante fluxo, como já dizia o heráclito: "ninguém entra no mesmo rio duas vezes", porque nem o rio é o mesmo, nem a gente......</p>
+				<p>a mudança não é uma escolha, uma opção que a gente aperta num botão… ela é uma lei da natureza, uma dança cósmica que acontece com ou sem a nossa permissão....</p>
+				<p>é a entropia em ação, a tendência natural de tudo se transformar, de se desorganizar para se reorganizar de um jeito novo.....</p>
+				<p>tentar ficar estática(o), imutável, é lutar contra a própria essência da vida..... é como querer que a água pare de correr, que o vento pare de soprar, que o tempo pare de... passar.... rsrsrs...</p>
+				<p>então, antes de querer mudar, que tal a gente se dar conta de que já estamos mudando o tempo todo????? e que isso é lindo, é vital, é a própria pulsação da existência.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a morte e o luto ♦</strong></p>
+			<br>
+				<p>mas se a mudança é tão natural, por que ela assusta tanto????</p>
+				<p>por que a gente resiste, se agarra ao que já foi, mesmo quando o que já foi não nos serve mais???</p>
+				<p>a resposta, talvez, esteja naquilo que a gente não aprendeu a fazer direito: passar pelo luto....</p>
+				<p>toda mudança, aquela que mexe com a gente por dentro, exige uma "morte"...... a morte da versão que nós éramos antes..... mudar de idéia, de casa, de relacionamento, de cabelo, de opinião sobre a vida...</p>
+				<p>tudo isso implica em deixar pra trás um pedaço de quem fomos.... e que as vezes até acreditamos que somos…..</p>
+				<p>mas a sociedade, essa mesma que nos cobra "siga em frente!!!", "seja sua melhor versão!!!", não nos ensina a viver esse luto....</p>
+				<p>ela quer que a gente se atualize como um app, sem dar tempo pra processar a versão antiga que se foi.....</p>
+				<p>mas a gente precisa desse tempo..... precisa chorar a versão que não existe mais, precisa se despedir do que ficou pra trás, mesmo que o que ficou pra trás fosse apertado, desconfortável, meio torto...</p>
+				<p>só depois de honrar o passado, de entender que ele nos trouxe até aqui, é que a gente consegue, de verdade, abraçar o novo..... sem culpas, sem amarras, sem fantasmas....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ a ditadura do que é novo ♦</strong></p>
+			<br>
+				<p>mas e quando a mudança não nasce de uma necessidade nossa, mas de uma imposição externa???</p>
+				<p>pensa na moda, no mercado, nas tendências de consumo.... vivemos numa sociedade que transformou a mudança em um produto e a obsolescência em uma regra.....</p>
+				<p>a cada seis meses, uma nova paleta de cores é ditada como a "certa", um novo formato de corpo é exaltado, um novo modelo de celular torna o seu, que funciona perfeitamente, obsoleto...</p>
+				<p>essa é a mudança plástica, a mudança de vitrine..... ela não exige luto, nem coragem, nem reflexão.... ela exige apenas adequação e consumo....</p>
+				<p>é uma pressão constante para sermos diferentes, não para evoluirmos, mas para não ficarmos "para trás" na esteira do mercado... e, ironicamente, nos igualarmos….</p>
+				<p>ceder a essa pressão, mudando a própria pele só para caber na roupa da estação, não é transformação..... é apagamento...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ o desapego do controle ♦</strong></p>
+			<br>
+				<p>pensa numa(m) artista..... se ela(e) pudesse, talvez nunca terminaria uma obra..... sempre haveria um detalhe a ajustar, uma cor a mudar, uma nova idéia que a(o) artista de hoje tem e a(o) de ontem não tinha… seria um processo ad eternum......</p>
+				<p>mas é preciso abrir mão do controle, declarar a obra "acabada" para aquele momento, mesmo sabendo que, mais tarde, pode revisitá-la, fazer uma nova versão, ou simplesmente deixá-la seguir seu próprio caminho no mundo.....</p>
+				<p>a verdadeira mudança é um pouco isso: é a coragem de demolir o que não serve mais, de desapegar do que é apenas um remendo, não para assentar um piso "definitivo" ou que vá "durar" para sempre, mas para criar um novo marco, uma nova versão, um novo momento...</p>
+				<p>é a ousadia de dizer: "isso aqui não me representa mais!!!" e ir lá e fazer diferente, mesmo que o mundo diga que é loucura....</p>
+				<p>porque, no fim das contas, a mudança não é sobre o que a gente perde, mas sobre o que a gente ganha: a liberdade de ser quem a gente realmente é, em constante (re)construção, em eterno movimento....</p>
+				<p>pois como cantou raulzito "eu prefiro ser essa metamorfose ambulante do que ter aquela velha opinião formada sobre tudo"...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ o prazer da novidade e o tédio da mesmice ♦</strong></p>
+			<br>
+				<p>porém, nem toda mudança dói..... ah, não mesmo!!!</p>
+				<p>tem gente que tem uma fome de novidade, uma curiosidade que pulsa, um tédio com a mesmice que vira faísca....</p>
+				<p>pra essas pessoas, mudar a decoração da sala a cada estação, experimentar um tempero novo na cozinha, raspar a cabeça do nada..... isso não é dor, é tesão, é alegria, é a vida acontecendo em cores vibrantes!!!!</p>
+				<p>é o prazer de descobrir, de se reinventar, de ver o mundo com outros olhos... é a criança que aprende a amarrar o cadarço e sai correndo pra mostrar pra todo mundo, orgulhosa da sua nova habilidade.....</p>
+				<p>então, vamos combinar: a mudança pode doer, sim, mas a dor não é, e não pode ser, a sua definição....</p>
+				<p>o que define a mudança é o movimento, a transformação, a vida que não para..... e esse movimento, às vezes, é pra fugir do que machuca, mas, muitas vezes, é só porque parar é parado demais, e tem gente que não nasceu pra ser estátua.....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ o relógio alheio ♦</strong></p>
+			<br>
+				<p>e é exatamente aí, no compasso desse movimento, que a coisa se complica..... porque ninguém muda na mesma velocidade.....</p>
+				<p>lidar com a própria mudança já é um desafio colossal, mas e como a gente lida com a mudança do outro???</p>
+				<p>você já sentiu a frustração de evoluir, de desconstruir velhas certezas, e perceber que a pessoa ao seu lado, seja uma amizade, um amor ou familiares, continua parada no mesmo cenário antigo????</p>
+				<p>ou o contrário: a angústia de ver quem amamos acelerar para o futuro enquanto nós ainda precisamos de tempo para processar o agora???</p>
+				<p>o escritor francês antoine de saint-exupéry dizia que "amar não é olhar um para o outro, é olhar juntos na mesma direção"..... mas o que ele não disse é que, muitas vezes, estamos na mesma direção, só que em velocidades brutalmente diferentes.....</p>
+				<p>respeitar o ritmo do outro, entender que a semente dele não germina no mesmo dia que a sua, é o teste máximo da empatia.....</p>
+				<p>às vezes, a maior prova de afeto é simplesmente esperar o outro chegar..... ou ter a coragem de seguir em frente, sabendo que os caminhos se bifurcaram de vez… podendo ou não se reencontrar mais adiante…. </p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ controle e descontrole ♦</strong></p>
+			<br>
+				<p>a gente muda mesmo quando não quer.....</p>
+				<p>a biologia é teimosa... as células se renovam, os neurônios se reconectam, os hormônios dançam conforme a música do tempo.... o escritor francês marcel proust, disse uma vez: "nós não somos feitos de matéria, somos feitos de tempo".....</p>
+				<p>e a vida, essa "onda" que lulu santos canta, "num indo e vindo infinito" que “não adianta fugir”.... a gente pode até tentar segurar, mas ela escorre pelos dedos.....</p>
+				<p>mas quanto controle a gente tem sobre essa dança???</p>
+				<p>tem a mudança que a gente planeja, que a gente busca, que a gente luta pra acontecer..... a revolução, a evolução, o progresso..... e tem a mudança que nos atropela, que nos tira do eixo, que nos obriga a recalcular a rota....</p>
+				<p>"o correr da vida embrulha tudo, a vida é assim: esquenta e esfria, aperta e daí afrouxa, sossega e depois desinquieta. o que ela quer da gente é coragem", já dizia guimarães rosa...... é preciso coragem pra lidar com o que a gente controla e, principalmente, com o que a gente não controla....</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ arte da adaptação ♦</strong></p>
+			<br>
+				<p>e por falar em controle e descontrole, a gente, aqui no brasil, tem uma forma muito peculiar de lidar com a mudança, nosso "jeitinho brasileiro".....</p>
+				<p>ele não é só malandragem, não... é uma capacidade incrível de adaptação, de encontrar soluções criativas em meio ao caos, de desviar do obstáculo quando não dá pra derrubá-los....</p>
+				<p>é uma forma de mudança que se manifesta na flexibilidade, na improvisação, na resiliência.....</p>
+				<p>é a prova de que a mudança pode ser um ato de sobrevivência, uma estratégia para seguir em frente quando as regras não funcionam ou quando o caminho planejado simplesmente não existe mais...</p>
+			<br>
+				<hr class="divisor-fino-longo">
+				<p><strong>♦ um convite ♦</strong></p>
+			<br>
+				<p>então, pra onde ou pra quem a gente está mudando agora???</p>
+				<p>o que a gente já está deixando pra trás, sem nem perceber?????</p>
+				<p>o que a gente sabe que precisa demolir pra construir algo mais sólido, mais a gente????</p>
+				<p>a mudança é uma das únicas certezas que temos em comum... então, que possamos aprender a mudar com gosto, com presença, com consciência.....</p>
+				<p>e, acima de tudo, que a mudança que nos atravesse seja genuinamente nossa… que ela nos pertença e não nos seja apenas imposta......</p>
+				<p>pois, como clarice lispector nos provocava: "até cortar os próprios defeitos pode ser perigoso. nunca se sabe qual é o defeito que sustenta nosso edifício inteiro." talvez a verdadeira sabedoria não seja sobre eliminar tudo o que nos construiu para parecermos "novos", o que nos "sustenta", mas sobre entender que esse "edifício" que somos está sempre em reforma, em constante adaptação, sem nunca ser "definitivo"...</p>
+				<p>no mais, até mais!!!!!</p>
+
+				<br>
+					<p>quer mergulhar em outras reflexões profundas???</p>
+					<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+					<p>vale a pena conferir!...</p>
+				<br>
+					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+					<p><center>__________________________________</center></p>
+					<p><center>não prometo respostas.....</center></p>
+					<p><center>mas te convido pra conversas interessantes......</center></p>
+					<p><center>__________________________________</center></p>
+				<br>
+				<br>
+					<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
+
 // 0022. semelhantes diferenças
 	{
 		id: "semelhantes-diferencas-ed17",
