@@ -324,7 +324,7 @@ const postsData =
 
 				<br>
 					<p>quer mergulhar em outras reflexões profundas???</p>
-					<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+					<p>no último texto, exploramos o que é o ritual chamado café.....</p>
 					<p>vale a pena conferir!...</p>
 				<br>
 					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
