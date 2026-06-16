@@ -4,7 +4,7 @@ const postsData =
 
 // 0024. natal
 	{
-		id: "e natal!!!...?-ed19",
+		id: "e_natal-ed19",
 		title: "é natal!!!...? - ed19",
 		date: "2026.jun.29",
 		readingTime: "9 min de leitura",
