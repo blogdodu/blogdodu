@@ -228,7 +228,7 @@ const postsData =
 
 				<br>
 					<p>quer mergulhar em outras reflexões profundas???</p>
-					<p>no último texto, XXXXXXXXXXXXXXXXXXXXX.....</p>
+					<p>no último texto, falamos sobre a diferença entre simples e fácil, difícil e complexo.....</p>
 					<p>vale a pena conferir!...</p>
 				<br>
 					<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
