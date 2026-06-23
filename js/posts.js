@@ -222,7 +222,7 @@ const postsData =
 				<p>o que a gente já está deixando pra trás, sem nem perceber?????</p>
 				<p>o que a gente sabe que precisa demolir pra construir algo mais sólido, mais a gente????</p>
 				<p>a mudança é uma das únicas certezas que temos em comum... então, que possamos aprender a mudar com gosto, com presença, com consciência.....</p>
-				<p>e, acima de tudo, que a mudança que nos atravesse seja genuinamente nossa… que ela nos pertença e não nos seja apenas imposta......</p>
+				<p>e, acima de tudo, que a mudança que nos atravessa seja genuinamente nossa… que ela nos pertença e não nos seja apenas imposta......</p>
 				<p>pois, como clarice lispector nos provocava: "até cortar os próprios defeitos pode ser perigoso. nunca se sabe qual é o defeito que sustenta nosso edifício inteiro." talvez a verdadeira sabedoria não seja sobre eliminar tudo o que nos construiu para parecermos "novos", o que nos "sustenta", mas sobre entender que esse "edifício" que somos está sempre em reforma, em constante adaptação, sem nunca ser "definitivo"...</p>
 				<p>no mais, até mais!!!!!</p>
 
