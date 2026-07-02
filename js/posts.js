@@ -114,7 +114,7 @@ const postsData =
 				<p>o jô mesmo ficou famoso, entre muitas outras coisas, por seu “beijo do gordo”, gesto que encerrava seu programa..... esse ocupava, para muitos adultos, o lugar daquele de boa noite dado na testa da criança antes dela dormir........</p>
 				<p>inclusive, havia quem esperasse aquele beijo para poder dormir..... o encerramento do programa como a última imagem do dia..... e isso funcionava como ritual de encerramento..... como quem apaga a luz..... o dia acabou, pode fechar os olhos.....</p>
 				<p>fazendo com que o beijo, mesmo sem deixar marca, marcasse o tempo..... como fronteira entre o estado de vigília e o de descanso..... é o acender e apagar que a infância aprende a reconhecer antes de saber explicar.....</p>
-				<p>mas talvez os mais difíceis são aqueles que deixamos de dar.... que esse não seja nosso caso hoje..... e que você possa sentir cada texto, como um beijo do du......</p>
+				<p>mas talvez os mais difíceis são aqueles que deixamos de dar.... que esse não seja nosso caso hoje, que comemoramos o dia internacional do beijo..... e que você possa sentir cada texto, como um beijo do du......</p>
 				<p>no mais, até mais!!!!</p>
 
 					<br>
