@@ -22,8 +22,10 @@ const postsData =
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a cartografia do invisível ♦</strong></p>
 			<br>
-				<p>há gestos que a lingüística chama de universais..... mas o beijo, curiosamente, não é um deles.....</p>
-				<p>há culturas que simplesmente não o praticam..... pelo menos o dado com a boca como forma de cumprimento, afeto ou desejo.....</p>
+				<p>há gestos que a lingüística chama de universais.....</p>
+				<p>mas o beijo, curiosamente, não é um deles.....</p>
+				<p>há culturas que simplesmente não o praticam.....</p>
+				<p>pelo menos o dado com a boca como forma de cumprimento, afeto ou desejo.....</p>
 				<p>para alguns povos indígenas da amazônia, para várias etnias do sudeste asiático, para populações de certas ilhas da oceania, o ato de aproximar os lábios de outra pessoa da forma que os ocidentais entendem como "beijo" é completamente estranho, às vezes até perturbador.....</p>
 				<p>no entanto, há outros gestos que fazem o mesmo trabalho.....</p>
 				<p>por exemplo, o honi dos maori, que pressiona narizes e testas, compartilhando o "hā", o sopro de vida.....</p>
