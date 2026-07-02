@@ -22,108 +22,108 @@ const postsData =
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a cartografia do invisível ♦</strong></p>
 			<br>
-				<p>há gestos que a lingüística chama de universais.....</p>
-				<p>mas o beijo, curiosamente, não é um deles.....</p>
+				<p>há gestos que a lingüística chama de universais....</p>
+				<p>mas o beijo, curiosamente, não é um deles...</p>
 				<p>há culturas que simplesmente não o praticam.....</p>
-				<p>pelo menos o dado com a boca como forma de cumprimento, afeto ou desejo.....</p>
-				<p>para alguns povos indígenas da amazônia, para várias etnias do sudeste asiático, para populações de certas ilhas da oceania, o ato de aproximar os lábios de outra pessoa da forma que os ocidentais entendem como "beijo" é completamente estranho, às vezes até perturbador.....</p>
-				<p>no entanto, há outros gestos que fazem o mesmo trabalho.....</p>
-				<p>por exemplo, o honi dos maori, que pressiona narizes e testas, compartilhando o "hā", o sopro de vida.....</p>
-				<p>ou o beijo de "esquimó", de muitas etnias inuit, que não é exatamente um esfregar de narizes como a caricatura popular ensinou, mas um cheirar, um inalar o cheiro do outro.....</p>
-				<p>como se a intimidade estivesse não na pressão dos lábios, mas no ar que o corpo da outra pessoa exala.....</p>
-				<p>assim, o que parece mesmo ser universal é a necessidade de se aproximar..... de encostar, de sentir a outra pessoa próxima o suficiente para que ela deixe de ser só imagem e vire também cheiro, calor, textura.....</p>
-				<p>o que me encanta nessa universalidade não do gesto, mas da necessidade..... é as ironias e sincronicidades.....</p>
-				<p>veja só, mesmo com sentido e forma completamente diferentes dos inuits, por terras tupiniquins, em boa parte do nordeste, quando você se despede de alguém e quer mandar um beijo, você manda "um cheiro".....</p>
-				<p>um cheiro..... não um toque, não um contato..... a parte mais aérea, mais invisível, mais improvável do encontro..... e é essa a palavra que ficou..... talvez porque o beijo verdadeiro tenha mesmo mais de cheiro do que de boca.....</p>
-				<p>porém, beijar, em suas mil formas, é só uma das respostas que a humanidade encontrou para essa necessidade de proximidade..... mesmo à distância, mesmo quando temos a necesidade de nos afastar</p>
-				<p>sem falar do momento que o antecede, que o corpo já sabe o que vai acontecer..... a cabeça ainda está negociando, pesando, hesitando..... mas o corpo já se inclinou um milímetro.....</p>
-				<p>a neurociência tem algumas coisas a dizer sobre isso.....</p>
-				<p>durante um beijo, o cérebro dispara um coquetel considerável: dopamina (recompensa), ocitocina (vínculo), serotonina (bem-estar) e adrenalina (excitação).....</p>
-				<p>o nariz, que fica tão próximo durante o beijo, processa feromônios e outras informações químicas que ajudam o corpo a avaliar compatibilidade genética..... ou seja, literalmente cheiramos a compatibilidade de quem beijamos..... e às vezes é exatamente esse cheiro, esse ar que o corpo do outro exala, o que fica na memória muito depois do rosto ter esquecido o calor dos lábios da outra pessoa.....</p>
-				<p>a evolucionista helen fisher propôs que o beijo pode ter nascido da alimentação boca-a-boca, da mãe para a sua prole, antes de haver alimentos pastosos suficientes..... uma intimidade nutritiva que o corpo guardou como lingüagem mesmo depois de não precisar mais.....</p>
-				<p>como se o ato de colocar a boca na boca do outro fosse uma memória celular de sobrevivência que virou desejo.....</p>
-				<p>mas a neurociência explica o mecanismo, não a experiência..... a experiência de um beijo verdadeiro não cabe em dopamina..... ela está naquela pausa entre um beijo e o próximo, quando a gente ainda não abriu os olhos e o mundo ainda não voltou.....</p>
+				<p>pelo menos o dado com a boca como forma de cumprimento, afeto ou desejo...</p>
+				<p>para alguns povos indígenas da amazônia, para várias etnias do sudeste asiático, para populações de certas ilhas da oceania, o ato de aproximar os lábios de outra pessoa da forma que os ocidentais entendem como "beijo" é completamente estranho, às vezes até perturbador.......</p>
+				<p>no entanto, há outros gestos que fazem o mesmo trabalho....</p>
+				<p>por exemplo, o honi dos maori, que pressiona narizes e testas, compartilhando o "hā", o sopro de vida......</p>
+				<p>ou o beijo de "esquimó", de muitas etnias inuit, que não é exatamente um esfregar de narizes como a caricatura popular ensinou, mas um cheirar, um inalar o cheiro do outro....</p>
+				<p>como se a intimidade estivesse não na pressão dos lábios, mas no ar que o corpo da outra pessoa exala...</p>
+				<p>assim, o que parece mesmo ser universal é a necessidade de se aproximar.... de encostar, de sentir a outra pessoa próxima o suficiente para que ela deixe de ser só imagem e vire também cheiro, calor, textura.....</p>
+				<p>o que me encanta nessa universalidade não do gesto, mas da necessidade... é as ironias e sincronicidades.....</p>
+				<p>veja só, mesmo com sentido e forma completamente diferentes dos inuits, por terras tupiniquins, em boa parte do nordeste, quando você se despede de alguém e quer mandar um beijo, você manda "um cheiro"...</p>
+				<p>um cheiro.... não um toque, não um contato..... a parte mais aérea, mais invisível, mais improvável do encontro... e é essa a palavra que ficou.... talvez porque o beijo verdadeiro tenha mesmo mais de cheiro do que de boca.....</p>
+				<p>porém, beijar, em suas mil formas, é só uma das respostas que a humanidade encontrou para essa necessidade de proximidade... mesmo à distância, mesmo quando temos a necesidade de nos afastar</p>
+				<p>sem falar do momento que o antecede, que o corpo já sabe o que vai acontecer.... a cabeça ainda está negociando, pesando, hesitando... mas o corpo já se inclinou um milímetro....</p>
+				<p>a neurociência tem algumas coisas a dizer sobre isso....</p>
+				<p>durante um beijo, o cérebro dispara um coquetel considerável: dopamina (recompensa), ocitocina (vínculo), serotonina (bem-estar) e adrenalina (excitação)....</p>
+				<p>o nariz, que fica tão próximo durante o beijo, processa feromônios e outras informações químicas que ajudam o corpo a avaliar compatibilidade genética... ou seja, literalmente cheiramos a compatibilidade de quem beijamos... e às vezes é exatamente esse cheiro, esse ar que o corpo do outro exala, o que fica na memória muito depois do rosto ter esquecido o calor dos lábios da outra pessoa....</p>
+				<p>a evolucionista helen fisher propôs que o beijo pode ter nascido da alimentação boca-a-boca, da mãe para a sua prole, antes de haver alimentos pastosos suficientes.... uma intimidade nutritiva que o corpo guardou como lingüagem mesmo depois de não precisar mais.....</p>
+				<p>como se o ato de colocar a boca na boca do outro fosse uma memória celular de sobrevivência que virou desejo...</p>
+				<p>mas a neurociência explica o mecanismo, não a experiência..... a experiência de um beijo verdadeiro não cabe em dopamina.... ela está naquela pausa entre um beijo e o próximo, quando a gente ainda não abriu os olhos e o mundo ainda não voltou...</p>
 			<br>
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a balança dos extremos ♦</strong></p>
 			<br>
-				<p>então o beijo não é universal e tampouco inocente.....</p>
-				<p>não é curioso que o gesto mais carregado de traição no imaginário do ocidente não foi uma facada, nem um veneno, nem uma emboscada..... foi um beijo.....</p>
-				<p>"o que eu beijar, é esse; prendei-o", é o que diz judas iscariotes no jardim do getsêmani, segundo o evangelho de mateus..... e os soldados avançam.....</p>
-				<p>é impressionante que se escolha exatamente o gesto de reconhecimento afetivo por excelência, para identificar quem deve “morrer”.....</p>
-				<p>como se a traição precisasse, para ser traição de verdade, passar pelo canal mais íntimo que existe..... a pele do rosto, os lábios, a proximidade que só se permite a quem se ama ou a quem se confia.....</p>
+				<p>então o beijo não é universal e tampouco inocente....</p>
+				<p>não é curioso que o gesto mais carregado de traição no imaginário do ocidente não foi uma facada, nem um veneno, nem uma emboscada... foi um beijo.....</p>
+				<p>"o que eu beijar, é esse; prendei-o", é o que diz judas iscariotes no jardim do getsêmani, segundo o evangelho de mateus... e os soldados avançam....</p>
+				<p>é impressionante que se escolha exatamente o gesto de reconhecimento afetivo por excelência, para identificar quem deve “morrer”....</p>
+				<p>como se a traição precisasse, para ser traição de verdade, passar pelo canal mais íntimo que existe... a pele do rosto, os lábios, a proximidade que só se permite a quem se ama ou a quem se confia....</p>
 				<p>mas o beijo de judas é o avesso de outros como os de contos de fada.....</p>
-				<p>em branca de neve ou na bela adormecida ele desperta, ele salva.....</p>
-				<p>ele é o código que desfaz o feitiço, o gesto que permite ao corpo retornar ao mundo..... enquanto o de judas entrega o corpo à morte, o dos contos o devolve à vida.....</p>
-				<p>e o que os dois têm em comum é justamente isso, ser evento transformador..... não um gesto neutro..... mas algo que muda o estado das coisas..... ele abre ou fecha, salva ou condena..... ele nunca apenas acontece.....</p>
-				<p>há ainda um terceiro arquétipo..... o da princesa que beija o sapo..... e aqui não existe resgate ou emboscada..... mas revelação.....</p>
+				<p>em branca de neve ou na bela adormecida ele desperta, ele salva...</p>
+				<p>ele é o código que desfaz o feitiço, o gesto que permite ao corpo retornar ao mundo.... enquanto o de judas entrega o corpo à morte, o dos contos o devolve à vida.....</p>
+				<p>e o que os dois têm em comum é justamente isso, ser evento transformador... não um gesto neutro.... mas algo que muda o estado das coisas..... ele abre ou fecha, salva ou condena.... ele nunca apenas acontece...</p>
+				<p>há ainda um terceiro arquétipo.... o da princesa que beija o sapo.... e aqui não existe resgate ou emboscada... mas revelação....</p>
 				<p>o beijo descobre o que estava escondido.....</p>
-				<p>debaixo de uma forma que não era a real, havia uma outra esperando..... e só esse gesto, por alguma razão que nem o conto explica muito bem, tinha o poder de mostrar o que estava lá o tempo todo.....</p>
-				<p>não é difícil ler isso como metáfora..... a gente o tempo todo decide se beija ou não o sapo..... se arrisca a intimidade com o que parece improvável..... e às vezes o sapo continua sapo..... mas só às vezes.....</p>
+				<p>debaixo de uma forma que não era a real, havia uma outra esperando.... e só esse gesto, por alguma razão que nem o conto explica muito bem, tinha o poder de mostrar o que estava lá o tempo todo....</p>
+				<p>não é difícil ler isso como metáfora..... a gente o tempo todo decide se beija ou não o sapo..... se arrisca a intimidade com o que parece improvável..... e às vezes o sapo continua sapo.... mas só às vezes...</p>
 				<p>há uma coragem enorme no beijo da princesa, uma coragem que os contos raramente celebram como deveriam..... ela não esperava a perfeição..... ela se aproximou do imperfeito, confiando que o certo vai além das aparências.....</p>
-				<p>lembro ainda o beijo da morte, que a gente conhece da máfia, em o poderoso chefão 2..... aquele que diz "te amo e mesmo assim"..... ou talvez "te amo e por isso mesmo"..... que é o mais aterrorizante que existe, porque a sentença de morte vem embrulhada em afeto.....</p>
-				<p>mas mesmo algo tão diverso, levou décadas para que a televisão brasileira, estampasse essa diversidade, mostrando um beijo entre casais homoafetivos em horário nobre..... e quando mostrou, o mundo não acabou (mesmo que uns poucos assim achem).....</p>
-				<p>mas o que antecedeu essas cenas foi uma guerra silenciosa de roteiristas, atores, diretores e espectadoras(es) que sabiam que aquilo era mais do que um gesto de ficção..... era algo que precisava vencer as barreiras do conservadorismo e ser transmitido.......</p>
-				<p>cada beijo proibido que vai ao ar é uma pequena ruptura na armadura do preconceito..... e quem assiste de casa, quem pode se reconhecer naquele gesto pela primeira vez na vida sabe exatamente o que aqueles dois segundos de televisão significam.....</p>
-				<p>porque beijar é fazer política também..... seja o gesto entre brejnev e honecker, os dois líderes soviéticos, pintado no muro de berlim pelo artista dmitri vrubel, com a frase "meu deus, ajuda-me a sobreviver a este amor mortal"..... dois homens que não se amavam, cujo beijo era ritual diplomático, eternizados num mural que virou símbolo de liberdade, de ironia e de resistência ao mesmo tempo..... seja as pinturas de casais se beijando em zonas de conflito, feitas por banksy .....</p>
+				<p>lembro ainda o beijo da morte, que a gente conhece da máfia, em o poderoso chefão 2... aquele que diz "te amo e mesmo assim"...... ou talvez "te amo e por isso mesmo".... que é o mais aterrorizante que existe, porque a sentença de morte vem embrulhada em afeto...</p>
+				<p>mas mesmo algo tão diverso, levou décadas para que a televisão brasileira, estampasse essa diversidade, mostrando um beijo entre casais homoafetivos em horário nobre... e quando mostrou, o mundo não acabou (mesmo que uns poucos assim achem).....</p>
+				<p>mas o que antecedeu essas cenas foi uma guerra silenciosa de roteiristas, atores, diretores e espectadoras(es) que sabiam que aquilo era mais do que um gesto de ficção.... era algo que precisava vencer as barreiras do conservadorismo e ser transmitido.......</p>
+				<p>cada beijo proibido que vai ao ar é uma pequena ruptura na armadura do preconceito... e quem assiste de casa, quem pode se reconhecer naquele gesto pela primeira vez na vida sabe exatamente o que aqueles dois segundos de televisão significam.....</p>
+				<p>porque beijar é fazer política também...... seja o gesto entre brejnev e honecker, os dois líderes soviéticos, pintado no muro de berlim pelo artista dmitri vrubel, com a frase "meu deus, ajuda-me a sobreviver a este amor mortal".... dois homens que não se amavam, cujo beijo era ritual diplomático, eternizados num mural que virou símbolo de liberdade, de ironia e de resistência ao mesmo tempo..... seja as pinturas de casais se beijando em zonas de conflito, feitas por banksy .....</p>
 				<p>o beijo sempre pode ser um ato de desobediência civil.....</p>
 			<br>
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a topologia da carne ♦</strong></p>
 			<br>
 				<p>os gregos, como quase sempre, entenderam de mais de um jeito.....</p>
-				<p>em grego antigo o beijo tinha nomes diferentes dependendo do que era..... o philema era o beijo afetuoso, de amizade, de cumprimento..... o kyneîn era mais genérico, o simples ato de beijar..... havia o katafíleîn, e é aqui que a coisa fica interessante..... era um beijo mais intenso, mais completo, mais... sem eufemismos.....</p>
-				<p>e havia o beijo erótico, descrito por filósofos e poetas, que incluía língua e que estava associado ao desejo, ao eros, a tudo que escorregava perigosamente para além do que era dito em voz alta.....</p>
-				<p>platão, no simpósio, coloca na boca de aristófanes um dos mitos de origem mais bonitos do ocidente..... os seres primordiais, esféricos e completos, foram cortados ao meio pelos deuses por serem demasiado poderosos..... e desde então cada metade passa a vida buscando a outra.....</p>
-				<p>o beijo, nessa leitura, não é um começo..... é uma memória..... o corpo que sabe que já foi uno e insiste em tentar, na superfície do outro, encontrar o eco desse todo perdido.....</p>
-				<p>e se os gregos deram nomes para o beijo na boca, não deixaram de entender que a boca é só um dos lugares..... o beijo, que hoje chamamos de grego, que nenhum pudor me impede de nomear aqui, é aquele que acabou ficando para o gesto de beijar e lamber o ânus de outra pessoa.....</p>
-				<p>um ato de intimidade radical, que exige confiança, entrega e a disposição de não ver nada de errado com o corpo do outro em sua totalidade..... os gregos, afinal, tinham uma relação com o corpo que nós passamos séculos tentando envergonhar..... e ainda não conseguimos de todo, felizmente.....</p>
-				<p>e por falar em beijo grego e partes do corpo, o beijo nunca foi algo só para a boca.....</p>
+				<p>em grego antigo o beijo tinha nomes diferentes dependendo do que era... o philema era o beijo afetuoso, de amizade, de cumprimento.... o kyneîn era mais genérico, o simples ato de beijar...... havia o katafíleîn, e é aqui que a coisa fica interessante..... era um beijo mais intenso, mais completo, mais... sem eufemismos......</p>
+				<p>e havia o beijo erótico, descrito por filósofos e poetas, que incluía língua e que estava associado ao desejo, ao eros, a tudo que escorregava perigosamente para além do que era dito em voz alta....</p>
+				<p>platão, no simpósio, coloca na boca de aristófanes um dos mitos de origem mais bonitos do ocidente.... os seres primordiais, esféricos e completos, foram cortados ao meio pelos deuses por serem demasiado poderosos... e desde então cada metade passa a vida buscando a outra....</p>
+				<p>o beijo, nessa leitura, não é um começo..... é uma memória... o corpo que sabe que já foi uno e insiste em tentar, na superfície do outro, encontrar o eco desse todo perdido.....</p>
+				<p>e se os gregos deram nomes para o beijo na boca, não deixaram de entender que a boca é só um dos lugares.... o beijo, que hoje chamamos de grego, que nenhum pudor me impede de nomear aqui, é aquele que acabou ficando para o gesto de beijar e lamber o ânus de outra pessoa....</p>
+				<p>um ato de intimidade radical, que exige confiança, entrega e a disposição de não ver nada de errado com o corpo do outro em sua totalidade... os gregos, afinal, tinham uma relação com o corpo que nós passamos séculos tentando envergonhar.... e ainda não conseguimos de todo, felizmente.....</p>
+				<p>e por falar em beijo grego e partes do corpo, o beijo nunca foi algo só para a boca....</p>
 				<p>há o beijo no pescoço, que é vulnerabilidade pura, deixar outra pessoa acessar essa curva é desarmar um dos reflexos mais primitivos de proteção..... </p>
-				<p>há o beijo na clavícula, na curva do ombro, no seio, na barriga, no interior do joelho, na nuca, nos olhos, na ponta do nariz, na planta do pé..... cada um com sua própria gramática, seu próprio peso, suas próprias promessas.....</p>
-				<p>o corpo inteiro é território, é alvo e a gente passa a vida mapeando esse território sem qualquer manual.....</p>
+				<p>há o beijo na clavícula, na curva do ombro, no seio, na barriga, no interior do joelho, na nuca, nos olhos, na ponta do nariz, na planta do pé..... cada um com sua própria gramática, seu próprio peso, suas próprias promessas...</p>
+				<p>o corpo inteiro é território, é alvo e a gente passa a vida mapeando esse território sem qualquer manual....</p>
 				<p>na lingüística popular brasileira, o beijo se espraiou de um jeito que vai muito além do gesto e do corpo.....</p>
-				<p>"beijo" no final de uma mensagem pode ser carinho ou pode ser ponto final da conversa, dependendo do tom..... "beijar o chão" é uma humilhação, é cair, é levar uma rasteira da realidade..... "beijar a lona" no boxe é ser nocauteado..... "dar com a cara na porta" tem a mesma lógica, o encontro inesperado com algo duro que te devolve ao chão.....</p>
-				<p>o "beija-flor" que pairando a cultura popular, emprestou o nome a uma das maiores escolas de samba do rio....... o pássaro que não pousa, que vai de flor em flor sem nunca se demorar..... um beija-flor que, no uso coloquial, é justamente quem beija muito sem se apegar a ninguém..... ou é só um passo da quadrilha junina</p>
-				<p>e o lambeijo do cachorro..... tecnicamente não é um beijo..... mas qualquer pessoa que tem um pet sabe que é..... é o beijo sem pudor, sem protocolo, sem horário, sem pedir licença..... é o beijo que não pensa se beijar tem qualquer regra.....</p>
-				<p>e há, claro, o beijo de quem cuida..... o beijo na testa de um pai idoso na hora de organizar os remédios do dia, o beijo na bochecha da irmã que trouxe o prato de comida quando a energia acabou.....</p>
-				<p>esse não tem a urgência do eros, nem a pompa da política..... é a âncora da rotina..... é o beijo que diz "estou aqui, eu seguro a barra, mesmo quando o corpo falha".....</p>
+				<p>"beijo" no final de uma mensagem pode ser carinho ou pode ser ponto final da conversa, dependendo do tom... "beijar o chão" é uma humilhação, é cair, é levar uma rasteira da realidade.... "beijar a lona" no boxe é ser nocauteado.... "dar com a cara na porta" tem a mesma lógica, o encontro inesperado com algo duro que te devolve ao chão...</p>
+				<p>o "beija-flor" que pairando a cultura popular, emprestou o nome a uma das maiores escolas de samba do rio....... o pássaro que não pousa, que vai de flor em flor sem nunca se demorar..... um beija-flor que, no uso coloquial, é justamente quem beija muito sem se apegar a ninguém.... ou é só um passo da quadrilha junina</p>
+				<p>e o lambeijo do cachorro..... tecnicamente não é um beijo.... mas qualquer pessoa que tem um pet sabe que é.... é o beijo sem pudor, sem protocolo, sem horário, sem pedir licença... é o beijo que não pensa se beijar tem qualquer regra.....</p>
+				<p>e há, claro, o beijo de quem cuida..... o beijo na testa de um pai idoso na hora de organizar os remédios do dia, o beijo na bochecha da irmã que trouxe o prato de comida quando a energia acabou...</p>
+				<p>esse não tem a urgência do eros, nem a pompa da política... é a âncora da rotina..... é o beijo que diz "estou aqui, eu seguro a barra, mesmo quando o corpo falha"....</p>
 				<p>um beijo que é puro alicerce, quase sempre invisível para o mundo, mas que sustenta a vida inteira de quem o recebe e de quem o dá.....</p>
 			<br>
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a performance e o sagrado ♦</strong></p>
 			<br>
 				<p>se há um gesto que a arte visual tentou capturar mais do que qualquer outro, é o beijo.....</p>
-				<p>gustav klimt, em 1907, pinta dois amantes fundidos num manto de ouro, ajoelhados na beira de uma falésia florida..... ela inclina a cabeça, ele a envolve..... os rostos quase não aparecem..... o que importa é o enlace, a dissolução de dois corpos num único contorno dourado..... o beijo de klimt não tem urgência..... é eterno, suspenso, como se o tempo concordasse em parar ali.....</p>
-				<p>rodin o esculpiu em mármore branco, em 1882..... uma cena com dois corpos nus se curvando um ao outro, os lábios quase se tocando, não de todo..... e o que comove é exatamente esse "quase"..... o desejo ainda em vôo, ainda não pousado.....</p>
+				<p>gustav klimt, em 1907, pinta dois amantes fundidos num manto de ouro, ajoelhados na beira de uma falésia florida... ela inclina a cabeça, ele a envolve..... os rostos quase não aparecem..... o que importa é o enlace, a dissolução de dois corpos num único contorno dourado... o beijo de klimt não tem urgência..... é eterno, suspenso, como se o tempo concordasse em parar ali...</p>
+				<p>rodin o esculpiu em mármore branco, em 1882..... uma cena com dois corpos nus se curvando um ao outro, os lábios quase se tocando, não de todo..... e o que comove é exatamente esse "quase".... o desejo ainda em vôo, ainda não pousado.....</p>
 				<p>há quem diga que o mais erótico de um beijo não é o contato, mas o milímetro antes dele..... e o rodin capturou exatamente esse milímetro.....</p>
-				<p>e robert doisneau, em 1950, fotografou um casal se beijando na rua em paris..... "le baiser de l'hôtel de ville"..... por décadas o mundo acreditou ser um flagrante, um momento espontâneo colhido na multidão..... contudo, descobriu-se que a cena era uma ficção programada...... os amantes eram atores encenando o flagrante..... e, ainda assim, é uma das imagens mais reproduzidas do século, porque captura algo que se reconhece imediatamente como verdadeiro, mesmo sendo ficção.....</p>
+				<p>e robert doisneau, em 1950, fotografou um casal se beijando na rua em paris..... "le baiser de l'hôtel de ville"..... por décadas o mundo acreditou ser um flagrante, um momento espontâneo colhido na multidão..... contudo, descobriu-se que a cena era uma ficção programada...... os amantes eram atores encenando o flagrante..... e, ainda assim, é uma das imagens mais reproduzidas do século, porque captura algo que se reconhece imediatamente como verdadeiro, mesmo sendo ficção...</p>
 				<p>o que isso diz sobre o beijo???</p>
-				<p>que nele há uma teatralidade, uma performance, que ele mesmo não percebe..... que quando a gente beija, está também sempre interpretando..... o beijo que se dá é também o beijo que se mostra.....</p>
-				<p>o beijo roubado tem isso de bom..... ele pega a performance de surpresa..... pois quando é roubado, o beijo não tem tempo de se comportar.....</p>
-				<p>porém, antes mesmo da fotografia encenada, a máquina de ilusões de hollywood já havia roteirizado a nossa expectativa de como um beijo deveria parecer, soar e até em que ângulo de luz deveria acontecer.....</p>
+				<p>que nele há uma teatralidade, uma performance, que ele mesmo não percebe..... que quando a gente beija, está também sempre interpretando... o beijo que se dá é também o beijo que se mostra....</p>
+				<p>o beijo roubado tem isso de bom..... ele pega a performance de surpresa.... pois quando é roubado, o beijo não tem tempo de se comportar.....</p>
+				<p>porém, antes mesmo da fotografia encenada, a máquina de ilusões de hollywood já havia roteirizado a nossa expectativa de como um beijo deveria parecer, soar e até em que ângulo de luz deveria acontecer....</p>
 				<p>o beijo na chuva torrencial, o beijo de ponta-cabeça pendurado numa teia (esse é mais moderno....), o beijo que sela o final feliz sob a orquestra sinfônica.....</p>
 				<p>hollywood nos ensinou a coreografia do afeto, transformando a intimidade num espetáculo de consumo.....</p>
 				<p>e nós, espectadoras(es) "obedientes", passamos a vida tentando reproduzir na sala de estar o roteiro que foi desenhado para a tela de cinema..... só para sentirmos uma fagulha de protagonismo</p>
-				<p>mas beijar não é só esse ato de prazer e conflito..... ele é também ritual, é sagrado.....</p>
+				<p>mas beijar não é só esse ato de prazer e conflito..... ele é também ritual, é sagrado...</p>
 				<p>o beijo da paz, o ósculo que os cristãos trocavam no início das liturgias como sinal de comunhão, sobreviveu no abraço, no comprimento cerimonial entre fiéis que, ainda hoje, em algumas tradições, interrompe a missa em confraternização.....</p>
-				<p>o gesto atravessou séculos porque ele faz algo que a palavra não faz..... ele coloca dois corpos no mesmo plano, sem necessidade de qualquer discurso..... às vezes envolve até mais que duas pessoas....</p>
-				<p>na corte medieval, a seqüência de beijos dizia tudo sobre o status de cada uma(m)..... beijar a mão era respeitar..... beijar o anel era venerar..... beijar o pé era submeter-se..... e todos sabiam ler esse código sem que ninguém precisasse explicar.....</p>
-				<p>as(os) fiéis muçulmanas(os) beijam a pedra negra da caaba durante o hajj..... os católicos beijam o anel do papa, as relíquias dos santos, o chão da terra santa.....</p>
-				<p>o beijo é também, portanto, o ponto de contato entre o humano e as lógicas que estão além dele..... como se a boca, ao tocar o sagrado, pudesse trazer um pouco dele para dentro de si.....</p>
-				<p>mas tem o beijo, sem contato algum, à distância, aquele que a gente joga..... a mão que se eleva em direção ao rosto, os dedos que tocam nos lábios e o sopro lançado ao ar em direção a alguém que já está longe demais para um toque real.....</p>
-				<p>é aquele que habita e percorre o espaço entre dois corpos que se separam..... talvez seja o mais honesto de todos porque ele não esconde que o desejo é de estar mais perto.....</p>
-				<p>a gente sempre quer mais perto, tão perto que às vezes marca..... o batom na gola da camisa..... no copo de vinho..... na bochecha..... no envelope da carta.....</p>
-				<p>o beijo que fica depois que quem o deu já foi..... é a marca sem a presença..... o calor já evaporado com a forma ainda ali.....</p>
-				<p>antes do telefone, as cartas terminavam com um x..... um símbolo que, dependendo da origem que você consultar, representa o beijo selado com a boca sobre a cruz, como promessa de sinceridade.....</p>
+				<p>o gesto atravessou séculos porque ele faz algo que a palavra não faz.... ele coloca dois corpos no mesmo plano, sem necessidade de qualquer discurso..... às vezes envolve até mais que duas pessoas....</p>
+				<p>na corte medieval, a seqüência de beijos dizia tudo sobre o status de cada uma(m)..... beijar a mão era respeitar..... beijar o anel era venerar..... beijar o pé era submeter-se..... e todos sabiam ler esse código sem que ninguém precisasse explicar...</p>
+				<p>as(os) fiéis muçulmanas(os) beijam a pedra negra da caaba durante o hajj.... os católicos beijam o anel do papa, as relíquias dos santos, o chão da terra santa.....</p>
+				<p>o beijo é também, portanto, o ponto de contato entre o humano e as lógicas que estão além dele..... como se a boca, ao tocar o sagrado, pudesse trazer um pouco dele para dentro de si....</p>
+				<p>mas tem o beijo, sem contato algum, à distância, aquele que a gente joga..... a mão que se eleva em direção ao rosto, os dedos que tocam nos lábios e o sopro lançado ao ar em direção a alguém que já está longe demais para um toque real...</p>
+				<p>é aquele que habita e percorre o espaço entre dois corpos que se separam... talvez seja o mais honesto de todos porque ele não esconde que o desejo é de estar mais perto.....</p>
+				<p>a gente sempre quer mais perto, tão perto que às vezes marca..... o batom na gola da camisa.... no copo de vinho..... na bochecha..... no envelope da carta...</p>
+				<p>o beijo que fica depois que quem o deu já foi.... é a marca sem a presença..... o calor já evaporado com a forma ainda ali.....</p>
+				<p>antes do telefone, as cartas terminavam com um x... um símbolo que, dependendo da origem que você consultar, representa o beijo selado com a boca sobre a cruz, como promessa de sinceridade.....</p>
 				<p>uma(m) analfabeta(o) que não sabia escrever o próprio nome assinava com um x e o beijava, para que o gesto valesse como juramento..... o beijo escrito..... o beijo que virou música e poema.....</p>
-				<p>e ainda tem o beijinho, docinho de festa junina, que é um beijo que não é bem um beijo..... é uma brincadeira que usa o nome do gesto sem cumprí-lo.....</p>
+				<p>e ainda tem o beijinho, docinho de festa junina, que é um beijo que não é bem um beijo... é uma brincadeira que usa o nome do gesto sem cumprí-lo.....</p>
 				<p>há o selinho, que a criança vai lá, tímida, dá bem rápido, já correndo antes de encostar..... ou que o adulto dá e finge que não deu..... e a gente já entende tudo.....</p>
-				<p>o "x" que se manda no whatsapp às duas da manhã..... o "bjão" no final da mensagem de voz..... o emoji que cada tribo usa de um jeito completamente diferente e que ninguém tem mais certeza o que significa naquele ou em outro contexto, mas todo mundo continua mandando.....</p>
+				<p>o "x" que se manda no whatsapp às duas da manhã..... o "bjão" no final da mensagem de voz.... o emoji que cada tribo usa de um jeito completamente diferente e que ninguém tem mais certeza o que significa naquele ou em outro contexto, mas todo mundo continua mandando.....</p>
 				<p>é muito beijo, smack, splish splash!!!!</p>
-				<p>o jô mesmo ficou famoso, entre muitas outras coisas, por seu “beijo do gordo”, gesto que encerrava seu programa..... esse ocupava, para muitos adultos, o lugar daquele de boa noite dado na testa da criança antes dela dormir........</p>
-				<p>inclusive, havia quem esperasse aquele beijo para poder dormir..... o encerramento do programa como a última imagem do dia..... e isso funcionava como ritual de encerramento..... como quem apaga a luz..... o dia acabou, pode fechar os olhos.....</p>
-				<p>fazendo com que o beijo, mesmo sem deixar marca, marcasse o tempo..... como fronteira entre o estado de vigília e o de descanso..... é o acender e apagar que a infância aprende a reconhecer antes de saber explicar.....</p>
+				<p>o jô mesmo ficou famoso, entre muitas outras coisas, por seu “beijo do gordo”, gesto que encerrava seu programa.... esse ocupava, para muitos adultos, o lugar daquele de boa noite dado na testa da criança antes dela dormir........</p>
+				<p>inclusive, havia quem esperasse aquele beijo para poder dormir..... o encerramento do programa como a última imagem do dia... e isso funcionava como ritual de encerramento.... como quem apaga a luz..... o dia acabou, pode fechar os olhos...</p>
+				<p>fazendo com que o beijo, mesmo sem deixar marca, marcasse o tempo..... como fronteira entre o estado de vigília e o de descanso..... é o acender e apagar que a infância aprende a reconhecer antes de saber explicar....</p>
 				<p>mas talvez os mais difíceis são aqueles que deixamos de dar.... que esse não seja nosso caso hoje, que comemoramos o dia internacional do beijo..... e que você possa sentir cada texto, como um beijo do du......</p>
 				<p>no mais, até mais!!!!</p>
 
