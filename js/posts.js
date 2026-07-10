@@ -4,6 +4,122 @@ const postsData =
 
 // 0025. um beijo
 	{
+		id: "a_tirania_da_escolha-ed21",
+		title: "a tirania da escolha - ed21",
+		date: "2026.jul.13",
+		readingTime: "7 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-tirania-da-escolha.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"par•e\"",
+		content:
+		`
+				<p>você já sentiu pressão, aquela incômoda, quase constante, de que precisamos ter uma opinião formada sobre absolutamente tudo????</p>
+				<p>e não só ter uma opinião, mas ter a opinião certa, o lado correto, a escolha perfeita???</p>
+				<p>como se a vida fosse um eterno vestibular, onde cada questão exige uma resposta única e definitiva....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ escolher, opinar, ranquear.... sem parar.... ♦</strong></p>
+			<br>
+				<p>ai de nós se hesitarmos, se dissermos "não sei", se ousarmos admitir a complexidade...</p>
+				<p>parece que somos bombardeadas(os) o tempo todo, não só com produtos e serviços para escolher, a famosa "tirania da escolha" que o psicólogo barry schwartz descreveu tão bem, mostrando como o excesso de opções pode nos paralisar e deixar infelizes....</p>
+				<p>mas também com uma avalanche de polêmicas, notícias, debates.... e a cobrança implícita, ou nem tanto, de que precisamos nos posicionar....</p>
+				<p>imediatamente!!!! escolher um lado do muro.... vestir uma camisa.... ranquear o que é "melhor" e descartar o resto...</p>
+				<p>mas.... será que precisa ser assim????</p>
+				<p>será que essa necessidade imposta de escolher, opinar e hierarquizar tudo.... o tempo todo.... não está nos deixando mais ansiosas(os), mais divididas(os) e, paradoxalmente, menos livres????</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a ilusão da liberdade no excesso ♦</strong></p>
+			<br>
+				<p>a idéia de que "mais escolha é sempre melhor" é um dos grandes mitos do nosso tempo....</p>
+				<p>o capitalismo adora essa idéia, claro..... quanto mais opções você quiser ter no momento de escolher, mais consumo, mais opções você precisará adquirir....</p>
+				<p>mas a experiência real, aquela que sentimos na pele, muitas vezes é o oposto....</p>
+				<p>o excesso de opções pode gerar uma ansiedade paralisante.... o medo de fazer a escolha errada.... a dúvida constante de que talvez a outra opção seria melhor....</p>
+				<p>a frustração por não conseguir aproveitar tudo..... schwartz argumenta que isso leva a menos satisfação, não a mais...</p>
+				<p>e esse peso não fica só na cabeça..... ele desce para o corpo.....</p>
+				<p>aquela tensão nos ombros quando o cardápio tem quarenta pratos e você só queria almoçar..... o cansaço de uma tarde de compras onde você experimentou tudo e não levou nada..... a exaustão de um domingo gasto rolando o feed em busca de algo para assistir, sem conseguir escolher, e indo dormir com a sensação de ter desperdiçado o dia.....</p>
+				<p>o neurocientista antonio damasio mostrou que decisões não são processadas só pela razão..... o corpo inteiro participa..... e quando sobrecarregamos esse sistema com escolhas demais, o resultado não é mais liberdade..... é fadiga.....</p>
+				<p>e isso não vale só para escolher um celular, um sapato ou um plano de streaming..... vale também para as idéias, para os estilos de vida, para as visões de mundo.....</p>
+				<p>somos apresentadas(os) a tantas possibilidades, tantas "verdades", que fica difícil saber o que realmente ressoa conosco..... o que é essencial, lembra do essencialismo????</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a velocidade que não deixa pensar ♦</strong></p>
+			<br>
+				<p>a internet e as redes sociais potencializaram essa pressão de uma forma assustadora....</p>
+				<p>o ciclo de notícias é 24/7..... as polêmicas surgem e morrem em questão de horas e a arquitetura das plataformas nos empurra para reagir.... para dar likes ou dislikes.... para comentar.... para compartilhar.... para ter uma opinião.... agora!!!!</p>
+				<p>o medo de ficar de fora, o famoso fomo..... o medo de parecer desinformada(o)..... o medo de não pertencer a um grupo..... tudo isso nos leva a formar opiniões apressadas, baseadas em manchetes, em memes, na opinião da nossa bolha.....</p>
+				<p>na opinião "pronta" de outra pessoa e não na nossa própria reflexão....</p>
+				<p>o espaço para a dúvida legítima, para a pesquisa cuidadosa, para o "preciso pensar melhor sobre isso"..... esse espaço está sendo esmagado....</p>
+				<p>dizer "não sei" virou quase um tabu..... admitir que um assunto é complexo e tem múltiplos lados virou sinal de fraqueza ou indecisão....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a simplificação que divide ♦</strong></p>
+			<br>
+				<p>e essa necessidade de ter uma opinião rápida, de escolher um lado, ela inevitavelmente simplifica questões que são profundamente complexas....</p>
+				<p>a realidade é cheia de nuances, de tons de cinza, mas a pressão social nos empurra para o preto ou o branco.... para o "certo" e o "errado"..... para o "nós" contra "elas(es)"....</p>
+				<p>isso alimenta a polarização..... dificulta o diálogo..... cria muros onde poderiam existir pontes....</p>
+				<p>quando somos obrigadas(os) a escolher um lado imediatamente, perdemos a capacidade de ouvir o outro..... de tentar entender perspectivas diferentes..... e, principalmente, de buscar pontos em comum....</p>
+				<p>a necessidade de ranquear tudo, de dizer que "isto" é melhor que "aquilo", também contribui para isso....</p>
+				<p>por que precisamos sempre hierarquizar????</p>
+				<p>não podemos simplesmente apreciar coisas diferentes por suas qualidades únicas, sem precisar colocá-las numa competição????</p>
+				<p>não podemos reconhecer valor em idéias diferentes, mesmo que não concordemos totalmente com elas????</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ resgatando o direito à lentidão e ao não saber ♦</strong></p>
+			<br>
+				<p>na arte, essa pressão aparece de formas curiosas..... john cage, compositor norte-americano, criou em 1952 uma peça chamada 4'33"..... quatro minutos e trinta e três segundos de silêncio..... ou melhor, de ausência de notas intencionais..... o que se ouvia era o ambiente, a tosse da platéia, o vento, o próprio desconforto de não saber como reagir..... a obra era exatamente isso, um convite ao não-fazer, ao não-opinar, ao simplesmente estar presente sem a obrigação de produzir uma resposta....</p>
+				<p>a platéia ficou furiosa..... claro.....</p>
+				<p>a antropóloga margaret mead, que passou anos estudando culturas radicalmente diferentes da ocidental, observou que muitas sociedades tradicionais tomam decisões coletivas que podem durar dias, semanas..... não porque são lentas ou indecisas, mas porque entendem que uma decisão apressada carrega o peso de tudo que não foi considerado..... o silêncio, para essas culturas, não é ausência de pensamento..... é parte do processo.....</p>
+				<p>e no mundo profissional, essa pressão também cobra seu preço..... quantas reuniões você já viu onde a decisão mais rápida venceu não por ser a melhor, mas por ter sido dita com mais convicção???? quantas idéias morreram antes de nascer porque quem as tinha precisava de mais tempo para articulá-las???? a cultura da agilidade, do "fail fast", do "move fast and break things", que o vale do silício tanto celebra, tem seu valor..... mas também tem suas vítimas silenciosas..... as idéias que precisavam de mais tempo para se tornar o que deveriam ser.....</p>
+				<p>na tradição taoísta, há um conceito que me parece uma resposta elegante a tudo isso: o wu wei..... que se traduz aproximadamente como "não-ação" ou "ação sem esforço"..... não é passividade, nem indiferença..... é a sabedoria de saber quando não agir é a ação mais poderosa..... quando não escolher é a escolha mais honesta.....</p>
+				<p>lao-tsé, no tao te ching, escreveu que "aquele que sabe não fala, aquele que fala não sabe"..... uma provocação direta à nossa necessidade de sempre ter algo a dizer..... com medo de sermos vistos como ignorantes ao assunto tratado se não falarmos.....</p>
+				<p>há também uma tradição filosófica e teológica chamada apofática, ou teologia negativa, que propõe conhecer algo pelo que ele não é, em vez de pelo que é..... os maiores pensadores medievais, como mestre eckhart e são joão da cruz, argumentavam que deus só poderia ser compreendido através do silêncio e da negação..... toda afirmação sobre o que se entende como divino seria, por definição, limitante..... o "não saber" era, paradoxalmente, a forma mais precisa de conhecer..... </p>
+				<p>transpondo isso para o nosso cotidiano: talvez admitir "não sei" seja, muitas vezes, a resposta mais inteligente, mais honesta e mais corajosa que podemos dar.....</p>
+				<p>e a criança sabe disso, antes de aprendermos a envergonhá-la por não saber..... quantas vezes uma criança pequena, diante de uma pergunta difícil, simplesmente encolhe os ombros e segue brincando???? não porque não se importa..... mas porque ainda não aprendeu que "não sei" é uma resposta proibida..... essa leveza, que chamamos de ingenuidade, talvez seja uma sabedoria que esquecemos no caminho.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ resgatando o direito à dúvida ♦</strong></p>
+			<br>
+				<p>talvez a verdadeira resistência hoje não seja ter mais opiniões e defender um lado.... mas sim reivindicar o direito à dúvida..... o direito de não saber..... o direito de levar tempo para pensar..... o direito de mudar de idéia..... o direito de admitir as possibilidades.....</p>
+				<p>talvez precisemos cultivar o "não opinar" como uma prática consciente....</p>
+				<p>escolher não reagir imediatamente a cada estímulo..... dar-nos permissão para observar, escutar, refletir..... antes de formar um juízo, se é que temos que formá-lo, muitas vezes só com parte das informações, visões e histórias envolvidas....</p>
+				<p>talvez precisemos reaprender a discordar....</p>
+				<p>não como uma batalha a ser vencida, mas como uma conversa a ser construída..... uma conversa onde o objetivo não é provar que estamos certas(os), mas entender melhor a complexidade do mundo e das perspectivas de outras pessoas....</p>
+				<p>uma conversa que exige escuta ativa, empatia e a coragem de admitir que não temos todas as respostas..... e que estas, as que temos, estão condicionadas aos limites da nossa perspectiva.....</p>
+				<p>o filósofo hans-georg gadamer chamava isso de "fusão de horizontes"..... o momento em que duas perspectivas diferentes se encontram não para que uma vença a outra, mas para que ambas se ampliem..... é um processo que exige tempo, escuta e a disposição de sair da conversa diferente de como se entrou..... algo cada vez mais raro, e cada vez mais necessário.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ um convite à complexidade ♦</p>
+			<br>
+				<p>o <strong>blog do du</strong> tenta ser um pequeno espaço para isso..... um lugar para pensar devagar..... para explorar as nuances..... para conviver com as perguntas sem a ânsia por respostas definitivas....</p>
+				<p>um lugar onde podemos, quem sabe, começar a nos libertar um pouco dessa tirania da escolha e da opinião instantânea...</p>
+				<p>não é fácil, eu sei....</p>
+				<p>a pressão externa é imensa..... e a interna também....</p>
+				<p>mas talvez, só talvez, ao nos permitirmos não saber, não escolher e não ranquear..... possamos encontrar um pouco mais de paz..... de clareza..... e, quem sabe, de verdadeira liberdade....</p>
+				<p>até porque tudo que sabemos é que nada sabemos e que nossas verdades absolutas, são decisões que tomamos com o tempo e com as informações que temos..... e elas podem e devem mudar de acordo com quanto mais informações temos......</p>
+				<p>o que você pensa sobre isso???? sem pressão para responder agora, claro!!!! rsrsrs....</p>
+				<p>no mais, até mais!!!!</p>
+				<br>
+						<p>quer mergulhar em outras reflexões profundas???</p>
+						<p>no último texto, comemoramos com muita reflexão o dia internacional do beijo.....</p>
+						<p>vale a pena conferir!...</p>
+					<br>
+						<p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+							<p><center>__________________________________</center></p>
+						<p><center>não prometo respostas.....</center></p>
+						<p><center>mas te convido pra conversas interessantes......</center></p>
+							<p><center>__________________________________</center></p>
+					<br>
+					<br>
+						<p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+	
+// 0025. um beijo
+	{
 		id: "um_beijo-ed20",
 		title: "um beijo não é só um beijo - ed20",
 		date: "2026.jul.06",
