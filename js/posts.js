@@ -6,7 +6,7 @@ const postsData =
 	{
 		id: "a_sabedoria_do_silencio-ed22",
 		title: "a sabedoria do silêncio - ed22",
-		date: "2026.jul.21",
+		date: "2026.jul.20",
 		readingTime: "10 min de leitura",
 		category: "ensaios e provocações",
 		categoryId: "#ways",
