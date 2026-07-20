@@ -4,6 +4,185 @@ const postsData =
 
 // 0025. um beijo
 	{
+		id: "a_sabedoria_do_silencio-ed22",
+		title: "a sabedoria do silêncio - ed22",
+		date: "2026.jul.21",
+		readingTime: "10 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-sabedoria-do-silêncio.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"livr•\"",
+		content:
+		`
+				<p>vivemos em um mundo onde o silêncio se tornou algo raro, precioso...</p>
+				<p>não que não o apreciemos - pelo contrário, muitas vezes o buscamos desesperadamente - mas ele se tornou escasso, freqüentemente esquecido na correria diária e na submersão constante nos ruídos....</p>
+				<p>notificações incessantes, motores a todo lado, músicas de fundo em lojas e restaurantes, televisores ligados em salas de espera, podcasts durante a caminhada, séries antes de dormir..... o ruído se tornou a trilha sonora da nossa existência...</p>
+				<p>como observou o filósofo pascal: "toda a infelicidade dos homens provém de uma só coisa: não saber ficar quieto num quarto".... embora escrita no século XVII, essa reflexão parece mais atual do que nunca....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o estranhamento do silêncio ♦</strong></p>
+			<br>
+				<p>por que nos sentimos tão desconfortáveis com o silêncio?</p>
+				<p>talvez porque, em grande parte, ele seja um conceito, na prática, completamente desconhecido para nós... não sabemos como habitá-lo, como nos relacionar com ele..... no silêncio, somos convidadas(os) a nos encontrar... a ouvir nossos pensamentos, a sentir nossas emoções, a confrontar nossas inquietações....</p>
+				<p>como escreveu fernando pessoa: "há um grande silêncio que dorme no fundo do meu silêncio: nunca é silêncio senão quando estou só"......</p>
+				<p>o ruído constante funciona como uma espécie de anestésico.... nos distrai das grandes questões, nos protege do desconforto de estar verdadeiramente presentes, nos poupa do trabalho de olhar para dentro...</p>
+				<p>a escritora susan sontag observou que "o silêncio permanece, inescapavelmente, uma forma de discurso (em muitos casos, de reclamação ou acusação) e um elemento de um diálogo" e que "assim como não existe o espaço vazio, não existe o tempo vazio".... o silêncio nunca é realmente vazio, ele está cheio de nós mesmas(os)...</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ silêncio imposto x silêncio escolhido ♦</strong></p>
+			<br>
+				<p>é importante distinguir entre o silêncio que nos é imposto e aquele que escolhemos.....</p>
+				<p>o silêncio imposto, aquele usado para calar vozes dissidentes, para marginalizar grupos, para esconder verdades inconvenientes, é uma ferramenta de opressão... como disse audre lorde: "seu silêncio não vai proteger você" é preciso gritarmos resistência......</p>
+				<p>já o silêncio escolhido, aquele que buscamos conscientemente como espaço de reflexão, de escuta, de presença, é um ato de resistência e autocuidado....</p>
+				<p>é uma forma de dizer "não" ao excesso de estímulos, de criar um espaço onde possamos realmente ouvir - a nós mesmas(os) e aos outros...</p>
+				<p>como escreveu thich nhat hanh: "o silêncio não é algo que você possa ver, mas você pode ouvir. o silêncio é um tipo de som, é um tipo de música".....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio como espaço de escuta ♦</strong></p>
+			<br>
+				<p>talvez uma das maiores sabedorias do silêncio seja sua capacidade de criar espaço para a escuta verdadeira....</p>
+				<p>em um mundo onde todos falam ao mesmo tempo, onde opiniões são disparadas antes mesmo que as idéias sejam completamente formadas, onde a pressa de responder supera o desejo de compreender, o silêncio se torna um ato revolucionário...</p>
+				<p>como diria o poeta rumi: "a língua é apenas um instrumento de comunicação. o coração tem sua própria linguagem. o coração conhece um tipo de grafia que não pode ser lida nem escrita".....</p>
+				<p>o silêncio nos permite ouvir não apenas as palavras ditas, mas também as não-ditas... nos permite perceber nuances, sentir intenções e 'energias', compreender para além do óbvio.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio entre nós ♦</strong></p>
+			<br>
+				<p>há silêncios que são conforto e silêncios que são abismo....</p>
+				<p>a diferença raramente está no silêncio em si..... está no que existe entre as duas pessoas que o compartilham...</p>
+				<p>sentar ao lado de alguém que você ama sem precisar preencher o ar com palavras é uma das formas mais profundas de intimidade que existem... não há performance, não há esforço de conexão.... a conexão já está lá, e o silêncio apenas a confirma......</p>
+				<p>mas o silêncio entre duas pessoas que se magoaram, ou que se afastaram sem entender bem por quê, ou que nunca aprenderam a se dizer as coisas que importam... esse silêncio pesa de um jeito completamente diferente..... não é presença... é ausência com forma......</p>
+				<p>o mesmo gesto, o mesmo vazio de palavras, e significados tão opostos..... talvez seja por isso que o silêncio assusta a tantos... não sabemos, antes de entrar nele, qual dos dois encontraremos......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio na era digital ♦</strong></p>
+			<br>
+				<p>a era digital trouxe novos desafios para nossa relação com o silêncio.....</p>
+				<p>as redes sociais criaram uma cultura onde o silêncio é freqüentemente interpretado como indiferença ou concordância... "quem cala, consente", diz o ditado popular, agora amplificado pelos algoritmos que premiam a interação constante....</p>
+				<p>byung-chul han, em seu livro 'no enxame', argumenta que "a comunicação digital, devido à sua temporalidade, não favorece o silêncio. o silêncio não é simplesmente uma pausa, mas uma condição fundamental para o pensamento"...</p>
+				<p>encontrar silêncio digital, momentos em que nos desconectamos completamente, em que permitimos que nossos pensamentos fluam sem a interrupção constante de notificações, tornou-se um desafio e, ao mesmo tempo, uma necessidade urgente....</p>
+				<p>um pequeno compromisso pessoal que estou implementando é: sempre que possível, desligar as notificações diariamente de 20h às 10h (com exceção, claro, para dias em que o trabalho, ou outra necessidade maior, que se encaixe nesses horários)..... uma pequena revolução silenciosa no cotidiano...</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a impossibilidade do silêncio absoluto ♦</strong></p>
+			<br>
+				<p>é curioso pensar que o silêncio absoluto é algo particularmente inconcebível e inalcançável em vida.....</p>
+				<p>mesmo em salas de isolamento acústico de níveis que beiram os 100% (salas anecóicas), ainda assim dois sons ecoam: o grave da circulação sanguínea e o agudo da atividade elétrica cerebral... mais do que isso, apenas a morte.....</p>
+				<p>talvez seja justamente essa impossibilidade que torna o silêncio tão fascinante..... ele nunca é completo, nunca é perfeito, nunca é definitivo.... é sempre um convite, uma aproximação, uma prática...</p>
+				<p>como escreveu john cage, após sua famosa peça 4'33": "não existe algo como silêncio. algo está sempre acontecendo que produz som".....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o "não-silêncio" e a curadoria sonora ♦</strong></p>
+			<br>
+				<p>curiosamente, muitas vezes o que buscamos não é o silêncio absoluto, mas um silêncio seletivo - uma espécie de curadoria sonora que nos permite focar apenas nos sons que escolhemos....</p>
+				<p>pensemos em uma banda ensaiando em uma sala acusticamente isolada.....</p>
+				<p>o objetivo ali não é o silêncio, mas justamente o contrário: criar um espaço onde certos sons (a música) possam existir sem interferências externas... ou quando usamos fones de ouvido, não para bloquear todos os sons, mas para selecionar o que queremos ouvir e dar atenção....</p>
+				<p>esse "não-silêncio" controlado revela algo importante sobre nossa relação com o mundo sonoro: mais do que ausência total de som, muitas vezes buscamos o poder de escolher quais sons farão parte da nossa experiência...</p>
+				<p>é uma forma de autonomia acústica, de criar nosso próprio ambiente sonoro em um mundo cada vez mais ruidoso....</p>
+				<p>como observou o compositor r. murray schafer, criador do conceito de 'paisagem sonora': "o ouvido, diferentemente dos olhos, não pode ser fechado à vontade. o ouvido está sempre aberto, sempre recebendo".....</p>
+				<p>talvez por isso mesmo a curadoria sonora seja tão importante - é nossa forma de "fechar os ouvidos" para o que não queremos ouvir.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio como prática espiritual e filosófica ♦</strong></p>
+			<br>
+				<p>em diversas tradições espirituais e filosóficas, o silêncio ocupa um lugar central.....</p>
+				<p>no budismo, a meditação silenciosa é um caminho para a iluminação.....</p>
+				<p>a técnica vipassana, por exemplo, praticada por milhões de pessoas ao redor do mundo, envolve períodos de silêncio máximo (incluindo a comunicação não-verbal) por dias ou até semanas..... nesse silêncio, busca-se a observação direta da realidade como ela é, sem filtros ou interpretações.....</p>
+				<p>no cristianismo, os mosteiros de clausura celebram o silêncio como forma de conexão com o divino.....</p>
+				<p>na filosofia estóica, o silêncio é valorizado como exercício de autocontrole e sabedoria.....</p>
+				<p>como escreveu lao-tsé: "o silêncio é uma fonte de grande força"..... mesmo para quem não segue nenhuma tradição específica, o silêncio pode ser uma prática transformadora, um momento para simplesmente ser, sem a pressão de produzir, consumir ou performar.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio na arte: intenção e expressão ♦</strong></p>
+			<br>
+				<p>na poesia, na música e na arte em geral, o silêncio não é apenas ausência - é presença intencional, cuidadosamente calibrada.....</p>
+				<p>uma(m) poetisa(a) sabe exatamente onde colocar uma quebra de linha, criando um momento de suspensão...</p>
+				<p>uma(m) musicista(úsico) entende o valor da pausa entre as notas, que dá forma à melodia....</p>
+				<p>uma(m) pintora(r) reconhece a importância do espaço vazio na tela, que permite que a imagem respire......</p>
+				<p>o silêncio na arte tem duração estipulada, ritmo, propósito..... ele cria respiração, contraste, expectativa, resolução.... é tão expressivo quanto o som, a palavra ou a cor...</p>
+				<p>como disse o compositor claude debussy: "a música não está nas notas, mas no silêncio entre elas".....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ os trabalhos silenciosos: invisibilidade e valor ♦</strong></p>
+			<br>
+				<p>há uma dimensão social do silêncio que raramente notamos: a dos trabalhos, trabalhadoras e trabalhadores invisibilizados, que atuam silenciosamente sustentando nossa sociedade...</p>
+				<p>quem limpa as ruas antes do amanhecer, para que encontremos tudo em ordem ao sairmos de casa.....</p>
+				<p>quem cuida de idosos, crianças ou doentes, em trabalhos de cuidado freqüentemente desvalorizados....</p>
+				<p>quem mantém funcionando a infraestrutura que usamos diariamente, das redes de esgoto à internet...</p>
+				<p>são trabalhos essenciais, mas que acontecem em silêncio, sem reconhecimento ou valorização adequada..... como se o silêncio, nesse caso, não fosse uma escolha, mas uma imposição, a invisibilidade social de quem realiza as tarefas consideradas menos "nobres", menos "intelectuais", menos "importantes"....</p>
+				<p>como escreveu a filósofa silvia federici: "o trabalho doméstico foi transformado em um atributo natural em vez de ser reconhecido como trabalho"..... o mesmo poderia ser dito de tantos outros trabalhos silenciosos que sustentam nossa existência cotidiana......</p>
+				<p>talvez parte da sabedoria do silêncio esteja em aprender a enxergar e valorizar esses trabalhos silenciosos, essas pessoas cujas vozes raramente ouvimos, mas de quem dependemos profundamente.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ cultivando o silêncio no cotidiano ♦</strong></p>
+			<br>
+				<p>como podemos cultivar o silêncio em nossas vidas cotidianas???</p>
+				<p>talvez comece com pequenos momentos: cinco minutos pela manhã antes de checar o celular... uma caminhada sem fones de ouvido..... uma refeição sem distrações... um banho onde apenas sentimos a água....</p>
+				<p>ou talvez envolva práticas mais estruturadas: meditação diária, retiros de silêncio, dias inteiros sem dispositivos eletrônicos.....</p>
+				<p>como descrito no que acontece na arte, o importante não é a forma, mas a intenção: criar espaços onde possamos nos reconectar com nós mesmas(os), onde possamos ouvir o que realmente importa, onde possamos existir para além do ruído......</p>
+				<p>como escreveu virginia woolf: "como é importante para uma mulher ter um teto todo seu, se pretende mesmo escrever ficção"...</p>
+				<p>embora falando especificamente sobre mulheres e escrita, woolf aponta para algo universal: a necessidade de um espaço próprio, físico e mental, onde possamos nos encontrar......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ silêncio, pausa e presença: uma tríade poderosa ♦</strong></p>
+			<br>
+				<p>há uma conexão profunda entre o silêncio, a pausa e a presença.....</p>
+				<p>se a pausa, como exploraremos em um texto futuro, é o luxo essencial e urgente de interromper o fluxo constante de atividades, o silêncio é o que encontramos nesse espaço de pausa... e é no silêncio que a verdadeira presença se torna possível....</p>
+				<p>como escrevemos antes sobre o presente: "estar presente é um ato de coragem e vulnerabilidade..... é abrir mão do controle ilusório sobre o passado e o futuro para habitar plenamente o agora, com todas as suas imperfeições e possibilidades"...</p>
+				<p>o silêncio nos convida a essa presença plena, a esse encontro corajoso com o momento atual..... nos lembra que existir, por si só, já é suficiente....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o silêncio como resistência política ♦</strong></p>
+			<br>
+				<p>em uma sociedade que valoriza a produtividade constante, que nos cobra posicionamentos imediatos sobre tudo, que transforma até mesmo nossas experiências mais íntimas em conteúdo a ser compartilhado, escolher o silêncio pode ser um ato político...</p>
+				<p>é dizer não à lógica do consumo e da exposição constante...... é recusar-se a participar da economia da atenção que transforma cada momento de silêncio em uma oportunidade perdida de engajamento....</p>
+				<p>como escreveu a poeta adrienne rich: "a liberdade é diária, prosaica, não dramática; a liberdade é poética, não retórica"...</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ um convite ao silêncio ♦</strong></p>
+			<br>
+				<p>este texto é, em si, um paradoxo: usa (tantas) palavras para falar sobre o valor do silêncio...</p>
+				<p>mas talvez seja assim mesmo: precisamos às vezes de palavras para nos lembrar do valor do que está além delas..... precisamos de ruído para reconhecer a preciosidade do silêncio....</p>
+				<p>o verdadeiro silêncio talvez não seja a ausência total de som, mas a presença total no momento, seja ele ruidoso ou quieto......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ e você, como cultiva o silêncio? ♦</strong></p>
+			<br>
+				<p>quando foi a última vez que você experimentou um momento de silêncio verdadeiro?????</p>
+				<p>quando se permitiu deitar na grama e apreciar as formas das nuvens???</p>
+				<p>como você se sente quando está em silêncio??? Confortável, ansiosa(o), em paz ou inquieta(o)????</p>
+				<p>que espaços de silêncio você poderia criar em sua vida cotidiana?????</p>
+				<p>talvez o silêncio seja, como tantas coisas valiosas na vida, uma prática, algo que cultivamos dia após dia, momento após momento, escolha após escolha.....</p>
+				<p>como escreveu clarice lispector: "o silêncio é tal que nem o pensamento pensa"....</p>
+				<p>e talvez seja justamente aí, nesse espaço além do pensamento, que encontremos a verdadeira sabedoria do silêncio...</p>
+				<p>no mais, até mais!!!</p>
+			<br>
+			<br>
+			<br>
+			<div class="pos-scriptum">
+				<p>p.s.: esse texto não engloba a surdez, um silêncio que não experencio nem alcanço sua compreensão, mas quero poder voltar no assunto no futuro, podendo trazer essa abordagem, conversando com alguém que a entenda....</p>
+			</div>
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, _________________________.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
+// 0025. um beijo
+	{
 		id: "a_tirania_da_escolha-ed21",
 		title: "a tirania da escolha - ed21",
 		date: "2026.jul.13",
