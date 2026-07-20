@@ -1923,6 +1923,7 @@ const postsData =
 				<p><strong>♦ o tempo e a natureza das verdades ♦</strong></p>
 			<br>
 				<p>encerro assim uma primeira abordagem desta trilogia do tempo, que não pretende encerrar assunto algum e nem gravar em pedra nenhum conceito, mas levantar pequenas reflexões sobre cada tema e chegar à verdades absolutas, como todas são, até que chegue a hora de abandoná-las e colocar melhores em seus lugares....</p>
+				<p>sigamos certos de que estar presente é um ato de coragem e vulnerabilidade..... é abrir mão do controle ilusório sobre o passado e o futuro para habitar plenamente o agora, com todas as suas imperfeições e possibilidades...</p>
 				<p>compartilhe suas experiências nos comentários...</p>
 				<p>sua opinião é importante......</p>
 
