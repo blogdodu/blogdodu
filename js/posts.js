@@ -1892,10 +1892,10 @@ const postsData =
 				<p><strong>♦ a busca pelo presente ♦</strong></p>
 			<br>
 				<p>buscar o presente, como algo que exista, esbarra em um primeiro problema: com qual grandeza dividiremos o tempo???</p>
-				<p>se pensamos em anos, hoje, 27.06.2024, 2023 e todos os anos que o precedem são o passado, assim como 2025 e os anos que o sucedem são o futuro, restando em 2024 a falsa idéia de ser este o presente...</p>
+				<p>se pensamos em anos, hoje, 30.03.2026, 2025 e todos os anos que o precedem são o passado, assim como 2027 e os anos que o sucedem são o futuro, restando em 2024 a falsa idéia de ser este o presente...</p>
 				<p>falsa idéia porque é de total consenso que o mês de janeiro não é mais presente, tão pouco dezembro assim também....</p>
 				<p>encontramos aqui uma necessidade de uma nova grandeza de escala e a mais imediata é a acabamos de usar, o mês...</p>
-				<p>sendo assim maio e os meses que o precedem já são também passado, assim como julho e seus sucessores já se apresentam como futuro, nos deixando, novamente, a falsa idéia de que este mês de junho é o presente...</p>
+				<p>sendo assim maio e os meses que o precedem já são também passado, assim como julho e seus sucessores já se apresentam como futuro, nos deixando, novamente, a falsa idéia de que este mês de março é o presente...</p>
 				<p>então seguimos com a necessidade de outra grandeza para encontrar o presente, o dia, assim teremos o ontem, o hoje e o amanhã, as horas, os minutos, os segundos, os milésimos e infinitas divisões do tempo, que apenas diminuirão a percepção do espaço que distancia o passado do futuro, mas nunca nos apresentarão onde está o presente, simplesmente, porque ele não existe....</p>
 				<p>chegar a esta conclusão parece ser como receber um presente de grego, mas na verdade é o oposto...</p>
 			<br>
