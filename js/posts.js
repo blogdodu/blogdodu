@@ -6,7 +6,7 @@ const postsData =
 	{
 		id: "um_inicio_diferente-fd1",
 		title: "um início diferente - fd1",
-		date: "2026.jul.29",
+		date: "2026.jul.27",
 		readingTime: "15 min de leitura",
 		category: "ficção e contos",
 		categoryId: "#ways",
