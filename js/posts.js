@@ -2,7 +2,138 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-// 0025. um beijo
+// 0028. um beijo
+	{
+		id: "um_inicio_diferente-fd1",
+		title: "um início diferente - fd1",
+		date: "2026.jul.29",
+		readingTime: "15 min de leitura",
+		category: "ficção e contos",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-início-diferente.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"qj´_k\"",
+		content:
+		`
+				<p>eu havia planejado um outro ensaio para hoje, mas preferi mudar um pouco a rota e publicar o começo do que venho desenvolvendo há algum tempo....</p>
+				<p>uma reimaginação completa do universo marvel...</p>
+				<p>a começar pelo próprio princípio de tudo e todos.... antes de qualquer heroína ou herói, vilã ou vilão.....</p>
+				<p>espero que seja tão interessante pra você quanto está sendo para mim....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>toda criação exige duas coisas: alguém disposto a imaginar... e um vazio disposto a receber essa imaginação....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>houve um tempo em que o tempo ainda não existia...</p>
+				<p>não havia dias, não havia noites, não havia distância entre dois pontos, porque ainda não existiam pontos, não havia matéria, não havia energia, não havia vida, nem morte, não existiam perguntas, muito menos respostas.....</p>
+				<p>o que existia era algo muito mais difícil de compreender....</p>
+				<p>o silêncio...</p>
+				<p>não um silêncio provocado pela ausência de sons, mas um silêncio absoluto, aquele que antecede qualquer possibilidade de existência.... um vazio tão profundo que nenhuma palavra criada pelas futuras civilizações conseguiria descrevê-lo completamente....</p>
+				<p>ainda assim, incontáveis povos tentariam.....</p>
+				<p>alguns o chamariam de vazio, outros, de nada, alguns acreditariam que fosse o fim de todas as coisas, mas todos estariam apenas observando uma pequena parte de algo infinitamente maior...</p>
+				<p>porque aquele vazio possuía consciência... e seu nome era oblivion....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>oblivion não dormia, não esperava, não desejava..... jamais conheceu esperança ou medo, não porque lhe faltassem sentimentos, mas porque sentimentos pertencem àquilo que muda e o vazio nunca muda.... ele simplesmente é....</p>
+				<p>não havia crueldade em sua natureza, nem bondade.... nenhuma intenção de destruir, nenhuma vontade de preservar.....</p>
+				<p>o vazio não precisava vencer, nem perder, ele apenas existia, e sua existência era necessária, pois mesmo o mais extraordinário dos sonhos precisa de um lugar onde possa nascer.....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>mas o vazio nunca esteve sozinho, desde sempre, mesmo quando "sempre" ainda não significava absolutamente nada, outra presença compartilhava aquela realidade sem forma...</p>
+				<p>ela também não possuía corpo, nem voz, nem rosto, nem idade....</p>
+				<p>era impossível dizer onde começava ou onde terminava....</p>
+				<p>se oblivion representava a ausência de tudo, a outra presença representava todas as possibilidades...</p>
+				<p>ela também receberia muitos nomes ao longo das eras.....</p>
+				<p>o criador, o primeiro, o alfa, o ômega, o arquiteto.... mas nenhum desses nomes existia ainda e muito antes de qualquer idioma nascer essa presença simplesmente já era.....</p>
+				<p>seu verdadeiro nome jamais seria pronunciado por qualquer língua mortal, ainda assim, bilhões de anos depois, os poucos seres capazes de compreender uma fração de sua natureza passariam a chamá-la de...</p>
+				<p>absolut-one.....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>entre ambas nunca existiu guerra, nunca existiu rivalidade, nunca houve uma disputa pela existência.....porque não havia motivo para lutar....</p>
+				<p>oblivion não desejava ocupar o lugar de absolut-one...</p>
+				<p>absolut-one não desejava eliminar oblivion.....</p>
+				<p>seria como uma folha de papel tentar destruir o escritor ou um escritor tentar eliminar o próprio papel.... nenhuma existiria plenamente sem o outra....</p>
+				<p>uma oferecia infinitas possibilidades, a outra oferecia infinitos lugares onde essas possibilidades poderiam existir.... e, durante uma eternidade sem tempo... foi suficiente...</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>então...</p>
+				<p>pela primeira vez...</p>
+				<p>algo mudou.....</p>
+				<p>não foi uma explosão, nem uma palavra, nem um gesto.... foi uma idéia... uma única idéia.....</p>
+				<p>pequena, quase imperceptível, mas completamente inédita....</p>
+				<p>absolut-one imaginou e, naquele instante, algo impossível aconteceu, o vazio deixou de ser apenas vazio, porque agora havia algo que nunca existira antes, uma possibilidade....</p>
+				<p>ainda invisível, ainda sem forma, ainda incapaz de ser chamada de criação, mas já diferente de tudo o que existira até então....</p>
+				<p>oblivion percebeu, não porque a idéia pudesse ser vista, mas porque o próprio vazio havia sido alterado por sua presença....</p>
+				<p>pela primeira vez... o silêncio carregava significado....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>mas absolut-one compreendeu imediatamente um problema, imaginar não bastava...</p>
+				<p>idéias não constroem universos.....</p>
+				<p>era necessário algo que transformasse intenção em existência, algo que permitisse que pensamentos deixassem de ser apenas pensamentos....</p>
+				<p>então... ele criou sua primeira obra....</p>
+				<p>não um mundo, nem uma estrela, nem uma dimensão...</p>
+				<p>criou o próprio ato de criar...</p>
+				<p>essa força não possuía forma, não possuía consciência, não julgava, não decidia, ela apenas tornava possível aquilo que antes era impossível.....</p>
+				<p>muito tempo depois, os seres que estudariam a origem do cosmos dariam um nome àquela força primordial.....</p>
+				<p>quintessência...</p>
+				<p>ela era anterior a todas essas coisas....</p>
+				<p>toda matéria que um dia existiria dependeria dela...</p>
+				<p>toda energia surgiria através dela...</p>
+				<p>toda lei física encontraria nela sua origem....</p>
+				<p>era o recurso invisível sobre o qual toda criação futura seria construída, como tinta antes do primeiro desenho, como a linguagem antes da primeira história, como a inspiração antes da primeira palavra...</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>pela primeira vez o vazio recebeu algo.... e não permaneceu igual...</p>
+				<p>oblivion não resistiu, não aprovou, não rejeitou, apenas acolheu, porque essa sempre fora sua natureza.... receber, permitir, conter....</p>
+				<p>sem o vazio... a quintessência não teria onde fazer manifestar a existência.....</p>
+				<p>sem a quintessência... o vazio permaneceria eternamente silencioso....</p>
+				<p>e daquela coexistência nasceu aquilo que nenhuma das duas presenças poderia produzir sozinha.... a primeira criação....</p>
+			<br>
+			<br>
+			<hr class="divisor-fino-longo">
+			<br>
+				<p>mas criar.... descobriria o absolut-one... era muito mais difícil do que imaginar...</p>
+			<br>
+			<br>
+			<br>
+			<div class="pos-scriptum">
+				<p>p.s.: algumas entidades e personagens do cânone mudaram(ão) de nome nessa minha releitura, como one-above-all que abordo como absolute-one... outras serão fundidas, outras seão criadas e algumas desconsideradas, mas tudo tem um motivo, inclusive as que permanecem.....</p>
+			</div>
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, _________________________.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+	
+// 0027. a sabedoria do silêncio
 	{
 		id: "a_sabedoria_do_silencio-ed22",
 		title: "a sabedoria do silêncio - ed22",
@@ -181,7 +312,7 @@ const postsData =
 		`
 	},
 
-// 0025. um beijo
+// 0026. a tirania da escolha
 	{
 		id: "a_tirania_da_escolha-ed21",
 		title: "a tirania da escolha - ed21",
