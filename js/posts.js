@@ -119,7 +119,7 @@ const postsData =
 			</div>
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
-			            <p>no último texto, _________________________.....</p>
+			            <p>no último texto, exploramos alguns significados do silêncio.....</p>
 			            <p>vale a pena conferir!...</p>
 			        <br>
 			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
