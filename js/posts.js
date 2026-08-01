@@ -2,7 +2,125 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-// 0028. um beijo
+// 0029. as sementes no escuro da terra (ou sobre o nosso imbolc)
+	{
+		id: "sobre_nosso_imbolc-ed22",
+		title: "as sementes no escuro da terra (ou sobre o nosso imbolc) - ed23",
+		date: "2026.ago.03",
+		readingTime: "8 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-sobre-nosso-imbolc.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"nunij\"",
+		content:
+		`
+				<p>ainda faz frio, mas a luz já mudou...</p>
+				<p>se alguns ensaios atrás falávamos sobre abraçar nosso natal, o nosso yule, e sobre a importância de respeitarmos o recolhimento, hoje a roda do ano dá mais um giro silencioso sob os nossos pés....</p>
+				<p>no primeiro dia de agosto celebramos o imbolc no hemisfério sul.....</p>
+				<p>e enquanto, lá no norte, os mercados e as vitrines começam a se preparar para a primeira colheita (lughnasadh), festejando o calor e a fartura do verão que já amadurece, aqui, no nosso chão, a terra nos conta uma história completamente diferente.....</p>
+				<p>e curtimos o friozinho do meio do inverno... porque o imbolc não é uma festa da abundância.... é uma celebração da esperança.....</p>
+				<p>é aquele instante quase imperceptível em que a semente, adormecida durante semanas na escuridão e no frio, começa lentamente a inchar... por fora, nada parece acontecer..... por dentro, porém, a vida inteira já trabalha....</p>
+				<p>a primavera (ostara) ainda está a certa distância... os ventos de agosto continuam secos e cortantes.... as manhãs ainda carregam aquele frio que nos convida ao abrigo.....</p>
+				<p>mas a duração dos dias já mudou alguns minutos.... a luz permanece um pouco mais.... a seiva das árvores inicia sua lenta ascensão..... os pássaros modificam discretamente seus comportamentos..... e a natureza, paciente como sempre foi, começa a preparar aquilo que nossos olhos ainda não conseguem enxergar......</p>
+				<p>e talvez o mais fascinante seja perceber que isso não pertence apenas ao universo do simbolismo.....</p>
+				<p>hoje sabemos, através da cronobiologia e da ecologia, que pequenas alterações na duração da luz do dia (o chamado fotoperíodo) já são suficientes para desencadear respostas fisiológicas em plantas, aves e mamíferos muito antes de qualquer transformação visível na paisagem.....</p>
+				<p>aquilo que os antigos percebiam pela observação paciente do céu e da terra, a biologia moderna apenas encontrou novas formas de explicar...</p>
+				<p>talvez o maior ensinamento do imbolc seja justamente este: a transformação começa muito antes de se tornar visível...</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a paciência do invisível ♦</strong></p>
+			<br>
+				<p>como vimos no texto sobre yule, vivemos em um tempo que nos arranca do ritmo da natureza..... uma época que exige resultados antes mesmo de permitir processos... que nos cobra flores antes de termos escolhido o solo onde plantar.... que celebra apenas aquilo que aparece, ignorando completamente o longo trabalho subterrâneo que sustenta toda forma de vida.....</p>
+				<p>essa aceleração constante nos faz acreditar que crescer significa apenas aparecer... quando, na verdade, quase tudo o que é essencial acontece escondido.....</p>
+				<p>a filósofa francesa simone weil escreveu que "a atenção é a forma mais rara e mais pura de generosidade"... talvez porque prestar verdadeira atenção seja aceitar que nem tudo floresce quando desejamos....</p>
+				<p>o imbolc nos convida exatamente a esse exercício... não há frutos maduros, não há jardins exuberantes, há apenas uma promessa.....</p>
+				<p>e, curiosamente, é justamente das promessas que nascem todas as florestas...</p>
+				<p>no nosso contexto latino-americano, em meio à aridez que marca o inverno de tantas regiões brasileiras, basta observarmos os ipês... durante meses parecem árvores mortas..... perdem as folhas.... suportam o frio..... suportam a seca... concentram toda a sua energia onde ninguém consegue ver.... nas raízes...... nos galhos aparentemente secos... na seiva que continua circulando silenciosamente.....</p>
+				<p>somente depois oferecem uma das florações mais espetaculares da natureza brasileira..... não florescem apesar do inverno..... florescem graças ao inverno...</p>
+				<p>talvez nós também..... porque existem ideias que só amadurecem no silêncio, afetos que apenas o recolhimento consegue aprofundar..... e projetos que precisam permanecer algum tempo enterrados antes de romperem a superfície...</p>
+				<p>descolonizar o nosso tempo passa, necessariamente, por reaprender a confiar nesse invisível.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ limpar o terreno e acender as velas ♦</strong></p>
+			<br>
+				<p>nas antigas tradições celtas, o imbolc era dedicado às chamas de brigid, deusa da forja, da poesia, da inspiração e da cura...</p>
+				<p>era o momento de purificar a casa..... reacender os fogos.... limpar os restos do inverno...... preparar o espaço onde a nova vida poderia nascer...</p>
+				<p>não por acaso, quando a igreja cristã precisou absorver esses saberes ancestrais para se impor na europa, muitos elementos associados a brigid acabaram incorporados ao culto de santa brígida e o festival do fogo virou a festa da candelária (ou nossa senhora das candeias, e também da luz).....</p>
+				<p>uma celebração marcada por procissões de velas para celebrar a purificação e o retorno da luz divina em pleno inverno gélido.....</p>
+				<p>a ironia trágica, mais uma vez, é que importamos a data exata (2 de fevereiro) para o calendário de cá, celebrando as "candeias" e a luz no auge do nosso verão, sob um sol de 40 graus..... quando, na verdade, biológica e existencialmente, o momento de acender as nossas velas para afastar o escuro e chamar a luz de volta é exatamente agora, no nosso agosto.....</p>
+				<p>mas talvez não precisemos atravessar séculos nem oceanos para compreender a força desse símbolo, se apenas olharmos para dentro....</p>
+				<p>as fogueiras e candeias que mais necessitamos acender hoje são interiores.....</p>
+				<p>existem crenças que precisam ser queimadas, há medos que já cumpriram sua função, há culpas que congelam nossos movimentos, há hábitos que ocupam o espaço onde novos sonhos poderiam germinar....</p>
+				<p>se no nosso yule nos recolhemos ao redor do fogo, contemplando aquilo que sobreviveria ao inverno, agora começamos a preparar a terra...</p>
+				<p>arrancamos as ervas daninhas, afofamos o solo, abrimos espaço para aquilo que ainda nem conhecemos completamente....</p>
+				<p>o poeta manoel de barros dizia que "é preciso transver o mundo"....</p>
+				<p>talvez transver agosto seja justamente libertá-lo da fama de "mês do desgosto"..... porque a natureza jamais enxergou tristeza neste período..... ela enxerga preparação...</p>
+				<p>já retomando a sabedoria tupi-guarani que nos acompanhou no outro ensaio, é justamente nessa transição delicada que o ara ymã, o tempo velho, começa lentamente a despedir-se para abrir caminho ao ara pyau, o tempo novo.... não como uma ruptura brusca... mas como toda transformação verdadeira acontece..... discretamente...</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ reacendendo a forja interior ♦</strong></p>
+			<br>
+				<p>há uma ironia quase cruel na maneira como organizamos nossas vidas.....</p>
+				<p>justamente quando a natureza nos pede concentração, profundidade e fortalecimento das raízes, o calendário comercial insiste em acelerar tudo...</p>
+				<p>produzir..... competir.... entregar.....</p>
+				<p>como se fôssemos máquinas incapazes de obedecer aos próprios ritmos biológicos.....</p>
+				<p>celebrar o nosso imbolc é um gesto simples e profundamente político.....</p>
+				<p>é reconhecer que ainda estamos no inverno, sem deixar de perceber que a luz já começou a vencer....</p>
+				<p>é acender uma vela (literal ou simbolicamente) e perguntar com honestidade: o que começa a nascer em mim?? quais sementes plantei há poucas semanas???? quais delas merecem minha atenção??? quais delas precisam apenas de tempo?? não de pressa... tempo.....</p>
+				<p>porque nenhum broto suporta ser puxado para crescer mais depressa..... a natureza nunca teve ansiedade.... apenas continuidade.....</p>
+				<p>uma semente jamais duvida do inverno... apenas espera a hora certa de romper a terra....</p>
+				<p>talvez sejamos nós os únicos seres que desaprenderam a confiar no tempo...</p>
+				<p>e a nossa violência atual, para além de destruir nossas florestas,  seja nos convencer de que devemos ‘florescer’ o ano inteiro.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o cortejo da vida e o descompasso do amor ♦</strong></p>
+			<br>
+				<p>e já que estamos falando sobre a seiva que volta a circular e os pássaros que começam a mudar seus hábitos, é impossível não rir da ironia dos nossos calendários românticos..... rsrsrs...</p>
+				<p>lá no hemisfério norte, o imbolc (em fevereiro) sempre marcou exatamente esse momento: o início do cortejo dos jovens....</p>
+				<p>a época em que os pássaros, sentindo a mudança da luz, começam a escolher seus pares, flertando na construção dos ninhos para a primavera que se anuncia.....</p>
+				<p>uma energia puramente biológica de fertilidade e paixão começa a fluir e que, não por acaso, acaba desaguando no valentine's day (14 de fevereiro), uma data costurada por cima das antigas festividades romanas de lupercália, que também celebravam essa pulsação....</p>
+				<p>mas e por aqui???</p>
+				<p>a gente engole as datas importadas ou, pior ainda, inventa o nosso "dia dos namorados" na véspera do nosso yule (12 de junho)..... bem no auge do frio, quando a terra está dormindo e o corpo pede recolhimento extremo, tudo por uma sacada publicitária de meados do século passado para aquecer as vendas de roupas em um mês sem feriados.....</p>
+				<p>enquanto isso, agora em agosto..... quando a vida de fato começa a inchar sob a terra, quando a seiva esquenta e o mundo natural inicia o seu próprio namoro na preparação para a explosão de ostara, nós ficamos órfãos de uma celebração oficial.....</p>
+				<p>mas, felizmente, a biologia não lê calendário de shopping..... ela sabe que o verdadeiro cortejo da vida começa agora..... de forma íntima, paciente e cheia de desejo latente.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o calor que vem de dentro ♦</strong></p>
+			<br>
+				<p>talvez seja por isso que o fogo de imbolc, ou da nossa candelária invertida, nunca tenha sido apenas um fogo externo.....</p>
+				<p>antes de aquecer a casa, ele aquecia a coragem....</p>
+				<p>antes de iluminar a noite, iluminava a imaginação...</p>
+				<p>antes de transformar o metal na forja, transformava quem segurava o martelo.....</p>
+				<p>e talvez esse seja o verdadeiro convite deste sabbat, não apressar o próprio florescimento, continuar cultivando nossos olhos de sul.....</p>
+				<p>confiar que a nossa primavera chegará quando o nosso próprio céu anunciar sua hora.... e não quando algum calendário importado disser que ela deveria existir.....</p>
+				<p>por ora....</p>
+				<p>limpe a casa..... organize as gavetas... cuide do corpo.... reacenda os projetos esquecidos...</p>
+				<p>permita que o frio continue ensinando aquilo que somente o frio consegue ensinar.....</p>
+				<p>que possamos ser como os rios subterrâneos, ganhando força no escuro, silenciosamente.... até que, sem alarde, encontremos nosso caminho para a superfície.....</p>
+				<p>porque a roda continua girando... e muito antes de qualquer flor aparecer a paisagem inteira já começou a despertar.....</p>
+				<p>quando você terminar de ler este texto, olhe por alguns segundos para a luz da manhã ou do fim da tarde..... ela ainda parece a mesma..... mas não é..... a terra inteira já percebeu isso..... talvez seja hora de nós percebermos também.....</p>
+				<p>no mais, até mais!!!</p>
+			
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, comecei minha releitura do universo de ficção da marvel e alguns textos atrás falamos sobre o yule, o nosso natal.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+	
+// 0028. marvel 1
 	{
 		id: "um_inicio_diferente-fd1",
 		title: "um início diferente - fd1",
