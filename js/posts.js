@@ -4,7 +4,7 @@ const postsData =
 
 // 0029. as sementes no escuro da terra (ou sobre o nosso imbolc)
 	{
-		id: "sobre_nosso_imbolc-ed22",
+		id: "sobre_nosso_imbolc-ed23",
 		title: "as sementes no escuro da terra (ou sobre o nosso imbolc) - ed23",
 		date: "2026.ago.03",
 		readingTime: "8 min de leitura",
