@@ -2,7 +2,7 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
-// 0029. as sementes no escuro da terra (ou sobre o nosso imbolc)
+// 0030. as sementes no escuro da terra (ou sobre o nosso imbolc)
 	{
 		id: "sobre_nosso_imbolc-ed23",
 		title: "as sementes no escuro da terra (ou sobre o nosso imbolc) - ed23",
@@ -14,7 +14,7 @@ const postsData =
 		authorId: "#authors",
 		image: "/img/post-sobre-nosso-imbolc.png",
 		imageAlt: "imagem ilustrativa",
-		imageCaption: "\"nunij\"",
+		imageCaption: "\"_nv_v\"",
 		content:
 		`
 				<p>ainda faz frio, mas a luz já mudou...</p>
@@ -107,6 +107,76 @@ const postsData =
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
 			            <p>no último texto, comecei minha releitura do universo de ficção da marvel e alguns textos atrás falamos sobre o yule, o nosso natal.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+	
+// 0029. a forja de agosto
+	{
+		id: "a_forja_de_agosto-pd2",
+		title: "a forja de agosto - pd2",
+		date: "2026.ago.01",
+		readingTime: "3 min de leitura",
+		category: "poesia e música",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/post-imbolc.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"nunij\"",
+		content:
+		`
+				<p>a roda do ano gira e, no silêncio seco de agosto, a terra começa a despertar.....</p>
+				<p>vivemos os dias em que a noite ainda é longa e carrega a geada da madrugada, mas o chão, por baixo da secura aparente, já murmura uma promessa de vida...</p>
+				<p>celebrar o imbolc no hemisfério sul é um exercício profundo de observação....</p>
+				<p>não temos a neve espessa derretendo das velhas tradições do norte, mas temos a aspereza do nosso próprio inverno, o vento cortante e a paisagem cinzenta que anseia por cor....</p>
+				<p>imbolc é o tempo do oimelc, o "leite primeiro" das ovelhas, que outrora sinalizava aos antigos o fim da escassez....</p>
+				<p>hoje, para nós, é o sopro sutil que reaquece a semente adormecida no solo...</p>
+				<p>neste sabbat do fogo, honramos a senhora da forja.....</p>
+				<p>é o momento de acender as candeias nas janelas para encorajar o sol frágil que retorna, e de dobrar os caules para tecer a cruz de palha, um amuleto ancestral de proteção para os nossos lares....</p>
+				<p>aqui, o nosso maior presságio de que o frio será vencido não são as flores de gelo europeias, mas o nosso ipê, que desafia a seca e, em breve, se tornará ouro absoluto em meio à vastidão....</p>
+				<p>celebramos a faísca sagrada que resiste à escuridão....</p>
+				<p>para marcar esse momento, o sincretismo de nossas raízes ibéricas e pagãs, e o rito definitivo do retorno da luz, deixo este singelo registro poético:</p>
+			<br>
+				<p><strong>a forja de agosto</strong></p>
+			<br>
+				<p>a noite augusta ainda carrega a geada,<br>
+				mas a terra seca, por dentro, já murmura<br>
+				é o leite primeiro da ovelha que quebra a penúria,<br>
+				é a chama quente que dança na velha fornalha</p>
+			<br>
+				<p>eu dobro os caules, eu teço a cruz de palha,<br>
+				quatro braços girando e a roda do tempo perdura<br>
+				não peço que o escuro, num sopro, se verta em doçura<br>
+				mas celebro a faísca que vence o relento em meada</p>
+			<br>
+				<p>nas praças, anciãs dão louvor ao fogo,<br>
+				e os ipês já florescem o tempo vindouro<br>
+				é rito pagão, no altar de tesouros<br>
+				garotos de palha exortam o frio</p>
+			<br>
+				<p>a prima semente de luz se abriu<br>
+				desperta a vida, reluz feito ouro<br>
+				que traga o céu, bondosos agouros<br>
+				de um sol vencedor que atende ao meu rogo</p>
+			<br>
+			<br>
+			<br>
+				<p>feliz imbolc.... que a chama de agosto ilumine seus caminhos e prepare o terreno para as flores que não tardam a chegar....</p>
+			
+			
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, _________________________.....</p>
 			            <p>vale a pena conferir!...</p>
 			        <br>
 			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
