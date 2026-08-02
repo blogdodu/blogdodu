@@ -106,7 +106,7 @@ const postsData =
 			
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
-			            <p>no último texto, comecei minha releitura do universo de ficção da marvel e alguns textos atrás falamos sobre o yule, o nosso natal.....</p>
+			            <p>no último texto, já sobre imbolc, postei um breve poema para marcar as comemorações e alguns textos atrás falamos sobre o yule, o nosso natal.....</p>
 			            <p>vale a pena conferir!...</p>
 			        <br>
 			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
@@ -176,7 +176,7 @@ const postsData =
 			
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
-			            <p>no último texto, _________________________.....</p>
+			            <p>no último texto, comecei minha releitura do universo de ficção da marvel.....</p>
 			            <p>vale a pena conferir!...</p>
 			        <br>
 			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
