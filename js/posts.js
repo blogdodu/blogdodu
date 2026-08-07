@@ -149,25 +149,25 @@ const postsData =
 			<br>
 				<p><strong>a forja de agosto</strong></p>
 			<br>
-				<p>a noite augusta ainda carrega a geada,<br>
+				<p>a noite augusta ainda traz consigo a geada,<br>
 				mas a terra seca, por dentro, já murmura<br>
-				é o leite primeiro da ovelha que quebra a penúria,<br>
-				é a chama quente que dança na velha fornalha</p>
+				e o primo leite da ovelha quebra a penúria<br>
+				é a chama quente a dançar na velha fornalha</p>
 			<br>
-				<p>eu dobro os caules, eu teço a cruz de palha,<br>
-				quatro braços girando e a roda do tempo perdura<br>
-				não peço que o escuro, num sopro, se verta em doçura<br>
-				mas celebro a faísca que vence o relento em meada</p>
+				<p>eu dobro os caules e já teço a cruz de palha,<br>
+				quatro braços, a roda do tempo perdura<br>
+				não peço que o escuro se verta em doçura<br>
+				mas celebro a faísca que vence laureada</p>
 			<br>
-				<p>nas praças, anciãs dão louvor ao fogo,<br>
+				<p>nas praças, anciãs já dão louvor ao fogo,<br>
 				e os ipês já florescem o tempo vindouro<br>
-				é rito pagão, no altar de tesouros<br>
-				garotos de palha exortam o frio</p>
+				é rito pagão feito no altar de tesouros<br>
+				garotos de palha exortam o frio pueril</p>
 			<br>
-				<p>a prima semente de luz se abriu<br>
-				desperta a vida, reluz feito ouro<br>
-				que traga o céu, bondosos agouros<br>
-				de um sol vencedor que atende ao meu rogo</p>
+				<p>a prima semente de luz hoje se abriu<br>
+				despertando em vida, reluzindo em casto ouro<br>
+				que o céu nos traga seus tão bondosos agouros<br>
+				de um sol vencedor que sempre  atende meu rogo</p>
 			<br>
 			<br>
 			<br>
