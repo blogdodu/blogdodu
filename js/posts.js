@@ -62,7 +62,7 @@ const postsData =
 			<hr class="divisor-fino-longo">
 				<p><strong>♦ a ilusão do som puro e a dança do timbre ♦</strong></p>
 			<br>
-				<p>é aqui que entra a imagem de capa deste ensaio..... repare na ilustração que preparei: e relacione a cor vermelha a uma corda baseada na pulsação de 110 Hz (um lá grave).......</p>
+				<p>é aqui que entra a imagem de capa deste ensaio (também no final do texto)..... repare na ilustração que preparei: e relacione a cor vermelha a uma corda baseada na pulsação de 110 Hz (um lá grave).......</p>
 				<p>na teoria matemática ou em um laboratório com geradores digitais, podemos criar uma onda senoidal pura, aquela curva perfeita, suave como o ir e vir de um balanço no parque, subindo até uma crista e descendo até um vale sem solavancos.....</p>
 				<p>mas no mundo real, a acústica não funciona em isolamento perfeito....... a imagem ilustra exatamente isso: quando tocamos essa nota de 110hz, a corda não vibra apenas inteira.....</p>
 				<p>ela também tem sub-vibrações, multiplicando inversamente a freqüência a cada divisão da freqüência original.....</p>
