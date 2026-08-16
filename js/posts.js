@@ -2,6 +2,143 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 0032. freqüência
+	{
+		id: "frequencias_e_o_mito_da_cura_em_hertz-ed25",
+		title: "freqüências e o mito da cura em hertz - ed25",
+		date: "2026.ago.17",
+		readingTime: "7 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/hertz.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"_nbb\"",
+		content:
+		`
+				<p>"garoto de 13 anos viraliza ao cantar na freqüência de 963 hz, conhecida como a freqüência da cura".....</p>
+				<p>essa manchete, num vídeo onde malakai mayoh interpreta o movimento solista pie jesu, da missa réquiem de fauré, que tem sido empurrada por algoritmos e compartilhada com entusiasmo nas redes sociais, rodou mais uma vez as telas recentemente e acabou esbarrando mais uma vez em mim....</p>
+				<p>o que me fez parar por alguns segundos para olhar o abismo da desinformação moderna...</p>
+				<p>e ele olhou de volta.... o que me motivou trazer esse tema para cá....</p>
+				<p>não que a voz do garoto não seja bonita ou que a música não emocione, longe disso... a arte tem seu valor subjetivo, afetivo e até espiritual para quem a escuta......</p>
+				<p>mas a alegação por trás do vídeo carrega uma ingenuidade perigosa, quando não, uma má-fé escancarada.....</p>
+				<p>entendo perfeitamente o fascínio....... vivemos tempos caóticos, dores complexas, e a promessa de um alívio simples, matemático e sonoro é extremamente tentadora....</p>
+				<p>no entanto, afirmar que existe uma nota mágica capaz de alinhar chakras por pura ressonância física ou regenerar células por milagre vibracional é, no mínimo, esvaziar a própria ciência do som.......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ afinal, do que estamos falando??? ♦</strong></p>
+			<br>
+				<p>antes de nos deixarmos levar pelos misticismos vestidos de jargões técnicos, vale a pena darmos alguns passos para trás e olharmos para o básico do básico.....</p>
+				<p>o que significa, na prática, essa grandeza chamada freqüência???</p>
+				<p>para além da física e da acústica, esse conceito é, antes de tudo, o ritmo das coisas no tempo.......</p>
+				<p>é a constância com que um evento acontece de novo, de novo e de novo....</p>
+				<p>a terra, por exemplo, completa uma volta sobre o próprio eixo a cada 24 horas... temos aí um ciclo de rotação.....</p>
+				<p>ela dá uma volta completa ao redor do sol a cada 365 dias....... essa é a nossa translação.....</p>
+				<p>a lua tem suas fases variando em cerca de 28 dias.... o ônibus do seu bairro passa no ponto, com sorte, de hora em hora.......</p>
+				<p>​podemos observar isso em várias outras métricas do nosso cotidiano: o motor do seu carro trabalha em rpm (rotações por minuto).....</p>
+				<p>​quando você sintoniza sua rádio fm favorita ou seu canal de tv, está escolhendo uma faixa exata de ondas.......</p>
+				<p>o seu monitor ou a tela do seu celular se atualizam a 60, 90 ou 120 hertz (vezes por segundo) para criar a ilusão de um movimento fluído na interface.......</p>
+				<p>o roteador do seu wi-fi pisca dados em 2.4 ou 5 gigahertz (bilhões de vezes por segundo).......</p>
+				<p>​o exame de ultra-som que mostra a imagem de um bebê, o microondas que esquenta o seu almoço, o raio-x do hospital....... tudo isso é freqüência...</p>
+				<p>​até mesmo o espectro das cores....... a radiação solar abrange uma faixa contínua de freqüências eletromagnéticas.....</p>
+				<p>e o que difere a luz vermelha da azul é, puramente, o quão rápido essas ondas vibram.......</p>
+				<p>o próprio blog que você lê agora tem uma cadência: um ensaio novo a cada sete dias, impreterivelmente às segundas-feiras.....</p>
+				<p>freqüência, trata-se apenas disso: a medição de uma ocorrência qualquer dentro de um determinado intervalo de tempo.......</p>
+				<p>não é uma energia oculta, não é um portal cósmico... é contagem, é métrica..... um cálculo de quantas vezes algo se repete.......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ encolhendo o tempo: o hertz ♦</strong></p>
+			<br>
+				<p>quando esse intervalo de repetição fica muito, muito rápido, tão rápido que nosso cérebro não consegue contar as ocorrências individualmente, mudamos a escala da nossa régua.......</p>
+				<p>como vimos nos caso dos raios solares, entramos na casa do hertz (hz), que nada mais é do que a contagem de repetições por segundo.....</p>
+				<p>se uma corda de violão ou a membrana de um alto-falante vibra 10 vezes em um único segundo, dizemos que ela está pulsando a 10 Hz...... (curiosidade: o ouvido humano geralmente começa a “ouvir” de 20 hertz pra cima)</p>
+				<p>se ela bate 440 vezes nesse mesmo segundo, temos 440hz....</p>
+				<p>e o nosso sistema auditivo transforma essa rapidez mecânica do ar em percepção sonora....... quanto mais acelerada a vibração (mais repetições por segundo), mais agudo percebemos o som..... quanto mais letárgica, mais grave.......</p>
+				<p>portanto, dizer que alguém cantou em 963hz significa simplesmente que as pregas vocais daquela pessoa vibraram 963 vezes em um segundo, produzindo uma nota aguda (muito próxima do si5 no piano)..... nada mais, nada menos....</p>
+				<p>o que não reflete nem de longe a realidade da experiência musical, já que uma canção nunca é composta por um som isolado, liso e estéril e nem dura apenas um segundo......</p>
+				<p>as melodias são seqüências de notas, entrelaçadas no tempo, ocorrendo umas após as outras e, quase sempre, também simultaneamente.......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a ilusão do som puro e a dança do timbre ♦</strong></p>
+			<br>
+				<p>é aqui que entra a imagem de capa deste ensaio..... repare na ilustração que preparei: e relacione a cor vermelha a uma corda baseada na pulsação de 110 Hz (um lá grave).......</p>
+				<p>na teoria matemática ou em um laboratório com geradores digitais, podemos criar uma onda senoidal pura, aquela curva perfeita, suave como o ir e vir de um balanço no parque, subindo até uma crista e descendo até um vale sem solavancos.....</p>
+				<p>mas no mundo real, a acústica não funciona em isolamento perfeito....... a imagem ilustra exatamente isso: quando tocamos essa nota de 110hz, a corda não vibra apenas inteira.....</p>
+				<p>ela também tem sub-vibrações, multiplicando inversamente a freqüência a cada divisão da freqüência original.....</p>
+				<p>ou seja, essa corda vibra também dividida pela metade (220hz), em um terço (330hz), em um quarto (440hz), em um quinto e assim sucessivamente.......</p>
+				<p>a física chama isso de "série harmônica", um princípio físico-matemático desvendado na antiguidade e estruturado por cientistas como hermann von helmholtz no século XIX, que nos ajuda a entender que um som natural é sempre uma soma de muitos sons.......</p>
+				<p>quando um alto-falante se move para tentar reproduzir aquele famoso 963 hertz, o próprio cone se deforma ligeiramente, o ar da sala oferece resistência, as paredes refletem as ondas.......</p>
+				<p>o resultado é que o som original gera sub-vibrações, ressonâncias secundárias e uma infinidade de harmônicos no ambiente....</p>
+				<p>quando uma pessoa canta, a complexidade é estupendamente maior.......</p>
+				<p>o som que sai da(o) cantora(r), sofre influência da conformação das pregas na garganta, da pressão do diafragma e dos músculos intercostais, reverbera pela caixa torácica, pela boca, pelos ossos da face.......</p>
+				<p>o mesmo acontece com o som de um instrumento.... sofrendo a influência de seu material, de seu formato e de como a pessoa que o toca o utiliza.....</p>
+				<p>isso tudo antes mesmo de reverberar pelo ambiente.... por isso, a voz humana e o som de um instrumento são uma mistura riquíssima de dezenas de pulsos simultâneos.....</p>
+				<p>é essa mistura orgânica que chamamos de timbre....... sendo que como se comportam as sub-freqüências, quais aparecem com maior intensidade e com menos, é que fazem uma mesma nota soar diferente em cada instrumento....</p>
+				<p>mesmo que a nota fundamental seja de 963 hertz, o som que chega aos seus ouvidos é uma constelação de outras freqüências sobrepostas.......</p>
+				<p>tentar vender isso como a emissão de uma "vibração pura e isolada" é ignorar solenemente como o som se propaga no ar que respiramos.......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ outro mito: os 432 hz e a obsessão pelos números mágicos ♦</strong></p>
+			<br>
+				<p>essa história dos 963 não nasceu no vácuo....... ela é herdeira direta de outra lenda urbana muito popular no meio musical e esotérico: a suposta afinação superior em 432 hertz.....</p>
+				<p>dizem os defensores dessa idéia, que afinar instrumentos nessa marca (em vez do padrão internacional de 440 hertz para a nota lá central) torna a música "organicamente alinhada com a natureza".....</p>
+				<p>dizem até que o 440 hertz teria sido imposto para gerar ansiedade e manipulação nas massas.......</p>
+				<p>trata-se de uma grande bobagem sem qualquer respaldo histórico ou científico....</p>
+				<p>a escolha do 440 hertz foi apenas uma convenção prática e internacional estabelecida no século xx para que orquestras e músicos de diferentes países pudessem tocar juntos sem soar desafinados entre si.......</p>
+				<p>isso, porque ao longo dos séculos anteriores, o que se convencionou chamar de nota lá variou imensamente, de 390 a mais de 450 hertz, dependendo da região, da temperatura das igrejas ou da preferência dos construtores de órgãos e outros instrumentos.......</p>
+				<p>para se ter uma idéia de como isso é puramente estético, muitas orquestras sinfônicas modernas afinam seus instrumentos hoje em 442 ou até 443 hertz, simplesmente porque isso confere um brilho sutilmente maior aos instrumentos de corda...</p>
+				<p>mudar de 432 para 440 altera ligeiramente a altura da nota, nada além disso.......</p>
+				<p>o som não fica "mágico", nem "maligno"..... fica apenas um pouco mais grave ou mais agudo.......</p>
+				<p>e o 963 segue a mesmíssima linha, quase sempre temperado com uma pitada deturpada das teorias de nikola tesla (o famoso 3-6-9) jogada na conta para dar um verniz de credibilidade.......</p>
+				<p>é exatamente a mesma ginástica mental (e mercadológica) que sustenta os chamados códigos de grabovoi.....</p>
+				<p>aquelas famosas seqüências numéricas que prometem atrair dinheiro, curar doenças ou trazer o amor de volta se forem repetidas à exaustão ou anotadas no pulso....</p>
+				<p>é a crença perigosa de que o universo é um grande algoritmo de computador, onde basta você digitar o "cheat code" ou sintonizar a "freqüência" correta para hackear a realidade e sacar um milagre....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o perigo das soluções fáceis ♦</strong></p>
+			<br>
+				<p>por que essas teses ganham tanto espaço e viralizam com facilidade???</p>
+				<p>talvez porque seja reconfortante acreditar que a saúde, a paz interior ou a cura para dores profundas possam ser alcançadas de forma tão passiva: bastando dar o play em um vídeo do youtube.......</p>
+				<p>é a busca por atalhos em um mundo exaustivo e ruidoso.....</p>
+				<p>mas faça um teste na próxima vez que esbarrar em um desses conteúdos....... repare na estética sonora.......</p>
+				<p>não há guitarras ríspidas, andamentos frenéticos ou baterias marcantes.......</p>
+				<p>invariavelmente, o que se vende como a tal 'freqüência milagrosa' é uma música que vem envelopada em andamentos lentíssimos, sintetizadores suaves (os famosos pads), acordes longos e uma verdadeira montanha de reverberação....</p>
+				<p>quase sempre acompanhados por imagens de águas fluindo ou nebulosas espaciais.......</p>
+				<p>ou seja: o que diminui o seu batimento cardíaco e traz aquela sensação de paz não é a matemática exata de 963 ou 432 hertz.......</p>
+				<p>é o arranjo....... é a velha e boa teoria musical somada à sonoplastia pura e simples.......</p>
+				<p>é a construção de uma atmosfera pensada especificamente para induzir a mente ao repouso, algo que a música ambiente já faz há décadas sem precisar de nenhum verniz místico/quântico.......</p>
+				<p>atribuir propriedades curativas a um número isolado simplifica a vasta complexidade da biologia humana, da medicina e da própria arte.......</p>
+				<p>como bem explorou o neurologista oliver sacks em seu livro "alucinações musicais", a música tem, sim, um poder terapêutico transformador sobre o cérebro humano.......</p>
+				<p>mas não por causa de um valor físico isolado.......</p>
+				<p>ela afeta nossas emoções pela memória afetiva, pela estruturação harmônica, pelo ritmo, pelas dinâmicas de tensão e relaxamento, pela identificação com a letra ou pela beleza da interpretação.......</p>
+				<p>a "cura" que a arte proporciona é da ordem do sentido, da cultura e do afeto, não de uma fricção molecular milagrosa do ar.......</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ a beleza da física sem disfarces ♦</strong></p>
+			<br>
+				<p>compreender a física real do som não destrói a poesia da música....... pelo contrário, a engrandece.......</p>
+				<p>saber que o som é o ar em movimento, que o timbre de um violino depende da idade da madeira e do formato do seu corpo, e que cada nota que ouvimos é uma complexa sobreposição de ondas mecânicas, torna a experiência auditiva imensamente mais fascinante do que qualquer mito rasteiro de redes sociais.......</p>
+				<p>desmistificar essas afirmações não é ser frio ou insensível; é respeitar tanto a ciência que estuda a natureza quanto a arte que nos abraça.......</p>
+				<p>da próxima vez que encontrar um vídeo prometendo curas milagrosas em determinadas taxas sonoras, aprecie a voz, a melodia ou a intenção do artista, mas deixe o misticismo numérico de lado.......</p>
+				<p>as verdades do mundo físico já são deslumbrantes o suficiente sem precisarem de truques.......</p>
+			
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, _________________________.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
 // 0031. trabalho
 	{
 		id: "trabalho_entre_obrigacao_e_significado-ed24",
@@ -130,7 +267,6 @@ const postsData =
 			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
 		`
 	},
-	
 
 // 0030. as sementes no escuro da terra (ou sobre o nosso imbolc)
 	{
