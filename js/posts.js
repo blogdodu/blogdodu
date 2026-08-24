@@ -2,6 +2,103 @@ const postsData =
 [
 	// --- SEQUÊNCIA CRONOLÓGICA (DO MAIS NOVO PARA O MAIS ANTIGO) ---
 
+// 0033. o que é arte???
+	{
+		id: "o_que_e_arte???-ed25",
+		title: "o que é arte??? - ed26",
+		date: "2026.ago.24",
+		readingTime: "5 min de leitura",
+		category: "ensaios e provocações",
+		categoryId: "#ways",
+		author: "du",
+		authorId: "#authors",
+		image: "/img/a_fonte.png",
+		imageAlt: "imagem ilustrativa",
+		imageCaption: "\"j_cn\"",
+		content:
+		`
+				<p>todo mundo sabe claramente o que é arte..... até tentar colocar em palavras a explicação.....</p>
+				<p>é uma daquelas palavras que a gente usa a vida inteira com uma certeza tranqüila, como se o significado viesse embutido, como se jamais precisasse ser destrinchado..... e aí alguém te pergunta, de verdade, o que é arte..... e o chão some..... sua explicação não consegue abarcar tudo que é considerado arte..... logo, é uma explicação falha....</p>
+				<p>e foi numa conversa com um escritor que isso se apresentou pra mim de novo..... ele foi colocando com toda a naturalidade que: quem escreve poesia mas não sabe fazer um soneto não seria propriamente uma(m) poeta..... o método como critério..... a forma como fronteira..... e eu imediatamente discordei, porque percebi que tinha muito mais a dizer do que eu ouvia.....</p>
+				<p>porque não é bem assim..... ou pelo menos não é assim pra mim.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o que move ♦</strong></p>
+			<br>
+				<p>arte é afeto.....</p>
+				<p>ponto..... ou quase ponto..... porque afeto aqui não é carinho, não é ternura, não é o sentimento de gostar de alguém..... afeto no sentido filosófico mesmo..... do latim affectus, aquilo que te atinge, que te muda de estado, que te desloca de onde você estava..... o afeto como evento..... como algo que acontece com você sem pedir licença.....</p>
+				<p>e aqui vem a virada que me parece essencial: esse afeto não depende de intenção.....</p>
+				<p>ou melhor..... ele pode vir da intenção de afetar, mas não precisa..... e a intenção pode existir sem que o afeto aconteça..... os dois são possibilidades independentes, que às vezes se encontram e às vezes não.....</p>
+				<p>são dois lugares diferentes de onde a arte pode nascer..... e só um deles é suficiente.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o fazer ♦</strong></p>
+			<br>
+				<p>o primeiro lugar é o fazer artístico..... a intenção da(o) artista de expressar algo, de construir algo que ela(e) já entende como arte, de criar com consciência de que está criando.....</p>
+				<p>isso vale mesmo que ninguém mais reconheça sua criação como arte..... mesmo que seja rejeitado, ignorado, incompreendido..... mesmo que as outras pessoas passem por aquilo e não sintam nada..... a intenção estava lá..... e o gesto foi artístico.....</p>
+				<p>e isso não tem nada a ver com dominar a forma..... eu posso saber metrificar, conhecer o esquema de rimas do soneto, dominar a cesura e o enjambement..... e ainda assim escolher não fazer um soneto..... não porque não sei..... mas porque não quero..... porque a forma que estou buscando não é essa..... porque, talvez, aquela estrutura não serve ao que estou tentando dizer ou sentir ou não cabe o que quero expurgar.....</p>
+				<p>e tem o outro lado..... eu posso não saber fazer um soneto, posso nunca ter ouvido esse nome, e ainda assim fazer algo que move pessoas, que cria imagens, que abre espaço dentro de quem lê..... a ignorância da técnica não invalida o gesto..... o gesto foi artístico..... a intenção estava lá.....</p>
+				<p>às vezes nem é intenção de provocar um afeto específico..... às vezes é a(o) artista que está sendo afetada(o) por algo e precisando colocar pra fora o que sente..... o que nasce daí é arte também..... talvez seja onde a arte mais claramente se parece com o que ela é..... uma descarga..... uma tentativa de redistribuir pelo mundo aquilo que foi grande demais pra ficar só dentro de um corpo.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o olhar ♦</strong></p>
+			<br>
+				<p>mas tem o segundo lugar onde a arte nasce..... e ele é mais estranho e mais bonito ao mesmo tempo.....</p>
+				<p>o olhar da apreciadora(r) pode criar arte onde não havia nenhuma intenção artística.....</p>
+				<p>uma pessoa sentada na calçada..... todo mundo passa por ela..... ou quase todo mundo..... mas uma pessoa para, ou mesmo sem parar, enquadra mentalmente aquela cena em seu olhar, algo no ângulo da luz, na postura do corpo, na tristeza ou na paz ou na indiferença daquele momento..... e ao ter esse olhar é afetada..... não por estar diante de uma “obra”..... mas diante de uma existência que a(o) impacta..... essa cena, para esse olhar específico, naquele momento específico, é arte..... que ainda pode ser capturada em fotografia por um artista visual para ser apreciada por outras pessoas......</p>
+				<p>a natureza não tem intenção nenhuma..... a luz que atravessa uma nuvem e cai exatamente de uma forma sobre o asfalto molhado não foi composta por ninguém..... a tragédia que passa no noticiário não foi encenada..... e ainda assim há quem seja afetada(o) por isso da mesma forma que seria por uma sinfonia ou por um poema..... porque o afeto aconteceu..... o estado mudou..... algo se deslocou.....</p>
+				<p>o mictório que duchamp colocou no museu em 1917..... "a fonte"..... não era arte quando estava na fábrica..... ou era??!?..... a pergunta não tem uma resposta que satisfaça os dois lados, e acho que duchamp sabia disso..... o que ele fez foi explicitar que o enquadramento é uma decisão, que o olhar é uma escolha, que o "isso é arte" não está no objeto mas na relação entre o objeto e quem o vê..... e isso provoca até hoje porque vai fundo demais para ser ignorado.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ o que o afeto não é ♦</strong></p>
+			<br>
+				<p>e aqui o ponto que mais me interessa..... o afeto é “neutro”.....</p>
+				<p>não é beleza..... não é prazer..... não é aprovação..... não é consolo..... o afeto também pode ser desconforto, angústia, raiva, estranhamento, mal-estar..... o afeto pode ser o filme que você não consegue parar de pensar e que você odeia..... o filme que te incomodou, que te tirou do lugar, que te deixou mais pesada(o) do que você estava quando começou..... esse filme te afetou..... logo, para você, foi arte..... mesmo que o que o incomodou nele seja como ele confronta o que você entende por um filme.... não se enquadrando em uma caixa que limita o que não tem limites....</p>
+				<p>o único fracasso artístico é a indiferença..... é o que passa por você sem deixar marca..... o que entra por um lado e sai pelo outro sem que nada mude..... esse é o vazio..... o oposto de arte não é a arte feia ou a arte ruim..... é o nada..... é o que não acontece.....</p>
+				<p>e isso desfaz um equívoco antigo..... o de que arte é aquilo de que eu gosto..... de que se eu não gosto, não é arte, ou não é boa arte..... mas o gosto é meu..... o afeto é da relação..... eu posso não gostar de algo e reconhecer que é arte porque vejo o quanto afeta quem está do meu lado..... eu posso detestar uma obra e ainda assim ter sido afetada(o) por ela..... o desgosto também é afeto..... a repulsa também move.....</p>
+				<p>e vai além..... eu posso repudiar uma obra, achar o humor de mau gosto, o conteúdo moralmente inaceitável, a forma deliberadamente perturbadora..... e ainda assim, se fui afetada(o), a arte cumpriu o que é..... não há limite de "aceitável" que defina onde a arte começa ou termina..... esse julgamento é subjetivo meu..... a arte já existia antes de eu chegar e continua existindo depois de eu ir embora..... </p>
+				<p>na música, a bossa nova foi taxada de desafinada..... o rock de sujo e sem apuro..... o jazz de barulho de negros..... o funk de degenerado..... cada época tem seu critério do que "não é bem arte"..... e cada época erra da mesma forma.....</p>
+				<p>kant tentou ancorar o julgamento estético no belo..... e mais do que no belo, no que ele chamou de julgamento de gosto com pretensão de universalidade..... quando digo "isso é belo", não estou dizendo só sobre mim..... estou pressupondo que os outros deveriam concordar..... é aí que o sublime entra, no que transcende o belo e nos confronta com algo maior do que o prazer..... mas mesmo kant ainda estava amarrado a um modo específico de afetar..... o meu interlocutor na conversa lá do início também..... o soneto como padrão..... o belo como critério..... o gosto como julgamento que deveria ser compartilhado.....</p>
+				<p>não concordo..... e não é só discordância estética..... é discordância sobre o que a arte é.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ quando os dois se encontram ♦</strong></p>
+			<br>
+				<p>mas tem um momento que me parece o mais completo..... quando a intenção do fazer e o olhar da apreciadora(r) se encontram..... quando alguém fez com consciência artística e alguém recebeu com um afeto real.....</p>
+				<p>não é que isso seja "mais arte"..... não é uma hierarquia..... é mais pleno talvez, no sentido de que o gesto atravessou sua trajetória inteira..... saiu de um corpo, chegou em outro, mudou os dois de estado..... tem algo de conversa nisso..... de encontro..... de reconhecimento mútuo.....</p>
+				<p>mas esse encontro não é garantido..... a(o) artista que faz com toda a intenção do mundo e não encontra quem seja afetada(o) não falhou como artista..... o gesto foi artístico..... o encontro simplesmente não aconteceu..... e o olhar que se afeta diante de algo sem intenção nenhuma por trás também não é uma ilusão..... é uma das formas possíveis de arte existir.....</p>
+				<p>o que a arte faz, em qualquer uma dessas formas, é criar uma interrupção..... no fluxo automático do dia, no piloto automático com que a gente atravessa a vida..... ela para você..... ou você para ela..... de qualquer jeito, algo fica diferente depois..... mesmo que seja só por um segundo..... mesmo que você não saiba nomear o que mudou.....</p>
+			<br>
+			<hr class="divisor-fino-longo">
+				<p><strong>♦ então o que é arte ♦</strong></p>
+			<br>
+				<p>é tudo que afeta ou tem intenção de afetar.....</p>
+				<p>não precisa ser bonito..... não precisa ser aprovado..... não precisa ser enquadrado..... não precisa ter método..... não precisa estar no museu..... pode estar na calçada, no noticiário, na luz que atravessou a janela exatamente assim às quatro e vinte da tarde.....</p>
+				<p>e o que não afeta, para você, não é arte para você (apesar de que você precisa dizer, talvez já tenha te afetado)..... não é um defeito da obra..... é só uma constatação sobre o encontro..... esse encontro não aconteceu..... outro pode acontecer amanhã com a mesma obra e uma pessoa diferente..... ou com você mesma(o) em outro momento...</p>
+				<p>a arte não fica guardada nos objetos..... ela acontece nas relações..... ela é um verbo fingindo ser substantivo.....</p>
+				<p>e o método????? a metrificação, o soneto, a técnica acadêmica?????</p>
+				<p>são caminhos..... ferramentas..... às vezes muito belas..... às vezes necessárias..... às vezes o único jeito que alguém encontrou de chegar lá..... mas não são o destino..... o destino é o afeto..... o destino é o deslocamento..... o destino é o momento em que algo para no tempo, seja lá em que forma esse algo apareça.....</p>
+				<p>e você, o que te afetou hoje que você não esperava?????</p>
+				<p>o que passou por você que não deveria ter sido arte e foi?????</p>
+				<p>ou o que você fez com a intenção de criar algo e não sabe se chegou até quem deveria chegar?????</p>
+				<p>até mais.....</p>
+			
+				<br>
+			            <p>quer mergulhar em outras reflexões profundas???</p>
+			            <p>no último texto, desmistificamos o que realmente é uma freqüência.....</p>
+			            <p>vale a pena conferir!...</p>
+			        <br>
+			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
+			                <p><center>__________________________________</center></p>
+			            <p><center>não prometo respostas.....</center></p>
+			            <p><center>mas te convido pra conversas interessantes......</center></p>
+			                <p><center>__________________________________</center></p>
+			        <br>
+			        <br>
+			            <p><strong><center>♦ vamos construir um espaço rico em troca de idéias e reflexões ♦</center></strong></p>
+		`
+	},
+
 // 0032. freqüência
 	{
 		id: "frequencias_e_o_mito_da_cura_em_hertz-ed25",
