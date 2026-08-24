@@ -4,7 +4,7 @@ const postsData =
 
 // 0033. o que é arte???
 	{
-		id: "o_que_e_arte???-ed25",
+		id: "o_que_e_arte???-ed26",
 		title: "o que é arte??? - ed26",
 		date: "2026.ago.24",
 		readingTime: "5 min de leitura",
