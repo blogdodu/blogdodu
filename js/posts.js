@@ -81,7 +81,7 @@ const postsData =
 				<p>e você, o que te afetou hoje que você não esperava?????</p>
 				<p>o que passou por você que não deveria ter sido arte e foi?????</p>
 				<p>ou o que você fez com a intenção de criar algo e não sabe se chegou até quem deveria chegar?????</p>
-				<p>até mais.....</p>
+				<p>no mais, até mais!!!</p>
 			
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
@@ -219,10 +219,11 @@ const postsData =
 				<p>desmistificar essas afirmações não é ser frio ou insensível; é respeitar tanto a ciência que estuda a natureza quanto a arte que nos abraça.......</p>
 				<p>da próxima vez que encontrar um vídeo prometendo curas milagrosas em determinadas taxas sonoras, aprecie a voz, a melodia ou a intenção do artista, mas deixe o misticismo numérico de lado.......</p>
 				<p>as verdades do mundo físico já são deslumbrantes o suficiente sem precisarem de truques.......</p>
+				<p>no mais, até mais!!!</p>
 			
 				<br>
 			            <p>quer mergulhar em outras reflexões profundas???</p>
-			            <p>no último texto, _________________________.....</p>
+			            <p>no último texto, exploramos nuances do que é e significa o trabalho.....</p>
 			            <p>vale a pena conferir!...</p>
 			        <br>
 			            <p><strong><center>♦ ensaios novos às segundas ♦</center></strong></p>
